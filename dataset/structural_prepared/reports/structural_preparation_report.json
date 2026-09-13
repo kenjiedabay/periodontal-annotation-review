@@ -1,0 +1,46 @@
+{
+  "config": {
+    "validation_dir": "..\\DenPAR Radiographs Dataset\\Dataset\\Validation",
+    "output_dir": "..\\dataset\\structural_prepared",
+    "confirmed_correspondence": null,
+    "resize_width": null,
+    "resize_height": null,
+    "sample_count": 3
+  },
+  "source_preserved": true,
+  "case_id_limitation": "Case/patient IDs unavailable in inspected DenPAR files; no train/validation/test split was generated.",
+  "task_statistics": {
+    "tooth_segmentation": {
+      "images": 150,
+      "targets": 655,
+      "excluded_unconfirmed": 0
+    },
+    "tooth_localization": {
+      "images": 150,
+      "targets": 655,
+      "excluded_unconfirmed": 0
+    },
+    "cej_apex_landmarks": {
+      "images": 0,
+      "targets": 0,
+      "excluded_unconfirmed": 1580
+    },
+    "bone_line_structure": {
+      "images": 0,
+      "targets": 0,
+      "excluded_unconfirmed": 519
+    }
+  },
+  "records": 150,
+  "manifest": "manifests/structural_manifest.json",
+  "validation": {
+    "images_with_dimension_preserving_identity_transform": 150,
+    "images_with_explicit_resize_transform": 0,
+    "disease_or_severity_targets_written": false,
+    "manifest_validation": {
+      "valid": true,
+      "record_count": 150,
+      "errors": []
+    }
+  }
+}

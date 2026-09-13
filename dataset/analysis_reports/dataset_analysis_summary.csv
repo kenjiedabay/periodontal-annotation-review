@@ -1,0 +1,19 @@
+metric,value
+total_images,650
+disease_positive_images,0
+disease_negative_images,0
+uncertain_images,0
+number_of_affected_teeth,0
+distribution_by_tooth_number,{}
+severity_distribution,{}
+radiographic_findings_distribution,{}
+image_dimensions,"{""1024x1024"": 650}"
+class_imbalance,"{""disease_classes"": {}, ""warnings"": [""No valid disease labels available; supervised disease classification is not currently feasible.""]}"
+missing_annotations,650
+invalid_annotations,0
+orphan_annotation_files,0
+incomplete_annotations,0
+valid_annotations,0
+expert_validated_annotations,0
+potential_problems,"[""No valid disease labels available; supervised disease classification is not currently feasible."", ""650 processed images have no annotation file.""]"
+feasibility,"{""disease_classes"": {}, ""disease_classification"": ""review required"", ""expert_validated_annotations"": 0, ""recommendation"": ""Use the report to decide task scope; do not infer clinical performance from these counts alone."", ""severity_prediction"": ""insufficient evidence"", ""tooth_localization"": ""not currently supported by validated tooth labels"", ""valid_annotations"": 0}"

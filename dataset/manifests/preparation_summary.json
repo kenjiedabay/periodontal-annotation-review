@@ -1,0 +1,16 @@
+{
+  "eligible_annotations": 0,
+  "train_images": 0,
+  "validation_images": 0,
+  "test_images": 0,
+  "augmented_training_images": 0,
+  "skipped_missing_images": 0,
+  "skipped_invalid_annotations": 0,
+  "skipped_unvalidated_annotations": 0,
+  "case_groups": 0,
+  "split_case_groups": {
+    "train": 0,
+    "validation": 0,
+    "test": 0
+  }
+}

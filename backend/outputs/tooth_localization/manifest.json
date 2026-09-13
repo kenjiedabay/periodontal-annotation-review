@@ -1,0 +1,1002 @@
+[
+  {
+    "image": "1.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "100.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\100_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1000.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1000_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1007.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1007_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1027.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1027_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "103.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\103_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1036.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1036_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1042.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1042_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1048.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1048_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1059.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1059_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "106.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\106_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1064.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1064_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1065.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1065_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "107.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\107_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1071.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1071_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1078.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1078_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1079.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1079_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "108.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\108_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1082.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1082_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1084.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1084_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1086.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1086_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1088.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1088_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "109.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\109_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1098.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1098_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1112.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1112_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1113.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1113_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1121.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1121_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1137.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1137_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1140.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1140_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1141.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1141_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1144.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1144_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1177.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1177_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1194.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1194_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1201.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1201_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1211.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1211_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1221.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1221_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1223.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1223_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1224.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1224_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1227.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1227_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1229.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1229_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1231.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1231_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1241.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1241_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1242.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1242_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "125.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\125_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1251.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1251_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1253.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1253_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1258.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1258_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1271.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1271_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1278.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1278_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "1285.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\1285_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "131.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\131_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "134.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\134_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "138.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\138_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "139.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\139_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "143.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\143_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "148.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\148_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "149.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\149_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "150.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\150_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "152.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\152_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "156.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\156_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "163.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\163_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "166.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\166_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "167.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\167_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "168.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\168_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "177.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\177_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "178.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\178_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "18.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\18_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "183.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\183_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "184.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\184_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "190.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\190_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "201.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\201_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "203.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\203_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "22.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\22_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "228.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\228_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "231.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\231_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "233.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\233_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "240.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\240_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "244.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\244_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "245.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\245_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "258.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\258_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "266.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\266_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "269.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\269_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "270.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\270_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "281.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\281_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "286.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\286_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "298.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\298_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "301.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\301_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "327.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\327_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "337.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\337_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "338.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\338_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "340.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\340_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "35.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\35_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "358.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\358_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "361.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\361_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "365.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\365_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "372.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\372_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "389.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\389_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "394.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\394_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "411.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\411_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "413.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\413_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "430.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\430_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "431.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\431_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "44.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\44_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "441.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\441_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "448.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\448_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "458.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\458_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "459.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\459_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "468.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\468_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "469.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\469_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "472.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\472_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "473.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\473_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "474.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\474_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "483.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\483_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "485.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\485_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "495.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\495_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "5.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\5_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "504.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\504_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "51.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\51_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "511.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\511_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "521.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\521_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "530.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\530_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "531.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\531_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "537.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\537_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "539.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\539_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "54.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\54_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "542.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\542_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "544.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\544_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "545.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\545_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "549.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\549_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "558.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\558_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "567.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\567_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "570.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\570_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "580.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\580_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "583.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\583_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "590.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\590_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "611.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\611_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "613.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\613_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "622.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\622_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "624.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\624_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "630.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\630_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "633.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\633_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "641.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\641_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "643.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\643_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "657.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\657_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "663.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\663_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "666.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\666_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "675.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\675_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "677.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\677_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "68.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\68_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "682.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\682_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "687.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\687_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "695.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\695_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "715.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\715_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "716.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\716_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "736.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\736_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "74.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\74_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "756.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\756_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "757.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\757_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "764.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\764_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "769.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\769_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "782.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\782_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "784.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\784_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "786.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\786_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "797.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\797_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "799.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\799_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "804.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\804_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "808.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\808_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "81.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\81_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "810.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\810_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "811.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\811_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "851.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\851_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "852.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\852_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "854.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\854_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "859.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\859_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "87.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\87_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "881.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\881_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "884.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\884_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "885.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\885_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "887.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\887_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "890.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\890_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "892.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\892_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "893.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\893_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "896.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\896_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "904.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\904_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "907.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\907_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "913.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\913_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "915.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\915_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "930.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\930_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "938.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\938_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "944.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\944_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "946.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\946_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "947.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\947_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "961.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\961_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "973.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\973_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "975.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\975_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "976.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\976_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "984.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\984_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "988.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\988_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "993.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\993_tooth_overlay.png",
+    "task": "tooth localization only"
+  },
+  {
+    "image": "998.jpg",
+    "tooth_overlay": "backend\\outputs\\tooth_localization\\998_tooth_overlay.png",
+    "task": "tooth localization only"
+  }
+]

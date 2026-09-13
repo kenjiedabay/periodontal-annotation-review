@@ -1,0 +1,19 @@
+{
+  "preprocessing_version": "1.0.0",
+  "output_format": "PNG",
+  "grayscale": true,
+  "target_width": 1024,
+  "target_height": 1024,
+  "preserve_aspect_ratio": true,
+  "normalization_method": "percentile",
+  "lower_percentile": 1.0,
+  "upper_percentile": 99.0,
+  "contrast_enhancement": true,
+  "clahe_clip_limit": 1.5,
+  "clahe_tile_grid_size": 8,
+  "noise_reduction": false,
+  "noise_reduction_kernel": 3,
+  "sharpening": false,
+  "sharpening_amount": 0.25,
+  "create_comparisons": true
+}

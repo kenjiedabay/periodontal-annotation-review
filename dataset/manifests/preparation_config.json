@@ -1,0 +1,17 @@
+{
+  "processed_dir": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\dataset\\processed",
+  "annotations_dir": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\dataset\\annotations",
+  "output_dir": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\dataset",
+  "train_ratio": 0.7,
+  "validation_ratio": 0.15,
+  "test_ratio": 0.15,
+  "seed": 42,
+  "augmentations_per_training_image": 1,
+  "require_expert_validated": true,
+  "group_map_path": null,
+  "rotation_degrees": 3.0,
+  "translation_fraction": 0.02,
+  "scale_fraction": 0.02,
+  "brightness_variation": 0.05,
+  "contrast_variation": 0.05
+}

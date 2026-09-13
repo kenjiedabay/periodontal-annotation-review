@@ -1,0 +1,39 @@
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# Python
+backend/.venv/
+backend/__pycache__/
+backend/**/*.py[cod]
+backend/.pytest_cache/
+backend/.env
+backend/ml/checkpoints/*.pt
+backend/ml/checkpoints/*.json
+backend/ml/checkpoints/*.csv
+backend/ml/checkpoints/**/*.pt
+backend/ml/checkpoints/**/*.json
+backend/ml/checkpoints/**/*.csv
+
+# Local data and model artifacts
+dataset/raw/*
+dataset/cleaned/*
+dataset/processed/*
+models/*
+!dataset/raw/.gitkeep
+!dataset/cleaned/.gitkeep
+!dataset/processed/.gitkeep
+!models/.gitkeep
+
+# Generated files and local tooling
+.runtime/
+artifacts/tooth-segmentation/
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
+.vscode/*.log
+.env
+.env.*
+!.env.example

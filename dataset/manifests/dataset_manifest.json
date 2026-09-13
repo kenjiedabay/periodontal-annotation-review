@@ -1,0 +1,36 @@
+{
+  "config": {
+    "processed_dir": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\dataset\\processed",
+    "annotations_dir": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\dataset\\annotations",
+    "output_dir": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\dataset",
+    "train_ratio": 0.7,
+    "validation_ratio": 0.15,
+    "test_ratio": 0.15,
+    "seed": 42,
+    "augmentations_per_training_image": 1,
+    "require_expert_validated": true,
+    "group_map_path": null,
+    "rotation_degrees": 3.0,
+    "translation_fraction": 0.02,
+    "scale_fraction": 0.02,
+    "brightness_variation": 0.05,
+    "contrast_variation": 0.05
+  },
+  "summary": {
+    "eligible_annotations": 0,
+    "train_images": 0,
+    "validation_images": 0,
+    "test_images": 0,
+    "augmented_training_images": 0,
+    "skipped_missing_images": 0,
+    "skipped_invalid_annotations": 0,
+    "skipped_unvalidated_annotations": 0,
+    "case_groups": 0,
+    "split_case_groups": {
+      "train": 0,
+      "validation": 0,
+      "test": 0
+    }
+  },
+  "records": []
+}

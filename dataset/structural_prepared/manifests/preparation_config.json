@@ -1,0 +1,8 @@
+{
+  "validation_dir": "..\\DenPAR Radiographs Dataset\\Dataset\\Validation",
+  "output_dir": "..\\dataset\\structural_prepared",
+  "confirmed_correspondence": null,
+  "resize_width": null,
+  "resize_height": null,
+  "sample_count": 3
+}
