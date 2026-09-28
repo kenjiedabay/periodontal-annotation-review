@@ -1,0 +1,33 @@
+{
+  "status": "STATUS C \u2014 CEJ DATASET STILL BLOCKED",
+  "official_partitions": {
+    "Training": {
+      "images_with_confirmed_CEJ": 0,
+      "teeth_with_confirmed_CEJ": 0,
+      "confirmed_CEJ_points": 0
+    },
+    "Validation": {
+      "images_with_confirmed_CEJ": 0,
+      "teeth_with_confirmed_CEJ": 0,
+      "confirmed_CEJ_points": 0
+    },
+    "Testing": {
+      "images_with_confirmed_CEJ": 0,
+      "teeth_with_confirmed_CEJ": 0,
+      "confirmed_CEJ_points": 0
+    }
+  },
+  "expert_review_revision": 0,
+  "uncertain_points": 0,
+  "rejected_points": 0,
+  "cannot_determine_points": 0,
+  "unresolved_points": 6119,
+  "unreviewed_points": 6119,
+  "missing_CEJ_cases": 0,
+  "multiple_CEJ_per_tooth_cases": [],
+  "point_status_count_note": "Unique source points per expert status; counts may overlap when different candidate pairs for one point have different decisions. Unresolved means absent from the confirmed-only manifest. Point totals by split count tooth-target occurrences.",
+  "decision_rule": "A requires usable confirmed targets in all three official partitions (Testing kept separate); B has some usable targets but incomplete split coverage; C has none. No training runs here.",
+  "next_action": "Obtain independent dental-expert decisions and usable images, then regenerate manifests. Keep modeling deferred.",
+  "training_performed": false,
+  "test_evaluation_performed": false
+}

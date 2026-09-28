@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "path_base": "repository root",
+  "input_provenance": {
+    "bone": {
+      "candidate_file": "structural_analysis\\step2_boneline_tooth_correspondence\\candidate_mappings.json",
+      "candidate_sha256": "85d4e07e09255c35c45ea37878cdd32920476dffeb3ed56652f23f1fc3cab677",
+      "review_file": "structural_analysis\\step2_boneline_tooth_correspondence\\expert_review.json",
+      "review_sha256": "c94bb9f636f24dac5c7afd9c33c3fab7574d1c837dc93b6f62901f1d92918ce1"
+    },
+    "landmark": {
+      "candidate_file": "structural_analysis\\step3_cej_apex_correspondence\\candidate_landmark_mappings.json",
+      "candidate_sha256": "e041e6e0663457e69ebb87b1d20e2b768a977f1f567a3f7832c772e5ad39a81a",
+      "review_file": "structural_analysis\\step3_cej_apex_correspondence\\expert_landmark_review.json",
+      "review_sha256": "f48aa6c8a1db9ad0b51549a58ac82601115e1caa515dcf01f99c863528b6f5f1"
+    }
+  },
+  "policy": "Explicit expert-confirmed targets only. No index correspondence, FDI inference, disease labels, severity labels or new partitioning.",
+  "records": []
+}

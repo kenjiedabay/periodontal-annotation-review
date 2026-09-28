@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "images": 1000,
+  "available_images": 350,
+  "source_point_counts": {
+    "CEJ": 6119,
+    "Apex": 4490
+  },
+  "candidate_counts": {
+    "probable": 3996,
+    "uncertain": 2252
+  },
+  "invalid_or_unavailable_points": 6915,
+  "images_with_unequal_source_counts": 981,
+  "source_files_unchanged": 5752,
+  "overlay_assets_verified": 2219,
+  "review_revision": 0
+}

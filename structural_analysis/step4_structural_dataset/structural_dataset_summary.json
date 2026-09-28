@@ -1,0 +1,35 @@
+{
+  "usable_tooth_records": 0,
+  "records_with_CEJ": 0,
+  "records_with_apex": 0,
+  "records_with_bone_lines": 0,
+  "records_with_all_required_structures": 0,
+  "required_structures_definition": "At least one confirmed CEJ point, one confirmed apex point and one confirmed bone line, plus valid original tooth mask and derived bbox. Partial records are allowed with explicit confirmed_structures flags.",
+  "unresolved_tooth_records": 4401,
+  "excluded_annotation_relationships": 17527,
+  "unresolved_images": 1000,
+  "official_partitions": {
+    "Training": {
+      "trainable": 0,
+      "excluded_teeth": 2882
+    },
+    "Validation": {
+      "trainable": 0,
+      "excluded_teeth": 655
+    },
+    "Testing": {
+      "trainable": 0,
+      "excluded_teeth": 864
+    }
+  },
+  "exclusion_reason_counts": {
+    "not_confirmed": 8395,
+    "no_candidate_or_expert_mapping": 9132
+  },
+  "expert_review_revisions": {
+    "bone": 0,
+    "landmark": 0
+  },
+  "no_confirmations_is_empty_dataset": true,
+  "source_files_overwritten": false
+}

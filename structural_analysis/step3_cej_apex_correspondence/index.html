@@ -1,0 +1,62 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CEJ / apex correspondence review</title>
+<style>body{font:15px system-ui;margin:24px;background:#101923;color:#eee}a{color:#8ddfff}input,select,button,textarea{font:inherit;background:#233849;color:inherit;padding:8px;margin:4px;border:1px solid #7691a5;border-radius:4px}button{cursor:pointer}button:disabled{opacity:.4}main{display:grid;grid-template-columns:minmax(400px,2fr) minmax(340px,1fr);gap:20px}.canvas{position:relative}.canvas img{width:100%;display:block}.canvas .layer,.canvas svg{position:absolute;inset:0;width:100%;height:100%}[hidden]{display:none!important}pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:240px;overflow:auto}#pairs{max-height:240px;overflow:auto}#pairs button{display:block;width:96%;text-align:left}textarea{width:90%}#message{color:#ffda85;min-height:24px}@media(max-width:850px){main{display:block}}</style>
+<h1>Step 3 · CEJ / apex correspondence review</h1><p>Geometry proposes candidates. Scores are not probabilities. Source index ordering does not pair points, boxes or teeth.</p>
+<p>Blue: selected tooth mask · Cyan: CEJ · Magenta: apex · Orange: independent keypoint boxes. Image top/bottom position does not establish crown/root anatomy.</p>
+<p id="counts"></p><a href="/api/report" target="_blank">Current report</a> · <a href="/expert_landmark_review.json" download>Download expert review</a> · <a href="/api/cej-records" download>CEJ review records</a>
+<p><button id="regenerate">Regenerate manifests &amp; CEJ readiness</button><span id="readiness" role="status">Save expert decisions, then regenerate the confirmed-only dataset.</span></p>
+<p><label>Radiograph <select id="images"></select></label><button id="prev">Previous</button><button id="next">Next</button></p>
+<main><section><h2 id="title"></h2><div class="canvas"><img id="original" alt="Original radiograph"><div id="neighbors" class="layer"></div><img id="mask" class="layer" alt="Selected tooth mask"><svg id="geometry" xmlns="http://www.w3.org/2000/svg"></svg></div><p id="unavailable"></p>
+<label><input type="checkbox" id="showmask" checked>Mask</label><label><input type="checkbox" id="showneighbors" checked>Neighboring teeth</label><label><input type="checkbox" id="showtoothboxes" checked>Tooth boxes / IDs</label><label><input type="checkbox" id="showboxes" checked>Keypoint boxes</label><label><input type="checkbox" id="showcej" checked>CEJ</label><label><input type="checkbox" id="showapex" checked>Apex</label><pre id="metadata"></pre></section>
+<section><h2>Point correspondence</h2><label>Point <select id="point"></select></label><label>Tooth <select id="tooth"></select></label><div id="pairs"></div><pre id="features"></pre>
+<label>Reviewer <input id="reviewer" placeholder="Your name"></label><textarea id="note" placeholder="Review note / anatomical rationale" aria-label="Review note"></textarea>
+<p>Multiple CEJ points may be confirmed for the same tooth. Accepting one mapping retains other candidates.</p>
+<button data-status="confirmed">Confirm point-to-tooth</button><button data-status="rejected">Reject</button><button data-status="uncertain">Mark uncertain</button><button data-status="cannot_determine">Cannot determine</button>
+<p><label>Replace old mapping <select id="replace"></select></label><button id="reassign">Reassign to selected tooth</button></p>
+<h3>Missing landmark review</h3><p>For the selected tooth, mark an absent landmark type explicitly. This creates no point or coordinate. A lack of confirmed mappings is not evidence of absence.</p>
+<label>Landmark type <select id="missingtype"><option>CEJ</option><option>Apex</option></select></label><button id="missing">Mark missing</button><button id="clearmissing">Clear missing / mark uncertain</button><pre id="missingstate"></pre><p id="message" role="status"></p></section></main>
+<script>
+let state,record;const $=s=>document.querySelector(s);
+function effective(){const m=new Map(state.data.candidates.map(c=>[c.id,c]));for(const d of state.review.decisions)m.set(d.id,d);return [...m.values()]}
+function counts(){$('#counts').textContent=Object.entries(state.report.counts).map(([k,v])=>`${k.replaceAll('_',' ')}: ${v}`).join(' · ')}
+function showImage(){record=state.data.records.find(r=>r.key===$('#images').value);$('#title').textContent=record.key;$('#metadata').textContent=JSON.stringify({metadata:record.metadata,source_counts:record.source_counts,issues:record.issues},null,2);$('#point').replaceChildren();for(const p of record.points)$('#point').add(new Option(`${p.point_id}${p.issues.length?' · invalid/unavailable':''}`,p.point_id));$('#tooth').replaceChildren();for(const t of record.teeth){const o=new Option(`${t.tooth_instance_id}${t.issues.length?' · unavailable':''}`,t.tooth_instance_id);o.disabled=!!t.issues.length;$('#tooth').add(o)}const first=record.teeth.find(t=>!t.issues.length);if(first)$('#tooth').value=first.tooth_instance_id;$('#original').hidden=!record.original_url;if(record.original_url)$('#original').src=record.original_url;else $('#original').removeAttribute('src');$('#unavailable').textContent=record.original_url?'':'Original image unavailable; review is blocked.';$('#note').value='';$('#message').textContent='';pointChanged()}
+function pointChanged(){const list=effective().filter(c=>c.key===record.key&&c.point_id===$('#point').value);const first=list.filter(c=>c.status!=='rejected').sort((a,b)=>(b.candidate_score||0)-(a.candidate_score||0))[0];if(first)$('#tooth').value=first.tooth_instance_id;$('#pairs').replaceChildren();$('#replace').replaceChildren(new Option('Choose old mapping',''));for(const c of list){const b=document.createElement('button');b.textContent=`${c.tooth_instance_id} · ${c.status} · score ${c.candidate_score===undefined?'manual':c.candidate_score.toFixed(3)}`;b.onclick=()=>{$('#tooth').value=c.tooth_instance_id;$('#note').value=c.note||'';showTarget()};$('#pairs').append(b);if(c.status!=='rejected')$('#replace').add(new Option(`${c.tooth_instance_id} · ${c.status}`,c.id))}showTarget()}
+function shape(name,attrs){const e=document.createElementNS('http://www.w3.org/2000/svg',name);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,v);$('#geometry').append(e)}
+function showTarget(){const t=record.teeth.find(t=>t.tooth_instance_id===$('#tooth').value);const p=record.points.find(p=>p.point_id===$('#point').value);$('#mask').hidden=!t?.overlay_url||!$('#showmask').checked;if(t?.overlay_url)$('#mask').src=t.overlay_url;else $('#mask').removeAttribute('src');$('#geometry').replaceChildren();$('#geometry').hidden=!record.original_url;$('#geometry').setAttribute('viewBox',`0 0 ${record.dimensions[0]} ${record.dimensions[1]}`);if($('#showboxes').checked)for(const b of record.bboxes){if(b.issues.length)continue;const [x,y,r,d]=b.bbox;shape('rect',{x,y,width:r-x,height:d-y,fill:'none',stroke:'orange','stroke-width':2,opacity:.65})}for(const q of record.points){if(q.issues.length||!$(q.point_type==='CEJ'?'#showcej':'#showapex').checked)continue;shape('circle',{cx:q.coordinate[0],cy:q.coordinate[1],r:q===p?10:5,fill:q.point_type==='CEJ'?'cyan':'magenta',stroke:q===p?'yellow':'black','stroke-width':q===p?4:1,opacity:q===p?1:.7})}const valid=record.original_url&&t&&!t.issues.length;for(const b of document.querySelectorAll('[data-status],#reassign'))b.disabled=!(valid&&p&&!p.issues.length);$('#missing').disabled=$('#clearmissing').disabled=!valid;const id=`${record.key}|${$('#point').value}|${$('#tooth').value}`;const entry=effective().find(e=>e.id===id);$('#features').textContent=entry?JSON.stringify(entry,null,2):JSON.stringify({point:p||null,message:'No generated candidate; an expert may explicitly assign a validated point.'},null,2);$('#missingstate').textContent=JSON.stringify(state.review.decisions.filter(d=>d.key===record.key&&d.tooth_instance_id===$('#tooth').value&&d.point_id===null),null,2)}
+async function save(status,mode='point'){const payload={key:record.key,tooth_instance_id:$('#tooth').value,point_id:mode==='missing'?null:$('#point').value,point_type:$('#missingtype').value,status,reviewer:$('#reviewer').value,note:$('#note').value,revision:state.review.revision};if(mode==='reassign'){payload.reassign_from=$('#replace').value;if(!payload.reassign_from){$('#message').textContent='Choose an old mapping to replace.';return}}$('#message').textContent='Saving…';try{const response=await fetch('/api/decision',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});const result=await response.json();if(!response.ok)throw Error(result.error);state.review=result.review;state.report=result.report;counts();const selected=$('#tooth').value;pointChanged();$('#tooth').value=selected;showTarget();$('#message').textContent=`Saved ${status} (revision ${state.review.revision}).`}catch(e){$('#message').textContent=e.message}}
+$('#images').onchange=showImage;$('#point').onchange=pointChanged;$('#tooth').onchange=showTarget;for(const id of ['showmask','showboxes','showcej','showapex'])$('#'+id).onchange=showTarget;for(const b of document.querySelectorAll('[data-status]'))b.onclick=()=>save(b.dataset.status);$('#missing').onclick=()=>save('missing','missing');$('#clearmissing').onclick=()=>save('uncertain','missing');$('#reassign').onclick=()=>save('confirmed','reassign');$('#prev').onclick=()=>{$('#images').selectedIndex=Math.max(0,$('#images').selectedIndex-1);showImage()};$('#next').onclick=()=>{$('#images').selectedIndex=Math.min($('#images').length-1,$('#images').selectedIndex+1);showImage()};
+(async()=>{try{const response=await fetch('/api/state');if(!response.ok)throw Error('Could not load review state');state=await response.json();for(const r of state.data.records)$('#images').add(new Option(`${r.key}${r.original_url?'':' · unavailable'}`,r.key));$('#images').value=state.data.records.find(r=>r.original_url)?.key||state.data.records[0].key;counts();showImage()}catch(e){$('#message').textContent=e.message+' — start serve.py and open its localhost URL.'}})();
+</script>
+<script>
+const baseShowTarget=showTarget;
+showTarget=function(){
+  baseShowTarget();
+  const tooth=record.teeth.find(t=>t.tooth_instance_id===$('#tooth').value);
+  $('#title').textContent=record.key+' · '+(tooth?.tooth_instance_id||'');
+  const neighbors=$('#neighbors');neighbors.replaceChildren();
+  if($('#showneighbors').checked)for(const other of record.teeth){
+    if(other===tooth||!other.overlay_url)continue;
+    const img=document.createElement('img');img.src=other.overlay_url;img.alt=other.tooth_instance_id;
+    img.style.cssText='position:absolute;inset:0;width:100%;opacity:.3';neighbors.append(img);
+  }
+  if($('#showtoothboxes').checked)for(const other of record.teeth){
+    if(other.issues.length||!other.bbox)continue;
+    const [x,y,right,bottom]=other.bbox;
+    shape('rect',{x,y,width:right-x,height:bottom-y,fill:'none',stroke:other===tooth?'white':'#7ea9bc','stroke-width':other===tooth?3:1});
+    const label=document.createElementNS('http://www.w3.org/2000/svg','text');
+    label.setAttribute('x',x+3);label.setAttribute('y',y+18);label.setAttribute('fill','white');label.setAttribute('font-size','18');
+    label.textContent=other.tooth_instance_id;$('#geometry').append(label);
+  }
+};
+$('#tooth').onchange=showTarget;
+for(const id of ['showmask','showneighbors','showtoothboxes','showboxes','showcej','showapex'])$('#'+id).onchange=showTarget;
+const baseSave=save;
+save=async function(...args){await baseSave(...args);$('#readiness').textContent='Regenerate manifests and readiness after saved review changes.'};
+$('#regenerate').onclick=async()=>{
+  const button=$('#regenerate');button.disabled=true;$('#readiness').textContent='Verifying sources and rebuilding manifests…';
+  try{
+    const response=await fetch('/api/regenerate',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});
+    const result=await response.json();if(!response.ok)throw Error(result.error);
+    $('#readiness').textContent=result.status+' · '+JSON.stringify(result.official_partitions);
+  }catch(e){$('#readiness').textContent=e.message}finally{button.disabled=false}
+};
+</script></html>
