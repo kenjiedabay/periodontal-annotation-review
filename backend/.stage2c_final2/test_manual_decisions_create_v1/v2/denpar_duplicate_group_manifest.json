@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0.0",
+  "policy_version": "denpar-leakage-remediation-v2",
+  "manifest_type": "denpar_duplicate_group_manifest",
+  "source_audit": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_final2\\test_manual_decisions_create_v1\\audit.json",
+  "source_audit_sha256": "275fa23193be1b1f3972b10c58d959ba4dd9f36236f9744656e27ecf62fb9812",
+  "decision_date": "2026-09-22T02:07:19.770207+00:00",
+  "source_files_copied": false,
+  "previous_manifest_version": {
+    "policy_version": "denpar-leakage-remediation-v1",
+    "manifest_hashes": {
+      "denpar_clean_train_manifest": "0d5b28fe64e6fa20c752efc2168f3eab76cd940d62aecbd9adc0501288e0be6e",
+      "denpar_clean_validation_manifest": "30947d2cba1a94657caa136f53b3424f3456ea4527b3fc34c9b28c530b60a905",
+      "denpar_clean_historical_test_manifest": "19089e4615a5bf708d91b4a455368a8b0c869f1c0bded9a38622507152a16a6f",
+      "denpar_exclusion_manifest": "981a8b4dfd492604b6febd84f525564b9d320eb73652f2f93e6f92e52320b1a8",
+      "denpar_duplicate_group_manifest": "7c0234bb90dd69e1238fb7ad855ee3e6c95711bb51f65a41c64a9ece9a3033aa",
+      "denpar_near_duplicate_review_queue": "fd573730f73df35706b1faae271807f8eacf1869ce30d6a381f427cd1245edca"
+    },
+    "manifest_directory": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_final2\\test_manual_decisions_create_v1\\v1"
+  },
+  "reconciled_counts": {
+    "unique_duplicated_images": 3,
+    "pairwise_relationships": 3,
+    "connected_groups": 1,
+    "same_partition_pairs": 1,
+    "same_partition_groups": 0,
+    "cross_partition_pairs": 2,
+    "cross_partition_groups": 1,
+    "groups": [
+      {
+        "group_id": "exact-a67598362c4c7275",
+        "members": [
+          {
+            "stable_image_id": "Training:A",
+            "image_id": "A",
+            "partition": "Training",
+            "source_path": "dataset/raw/A.png",
+            "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_final2\\test_manual_decisions_create_v1\\dataset\\raw\\A.png",
+            "file_sha256": "d27856bd12bedba96ae8eaec8459ee6494ae3c15ea1fe27eef3ad30c305a3d21",
+            "normalized_pixel_sha256": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+          },
+          {
+            "stable_image_id": "Training:B",
+            "image_id": "B",
+            "partition": "Training",
+            "source_path": "dataset/raw/B.png",
+            "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_final2\\test_manual_decisions_create_v1\\dataset\\raw\\B.png",
+            "file_sha256": "d27856bd12bedba96ae8eaec8459ee6494ae3c15ea1fe27eef3ad30c305a3d21",
+            "normalized_pixel_sha256": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+          },
+          {
+            "stable_image_id": "Validation:C",
+            "image_id": "C",
+            "partition": "Validation",
+            "source_path": "DenPAR/Dataset/Validation/Images/C.png",
+            "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_final2\\test_manual_decisions_create_v1\\DenPAR\\Dataset\\Validation\\Images\\C.png",
+            "file_sha256": "d27856bd12bedba96ae8eaec8459ee6494ae3c15ea1fe27eef3ad30c305a3d21",
+            "normalized_pixel_sha256": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+          }
+        ],
+        "pairwise_relationships": 3,
+        "cross_partition": true
+      }
+    ]
+  },
+  "groups": [
+    {
+      "group_id": "exact-a67598362c4c7275",
+      "members": [
+        {
+          "stable_image_id": "Training:A",
+          "image_id": "A",
+          "partition": "Training",
+          "source_path": "dataset/raw/A.png",
+          "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_final2\\test_manual_decisions_create_v1\\dataset\\raw\\A.png",
+          "file_sha256": "d27856bd12bedba96ae8eaec8459ee6494ae3c15ea1fe27eef3ad30c305a3d21",
+          "normalized_pixel_sha256": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+        },
+        {
+          "stable_image_id": "Training:B",
+          "image_id": "B",
+          "partition": "Training",
+          "source_path": "dataset/raw/B.png",
+          "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_final2\\test_manual_decisions_create_v1\\dataset\\raw\\B.png",
+          "file_sha256": "d27856bd12bedba96ae8eaec8459ee6494ae3c15ea1fe27eef3ad30c305a3d21",
+          "normalized_pixel_sha256": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+        },
+        {
+          "stable_image_id": "Validation:C",
+          "image_id": "C",
+          "partition": "Validation",
+          "source_path": "DenPAR/Dataset/Validation/Images/C.png",
+          "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_final2\\test_manual_decisions_create_v1\\DenPAR\\Dataset\\Validation\\Images\\C.png",
+          "file_sha256": "d27856bd12bedba96ae8eaec8459ee6494ae3c15ea1fe27eef3ad30c305a3d21",
+          "normalized_pixel_sha256": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+        }
+      ],
+      "pairwise_relationships": 3,
+      "cross_partition": true,
+      "canonical_stable_image_id": "Training:A",
+      "canonical_image_id": "A",
+      "canonical_partition": "Training",
+      "policy_decision": "retain_one_canonical_member",
+      "decision_date": "2026-09-21",
+      "existing_checkpoint_note": "The existing checkpoint may already have trained on every original Training member in this group."
+    }
+  ],
+  "content_hash": "716178587f820911e1b08ef48d90392d2c64b145ca8eb6b3fae4d21619d412dc"
+}

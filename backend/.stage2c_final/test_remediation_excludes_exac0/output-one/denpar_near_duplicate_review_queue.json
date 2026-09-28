@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0.0",
+  "policy_version": "denpar-leakage-remediation-v1",
+  "manifest_type": "denpar_near_duplicate_review_queue",
+  "source_audit": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_final\\test_remediation_excludes_exac0\\audit.json",
+  "source_audit_sha256": "eace597f256687b97450d63dbfc1872e621b44c0dca20e2aa0684099ca7506b7",
+  "decision_date": "2026-09-21",
+  "source_files_copied": false,
+  "status": "pending_manual_review",
+  "automatic_exclusion": false,
+  "quarantine_rule": "Both members of every cross-partition candidate are absent from clean manifests until reviewed.",
+  "pairs": [
+    {
+      "pair_id": "near-pair-9d89d8ec18035668",
+      "near_duplicate_group_id": "near-9d89d8ec18035668",
+      "left": {
+        "stable_image_id": "Testing:F",
+        "image_id": "F",
+        "official_partition": "Testing",
+        "source_path": "DenPAR/Dataset/Images/F.png",
+        "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_final\\test_remediation_excludes_exac0\\DenPAR\\Dataset\\Images\\F.png",
+        "file_sha256": "e89b32bfdce611efc5f9831f0e2fc305f17390143de062a1a3a82a00c9d323af",
+        "normalized_pixel_sha256": "851538c25b8d45529c463e455cf2dd29054895378da5993238009bb770c84ac1",
+        "perceptual_hash_64": "8000000000000000"
+      },
+      "right": {
+        "stable_image_id": "Training:E",
+        "image_id": "E",
+        "official_partition": "Training",
+        "source_path": "dataset/raw/E.png",
+        "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_final\\test_remediation_excludes_exac0\\dataset\\raw\\E.png",
+        "file_sha256": "b04d52176a641acc9301e6b729acc11ca1dae58370f48ea4a107fe6197ca3176",
+        "normalized_pixel_sha256": "506184c73ef8c1fbacbcf9482e23d683c0d8c00b4963b6a56e21513540f73fa5",
+        "perceptual_hash_64": "8000000000000000"
+      },
+      "p_hash_method": "64-bit DCT pHash",
+      "p_hash_distance": 0,
+      "p_hash_threshold": "Hamming distance <= 6",
+      "stage2a_supporting_evidence": {
+        "thumbnail_pearson_correlation": 0.999,
+        "normalized_thumbnail_mae": 0.001
+      },
+      "review_artifact": {
+        "artifact_path": "near_duplicate_artifacts/near-pair-9d89d8ec18035668.png",
+        "artifact_sha256": "cb37fd62f50b4bd7ea75cd8d7a37716184b868352e0cbb0586144f91512c083d",
+        "left_dimensions": [
+          32,
+          24
+        ],
+        "right_dimensions": [
+          32,
+          24
+        ],
+        "transformation_scores": {
+          "identity": {
+            "thumbnail_pearson_correlation": 0.9999902370581152,
+            "normalized_thumbnail_mae": 0.0029411765281111
+          },
+          "horizontal_flip": {
+            "thumbnail_pearson_correlation": -0.14238693233649194,
+            "normalized_thumbnail_mae": 0.3294117748737335
+          },
+          "vertical_flip": {
+            "thumbnail_pearson_correlation": 0.9999902370581152,
+            "normalized_thumbnail_mae": 0.0029411765281111
+          },
+          "rotate_180": {
+            "thumbnail_pearson_correlation": -0.14238693233649194,
+            "normalized_thumbnail_mae": 0.3294117748737335
+          }
+        },
+        "best_scoring_transformation": "identity",
+        "edge_method": "Canny thresholds 50/150; left red, right cyan, overlap white",
+        "difference_method": "absolute difference after matched 512x512 aspect-preserving fit"
+      },
+      "review_status": "pending",
+      "allowed_decisions": [
+        "different_radiograph",
+        "same_underlying_radiograph",
+        "uncertain"
+      ],
+      "decision": null,
+      "reviewer_id": null,
+      "decision_date": null,
+      "notes": null
+    }
+  ],
+  "quarantined_images": [
+    {
+      "stable_image_id": "Testing:F",
+      "image_id": "F",
+      "official_partition": "Testing",
+      "source_path": "DenPAR/Dataset/Images/F.png",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_final\\test_remediation_excludes_exac0\\DenPAR\\Dataset\\Images\\F.png",
+      "file_sha256": "e89b32bfdce611efc5f9831f0e2fc305f17390143de062a1a3a82a00c9d323af",
+      "normalized_pixel_sha256": "851538c25b8d45529c463e455cf2dd29054895378da5993238009bb770c84ac1"
+    },
+    {
+      "stable_image_id": "Training:E",
+      "image_id": "E",
+      "official_partition": "Training",
+      "source_path": "dataset/raw/E.png",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_final\\test_remediation_excludes_exac0\\dataset\\raw\\E.png",
+      "file_sha256": "b04d52176a641acc9301e6b729acc11ca1dae58370f48ea4a107fe6197ca3176",
+      "normalized_pixel_sha256": "506184c73ef8c1fbacbcf9482e23d683c0d8c00b4963b6a56e21513540f73fa5"
+    }
+  ],
+  "content_hash": "e17e73f45ec968ef2c19a4f8c4951b7abbd5fef866c25fe95bd6abb6314ab993"
+}

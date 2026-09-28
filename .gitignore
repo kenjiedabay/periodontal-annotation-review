@@ -9,6 +9,8 @@ backend/.venv/
 backend/__pycache__/
 backend/**/*.py[cod]
 backend/.pytest_cache/
+backend/.pytest_tmp/
+backend/.*_test_tmp*/
 backend/.env
 backend/ml/checkpoints/*.pt
 backend/ml/checkpoints/*.json
@@ -18,10 +20,21 @@ backend/ml/checkpoints/**/*.json
 backend/ml/checkpoints/**/*.csv
 
 # Local data and model artifacts
+datasets/
 dataset/raw/*
 dataset/cleaned/*
 dataset/processed/*
 models/*
+data/review_foundation/
+
+# Local radiograph datasets and review image stores
+DATASETS THESIS/
+16645076/
+DenPAR Radiographs Dataset/
+Dataset of dental radiographs for the study of periapical lesions/
+backend/data/review_foundation/images/
+backend/data/review_foundation/source_images/
+artifacts/**/images/
 !dataset/raw/.gitkeep
 !dataset/cleaned/.gitkeep
 !dataset/processed/.gitkeep

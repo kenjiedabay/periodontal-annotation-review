@@ -1,0 +1,64 @@
+{
+  "annotation_duplicates": [
+    {
+      "classification": "annotation_mismatch",
+      "issue": "identical_annotation_mapped_to_multiple_images",
+      "annotation_kind": "tooth_mask",
+      "sha256": "9b4c162517e33cacb439295e17b114622081e67aa6e06a24a41611e69ac3ec8d",
+      "images": [
+        "Testing:test1",
+        "Testing:test2",
+        "Training:train1",
+        "Validation:val1"
+      ],
+      "paths": [
+        "DenPAR/Dataset/Training/Masks (Tooth-wise)/train1/mask1.png",
+        "DenPAR/Dataset/Validation/Masks (Tooth-wise)/val1/mask1.png",
+        "DenPAR/Dataset/Testing/Masks (Tooth-wise)/test1/mask1.png",
+        "DenPAR/Dataset/Testing/Masks (Tooth-wise)/test2/mask1.png"
+      ]
+    },
+    {
+      "classification": "annotation_mismatch",
+      "issue": "identical_annotation_mapped_to_multiple_images",
+      "annotation_kind": "radiograph_mask",
+      "sha256": "9b4c162517e33cacb439295e17b114622081e67aa6e06a24a41611e69ac3ec8d",
+      "images": [
+        "Testing:test1",
+        "Testing:test2",
+        "Training:train1",
+        "Validation:val1"
+      ],
+      "paths": [
+        "DenPAR/Dataset/Training/Masks (Radiograph-wise)/train1.png",
+        "DenPAR/Dataset/Validation/Masks (Radiograph-wise)/val1.png",
+        "DenPAR/Dataset/Testing/Masks (Radiograph-wise)/test1.png",
+        "DenPAR/Dataset/Testing/Masks (Radiograph-wise)/test2.png"
+      ]
+    }
+  ],
+  "orphaned": [
+    {
+      "classification": "annotation_mismatch",
+      "issue": "annotation_without_matching_image",
+      "partition": "Validation",
+      "annotation_kind": "keypoints",
+      "image_id": "orphan",
+      "path": "DenPAR/Dataset/Validation/Key Points Annotations/orphan.json"
+    },
+    {
+      "classification": "annotation_mismatch",
+      "issue": "workbook_row_without_matching_image",
+      "image_id": "orphan",
+      "workbook": "DenPAR/Dataset/Characteristics of radiographs included.xlsx"
+    }
+  ],
+  "missing": [
+    {
+      "classification": "missing_component",
+      "issue": "bone_level",
+      "stable_image_id": "Testing:test2",
+      "partition": "Testing"
+    }
+  ]
+}

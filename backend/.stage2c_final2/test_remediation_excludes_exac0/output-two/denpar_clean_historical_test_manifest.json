@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "policy_version": "denpar-leakage-remediation-v1",
+  "manifest_type": "denpar_clean_historical_test_manifest",
+  "source_audit": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_final2\\test_remediation_excludes_exac0\\audit.json",
+  "source_audit_sha256": "d54d992a388fd4300877f3ee07350ec9145bd272eb50e2f2d96cba1a6e5ce877",
+  "decision_date": "2026-09-21",
+  "source_files_copied": false,
+  "test_set_status": "historical_exposed_test",
+  "allowed_use": "transparent_historical_comparison_after_exclusions",
+  "prohibited_use": [
+    "model_selection",
+    "hyperparameter_tuning",
+    "claim_as_pristine_final_test"
+  ],
+  "external_holdout_recommendation": "Use a future independent expert-labeled external holdout for final unbiased evaluation.",
+  "fallback_limitation": "If no external holdout exists, patient-independent or grouped validation requires reliable patient identifiers, which are currently unavailable.",
+  "entries": [
+    {
+      "stable_image_id": "Testing:D",
+      "image_id": "D",
+      "official_partition": "Testing",
+      "source_path": "DenPAR/Dataset/Images/D.png",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_final2\\test_remediation_excludes_exac0\\DenPAR\\Dataset\\Images\\D.png",
+      "file_sha256": "546f0b6e3192550989ddcfa314008bce6bf42a31b4a6b3f84be6243ef61cc7f6",
+      "normalized_pixel_sha256": "05a818477c59ac920899c9a630bfb7d672ba2a754df10db2d10c25b041194bdc"
+    }
+  ],
+  "content_hash": "151b1406e95af21ede7e022d57971bb506d54c19010e8b7b6d2ee37abb1aa04c"
+}

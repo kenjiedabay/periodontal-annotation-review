@@ -30,6 +30,7 @@ class ToothSegmentationService:
         self.lock = Lock()
         self.attempted = False
         self.model = None
+        self.load_error = None
 
     def load(self):
         if self.attempted:
@@ -45,9 +46,11 @@ class ToothSegmentationService:
             model, _ = create_model(pretrained=False, max_size=1024)
             model.load_state_dict(checkpoint['state_dict'], strict=True)
             self.model = model.to(self.device).eval()
-        except Exception:
+            self.load_error = None
+        except Exception as error:
             logging.exception('Tooth segmentation checkpoint unavailable')
             self.model = None
+            self.load_error = f'{type(error).__name__}: {error}'
 
     def predict(self, image_id, original):
         height, width = original.shape[:2]
@@ -59,6 +62,7 @@ class ToothSegmentationService:
         with self.lock:
             self.load()
             if self.model is None:
+                response['model_error'] = self.load_error or 'The model service could not load the checkpoint.'
                 return response
             import torch
             processed, _, _ = apply_transforms(original, load_config())
@@ -90,7 +94,10 @@ def ground_truth(image_id, original):
         return None
     root = ROOT / 'DenPAR Radiographs Dataset/Dataset'
     for split in ('Validation', 'Testing'):
-        source = root / ('Validation/Images' if split == 'Validation' else 'Images') / f'{image_id}.jpg'
+        source = root / split / 'Images' / f'{image_id}.jpg'
+        if not source.is_file() and split == 'Testing':
+            # Compatibility with the original DenPAR package layout.
+            source = root / 'Images' / f'{image_id}.jpg'
         if not source.is_file():
             continue
         decoded = cv2.imread(str(source), cv2.IMREAD_UNCHANGED)

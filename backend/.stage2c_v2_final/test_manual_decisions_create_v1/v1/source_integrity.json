@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "policy_version": "denpar-leakage-remediation-v1",
+  "manifest_type": "source_integrity",
+  "source_audit": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_v2_final\\test_manual_decisions_create_v1\\audit.json",
+  "source_audit_sha256": "4061138de32f2f628a601fa2d36f4e085f5b27d83c02cf911958ce36941f4cb4",
+  "decision_date": "2026-09-21",
+  "source_files_copied": false,
+  "files_hashed": 6,
+  "source_tree_hash": "8e7fa961402f280da187c99b9ccf9060f286cc7be141ece668ce329a9478fd4f",
+  "changed_files": [],
+  "preserved": true,
+  "content_hash": "1a7d30a5e1df27bb862d121b33f4d11c60e65a4b404f4d488641a1f187673f50"
+}

@@ -30,4 +30,8 @@ Verified on 2026-09-12 with the production build and headless Edge: Validation `
 
 For this workspace's locally installed runtime dependencies, launch from the project root in PowerShell using `$env:PYTHONPATH="$PWD/.runtime;$PWD/backend"`, then `python -m uvicorn main:app --host 127.0.0.1 --port 8000`. The same environment supports `python backend/test_tooth_segmentation_integration.py`.
 
+## Windows Application Control troubleshooting
+
+If the UI says the model is unavailable and includes `DLL load failed while importing _C: An Application Control policy has blocked this file`, the active Python environment cannot load PyTorch's native library. Stop that backend process and launch it with the project-root command above. In this workspace, the bundled runtime dependencies plus the system Python installation load the epoch-8 checkpoint successfully; `backend/.venv` does not because its PyTorch native library is blocked by the local Windows policy.
+
 The integration script uploads Validation `1002.jpg` and Testing `1.jpg` through the actual frontend, uses the real checkpoint, checks nonempty API predictions, compares preprocessing exactly to the training tensor, verifies original mask dimensions and mask/box extents, compares every SVG box and confidence label to the response, checks equal horizontal/vertical browser scaling at 1440 and 760 pixel viewports, exercises toggles and all comparison modes, checks malformed input and unavailable-model responses, and hashes the used source files before/after. Responses, screenshots, and `verification.json` are saved under `artifacts/tooth-segmentation/`. These checks verify integration; they do not constitute clinical validation or new model selection.

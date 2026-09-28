@@ -1,0 +1,17 @@
+# Bone-line localization baseline
+
+Run `python backend/train_bone_lines.py --epochs 10` from the repository root. The script reads original DenPAR radiographs and `Bone_Lines` polylines, rasterizes lines at 128 × 128, and trains a small U-Net. It uses the official Training and Validation folders. It rejects lines with invalid geometry rather than clipping them; this run used 639 Training and 147 Validation images (11 and 3 excluded).
+
+The best checkpoint was selected by Validation tolerance F1 at epoch 7, with a prediction threshold of 0.7. Run `python backend/train_bone_lines.py --evaluate-test` to evaluate that locked checkpoint once on Testing. The Test run used 195 images (5 excluded) and returned precision 0.339, recall 0.814, F1 0.479 with a three-pixel tolerance at 128 × 128. The test was not used to choose the model or threshold. Artifacts are under `models/bone_line_unet_baseline/`.
+
+This is a weak baseline. The `test_example.png` overlay (green annotation, red prediction) contains broad false positives, so the tolerance score must not be interpreted as accurate bone-line tracing. Source lines are image-level polylines; they are not associated with a specific tooth and do not encode disease or severity. Patient-level independence of the official partitions is unverified.
+
+The next experiment should use greater image resolution, boundary-sensitive evaluation, and a reviewed sample of annotation geometry. Keep the Testing partition untouched while changing the model; compare candidates on Validation and run Testing only after the next model is locked.
+
+## Frontend review
+
+Run `python backend/export_bone_line_predictions.py` after training to export the selected checkpoint's predictions for the official Validation images. Start the FastAPI backend and Vite frontend, upload a JPG from `DenPAR Radiographs Dataset/Dataset/Validation/Images/` (for example `1002.jpg`), and choose **Structural audit**. The page opens on **Bone model review**, with source lines in green and model predictions in red on the original DenPAR image. **Source annotations** has layer toggles and item isolation; **Correspondence** shows unresolved relationships. Three Validation images with invalid geometry have no model prediction; the viewer says so. Choose a review outcome, add notes, and click **Save review in this browser**. Notes are local to that browser; they do not modify the source annotations or create expert ground truth.
+
+Use **Export all reviews (JSON)** to download all bone-line review notes saved in the current browser. Keep that file with the experiment records; browser storage is not a shared database. Run `python backend/rank_bone_line_cases.py` to create `models/bone_line_unet_baseline/validation_case_ranking.csv`, ordered from lowest to highest Validation tolerance F1. Inspect low, middle, and high-ranked examples rather than only the lowest scores. The ranking measures agreement with DenPAR polylines, not clinical correctness.
+
+For a higher-resolution experiment, run `python backend/train_bone_lines.py --size 256 --epochs 10 --output models/bone_line_unet_256` from the repository root. This writes a separate checkpoint and report; it does not replace the baseline. The metric tolerance scales with output resolution to match the baseline's three pixels at 128 pixels. Compare Validation results and overlays before any further Testing evaluation.

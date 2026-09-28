@@ -30,9 +30,10 @@ export default function ResultsPanel({ imageId, imageName, imageSrc, imageFile, 
     <div className="results-heading"><div><h2>MODEL TOOTH SEGMENTATION</h2><p>{imageName}</p></div><button className="secondary-btn" onClick={onBack}>Back to review</button></div>
     <div className="research-disclaimer">This system is a research prototype intended to support oral assessment and treatment planning research. Its outputs are not clinically validated and should not be used as a standalone diagnosis or treatment recommendation.</div>
     <p className="research-disclaimer">Research prototype. Tooth segmentation output does not indicate periodontal disease, severity, or treatment need.</p>
+    <p className="research-disclaimer">AI-generated—awaiting expert review.</p>
     {!result && !error && <p role="status">Running tooth segmentation...</p>}
     {error && <p role="alert">{error}</p>}
-    {result?.model_status === 'unavailable' && <p role="status">Tooth segmentation model unavailable. No predictions generated.</p>}
+    {result?.model_status === 'unavailable' && <p role="status">Tooth segmentation model unavailable. No predictions generated.{result.model_error ? ` ${result.model_error}` : ''}</p>}
     {result?.model_status === 'available' && <>
       <p data-testid="instance-count">{result.instances.length} detected tooth instances / {result.model_version} / confidence threshold {result.confidence_threshold}</p>
       <div className="segmentation-controls">

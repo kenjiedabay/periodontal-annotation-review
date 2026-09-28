@@ -1,0 +1,123 @@
+{
+  "unique_pairs": [
+    {
+      "classification": "confirmed_leakage",
+      "images": [
+        "Training:train1",
+        "Validation:val1"
+      ],
+      "partitions": [
+        "Training",
+        "Validation"
+      ],
+      "cross_partition": true,
+      "evidence_methods": [
+        {
+          "method": "identical_file_sha256",
+          "hash": "d787b99590b850d63a8528bcdf086f36123e4d4ccb430c17256951fe5040ea19"
+        },
+        {
+          "method": "identical_normalized_pixels",
+          "hash": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+        }
+      ]
+    },
+    {
+      "classification": "confirmed_leakage",
+      "images": [
+        "Testing:test1",
+        "Training:train1"
+      ],
+      "partitions": [
+        "Testing",
+        "Training"
+      ],
+      "cross_partition": true,
+      "evidence_methods": [
+        {
+          "method": "identical_normalized_pixels",
+          "hash": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+        }
+      ]
+    },
+    {
+      "classification": "confirmed_leakage",
+      "images": [
+        "Testing:test1",
+        "Validation:val1"
+      ],
+      "partitions": [
+        "Testing",
+        "Validation"
+      ],
+      "cross_partition": true,
+      "evidence_methods": [
+        {
+          "method": "identical_normalized_pixels",
+          "hash": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+        }
+      ]
+    }
+  ],
+  "unique_pair_count": 3,
+  "cross_partition_unique_pair_count": 3,
+  "file_hash_group_count": 1,
+  "normalized_pixel_group_count": 1,
+  "evidence_groups": [
+    {
+      "classification": "exact_duplicate",
+      "method": "identical_file_sha256",
+      "hash": "d787b99590b850d63a8528bcdf086f36123e4d4ccb430c17256951fe5040ea19",
+      "cross_partition": true,
+      "partitions": [
+        "Training",
+        "Validation"
+      ],
+      "images": [
+        {
+          "stable_image_id": "Training:train1",
+          "source_path": "dataset/raw/train1.jpg",
+          "file_sha256": "d787b99590b850d63a8528bcdf086f36123e4d4ccb430c17256951fe5040ea19",
+          "normalized_pixel_sha256": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+        },
+        {
+          "stable_image_id": "Validation:val1",
+          "source_path": "DenPAR/Dataset/Validation/Images/val1.jpg",
+          "file_sha256": "d787b99590b850d63a8528bcdf086f36123e4d4ccb430c17256951fe5040ea19",
+          "normalized_pixel_sha256": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+        }
+      ]
+    },
+    {
+      "classification": "exact_duplicate",
+      "method": "identical_normalized_pixels",
+      "hash": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12",
+      "cross_partition": true,
+      "partitions": [
+        "Testing",
+        "Training",
+        "Validation"
+      ],
+      "images": [
+        {
+          "stable_image_id": "Training:train1",
+          "source_path": "dataset/raw/train1.jpg",
+          "file_sha256": "d787b99590b850d63a8528bcdf086f36123e4d4ccb430c17256951fe5040ea19",
+          "normalized_pixel_sha256": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+        },
+        {
+          "stable_image_id": "Validation:val1",
+          "source_path": "DenPAR/Dataset/Validation/Images/val1.jpg",
+          "file_sha256": "d787b99590b850d63a8528bcdf086f36123e4d4ccb430c17256951fe5040ea19",
+          "normalized_pixel_sha256": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+        },
+        {
+          "stable_image_id": "Testing:test1",
+          "source_path": "DenPAR/Dataset/Images/test1.jpg",
+          "file_sha256": "51448f216de6ecbe946b66c8944e0dd7bed1e32c54e86b62d71dba6414fb4a61",
+          "normalized_pixel_sha256": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+        }
+      ]
+    }
+  ]
+}

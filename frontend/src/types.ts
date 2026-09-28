@@ -18,6 +18,7 @@ export interface ToothSegmentationResponse {
   model_status: 'available' | 'unavailable';
   model_version: string;
   confidence_threshold: number;
+  model_error?: string;
   width: number;
   height: number;
   instances: ToothInstance[];
@@ -139,6 +140,8 @@ export interface ModelAnalysisResponse {
 }
 
 export interface StructuralAuditRecord {
+  available: boolean;
+  reason?: string;
   image: { image_id: string; filename: string; width: number; height: number };
   tooth_masks: Array<{ filename: string; url: string; width: number; height: number; nonzero_pixels: number }>;
   radiograph_mask: { url: string; width: number; height: number; nonzero_pixels: number } | null;

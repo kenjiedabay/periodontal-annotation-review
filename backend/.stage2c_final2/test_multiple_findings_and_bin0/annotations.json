@@ -1,0 +1,33 @@
+{
+  "9e41fd9f-4960-49c4-b293-af5e627266c6": {
+    "id": "9e41fd9f-4960-49c4-b293-af5e627266c6",
+    "image_id": "1002",
+    "tooth_instance_id": 4,
+    "finding_type": "bone_loss_region",
+    "annotation_tool": "brush",
+    "points": [],
+    "mask_path": "masks/image_1002/9e41fd9f-4960-49c4-b293-af5e627266c6.png",
+    "status": "draft",
+    "expert_comment": "",
+    "created_at": "2026-09-22T02:07:18.988908+00:00",
+    "updated_at": "2026-09-22T02:07:19.004943+00:00"
+  },
+  "889ece7a-e588-44cd-ae4a-a85eee800039": {
+    "id": "889ece7a-e588-44cd-ae4a-a85eee800039",
+    "image_id": "1002",
+    "tooth_instance_id": 4,
+    "finding_type": "cej",
+    "annotation_tool": "point",
+    "points": [
+      {
+        "x": 412.5,
+        "y": 228.3
+      }
+    ],
+    "mask_path": null,
+    "status": "draft",
+    "expert_comment": "",
+    "created_at": "2026-09-22T02:07:18.990417+00:00",
+    "updated_at": "2026-09-22T02:07:18.990417+00:00"
+  }
+}

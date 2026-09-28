@@ -1,0 +1,156 @@
+[
+  {
+    "stable_image_id": "Training:train1",
+    "image_id": "train1",
+    "filename": "train1.jpg",
+    "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_v2_final\\test_read_only_audit_detects_i0\\dataset\\raw\\train1.jpg",
+    "source_path": "dataset/raw/train1.jpg",
+    "official_partition": "Training",
+    "width": 32,
+    "height": 24,
+    "format": "JPEG",
+    "file_sha256": "d787b99590b850d63a8528bcdf086f36123e4d4ccb430c17256951fe5040ea19",
+    "normalized_pixel_sha256": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12",
+    "perceptual_hash_64": "8000000000000000",
+    "tooth_masks": [
+      {
+        "path": "DenPAR/Dataset/Training/Masks (Tooth-wise)/train1/mask1.png",
+        "sha256": "9b4c162517e33cacb439295e17b114622081e67aa6e06a24a41611e69ac3ec8d",
+        "width": 32,
+        "height": 24,
+        "nonzero_pixels": 176
+      }
+    ],
+    "cej_apex_annotation": "DenPAR/Dataset/Training/Key Points Annotations/train1.json",
+    "bone_level_annotation": "DenPAR/Dataset/Training/Bone Level Annotations/train1.json",
+    "radiograph_mask_annotation": "DenPAR/Dataset/Training/Masks (Radiograph-wise)/train1.png",
+    "workbook_metadata_reference": {
+      "path": "DenPAR/Dataset/Characteristics of radiographs included.xlsx",
+      "image_id": "train1",
+      "fields": {
+        "id": "train1.0",
+        "Arch": "Upper",
+        "Site": "Anterior",
+        "FDI notation of fully/partially visible teeth": "11"
+      }
+    },
+    "missing_components": [],
+    "unreadable_components": []
+  },
+  {
+    "stable_image_id": "Validation:val1",
+    "image_id": "val1",
+    "filename": "val1.jpg",
+    "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_v2_final\\test_read_only_audit_detects_i0\\DenPAR\\Dataset\\Validation\\Images\\val1.jpg",
+    "source_path": "DenPAR/Dataset/Validation/Images/val1.jpg",
+    "official_partition": "Validation",
+    "width": 32,
+    "height": 24,
+    "format": "JPEG",
+    "file_sha256": "d787b99590b850d63a8528bcdf086f36123e4d4ccb430c17256951fe5040ea19",
+    "normalized_pixel_sha256": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12",
+    "perceptual_hash_64": "8000000000000000",
+    "tooth_masks": [
+      {
+        "path": "DenPAR/Dataset/Validation/Masks (Tooth-wise)/val1/mask1.png",
+        "sha256": "9b4c162517e33cacb439295e17b114622081e67aa6e06a24a41611e69ac3ec8d",
+        "width": 32,
+        "height": 24,
+        "nonzero_pixels": 176
+      }
+    ],
+    "cej_apex_annotation": "DenPAR/Dataset/Validation/Key Points Annotations/val1.json",
+    "bone_level_annotation": "DenPAR/Dataset/Validation/Bone Level Annotations/val1.json",
+    "radiograph_mask_annotation": "DenPAR/Dataset/Validation/Masks (Radiograph-wise)/val1.png",
+    "workbook_metadata_reference": {
+      "path": "DenPAR/Dataset/Characteristics of radiographs included.xlsx",
+      "image_id": "val1",
+      "fields": {
+        "id": "val1.0",
+        "Arch": "Upper",
+        "Site": "Anterior",
+        "FDI notation of fully/partially visible teeth": "11"
+      }
+    },
+    "missing_components": [],
+    "unreadable_components": []
+  },
+  {
+    "stable_image_id": "Testing:test1",
+    "image_id": "test1",
+    "filename": "test1.jpg",
+    "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_v2_final\\test_read_only_audit_detects_i0\\DenPAR\\Dataset\\Images\\test1.jpg",
+    "source_path": "DenPAR/Dataset/Images/test1.jpg",
+    "official_partition": "Testing",
+    "width": 32,
+    "height": 24,
+    "format": "JPEG",
+    "file_sha256": "51448f216de6ecbe946b66c8944e0dd7bed1e32c54e86b62d71dba6414fb4a61",
+    "normalized_pixel_sha256": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12",
+    "perceptual_hash_64": "8000000000000000",
+    "tooth_masks": [
+      {
+        "path": "DenPAR/Dataset/Testing/Masks (Tooth-wise)/test1/mask1.png",
+        "sha256": "9b4c162517e33cacb439295e17b114622081e67aa6e06a24a41611e69ac3ec8d",
+        "width": 32,
+        "height": 24,
+        "nonzero_pixels": 176
+      }
+    ],
+    "cej_apex_annotation": "DenPAR/Dataset/Testing/Key Points Annotations/test1.json",
+    "bone_level_annotation": "DenPAR/Dataset/Testing/Bone Level Annotations/test1.json",
+    "radiograph_mask_annotation": "DenPAR/Dataset/Testing/Masks (Radiograph-wise)/test1.png",
+    "workbook_metadata_reference": {
+      "path": "DenPAR/Dataset/Characteristics of radiographs included.xlsx",
+      "image_id": "test1",
+      "fields": {
+        "id": "test1.0",
+        "Arch": "Upper",
+        "Site": "Anterior",
+        "FDI notation of fully/partially visible teeth": "11"
+      }
+    },
+    "missing_components": [],
+    "unreadable_components": []
+  },
+  {
+    "stable_image_id": "Testing:test2",
+    "image_id": "test2",
+    "filename": "test2.jpg",
+    "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_v2_final\\test_read_only_audit_detects_i0\\DenPAR\\Dataset\\Images\\test2.jpg",
+    "source_path": "DenPAR/Dataset/Images/test2.jpg",
+    "official_partition": "Testing",
+    "width": 32,
+    "height": 24,
+    "format": "JPEG",
+    "file_sha256": "d27ee93f06361a05ad5efd9387d23b932487df52cf5f46a2b28a3efeffa41294",
+    "normalized_pixel_sha256": "4757fb9fcaedc7a3393482044666d34bc387cfbac4e6cde266c49c8e85217fb9",
+    "perceptual_hash_64": "8000000000000000",
+    "tooth_masks": [
+      {
+        "path": "DenPAR/Dataset/Testing/Masks (Tooth-wise)/test2/mask1.png",
+        "sha256": "9b4c162517e33cacb439295e17b114622081e67aa6e06a24a41611e69ac3ec8d",
+        "width": 32,
+        "height": 24,
+        "nonzero_pixels": 176
+      }
+    ],
+    "cej_apex_annotation": "DenPAR/Dataset/Testing/Key Points Annotations/test2.json",
+    "bone_level_annotation": null,
+    "radiograph_mask_annotation": "DenPAR/Dataset/Testing/Masks (Radiograph-wise)/test2.png",
+    "workbook_metadata_reference": {
+      "path": "DenPAR/Dataset/Characteristics of radiographs included.xlsx",
+      "image_id": "test2",
+      "fields": {
+        "id": "test2.0",
+        "Arch": "Upper",
+        "Site": "Anterior",
+        "FDI notation of fully/partially visible teeth": "11"
+      }
+    },
+    "missing_components": [
+      "bone_level"
+    ],
+    "unreadable_components": []
+  }
+]

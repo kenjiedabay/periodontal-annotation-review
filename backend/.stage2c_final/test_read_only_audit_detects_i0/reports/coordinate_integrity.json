@@ -1,0 +1,18 @@
+[
+  {
+    "classification": "annotation_mismatch",
+    "issue": "point_out_of_bounds",
+    "stable_image_id": "Validation:val1",
+    "annotation": "DenPAR/Dataset/Validation/Key Points Annotations/val1.json",
+    "point_type": "CEJ_Points",
+    "point_index": 0,
+    "point": [
+      33,
+      5
+    ],
+    "bounds": [
+      32,
+      24
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "policy_version": "denpar-leakage-remediation-v1",
+  "manifest_type": "stage2b_gate",
+  "source_audit": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_final2\\test_remediation_excludes_exac0\\audit.json",
+  "source_audit_sha256": "d54d992a388fd4300877f3ee07350ec9145bd272eb50e2f2d96cba1a6e5ce877",
+  "decision_date": "2026-09-21",
+  "source_files_copied": false,
+  "status": "blocked_pending_manual_review",
+  "pending_pair_ids": [
+    "near-pair-9d89d8ec18035668"
+  ],
+  "required_manifests": {
+    "denpar_clean_train_manifest": "e89865e81cacef3245ae1a13603459adf83d3c4c43b18df99c45798a2b7cadf3",
+    "denpar_clean_validation_manifest": "6811d7d6ee0a968f84ebf5a6f004fb8cda210e6081fde320f6646985b283c566",
+    "denpar_clean_historical_test_manifest": "151b1406e95af21ede7e022d57971bb506d54c19010e8b7b6d2ee37abb1aa04c",
+    "denpar_exclusion_manifest": "026da2709718e1dd5a5815554f9374151d7a366db1b57b6e6e2f6ea6613e48a0",
+    "denpar_duplicate_group_manifest": "710f2379d9dc63c68e269411bd9b845c03cf5f6916bac7803d6819eeae9e70bb",
+    "denpar_near_duplicate_review_queue": "4415cf85bcbc5ee94577944d2a7f58f26ae0e283fceb847a775cd1915b089903"
+  },
+  "loader_requirement": "Future Stage 2B runs must provide and log explicit manifest paths, schema versions, policy versions, and content hashes. Raw-partition fallback is forbidden.",
+  "content_hash": "1bade79311414cef057fa1730b540a8f77c4653c755c0fd8d99e6a65d7b34dd0"
+}

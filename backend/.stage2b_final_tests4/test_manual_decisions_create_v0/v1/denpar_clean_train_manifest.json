@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "policy_version": "denpar-leakage-remediation-v1",
+  "manifest_type": "denpar_clean_train_manifest",
+  "source_audit": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2b_final_tests4\\test_manual_decisions_create_v0\\audit.json",
+  "source_audit_sha256": "fc4ebcb8463411ea53449bbc43dbe707464d8e923efffd445261c43c4c4c1837",
+  "decision_date": "2026-09-21",
+  "source_files_copied": false,
+  "entries": [
+    {
+      "stable_image_id": "Training:A",
+      "image_id": "A",
+      "official_partition": "Training",
+      "source_path": "dataset/raw/A.png",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2b_final_tests4\\test_manual_decisions_create_v0\\dataset\\raw\\A.png",
+      "file_sha256": "d27856bd12bedba96ae8eaec8459ee6494ae3c15ea1fe27eef3ad30c305a3d21",
+      "normalized_pixel_sha256": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+    }
+  ],
+  "content_hash": "ec8700a1660377b11bd62637acc79d2b9e63efbf52537a15c41bf4a7baa1eda5"
+}

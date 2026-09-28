@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "policy_version": "denpar-leakage-remediation-v2",
+  "manifest_type": "stage2b_gate",
+  "source_audit": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_v2_final\\test_manual_decisions_create_v1\\audit.json",
+  "source_audit_sha256": "4061138de32f2f628a601fa2d36f4e085f5b27d83c02cf911958ce36941f4cb4",
+  "decision_date": "2026-09-22T02:54:29.832444+00:00",
+  "source_files_copied": false,
+  "previous_manifest_version": {
+    "policy_version": "denpar-leakage-remediation-v1",
+    "manifest_hashes": {
+      "denpar_clean_train_manifest": "74880d59bc491653fe2f2bde473a40a6ea2ca02f591edfc70b4d1ba8cad010ea",
+      "denpar_clean_validation_manifest": "d3082ee93d176d6f5057d66e98cb18184812387bff0178846692ecda569120bf",
+      "denpar_clean_historical_test_manifest": "68ab9fcfdaeb8bca4620c671dcec0a611629bf7eb781a027debe209d58db0c44",
+      "denpar_exclusion_manifest": "b4976b36d015b834fd78b5185e7ae8cf08be9a8486262b80df61b5106d93730c",
+      "denpar_duplicate_group_manifest": "1d977141fc6e590dffb9d5a16a0f35f645c2c34a454d3839d6dc16949a6a2e87",
+      "denpar_near_duplicate_review_queue": "26628e1f331e77ccd0bdb24373afce4deba50341b74cee823de135cac46f9354"
+    },
+    "manifest_directory": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_v2_final\\test_manual_decisions_create_v1\\v1"
+  },
+  "status": "ready_for_stage2b_with_historical_test_limitations",
+  "pending_pair_ids": [],
+  "required_manifests": {
+    "denpar_clean_train_manifest": "02b52a09b27052c12f17b3035d1fc4c57026a753c01effe0ee3a38fc441019b0",
+    "denpar_clean_validation_manifest": "8e7c424b9b12054daf75e2dc46bffdd62b4351a8851ca62bae4f0d2919b6d43b",
+    "denpar_clean_historical_test_manifest": "5bdcc128dd455340dadcc3e12b85eb2d905700c35dce6df94c42bdaeb0c778ba",
+    "denpar_exclusion_manifest": "546d8ee8289ff79ff8a08454d2d7af69edc3dd04a0870e23157be50c0a73f5d3",
+    "denpar_duplicate_group_manifest": "8f026f5d78a2f1c6dbe2d3a9493480e3697515b0f3e8474d4af9978a4563f856",
+    "denpar_near_duplicate_review_queue": "4c29e4efce902fd210ba0ac9223fec173293c653b8e4e3869e428e39dc061502"
+  },
+  "loader_requirement": "Every Stage 2B run must provide and log these explicit manifest versions and hashes; raw-partition fallback is forbidden.",
+  "evaluation_limitation": "Historical Testing is exposed and cannot serve as a pristine final test set.",
+  "content_hash": "63b969b62c69bf34a3fd3c89766521856f2046d50b2c4681d197b3b45055050e"
+}

@@ -18,8 +18,22 @@ from app.annotation_storage import Annotation, StoredAnnotation, create, delete,
 from app.structural_audit.correspondence import analyze_record
 from app.structural_audit.loader import find_validation_record
 from app.tooth_segmentation import service as tooth_service
+from app.anatomy_prediction import service as anatomy_service
+from app.spatial_annotations import router as spatial_annotation_router
+from app.review_foundation import router as review_foundation_router, assert_ai_access
+from app.association_review import router as association_review_router, legacy_router as association_review_legacy_router
+from app.surface_verification import router as surface_verification_router
+from app.pilot_surface_review import router as pilot_surface_router
+from app.ground_truth_pilot_api import router as ground_truth_pilot_router
 
 app = FastAPI(title="PerioLab Research API", version="0.1.0")
+app.include_router(spatial_annotation_router)
+app.include_router(review_foundation_router)
+app.include_router(association_review_router)
+app.include_router(association_review_legacy_router)
+app.include_router(surface_verification_router)
+app.include_router(pilot_surface_router)
+app.include_router(ground_truth_pilot_router)
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
 
@@ -28,10 +42,23 @@ def tooth_segmentation(image_id: str, file: UploadFile = File(...)) -> dict[str,
     data = file.file.read(30 * 1024 * 1024 + 1)
     if len(data) > 30 * 1024 * 1024:
         raise HTTPException(status_code=413, detail='Image exceeds 30 MB')
+    assert_ai_access(image_id, data)
     original = cv2.imdecode(np.frombuffer(data, np.uint8), cv2.IMREAD_UNCHANGED)
     if original is None:
         raise HTTPException(status_code=422, detail='Unsupported image')
     return tooth_service.predict(image_id, original)
+
+
+@app.post('/analysis/anatomical-overlay')
+def anatomical_overlay(image_id: str, file: UploadFile = File(...)) -> dict[str, Any]:
+    data = file.file.read(30 * 1024 * 1024 + 1)
+    if len(data) > 30 * 1024 * 1024:
+        raise HTTPException(status_code=413, detail='Image exceeds 30 MB')
+    assert_ai_access(image_id, data)
+    original = cv2.imdecode(np.frombuffer(data, np.uint8), cv2.IMREAD_UNCHANGED)
+    if original is None:
+        raise HTTPException(status_code=422, detail='Unsupported image')
+    return anatomy_service.predict(image_id, original)
 
 cases: dict[str, dict[str, Any]] = {}
 DENPAR_VALIDATION_DIR = Path(os.getenv("DENPAR_VALIDATION_DIR", Path(__file__).resolve().parents[1] / "DenPAR Radiographs Dataset" / "Dataset" / "Validation"))
@@ -46,11 +73,20 @@ def _validation_image_path(image_id: str) -> Path:
 
 @app.get("/structural-audit/{image_id}")
 def structural_audit_record(image_id: str) -> dict[str, Any]:
+    assert_ai_access(image_id)
     try:
         audit, record = find_validation_record(DENPAR_VALIDATION_DIR, image_id)
-    except FileNotFoundError as error:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="DenPAR Validation record not found") from error
+    except FileNotFoundError:
+        # A filename alone does not establish that an uploaded image belongs to
+        # the supplied Validation partition.
+        return {
+            "available": False,
+            "image_id": image_id,
+            "reason": "No DenPAR Validation structural-annotation record is available for this image ID.",
+            "source_preserved": True,
+        }
     return {
+        "available": True,
         "image": {"image_id": record.image.image_id, "filename": record.image.filename, "width": record.image.width, "height": record.image.height},
         "tooth_masks": [{**mask, "url": f"/structural-audit/{image_id}/mask/tooth/{mask['filename']}"} for mask in record.tooth_masks],
         "radiograph_mask": {**record.radiograph_mask, "url": f"/structural-audit/{image_id}/mask/radiograph"} if record.radiograph_mask else None,
@@ -69,8 +105,21 @@ def structural_audit_image(image_id: str) -> FileResponse:
     return FileResponse(_validation_image_path(image_id), media_type="image/jpeg")
 
 
+@app.get("/structural-audit/{image_id}/bone-line-prediction")
+def structural_audit_bone_prediction(image_id: str) -> FileResponse:
+    assert_ai_access(image_id)
+    if not image_id.isdecimal():
+        raise HTTPException(status_code=400, detail="Invalid image ID")
+    _validation_image_path(image_id)
+    path = Path(__file__).resolve().parents[1] / "models" / "bone_line_unet_baseline" / "validation_predictions" / f"{image_id}.png"
+    if not path.is_file():
+        raise HTTPException(status_code=404, detail="No prediction available for this Validation image")
+    return FileResponse(path, media_type="image/png")
+
+
 @app.get("/structural-audit/{image_id}/mask/radiograph")
 def structural_audit_radiograph_mask(image_id: str) -> FileResponse:
+    assert_ai_access(image_id)
     path = DENPAR_VALIDATION_DIR / "Masks (Radiograph-wise)" / f"{image_id}.png"
     if not path.exists():
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Radiograph-wise mask not found")
@@ -79,6 +128,7 @@ def structural_audit_radiograph_mask(image_id: str) -> FileResponse:
 
 @app.get("/structural-audit/{image_id}/mask/tooth/{filename}")
 def structural_audit_tooth_mask(image_id: str, filename: str) -> FileResponse:
+    assert_ai_access(image_id)
     if Path(filename).name != filename or not filename.endswith(".png"):
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Invalid mask filename")
     path = DENPAR_VALIDATION_DIR / "Masks (Tooth-wise)" / image_id / filename

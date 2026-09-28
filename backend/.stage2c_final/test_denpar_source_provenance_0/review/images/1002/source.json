@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "record_id": "d5609a88-d7e1-49ea-b9be-abbd09c60583",
+  "record_type": "source_record",
+  "version": 1,
+  "image_id": "1002",
+  "image_hash": "91b7e1aefb010576f258e416d4abba89947f705cddda772732f0d8ff5f1772f4",
+  "source_dataset": "DenPAR",
+  "source_partition": "Validation",
+  "original_width": 1171,
+  "original_height": 886,
+  "coordinate_space": "original_image_pixels",
+  "coordinate_origin": "top_left",
+  "created_at": "2026-09-22T02:05:55.335938+00:00",
+  "created_by": "intake",
+  "parent_record_id": null,
+  "model_name": null,
+  "model_version": null,
+  "review_status": "unreviewed",
+  "uncertainty_reasons": [],
+  "review_mode": "ai_assisted",
+  "original_filename": "1002.jpg",
+  "source_image_ref": "DenPAR Radiographs Dataset/Dataset/Validation/Images/1002.jpg",
+  "stored_copy": false,
+  "source_annotations": [
+    {
+      "kind": "keypoints",
+      "path": "DenPAR Radiographs Dataset/Dataset/Validation/Key Points Annotations/1002.json",
+      "sha256": "e19d58760f21bb3afccf5ce9d54bc19aad09446cbe28e37938c35f792bab5809"
+    },
+    {
+      "kind": "bone_lines",
+      "path": "DenPAR Radiographs Dataset/Dataset/Validation/Bone Level Annotations/1002.json",
+      "sha256": "254e3c9125d1670ad333481539cb51c77ab51b623b7c6e98567e1a82278e899f"
+    },
+    {
+      "kind": "radiograph_mask",
+      "path": "DenPAR Radiographs Dataset/Dataset/Validation/Masks (Radiograph-wise)/1002.png",
+      "sha256": "41cd6df2207a0dc1c291cd0e899957bee62e2a18c3d2c6ed331b32f466547ba8"
+    },
+    {
+      "kind": "tooth_instances_coco",
+      "path": "DenPAR Radiographs Dataset/Dataset/Validation/Masks (Tooth-wise)/coco_format_instances_valid.json",
+      "sha256": "f5d6ad9dd7b44d22f970615e2092734a590c982484582a0d9e1ae90a8988cba9"
+    },
+    {
+      "kind": "radiograph_characteristics",
+      "path": "DenPAR Radiographs Dataset/Dataset/Characteristics of radiographs included.xlsx",
+      "sha256": "de9e2a707acbe5d9297dfc8978db045f72700e4dfa8f3a3819b3acd030974425"
+    },
+    {
+      "kind": "tooth_mask",
+      "path": "DenPAR Radiographs Dataset/Dataset/Validation/Masks (Tooth-wise)/1002/mask1.png",
+      "sha256": "608a934487917893f2fb6db1f8a4a5f14a3b981c6fcd889336ed2b03ea8bfddc"
+    },
+    {
+      "kind": "tooth_mask",
+      "path": "DenPAR Radiographs Dataset/Dataset/Validation/Masks (Tooth-wise)/1002/mask2.png",
+      "sha256": "37842aa6a45a38228351ac958d57800c942f393e188645af65f2b11cd16a6c82"
+    },
+    {
+      "kind": "tooth_mask",
+      "path": "DenPAR Radiographs Dataset/Dataset/Validation/Masks (Tooth-wise)/1002/mask3.png",
+      "sha256": "6b15d9cc0104e4d371e5b32f2c78dbe2198fd4b0ea60e3ac77ee6ee6f8dde275"
+    },
+    {
+      "kind": "tooth_mask",
+      "path": "DenPAR Radiographs Dataset/Dataset/Validation/Masks (Tooth-wise)/1002/mask4.png",
+      "sha256": "ae2d63af45b20a5d9c14e58629320b3b5eb8275028d117cddcbe125b83da7354"
+    }
+  ]
+}

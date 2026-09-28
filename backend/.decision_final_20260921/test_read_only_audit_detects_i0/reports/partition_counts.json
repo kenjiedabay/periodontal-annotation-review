@@ -1,0 +1,38 @@
+{
+  "Training": {
+    "expected_images": 1,
+    "observed_images": 1,
+    "matches_expected": true,
+    "tooth_mask_files": 1,
+    "images_with_tooth_masks": 1,
+    "keypoint_annotation_files": 1,
+    "bone_level_annotation_files": 1,
+    "radiograph_mask_files": 1,
+    "workbook_rows_matched": 1,
+    "aggregate_annotation_files": 0
+  },
+  "Validation": {
+    "expected_images": 1,
+    "observed_images": 1,
+    "matches_expected": true,
+    "tooth_mask_files": 1,
+    "images_with_tooth_masks": 1,
+    "keypoint_annotation_files": 1,
+    "bone_level_annotation_files": 1,
+    "radiograph_mask_files": 1,
+    "workbook_rows_matched": 1,
+    "aggregate_annotation_files": 0
+  },
+  "Testing": {
+    "expected_images": 2,
+    "observed_images": 2,
+    "matches_expected": true,
+    "tooth_mask_files": 2,
+    "images_with_tooth_masks": 2,
+    "keypoint_annotation_files": 2,
+    "bone_level_annotation_files": 1,
+    "radiograph_mask_files": 2,
+    "workbook_rows_matched": 2,
+    "aggregate_annotation_files": 0
+  }
+}

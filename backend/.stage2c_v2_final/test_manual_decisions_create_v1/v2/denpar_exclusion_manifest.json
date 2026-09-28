@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "policy_version": "denpar-leakage-remediation-v2",
+  "manifest_type": "denpar_exclusion_manifest",
+  "source_audit": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_v2_final\\test_manual_decisions_create_v1\\audit.json",
+  "source_audit_sha256": "4061138de32f2f628a601fa2d36f4e085f5b27d83c02cf911958ce36941f4cb4",
+  "decision_date": "2026-09-22T02:54:29.832444+00:00",
+  "source_files_copied": false,
+  "previous_manifest_version": {
+    "policy_version": "denpar-leakage-remediation-v1",
+    "manifest_hashes": {
+      "denpar_clean_train_manifest": "74880d59bc491653fe2f2bde473a40a6ea2ca02f591edfc70b4d1ba8cad010ea",
+      "denpar_clean_validation_manifest": "d3082ee93d176d6f5057d66e98cb18184812387bff0178846692ecda569120bf",
+      "denpar_clean_historical_test_manifest": "68ab9fcfdaeb8bca4620c671dcec0a611629bf7eb781a027debe209d58db0c44",
+      "denpar_exclusion_manifest": "b4976b36d015b834fd78b5185e7ae8cf08be9a8486262b80df61b5106d93730c",
+      "denpar_duplicate_group_manifest": "1d977141fc6e590dffb9d5a16a0f35f645c2c34a454d3839d6dc16949a6a2e87",
+      "denpar_near_duplicate_review_queue": "26628e1f331e77ccd0bdb24373afce4deba50341b74cee823de135cac46f9354"
+    },
+    "manifest_directory": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_v2_final\\test_manual_decisions_create_v1\\v1"
+  },
+  "entries": [
+    {
+      "stable_image_id": "Training:B",
+      "image_id": "B",
+      "original_partition": "Training",
+      "duplicate_group_id": "exact-a67598362c4c7275",
+      "canonical_stable_image_id": "Training:A",
+      "canonical_image_id": "A",
+      "exclusion_reason": "duplicate_training_copy_excluded_to_avoid_overweighting",
+      "file_sha256": "d27856bd12bedba96ae8eaec8459ee6494ae3c15ea1fe27eef3ad30c305a3d21",
+      "normalized_pixel_sha256": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12",
+      "decision_date": "2026-09-21",
+      "policy_version": "denpar-leakage-remediation-v1"
+    },
+    {
+      "stable_image_id": "Validation:C",
+      "image_id": "C",
+      "original_partition": "Validation",
+      "duplicate_group_id": "exact-a67598362c4c7275",
+      "canonical_stable_image_id": "Training:A",
+      "canonical_image_id": "A",
+      "exclusion_reason": "evaluation_copy_duplicates_training_content",
+      "file_sha256": "d27856bd12bedba96ae8eaec8459ee6494ae3c15ea1fe27eef3ad30c305a3d21",
+      "normalized_pixel_sha256": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12",
+      "decision_date": "2026-09-21",
+      "policy_version": "denpar-leakage-remediation-v1"
+    }
+  ],
+  "content_hash": "546d8ee8289ff79ff8a08454d2d7af69edc3dd04a0870e23157be50c0a73f5d3"
+}

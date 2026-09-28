@@ -1,0 +1,306 @@
+[
+  {
+    "classification": "probable_near_duplicate",
+    "method": "64-bit DCT pHash",
+    "threshold": "Hamming distance <= 6",
+    "hamming_distance": 0,
+    "relative_aspect_difference": 0.0,
+    "cross_partition": true,
+    "left": {
+      "stable_image_id": "Training:train1",
+      "source_path": "dataset/raw/train1.jpg",
+      "official_partition": "Training",
+      "perceptual_hash_64": "8000000000000000"
+    },
+    "right": {
+      "stable_image_id": "Testing:test2",
+      "source_path": "DenPAR/Dataset/Images/test2.jpg",
+      "official_partition": "Testing",
+      "perceptual_hash_64": "8000000000000000"
+    },
+    "supporting_evidence": {
+      "normalized_thumbnail_mae": 0.007843137718737125,
+      "thumbnail_pearson_correlation": 1.0
+    },
+    "interpretation": "candidate_for_manual_review_not_a_confirmed_duplicate"
+  },
+  {
+    "classification": "probable_near_duplicate",
+    "method": "64-bit DCT pHash",
+    "threshold": "Hamming distance <= 6",
+    "hamming_distance": 0,
+    "relative_aspect_difference": 0.0,
+    "cross_partition": true,
+    "left": {
+      "stable_image_id": "Validation:val1",
+      "source_path": "DenPAR/Dataset/Validation/Images/val1.jpg",
+      "official_partition": "Validation",
+      "perceptual_hash_64": "8000000000000000"
+    },
+    "right": {
+      "stable_image_id": "Testing:test2",
+      "source_path": "DenPAR/Dataset/Images/test2.jpg",
+      "official_partition": "Testing",
+      "perceptual_hash_64": "8000000000000000"
+    },
+    "supporting_evidence": {
+      "normalized_thumbnail_mae": 0.007843137718737125,
+      "thumbnail_pearson_correlation": 1.0
+    },
+    "interpretation": "candidate_for_manual_review_not_a_confirmed_duplicate"
+  },
+  {
+    "classification": "probable_near_duplicate",
+    "method": "64-bit DCT pHash",
+    "threshold": "Hamming distance <= 6",
+    "hamming_distance": 0,
+    "relative_aspect_difference": 0.0,
+    "cross_partition": false,
+    "left": {
+      "stable_image_id": "Testing:test1",
+      "source_path": "DenPAR/Dataset/Images/test1.jpg",
+      "official_partition": "Testing",
+      "perceptual_hash_64": "8000000000000000"
+    },
+    "right": {
+      "stable_image_id": "Testing:test2",
+      "source_path": "DenPAR/Dataset/Images/test2.jpg",
+      "official_partition": "Testing",
+      "perceptual_hash_64": "8000000000000000"
+    },
+    "supporting_evidence": {
+      "normalized_thumbnail_mae": 0.007843137718737125,
+      "thumbnail_pearson_correlation": 1.0
+    },
+    "interpretation": "candidate_for_manual_review_not_a_confirmed_duplicate"
+  },
+  {
+    "classification": "confirmed_leakage",
+    "images": [
+      "Training:train1",
+      "Validation:val1"
+    ],
+    "partitions": [
+      "Training",
+      "Validation"
+    ],
+    "cross_partition": true,
+    "evidence_methods": [
+      {
+        "method": "identical_file_sha256",
+        "hash": "d787b99590b850d63a8528bcdf086f36123e4d4ccb430c17256951fe5040ea19"
+      },
+      {
+        "method": "identical_normalized_pixels",
+        "hash": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+      }
+    ]
+  },
+  {
+    "classification": "confirmed_leakage",
+    "images": [
+      "Testing:test1",
+      "Training:train1"
+    ],
+    "partitions": [
+      "Testing",
+      "Training"
+    ],
+    "cross_partition": true,
+    "evidence_methods": [
+      {
+        "method": "identical_normalized_pixels",
+        "hash": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+      }
+    ]
+  },
+  {
+    "classification": "confirmed_leakage",
+    "images": [
+      "Testing:test1",
+      "Validation:val1"
+    ],
+    "partitions": [
+      "Testing",
+      "Validation"
+    ],
+    "cross_partition": true,
+    "evidence_methods": [
+      {
+        "method": "identical_normalized_pixels",
+        "hash": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+      }
+    ]
+  },
+  {
+    "classification": "annotation_mismatch",
+    "issue": "identical_annotation_mapped_to_multiple_images",
+    "annotation_kind": "tooth_mask",
+    "sha256": "9b4c162517e33cacb439295e17b114622081e67aa6e06a24a41611e69ac3ec8d",
+    "images": [
+      "Testing:test1",
+      "Testing:test2",
+      "Training:train1",
+      "Validation:val1"
+    ],
+    "paths": [
+      "DenPAR/Dataset/Training/Masks (Tooth-wise)/train1/mask1.png",
+      "DenPAR/Dataset/Validation/Masks (Tooth-wise)/val1/mask1.png",
+      "DenPAR/Dataset/Testing/Masks (Tooth-wise)/test1/mask1.png",
+      "DenPAR/Dataset/Testing/Masks (Tooth-wise)/test2/mask1.png"
+    ]
+  },
+  {
+    "classification": "annotation_mismatch",
+    "issue": "identical_annotation_mapped_to_multiple_images",
+    "annotation_kind": "radiograph_mask",
+    "sha256": "9b4c162517e33cacb439295e17b114622081e67aa6e06a24a41611e69ac3ec8d",
+    "images": [
+      "Testing:test1",
+      "Testing:test2",
+      "Training:train1",
+      "Validation:val1"
+    ],
+    "paths": [
+      "DenPAR/Dataset/Training/Masks (Radiograph-wise)/train1.png",
+      "DenPAR/Dataset/Validation/Masks (Radiograph-wise)/val1.png",
+      "DenPAR/Dataset/Testing/Masks (Radiograph-wise)/test1.png",
+      "DenPAR/Dataset/Testing/Masks (Radiograph-wise)/test2.png"
+    ]
+  },
+  {
+    "classification": "annotation_mismatch",
+    "issue": "annotation_without_matching_image",
+    "partition": "Validation",
+    "annotation_kind": "keypoints",
+    "image_id": "orphan",
+    "path": "DenPAR/Dataset/Validation/Key Points Annotations/orphan.json"
+  },
+  {
+    "classification": "annotation_mismatch",
+    "issue": "workbook_row_without_matching_image",
+    "image_id": "orphan",
+    "workbook": "DenPAR/Dataset/Characteristics of radiographs included.xlsx"
+  },
+  {
+    "classification": "annotation_mismatch",
+    "issue": "point_out_of_bounds",
+    "stable_image_id": "Validation:val1",
+    "annotation": "DenPAR/Dataset/Validation/Key Points Annotations/val1.json",
+    "point_type": "CEJ_Points",
+    "point_index": 0,
+    "point": [
+      33,
+      5
+    ],
+    "bounds": [
+      32,
+      24
+    ]
+  },
+  {
+    "classification": "missing_component",
+    "issue": "bone_level",
+    "stable_image_id": "Testing:test2",
+    "partition": "Testing"
+  },
+  {
+    "classification": "provenance_unverified",
+    "issue": "checkpoint_training_provenance_incomplete",
+    "details": {
+      "classification": "provenance_unverified",
+      "checkpoint_training_provenance_verified": false,
+      "checkpoint": null,
+      "checkpoint_metadata": {},
+      "checkpoint_metadata_load_error": "checkpoint not supplied",
+      "evidence": [
+        {
+          "kind": "training_manifest",
+          "path": "training_manifest.json",
+          "sha256": "4dc79f57fdf7bd75479fcc3e0c0d98820e2bd21f139ed878d67bf1813be8690f",
+          "image_ids": 1
+        }
+      ],
+      "training_source_directory": "dataset/raw",
+      "training_source_location_note": "Training radiographs are outside the DenPAR Training folder; identity is supported by the immutable manifest and matching official annotation IDs.",
+      "manifest_training_id_count": 1,
+      "manifest_matches_all_observed_training_ids": true,
+      "checkpoint_paths_and_manifest_version_match_locked_configuration": false,
+      "manifest_validation_id_overlap": [],
+      "manifest_testing_id_overlap": [],
+      "cross_partition_exact_image_groups_by_method": 2,
+      "cross_partition_unique_exact_image_pairs": [
+        {
+          "classification": "confirmed_leakage",
+          "images": [
+            "Training:train1",
+            "Validation:val1"
+          ],
+          "partitions": [
+            "Training",
+            "Validation"
+          ],
+          "cross_partition": true,
+          "evidence_methods": [
+            {
+              "method": "identical_file_sha256",
+              "hash": "d787b99590b850d63a8528bcdf086f36123e4d4ccb430c17256951fe5040ea19"
+            },
+            {
+              "method": "identical_normalized_pixels",
+              "hash": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+            }
+          ]
+        },
+        {
+          "classification": "confirmed_leakage",
+          "images": [
+            "Testing:test1",
+            "Training:train1"
+          ],
+          "partitions": [
+            "Testing",
+            "Training"
+          ],
+          "cross_partition": true,
+          "evidence_methods": [
+            {
+              "method": "identical_normalized_pixels",
+              "hash": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+            }
+          ]
+        },
+        {
+          "classification": "confirmed_leakage",
+          "images": [
+            "Testing:test1",
+            "Validation:val1"
+          ],
+          "partitions": [
+            "Testing",
+            "Validation"
+          ],
+          "cross_partition": true,
+          "evidence_methods": [
+            {
+              "method": "identical_normalized_pixels",
+              "hash": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+            }
+          ]
+        }
+      ],
+      "validation_or_testing_paths_in_training_manifest": null,
+      "validation_or_testing_content_duplicated_in_training": true,
+      "verified_claim": null,
+      "cannot_verify": [
+        "Patient-level split independence cannot be verified from the supplied metadata.",
+        "Filesystem artifacts cannot independently prove every runtime batch consumed during historical training."
+      ]
+    }
+  },
+  {
+    "classification": "provenance_unverified",
+    "issue": "patient_level_grouping_unavailable",
+    "limitation": "No patient, subject, or case identifier is present; patient-level separation cannot be verified."
+  }
+]

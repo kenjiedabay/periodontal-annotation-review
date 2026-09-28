@@ -1,0 +1,26 @@
+.spatial-page { display: grid; gap: 16px; }
+.spatial-heading { display: flex; justify-content: space-between; align-items: start; gap: 20px; }
+.spatial-heading h2 { margin: 4px 0; font-size: 25px; }
+.spatial-heading p { max-width: 800px; font-size: 12px; color: #6a7d79; }
+.spatial-layout { display: grid; grid-template-columns: 210px minmax(0, 1fr) 265px; gap: 12px; min-height: 620px; }
+.spatial-side { display: flex; flex-direction: column; align-items: stretch; gap: 10px; padding: 16px; border: 1px solid #dbe5e0; border-radius: 7px; background: white; font-size: 11px; }
+.spatial-side h3 { margin: 8px 0 0; font-size: 13px; }
+.spatial-side label { display: grid; gap: 5px; }
+.spatial-side label:has(input[type=checkbox]) { display: block; }
+.spatial-side input[type=checkbox] { width: auto; }
+.spatial-side button { border: 1px solid #cddbd5; border-radius: 4px; padding: 7px; background: #f5faf7; color: #30584e; }
+.spatial-tools { display: flex; flex-wrap: wrap; gap: 5px; }
+.spatial-tools button.active { background: #2c7565; color: white; }
+.spatial-canvas { min-width: 0; height: 620px; background: #142329; overflow: hidden; border-radius: 7px; touch-action: none; }
+.spatial-list { display: grid; gap: 5px; max-height: 260px; overflow: auto; }
+.spatial-list > div { display: flex; gap: 3px; }
+.spatial-list > div.selected { background: #d8f1e8; }
+.spatial-list > div button:first-child { flex: 1; text-align: left; }
+.spatial-dirty { color: #a36528; }
+@media(max-width:1100px) { .spatial-layout { grid-template-columns: 1fr; }.spatial-canvas { order: -1; } }
+.review-foundation-card { display: grid; gap: 10px; padding: 18px; border: 1px solid #dbe5e0; border-radius: 8px; background: #fff; color: #203239; }
+.review-foundation-card h3, .review-foundation-card p { margin: 0; }
+.review-foundation-card label { display: grid; gap: 5px; max-width: 320px; }
+.review-foundation-card input { padding: 8px; border: 1px solid #b8cbc5; border-radius: 5px; }
+.review-foundation-card .casebar-actions { flex-wrap: wrap; }
+.review-foundation-card > div { overflow-wrap: anywhere; }

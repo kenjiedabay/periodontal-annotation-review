@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "policy_version": "denpar-leakage-remediation-v2",
+  "manifest_type": "denpar_clean_historical_test_manifest",
+  "source_audit": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_final2\\test_manual_decisions_create_v0\\audit.json",
+  "source_audit_sha256": "d71b9656c3899a6393e87fb7edff9253f70c8ab1129daffebaeb5b841793fc67",
+  "decision_date": "2026-09-22T02:07:19.650150+00:00",
+  "source_files_copied": false,
+  "previous_manifest_version": {
+    "policy_version": "denpar-leakage-remediation-v1",
+    "manifest_hashes": {
+      "denpar_clean_train_manifest": "cc51e0900b8c51b800463a4df668acb22b2f1bf8c8ee2580196ef014d9fee774",
+      "denpar_clean_validation_manifest": "2458a4ae29fac6374387ad1e05a83cca379e1cb7f03c59a8a44d67777e346daa",
+      "denpar_clean_historical_test_manifest": "37b64d6c338a60677d1d5f495fe80f221d67085efa5022f3d89a3337e1c6a58f",
+      "denpar_exclusion_manifest": "676f6d4f94293a223ef41e4da5e53ca6c3f9ec1edbb846089def52edff2cec4d",
+      "denpar_duplicate_group_manifest": "6b654b60ab6c5063722d3501c63a85adcfae3e480456d39f55f71839ef9c4b70",
+      "denpar_near_duplicate_review_queue": "4b2ee7d36fc3a7b13bbffe39c482902a073b5eebb87a1889ca618d9c31a875aa"
+    },
+    "manifest_directory": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_final2\\test_manual_decisions_create_v0\\v1"
+  },
+  "test_set_status": "historical_exposed_test",
+  "allowed_use": "transparent_historical_comparison_after_exclusions",
+  "prohibited_use": [
+    "model_selection",
+    "hyperparameter_tuning",
+    "claim_as_pristine_final_test"
+  ],
+  "external_holdout_recommendation": "Use a future independent expert-labeled external holdout for final unbiased evaluation.",
+  "fallback_limitation": "Patient-independent or grouped validation requires reliable patient identifiers, which remain unavailable.",
+  "entries": [
+    {
+      "stable_image_id": "Testing:D",
+      "image_id": "D",
+      "official_partition": "Testing",
+      "source_path": "DenPAR/Dataset/Images/D.png",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_final2\\test_manual_decisions_create_v0\\DenPAR\\Dataset\\Images\\D.png",
+      "file_sha256": "546f0b6e3192550989ddcfa314008bce6bf42a31b4a6b3f84be6243ef61cc7f6",
+      "normalized_pixel_sha256": "05a818477c59ac920899c9a630bfb7d672ba2a754df10db2d10c25b041194bdc"
+    }
+  ],
+  "content_hash": "3fc4a314fbadb7f3207f8981e7e8c4c2a6e6edd93c35efd082891f6cb34283e2"
+}

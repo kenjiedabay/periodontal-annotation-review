@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "record_id": "d587a4a7-7010-4d4b-a130-8f748d720795",
+  "record_type": "raw_ai_prediction",
+  "version": 1,
+  "image_id": "case_a",
+  "image_hash": "3a2f1c3132026f6578b6757cecc6e279fef50a99f3165b7d06da48c0419cefbd",
+  "source_dataset": "uploaded",
+  "source_partition": "Unassigned",
+  "original_width": 32,
+  "original_height": 24,
+  "coordinate_space": "original_image_pixels",
+  "coordinate_origin": "top_left",
+  "created_at": "2026-09-21T15:23:36.583313+00:00",
+  "created_by": "service",
+  "parent_record_id": "6862c372-163a-418e-b1c4-3a6a54bc4eea",
+  "model_name": "Mask R-CNN ResNet-50 FPN",
+  "model_version": "maskrcnn_epoch8",
+  "review_status": "AI-generated—awaiting expert review",
+  "uncertainty_reasons": [
+    "landmark_and_surface_relationships_not_predicted"
+  ],
+  "checkpoint_identity": {
+    "path": "backend/.stage2b_final_tests4/test_versioned_review_blinding0/checkpoint.pt",
+    "sha256": "c851a228afa6abdf1565ed772971db1312f6657961e1f25fa4f222e0f46bda6e"
+  },
+  "prediction_timestamp": "2026-09-21T15:23:36.583313+00:00",
+  "preprocessing": {
+    "preprocessing_version": "1.0.0",
+    "output_format": "PNG",
+    "grayscale": true,
+    "target_width": 1024,
+    "target_height": 1024,
+    "preserve_aspect_ratio": true,
+    "normalization_method": "percentile",
+    "lower_percentile": 1.0,
+    "upper_percentile": 99.0,
+    "contrast_enhancement": true,
+    "clahe_clip_limit": 1.5,
+    "clahe_tile_grid_size": 8,
+    "noise_reduction": false,
+    "noise_reduction_kernel": 3,
+    "sharpening": false,
+    "sharpening_amount": 0.25,
+    "create_comparisons": true
+  },
+  "coordinate_transform": {
+    "model_canvas": [
+      1024,
+      1024
+    ],
+    "resized_image": [
+      1024,
+      768
+    ],
+    "pad_offset": [
+      0,
+      128
+    ],
+    "stored_output_space": "original_image_pixels"
+  },
+  "raw_model_output": {
+    "image_id": "case_a",
+    "task": "tooth_instance_segmentation",
+    "model_status": "available",
+    "model_version": "maskrcnn_epoch8",
+    "confidence_threshold": 0.5,
+    "mask_threshold": 0.5,
+    "instances": [
+      {
+        "instance_id": 1,
+        "confidence": 0.91,
+        "bbox": [
+          3,
+          4,
+          20,
+          22
+        ],
+        "mask_url": "data:image/png;base64,AA=="
+      }
+    ],
+    "width": 32,
+    "height": 24,
+    "coordinate_space": "original_image",
+    "bbox_format": "xyxy",
+    "ground_truth": null
+  },
+  "teeth": [
+    {
+      "tooth_id": null,
+      "instance_id": 1,
+      "orientation_status": "uncertain",
+      "tooth_mask": "data:image/png;base64,AA==",
+      "tooth_bbox": [
+        3.0,
+        4.0,
+        20.0,
+        22.0
+      ],
+      "crop_box": null,
+      "crop_margin_pixels": null,
+      "cej_mesial": {
+        "state": "uncertain",
+        "point": null,
+        "confidence": null,
+        "uncertainty_reason": null
+      },
+      "cej_distal": {
+        "state": "uncertain",
+        "point": null,
+        "confidence": null,
+        "uncertainty_reason": null
+      },
+      "bone_mesial": {
+        "state": "uncertain",
+        "point": null,
+        "confidence": null,
+        "uncertainty_reason": null
+      },
+      "bone_distal": {
+        "state": "uncertain",
+        "point": null,
+        "confidence": null,
+        "uncertainty_reason": null
+      },
+      "root_apices": [],
+      "mesial_apex_index": null,
+      "distal_apex_index": null,
+      "mesial_surface_status": "uncertain",
+      "distal_surface_status": "uncertain",
+      "confidence": 0.91,
+      "uncertainty_reasons": [
+        "tooth_identity_and_orientation_unconfirmed"
+      ]
+    }
+  ]
+}

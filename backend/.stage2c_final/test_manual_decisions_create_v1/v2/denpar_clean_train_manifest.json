@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "policy_version": "denpar-leakage-remediation-v2",
+  "manifest_type": "denpar_clean_train_manifest",
+  "source_audit": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_final\\test_manual_decisions_create_v1\\audit.json",
+  "source_audit_sha256": "361d8b17610196b8c392534cc778afd1d25ee7de6a0426c78c37a52cc0291a65",
+  "decision_date": "2026-09-22T02:06:14.151768+00:00",
+  "source_files_copied": false,
+  "previous_manifest_version": {
+    "policy_version": "denpar-leakage-remediation-v1",
+    "manifest_hashes": {
+      "denpar_clean_train_manifest": "bc00034870f8ff0871651e3d6dd69aabfa39e8ccdf1d49750d6de6cf9ed3d5cb",
+      "denpar_clean_validation_manifest": "3ed5a5a329bc9308487d2d666a0e33e098863ed546e867b340d67687295ebf88",
+      "denpar_clean_historical_test_manifest": "dc4e259a34d53e2b8370afa605aa8f6071659a284ce65111e41ac8cceed3d71d",
+      "denpar_exclusion_manifest": "37b96df95b7084fa6ed6270fa19ef733010ee24e71442a178a8c4325f7e4c3a4",
+      "denpar_duplicate_group_manifest": "e4e9d60bbffb1084baa0f2802c727c99752f3b3e229fd83138843f2ddce6774f",
+      "denpar_near_duplicate_review_queue": "43c519c348c704a6a98d96602807f6efb9f1147aeb4910ff3179bf1b20fb8045"
+    },
+    "manifest_directory": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_final\\test_manual_decisions_create_v1\\v1"
+  },
+  "entries": [
+    {
+      "stable_image_id": "Training:A",
+      "image_id": "A",
+      "official_partition": "Training",
+      "source_path": "dataset/raw/A.png",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_final\\test_manual_decisions_create_v1\\dataset\\raw\\A.png",
+      "file_sha256": "d27856bd12bedba96ae8eaec8459ee6494ae3c15ea1fe27eef3ad30c305a3d21",
+      "normalized_pixel_sha256": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+    },
+    {
+      "stable_image_id": "Training:E",
+      "image_id": "E",
+      "official_partition": "Training",
+      "source_path": "dataset/raw/E.png",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\backend\\.stage2c_final\\test_manual_decisions_create_v1\\dataset\\raw\\E.png",
+      "file_sha256": "b04d52176a641acc9301e6b729acc11ca1dae58370f48ea4a107fe6197ca3176",
+      "normalized_pixel_sha256": "506184c73ef8c1fbacbcf9482e23d683c0d8c00b4963b6a56e21513540f73fa5"
+    }
+  ],
+  "content_hash": "e30e1d415be2ecae479142159b408e706abe4ecc6a4f62fc29db18f50f06c156"
+}

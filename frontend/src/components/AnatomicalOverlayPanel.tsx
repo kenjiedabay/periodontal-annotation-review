@@ -1,0 +1,22 @@
+import {useEffect,useState} from 'react';
+
+const API=(import.meta.env.VITE_API_URL as string|undefined)?.replace(/\/$/,'')||'http://127.0.0.1:8000';
+type Point={x:number;y:number;confidence:number};
+type Result={model_status:'available'|'unavailable';model_error?:string;width:number;height:number;bone_overlay_url:string;bone_threshold:number;landmark_threshold:number;points:{cej:Point[];apex:Point[]};model_versions:{bone_level:string;key_points:string};scope:string};
+
+export default function AnatomicalOverlayPanel({imageId,imageName,imageSrc,imageFile,onBack}:{imageId:string;imageName:string;imageSrc:string;imageFile:File;onBack:()=>void}){
+ const[result,setResult]=useState<Result|null>(null),[error,setError]=useState(''),[bone,setBone]=useState(true),[cej,setCej]=useState(true),[apex,setApex]=useState(true);
+ useEffect(()=>{const controller=new AbortController(),body=new FormData();body.append('file',imageFile);setResult(null);setError('');fetch(`${API}/analysis/anatomical-overlay?image_id=${encodeURIComponent(imageId)}`,{method:'POST',body,signal:controller.signal}).then(async r=>{const value=await r.json();if(!r.ok)throw new Error(value.detail||'Anatomical prediction failed.');return value}).then(value=>{if(!controller.signal.aborted)setResult(value)}).catch(reason=>{if(!controller.signal.aborted)setError(String(reason.message||reason))});return()=>controller.abort()},[imageId,imageFile]);
+ const radius=result?Math.max(result.width,result.height)*.006:6;
+ return <section className="results-page anatomy-overlay-page">
+  <div className="results-heading"><div><span className="eyebrow">THESIS DEMONSTRATION</span><h2>CEJ, bone level, and key-point overlay</h2><p>{imageName}</p></div><button className="secondary-btn" onClick={onBack}>Back to Image Review</button></div>
+  <div className="research-disclaimer"><strong>Experimental AI output—awaiting expert review.</strong> These image-level markers are not clinically validated, are not assigned to a confirmed tooth or surface, and must not be presented as a diagnosis or measured periodontal bone loss.</div>
+  {!result&&!error&&<p role="status">Running CEJ, apex, and bone-level models…</p>}{error&&<p className="save-error" role="alert">{error}</p>}
+  {result?.model_status==='unavailable'&&<p className="save-error" role="alert">Models unavailable. {result.model_error}</p>}
+  {result?.model_status==='available'&&<><div className="segmentation-controls"><label><input type="checkbox" checked={bone} onChange={e=>setBone(e.target.checked)}/> Bone level</label><label><input type="checkbox" checked={cej} onChange={e=>setCej(e.target.checked)}/> CEJ points</label><label><input type="checkbox" checked={apex} onChange={e=>setApex(e.target.checked)}/> Apex key points</label></div>
+   <div className="anatomy-legend"><span><i className="bone"/>Predicted bone level</span><span><i className="cej"/>Predicted CEJ</span><span><i className="apex"/>Predicted apex</span></div>
+   <svg viewBox={`0 0 ${result.width} ${result.height}`} className="anatomy-overlay-canvas" role="img" aria-label="Uploaded radiograph with experimental CEJ, apex, and bone-level predictions"><image href={imageSrc} width={result.width} height={result.height}/>{bone&&<image href={result.bone_overlay_url} width={result.width} height={result.height}/>} {cej&&result.points.cej.map((point,index)=><g key={`cej-${index}`}><circle cx={point.x} cy={point.y} r={radius} fill="#28f0c0" stroke="#082d27" strokeWidth={radius*.25}/><text x={point.x+radius} y={point.y-radius} className="anatomy-point-label">CEJ</text></g>)}{apex&&result.points.apex.map((point,index)=><g key={`apex-${index}`}><circle cx={point.x} cy={point.y} r={radius} fill="#ef5cff" stroke="#35103a" strokeWidth={radius*.25}/><text x={point.x+radius} y={point.y-radius} className="anatomy-point-label">Apex</text></g>)}</svg>
+   <div className="audit-summary-grid"><div><strong>{result.points.cej.length}</strong><span>CEJ candidates</span></div><div><strong>{result.points.apex.length}</strong><span>apex candidates</span></div><div><strong>{result.landmark_threshold.toFixed(2)}</strong><span>point threshold</span></div><div><strong>{result.bone_threshold.toFixed(2)}</strong><span>bone threshold</span></div></div>
+   <details><summary>Model details and limitations</summary><p>{result.model_versions.key_points}</p><p>{result.model_versions.bone_level}</p><p>{result.scope}</p></details></>}
+ </section>;
+}

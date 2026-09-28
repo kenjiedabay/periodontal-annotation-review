@@ -1,0 +1,90 @@
+{
+  "classification": "provenance_unverified",
+  "checkpoint_training_provenance_verified": false,
+  "checkpoint": null,
+  "checkpoint_metadata": {},
+  "checkpoint_metadata_load_error": "checkpoint not supplied",
+  "evidence": [
+    {
+      "kind": "training_manifest",
+      "path": "training_manifest.json",
+      "sha256": "4dc79f57fdf7bd75479fcc3e0c0d98820e2bd21f139ed878d67bf1813be8690f",
+      "image_ids": 1
+    }
+  ],
+  "training_source_directory": "dataset/raw",
+  "training_source_location_note": "Training radiographs are outside the DenPAR Training folder; identity is supported by the immutable manifest and matching official annotation IDs.",
+  "manifest_training_id_count": 1,
+  "manifest_matches_all_observed_training_ids": true,
+  "checkpoint_paths_and_manifest_version_match_locked_configuration": false,
+  "manifest_validation_id_overlap": [],
+  "manifest_testing_id_overlap": [],
+  "cross_partition_exact_image_groups_by_method": 2,
+  "cross_partition_unique_exact_image_pairs": [
+    {
+      "classification": "confirmed_leakage",
+      "images": [
+        "Training:train1",
+        "Validation:val1"
+      ],
+      "partitions": [
+        "Training",
+        "Validation"
+      ],
+      "cross_partition": true,
+      "evidence_methods": [
+        {
+          "method": "identical_file_sha256",
+          "hash": "d787b99590b850d63a8528bcdf086f36123e4d4ccb430c17256951fe5040ea19"
+        },
+        {
+          "method": "identical_normalized_pixels",
+          "hash": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+        }
+      ]
+    },
+    {
+      "classification": "confirmed_leakage",
+      "images": [
+        "Testing:test1",
+        "Training:train1"
+      ],
+      "partitions": [
+        "Testing",
+        "Training"
+      ],
+      "cross_partition": true,
+      "evidence_methods": [
+        {
+          "method": "identical_normalized_pixels",
+          "hash": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+        }
+      ]
+    },
+    {
+      "classification": "confirmed_leakage",
+      "images": [
+        "Testing:test1",
+        "Validation:val1"
+      ],
+      "partitions": [
+        "Testing",
+        "Validation"
+      ],
+      "cross_partition": true,
+      "evidence_methods": [
+        {
+          "method": "identical_normalized_pixels",
+          "hash": "404f72e0376a18cd14ccf0f729d3347b279d0b867c7a6cfeb44e20cef71d8a12"
+        }
+      ]
+    }
+  ],
+  "validation_or_testing_paths_in_training_manifest": null,
+  "validation_or_testing_content_duplicated_in_training": true,
+  "verified_claim": null,
+  "cannot_verify": [
+    "Patient-level split independence cannot be verified from the supplied metadata.",
+    "Filesystem artifacts cannot independently prove every runtime batch consumed during historical training."
+  ]
+}

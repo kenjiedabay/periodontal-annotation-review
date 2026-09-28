@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "record_id": "52659c51-e0d4-4c17-9617-5d28153b8ad1",
+  "record_type": "independent_expert_annotation",
+  "version": 2,
+  "image_id": "case_a",
+  "image_hash": "3a2f1c3132026f6578b6757cecc6e279fef50a99f3165b7d06da48c0419cefbd",
+  "source_dataset": "uploaded",
+  "source_partition": "Unassigned",
+  "original_width": 32,
+  "original_height": 24,
+  "coordinate_space": "original_image_pixels",
+  "coordinate_origin": "top_left",
+  "created_at": "2026-09-22T02:05:55.564056+00:00",
+  "created_by": "reviewer-1",
+  "parent_record_id": "e38d22e9-0373-4bb3-a94f-0dde3025bbee",
+  "model_name": null,
+  "model_version": null,
+  "review_status": "draft",
+  "uncertainty_reasons": [],
+  "items": [
+    {
+      "item_id": "d4ebdb96-a44e-497d-9327-2f46f0bf6e42",
+      "tooth_instance_id": 1,
+      "finding_type": "cej",
+      "annotation_tool": "point",
+      "points": [
+        {
+          "x": 9.0,
+          "y": 10.0
+        }
+      ],
+      "mask_data_url": null,
+      "status": "draft",
+      "expert_comment": ""
+    }
+  ],
+  "teeth": [],
+  "findings": [],
+  "notes": ""
+}

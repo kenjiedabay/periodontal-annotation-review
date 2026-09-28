@@ -8,16 +8,18 @@ import hashlib
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 import json
 from pathlib import Path
+import shutil
+import tempfile
 import threading
 import time
 
 import cv2
 import numpy as np
 from fastapi.testclient import TestClient
-from playwright.sync_api import sync_playwright
 import uvicorn
 
 from main import app
+from app import review_foundation
 from app.tooth_segmentation import ROOT, ToothSegmentationService, service
 from app.tooth_instance_baseline.data import Record, ToothInstanceDataset
 from app.preprocessing.transforms import apply_transforms
@@ -25,6 +27,9 @@ from app.preprocessing.config import load_config
 
 
 def run():
+    from playwright.sync_api import sync_playwright
+    review_root = Path(tempfile.mkdtemp(prefix='stage1-inference-smoke-'))
+    review_foundation.ROOT = review_root
     output = ROOT / 'artifacts/tooth-segmentation'
     output.mkdir(parents=True, exist_ok=True)
     api = uvicorn.Server(uvicorn.Config(app, host='127.0.0.1', port=8000, log_level='warning'))
@@ -112,6 +117,7 @@ def run():
     finally:
         api.should_exit = True
         web.shutdown()
+        shutil.rmtree(review_root, ignore_errors=True)
 
 
 if __name__ == '__main__':

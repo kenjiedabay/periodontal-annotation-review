@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "record_id": "b7237f4f-bb2c-4fa8-bf54-b95c6e241627",
+  "record_type": "raw_ai_prediction",
+  "version": 1,
+  "image_id": "case_a",
+  "image_hash": "3a2f1c3132026f6578b6757cecc6e279fef50a99f3165b7d06da48c0419cefbd",
+  "source_dataset": "uploaded",
+  "source_partition": "Unassigned",
+  "original_width": 32,
+  "original_height": 24,
+  "coordinate_space": "original_image_pixels",
+  "coordinate_origin": "top_left",
+  "created_at": "2026-09-22T02:05:55.440738+00:00",
+  "created_by": "system",
+  "parent_record_id": "5d195dc7-9a19-4452-9c10-a4632983c915",
+  "model_name": "Mask R-CNN ResNet-50 FPN",
+  "model_version": "maskrcnn_epoch8",
+  "review_status": "AI-generated—awaiting expert review",
+  "uncertainty_reasons": [
+    "landmark_and_surface_relationships_not_predicted"
+  ],
+  "checkpoint_identity": {
+    "path": "backend/.stage2c_final/test_routine_ai_assisted_revie0/checkpoint.pt",
+    "sha256": "f16d05ec6b29248d2c61adb1e9263f78e4f7bace1b955014a2d17872cfe4064d"
+  },
+  "prediction_timestamp": "2026-09-22T02:05:55.440738+00:00",
+  "preprocessing": {
+    "preprocessing_version": "1.0.0",
+    "output_format": "PNG",
+    "grayscale": true,
+    "target_width": 1024,
+    "target_height": 1024,
+    "preserve_aspect_ratio": true,
+    "normalization_method": "percentile",
+    "lower_percentile": 1.0,
+    "upper_percentile": 99.0,
+    "contrast_enhancement": true,
+    "clahe_clip_limit": 1.5,
+    "clahe_tile_grid_size": 8,
+    "noise_reduction": false,
+    "noise_reduction_kernel": 3,
+    "sharpening": false,
+    "sharpening_amount": 0.25,
+    "create_comparisons": true
+  },
+  "coordinate_transform": {
+    "model_canvas": [
+      1024,
+      1024
+    ],
+    "resized_image": [
+      1024,
+      768
+    ],
+    "pad_offset": [
+      0,
+      128
+    ],
+    "stored_output_space": "original_image_pixels"
+  },
+  "raw_model_output": {
+    "image_id": "case_a",
+    "task": "tooth_instance_segmentation",
+    "model_status": "available",
+    "model_version": "maskrcnn_epoch8",
+    "instances": [],
+    "width": 32,
+    "height": 24,
+    "ground_truth": null
+  },
+  "teeth": []
+}
