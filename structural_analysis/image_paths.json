@@ -1,0 +1,5 @@
+{
+  "Training": "dataset/raw",
+  "Validation": "DenPAR Radiographs Dataset/Dataset/Validation/Images",
+  "Testing": "DenPAR Radiographs Dataset/Dataset/Images"
+}

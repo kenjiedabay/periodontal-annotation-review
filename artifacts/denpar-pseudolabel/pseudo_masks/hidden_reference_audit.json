@@ -1,0 +1,8 @@
+{
+  "images": 325,
+  "true_instances": 1432,
+  "pseudo_instances": 1390,
+  "matched_instances_iou50": 1347,
+  "instance_recall_iou50": 0.9406424581005587,
+  "mean_union_dice": 0.9465380722175359
+}

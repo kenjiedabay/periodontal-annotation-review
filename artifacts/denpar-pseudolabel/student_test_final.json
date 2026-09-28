@@ -1,0 +1,28 @@
+{
+  "checkpoint": "../artifacts/denpar-pseudolabel/student/latest_checkpoint.pt",
+  "checkpoint_epoch": 4,
+  "split": "test",
+  "source": {
+    "usable_images": 200,
+    "total_instances": 864
+  },
+  "aggregate": {
+    "dice": 0.9255960682330985,
+    "iou": 0.8668317046988548,
+    "precision": 0.9049680523185217,
+    "recall": 0.9544620476089607,
+    "matched_instances": 4.175,
+    "missed_instances": 0.145,
+    "false_positive_instances": 1.905,
+    "mean_matched_instance_iou": 0.8964381085865064
+  },
+  "error_analysis": {
+    "missed_teeth": 29,
+    "false_positive_regions": 381,
+    "merged_or_split_instances": "requires qualitative review; reported visualizations distinguish prediction and ground truth",
+    "poor_boundary_delineation_images": [
+      "504",
+      "580"
+    ]
+  }
+}

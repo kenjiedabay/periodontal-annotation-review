@@ -1,0 +1,1540 @@
+{
+  "schema_version": "1.0.0",
+  "queue_version": "denpar-stage2c-pilot-v1",
+  "sampling_seed": 20260922,
+  "queue_size": 40,
+  "partition_targets": {
+    "Training": 30,
+    "Validation": 10
+  },
+  "second_reviewer_available": false,
+  "overlap_fraction": 0.2,
+  "allowed_partitions": [
+    "Training",
+    "Validation"
+  ],
+  "prohibited_partition": "Testing",
+  "selection_strata": [
+    "high_confidence",
+    "ambiguous_cej",
+    "ambiguous_apex",
+    "multiple_apex_candidates",
+    "ambiguous_bone_line",
+    "boundary_tooth",
+    "clipped_crop",
+    "single_apex_candidate",
+    "multiple_apex_candidate",
+    "arch",
+    "site",
+    "visible_tooth_count"
+  ],
+  "created_at": "2026-09-22T01:52:21.887926+00:00",
+  "entries": [
+    {
+      "source_partition": "Training",
+      "source_image_id": "355",
+      "stable_image_id": "Training:355",
+      "association_ids": [
+        "Training:355:cej:1",
+        "Training:355:cej:2",
+        "Training:355:cej:3",
+        "Training:355:cej:4",
+        "Training:355:cej:5",
+        "Training:355:apex:1",
+        "Training:355:apex:2",
+        "Training:355:apex:3",
+        "Training:355:apex:4",
+        "Training:355:bone:1",
+        "Training:355:bone:2",
+        "Training:355:bone:3"
+      ],
+      "tooth_instance_ids": [
+        "Training:355:tooth:01",
+        "Training:355:tooth:02",
+        "Training:355:tooth:03"
+      ],
+      "selection_reasons": [
+        "ambiguous_apex",
+        "ambiguous_bone_line",
+        "ambiguous_cej",
+        "arch:Upper",
+        "boundary_tooth",
+        "clipped_crop",
+        "multiple_apex_candidate",
+        "site:Left",
+        "visible_tooth_count:3"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "83",
+      "stable_image_id": "Training:83",
+      "association_ids": [
+        "Training:83:cej:1",
+        "Training:83:cej:2",
+        "Training:83:cej:3",
+        "Training:83:cej:4",
+        "Training:83:cej:5",
+        "Training:83:cej:6",
+        "Training:83:cej:7",
+        "Training:83:apex:1",
+        "Training:83:apex:2",
+        "Training:83:apex:3",
+        "Training:83:apex:4",
+        "Training:83:bone:1",
+        "Training:83:bone:2",
+        "Training:83:bone:3"
+      ],
+      "tooth_instance_ids": [
+        "Training:83:tooth:01",
+        "Training:83:tooth:02",
+        "Training:83:tooth:03",
+        "Training:83:tooth:04"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "arch:Lower",
+        "boundary_tooth",
+        "clipped_crop",
+        "high_confidence",
+        "single_apex_candidate",
+        "site:Right",
+        "visible_tooth_count:4"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "32",
+      "stable_image_id": "Training:32",
+      "association_ids": [
+        "Training:32:cej:1",
+        "Training:32:cej:2",
+        "Training:32:cej:3",
+        "Training:32:cej:4",
+        "Training:32:cej:5",
+        "Training:32:cej:6",
+        "Training:32:cej:7",
+        "Training:32:apex:1",
+        "Training:32:apex:2",
+        "Training:32:apex:3",
+        "Training:32:apex:4",
+        "Training:32:bone:1",
+        "Training:32:bone:2",
+        "Training:32:bone:3"
+      ],
+      "tooth_instance_ids": [
+        "Training:32:tooth:01",
+        "Training:32:tooth:02",
+        "Training:32:tooth:03",
+        "Training:32:tooth:04",
+        "Training:32:tooth:05",
+        "Training:32:tooth:06"
+      ],
+      "selection_reasons": [
+        "ambiguous_apex",
+        "ambiguous_bone_line",
+        "ambiguous_cej",
+        "arch:Lower",
+        "boundary_tooth",
+        "clipped_crop",
+        "single_apex_candidate",
+        "site:Anterior",
+        "visible_tooth_count:6"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "713",
+      "stable_image_id": "Training:713",
+      "association_ids": [
+        "Training:713:cej:1",
+        "Training:713:cej:2",
+        "Training:713:cej:3",
+        "Training:713:cej:4",
+        "Training:713:cej:5",
+        "Training:713:cej:6",
+        "Training:713:cej:7",
+        "Training:713:cej:8",
+        "Training:713:cej:9",
+        "Training:713:apex:1",
+        "Training:713:apex:2",
+        "Training:713:apex:3",
+        "Training:713:apex:4",
+        "Training:713:apex:5",
+        "Training:713:apex:6",
+        "Training:713:apex:7",
+        "Training:713:bone:1",
+        "Training:713:bone:2",
+        "Training:713:bone:3",
+        "Training:713:bone:4",
+        "Training:713:bone:5"
+      ],
+      "tooth_instance_ids": [
+        "Training:713:tooth:01",
+        "Training:713:tooth:02",
+        "Training:713:tooth:03",
+        "Training:713:tooth:04",
+        "Training:713:tooth:05"
+      ],
+      "selection_reasons": [
+        "ambiguous_apex",
+        "ambiguous_bone_line",
+        "ambiguous_cej",
+        "arch:Upper",
+        "boundary_tooth",
+        "clipped_crop",
+        "multiple_apex_candidate",
+        "site:Right",
+        "visible_tooth_count:5"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "598",
+      "stable_image_id": "Training:598",
+      "association_ids": [
+        "Training:598:cej:1",
+        "Training:598:cej:2",
+        "Training:598:cej:3",
+        "Training:598:apex:1",
+        "Training:598:bone:1",
+        "Training:598:bone:2"
+      ],
+      "tooth_instance_ids": [
+        "Training:598:tooth:01",
+        "Training:598:tooth:02"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "arch:Lower",
+        "boundary_tooth",
+        "clipped_crop",
+        "high_confidence",
+        "single_apex_candidate",
+        "site:Left",
+        "visible_tooth_count:2"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "1005",
+      "stable_image_id": "Training:1005",
+      "association_ids": [
+        "Training:1005:cej:1",
+        "Training:1005:cej:2",
+        "Training:1005:cej:3",
+        "Training:1005:cej:4",
+        "Training:1005:cej:5",
+        "Training:1005:cej:6",
+        "Training:1005:apex:1",
+        "Training:1005:apex:2",
+        "Training:1005:apex:3",
+        "Training:1005:apex:4",
+        "Training:1005:bone:1",
+        "Training:1005:bone:2",
+        "Training:1005:bone:3"
+      ],
+      "tooth_instance_ids": [
+        "Training:1005:tooth:01",
+        "Training:1005:tooth:02",
+        "Training:1005:tooth:03",
+        "Training:1005:tooth:04",
+        "Training:1005:tooth:05",
+        "Training:1005:tooth:06",
+        "Training:1005:tooth:07"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "arch:Upper",
+        "boundary_tooth",
+        "clipped_crop",
+        "high_confidence",
+        "single_apex_candidate",
+        "site:Anterior",
+        "visible_tooth_count:7"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "604",
+      "stable_image_id": "Training:604",
+      "association_ids": [
+        "Training:604:cej:1",
+        "Training:604:cej:2",
+        "Training:604:cej:3",
+        "Training:604:cej:4",
+        "Training:604:cej:5",
+        "Training:604:cej:6",
+        "Training:604:cej:7",
+        "Training:604:cej:8",
+        "Training:604:cej:9",
+        "Training:604:cej:10",
+        "Training:604:cej:11",
+        "Training:604:cej:12",
+        "Training:604:apex:1",
+        "Training:604:apex:2",
+        "Training:604:apex:3",
+        "Training:604:apex:4",
+        "Training:604:bone:1",
+        "Training:604:bone:2",
+        "Training:604:bone:3",
+        "Training:604:bone:4"
+      ],
+      "tooth_instance_ids": [
+        "Training:604:tooth:01",
+        "Training:604:tooth:02",
+        "Training:604:tooth:03",
+        "Training:604:tooth:04",
+        "Training:604:tooth:05",
+        "Training:604:tooth:06",
+        "Training:604:tooth:07",
+        "Training:604:tooth:08"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "ambiguous_cej",
+        "arch:Lower",
+        "boundary_tooth",
+        "clipped_crop",
+        "multiple_apex_candidate",
+        "site:Anterior",
+        "visible_tooth_count:8"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "774",
+      "stable_image_id": "Training:774",
+      "association_ids": [
+        "Training:774:cej:1",
+        "Training:774:cej:2",
+        "Training:774:apex:1",
+        "Training:774:apex:2",
+        "Training:774:bone:1",
+        "Training:774:bone:2"
+      ],
+      "tooth_instance_ids": [
+        "Training:774:tooth:01"
+      ],
+      "selection_reasons": [
+        "arch:Lower",
+        "boundary_tooth",
+        "clipped_crop",
+        "high_confidence",
+        "multiple_apex_candidate",
+        "site:Right",
+        "visible_tooth_count:1"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "347",
+      "stable_image_id": "Training:347",
+      "association_ids": [
+        "Training:347:cej:1",
+        "Training:347:cej:2",
+        "Training:347:cej:3",
+        "Training:347:cej:4",
+        "Training:347:cej:5",
+        "Training:347:cej:6",
+        "Training:347:cej:7",
+        "Training:347:cej:8",
+        "Training:347:cej:9",
+        "Training:347:apex:1",
+        "Training:347:apex:2",
+        "Training:347:apex:3",
+        "Training:347:apex:4",
+        "Training:347:apex:5",
+        "Training:347:apex:6",
+        "Training:347:apex:7",
+        "Training:347:apex:8",
+        "Training:347:bone:1",
+        "Training:347:bone:2",
+        "Training:347:bone:3"
+      ],
+      "tooth_instance_ids": [
+        "Training:347:tooth:01",
+        "Training:347:tooth:02",
+        "Training:347:tooth:03",
+        "Training:347:tooth:04",
+        "Training:347:tooth:05",
+        "Training:347:tooth:06"
+      ],
+      "selection_reasons": [
+        "ambiguous_apex",
+        "ambiguous_bone_line",
+        "ambiguous_cej",
+        "arch:Upper",
+        "boundary_tooth",
+        "clipped_crop",
+        "multiple_apex_candidate",
+        "site:Right",
+        "visible_tooth_count:6"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "612",
+      "stable_image_id": "Training:612",
+      "association_ids": [
+        "Training:612:cej:1",
+        "Training:612:cej:2",
+        "Training:612:cej:3",
+        "Training:612:cej:4",
+        "Training:612:apex:1",
+        "Training:612:apex:2",
+        "Training:612:bone:1",
+        "Training:612:bone:2",
+        "Training:612:bone:3"
+      ],
+      "tooth_instance_ids": [
+        "Training:612:tooth:01",
+        "Training:612:tooth:02"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "arch:Upper",
+        "boundary_tooth",
+        "clipped_crop",
+        "high_confidence",
+        "single_apex_candidate",
+        "site:Left",
+        "visible_tooth_count:2"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "1293",
+      "stable_image_id": "Training:1293",
+      "association_ids": [
+        "Training:1293:cej:1",
+        "Training:1293:cej:2",
+        "Training:1293:cej:3",
+        "Training:1293:cej:4",
+        "Training:1293:cej:5",
+        "Training:1293:cej:6",
+        "Training:1293:cej:7",
+        "Training:1293:apex:1",
+        "Training:1293:apex:2",
+        "Training:1293:apex:3",
+        "Training:1293:apex:4",
+        "Training:1293:bone:1",
+        "Training:1293:bone:2",
+        "Training:1293:bone:3",
+        "Training:1293:bone:4"
+      ],
+      "tooth_instance_ids": [
+        "Training:1293:tooth:01",
+        "Training:1293:tooth:02",
+        "Training:1293:tooth:03",
+        "Training:1293:tooth:04"
+      ],
+      "selection_reasons": [
+        "ambiguous_apex",
+        "ambiguous_bone_line",
+        "arch:Upper",
+        "boundary_tooth",
+        "clipped_crop",
+        "multiple_apex_candidate",
+        "site:Left",
+        "visible_tooth_count:4"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "57",
+      "stable_image_id": "Training:57",
+      "association_ids": [
+        "Training:57:cej:1",
+        "Training:57:cej:2",
+        "Training:57:cej:3",
+        "Training:57:cej:4",
+        "Training:57:cej:5",
+        "Training:57:cej:6",
+        "Training:57:cej:7",
+        "Training:57:cej:8",
+        "Training:57:cej:9",
+        "Training:57:cej:10",
+        "Training:57:apex:1",
+        "Training:57:apex:2",
+        "Training:57:apex:3",
+        "Training:57:apex:4",
+        "Training:57:apex:5",
+        "Training:57:apex:6",
+        "Training:57:bone:1",
+        "Training:57:bone:2",
+        "Training:57:bone:3",
+        "Training:57:bone:4"
+      ],
+      "tooth_instance_ids": [
+        "Training:57:tooth:01",
+        "Training:57:tooth:02",
+        "Training:57:tooth:03",
+        "Training:57:tooth:04",
+        "Training:57:tooth:05",
+        "Training:57:tooth:06",
+        "Training:57:tooth:07"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "ambiguous_cej",
+        "arch:Lower",
+        "boundary_tooth",
+        "clipped_crop",
+        "single_apex_candidate",
+        "site:Anterior",
+        "visible_tooth_count:7"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "919",
+      "stable_image_id": "Training:919",
+      "association_ids": [
+        "Training:919:cej:1",
+        "Training:919:cej:2",
+        "Training:919:cej:3",
+        "Training:919:cej:4",
+        "Training:919:cej:5",
+        "Training:919:apex:1",
+        "Training:919:apex:2",
+        "Training:919:apex:3",
+        "Training:919:apex:4",
+        "Training:919:bone:1",
+        "Training:919:bone:2",
+        "Training:919:bone:3"
+      ],
+      "tooth_instance_ids": [
+        "Training:919:tooth:01",
+        "Training:919:tooth:02",
+        "Training:919:tooth:03"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "arch:Upper",
+        "boundary_tooth",
+        "clipped_crop",
+        "high_confidence",
+        "multiple_apex_candidate",
+        "site:Right",
+        "visible_tooth_count:3"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "926",
+      "stable_image_id": "Training:926",
+      "association_ids": [
+        "Training:926:cej:1",
+        "Training:926:cej:2",
+        "Training:926:cej:3",
+        "Training:926:cej:4",
+        "Training:926:cej:5",
+        "Training:926:cej:6",
+        "Training:926:cej:7",
+        "Training:926:apex:1",
+        "Training:926:apex:2",
+        "Training:926:apex:3",
+        "Training:926:apex:4",
+        "Training:926:bone:1",
+        "Training:926:bone:2",
+        "Training:926:bone:3",
+        "Training:926:bone:4"
+      ],
+      "tooth_instance_ids": [
+        "Training:926:tooth:01",
+        "Training:926:tooth:02",
+        "Training:926:tooth:03",
+        "Training:926:tooth:04",
+        "Training:926:tooth:05"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "ambiguous_cej",
+        "arch:Lower",
+        "boundary_tooth",
+        "clipped_crop",
+        "single_apex_candidate",
+        "site:Anterior",
+        "visible_tooth_count:5"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "105",
+      "stable_image_id": "Training:105",
+      "association_ids": [
+        "Training:105:cej:1",
+        "Training:105:cej:2",
+        "Training:105:cej:3",
+        "Training:105:cej:4",
+        "Training:105:cej:5",
+        "Training:105:cej:6",
+        "Training:105:cej:7",
+        "Training:105:cej:8",
+        "Training:105:cej:9",
+        "Training:105:apex:1",
+        "Training:105:apex:2",
+        "Training:105:apex:3",
+        "Training:105:apex:4",
+        "Training:105:bone:1",
+        "Training:105:bone:2",
+        "Training:105:bone:3"
+      ],
+      "tooth_instance_ids": [
+        "Training:105:tooth:01",
+        "Training:105:tooth:02",
+        "Training:105:tooth:03",
+        "Training:105:tooth:04",
+        "Training:105:tooth:05",
+        "Training:105:tooth:06",
+        "Training:105:tooth:07",
+        "Training:105:tooth:08"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "ambiguous_cej",
+        "arch:Upper",
+        "boundary_tooth",
+        "clipped_crop",
+        "multiple_apex_candidate",
+        "site:Left",
+        "visible_tooth_count:8"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "91",
+      "stable_image_id": "Training:91",
+      "association_ids": [
+        "Training:91:cej:1",
+        "Training:91:cej:2",
+        "Training:91:apex:1",
+        "Training:91:apex:2",
+        "Training:91:bone:1",
+        "Training:91:bone:2"
+      ],
+      "tooth_instance_ids": [
+        "Training:91:tooth:01"
+      ],
+      "selection_reasons": [
+        "arch:Lower",
+        "boundary_tooth",
+        "clipped_crop",
+        "high_confidence",
+        "multiple_apex_candidate",
+        "site:Left",
+        "visible_tooth_count:1"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "667",
+      "stable_image_id": "Training:667",
+      "association_ids": [
+        "Training:667:cej:1",
+        "Training:667:cej:2",
+        "Training:667:cej:3",
+        "Training:667:cej:4",
+        "Training:667:apex:1",
+        "Training:667:apex:2",
+        "Training:667:apex:3",
+        "Training:667:apex:4",
+        "Training:667:apex:5",
+        "Training:667:bone:1",
+        "Training:667:bone:2",
+        "Training:667:bone:3"
+      ],
+      "tooth_instance_ids": [
+        "Training:667:tooth:01",
+        "Training:667:tooth:02",
+        "Training:667:tooth:03",
+        "Training:667:tooth:04",
+        "Training:667:tooth:05",
+        "Training:667:tooth:06"
+      ],
+      "selection_reasons": [
+        "ambiguous_apex",
+        "ambiguous_bone_line",
+        "arch:Lower",
+        "boundary_tooth",
+        "clipped_crop",
+        "single_apex_candidate",
+        "site:Anterior",
+        "visible_tooth_count:6"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "1063",
+      "stable_image_id": "Training:1063",
+      "association_ids": [
+        "Training:1063:cej:1",
+        "Training:1063:cej:2",
+        "Training:1063:cej:3",
+        "Training:1063:cej:4",
+        "Training:1063:cej:5",
+        "Training:1063:apex:1",
+        "Training:1063:apex:2",
+        "Training:1063:apex:3",
+        "Training:1063:apex:4",
+        "Training:1063:apex:5",
+        "Training:1063:apex:6",
+        "Training:1063:bone:1",
+        "Training:1063:bone:2",
+        "Training:1063:bone:3",
+        "Training:1063:bone:4"
+      ],
+      "tooth_instance_ids": [
+        "Training:1063:tooth:01",
+        "Training:1063:tooth:02",
+        "Training:1063:tooth:03"
+      ],
+      "selection_reasons": [
+        "ambiguous_apex",
+        "ambiguous_bone_line",
+        "arch:Upper",
+        "boundary_tooth",
+        "clipped_crop",
+        "multiple_apex_candidate",
+        "site:Right",
+        "visible_tooth_count:3"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "75",
+      "stable_image_id": "Training:75",
+      "association_ids": [
+        "Training:75:cej:1",
+        "Training:75:cej:2",
+        "Training:75:cej:3",
+        "Training:75:cej:4",
+        "Training:75:cej:5",
+        "Training:75:cej:6",
+        "Training:75:cej:7",
+        "Training:75:apex:1",
+        "Training:75:apex:2",
+        "Training:75:apex:3",
+        "Training:75:bone:1",
+        "Training:75:bone:2",
+        "Training:75:bone:3",
+        "Training:75:bone:4"
+      ],
+      "tooth_instance_ids": [
+        "Training:75:tooth:01",
+        "Training:75:tooth:02",
+        "Training:75:tooth:03",
+        "Training:75:tooth:04"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "arch:Upper",
+        "boundary_tooth",
+        "clipped_crop",
+        "high_confidence",
+        "single_apex_candidate",
+        "site:Right",
+        "visible_tooth_count:4"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "1219",
+      "stable_image_id": "Training:1219",
+      "association_ids": [
+        "Training:1219:cej:1",
+        "Training:1219:cej:2",
+        "Training:1219:cej:3",
+        "Training:1219:cej:4",
+        "Training:1219:cej:5",
+        "Training:1219:cej:6",
+        "Training:1219:apex:1",
+        "Training:1219:apex:2",
+        "Training:1219:apex:3",
+        "Training:1219:apex:4",
+        "Training:1219:bone:1",
+        "Training:1219:bone:2",
+        "Training:1219:bone:3",
+        "Training:1219:bone:4"
+      ],
+      "tooth_instance_ids": [
+        "Training:1219:tooth:01",
+        "Training:1219:tooth:02",
+        "Training:1219:tooth:03",
+        "Training:1219:tooth:04",
+        "Training:1219:tooth:05"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "arch:Lower",
+        "boundary_tooth",
+        "clipped_crop",
+        "high_confidence",
+        "single_apex_candidate",
+        "site:Anterior",
+        "visible_tooth_count:5"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "275",
+      "stable_image_id": "Training:275",
+      "association_ids": [
+        "Training:275:cej:1",
+        "Training:275:cej:2",
+        "Training:275:cej:3",
+        "Training:275:cej:4",
+        "Training:275:cej:5",
+        "Training:275:cej:6",
+        "Training:275:cej:7",
+        "Training:275:apex:1",
+        "Training:275:apex:2",
+        "Training:275:apex:3",
+        "Training:275:apex:4",
+        "Training:275:bone:1",
+        "Training:275:bone:2",
+        "Training:275:bone:3"
+      ],
+      "tooth_instance_ids": [
+        "Training:275:tooth:01",
+        "Training:275:tooth:02",
+        "Training:275:tooth:03",
+        "Training:275:tooth:04",
+        "Training:275:tooth:05",
+        "Training:275:tooth:06",
+        "Training:275:tooth:07"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "ambiguous_cej",
+        "arch:Lower",
+        "boundary_tooth",
+        "clipped_crop",
+        "single_apex_candidate",
+        "site:Left",
+        "visible_tooth_count:7"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "875",
+      "stable_image_id": "Training:875",
+      "association_ids": [
+        "Training:875:cej:1",
+        "Training:875:cej:2",
+        "Training:875:cej:3",
+        "Training:875:cej:4",
+        "Training:875:apex:1",
+        "Training:875:apex:2",
+        "Training:875:apex:3",
+        "Training:875:apex:4",
+        "Training:875:bone:1",
+        "Training:875:bone:2",
+        "Training:875:bone:3"
+      ],
+      "tooth_instance_ids": [
+        "Training:875:tooth:01",
+        "Training:875:tooth:02"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "arch:Upper",
+        "boundary_tooth",
+        "clipped_crop",
+        "high_confidence",
+        "multiple_apex_candidate",
+        "site:Left",
+        "visible_tooth_count:2"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "721",
+      "stable_image_id": "Training:721",
+      "association_ids": [
+        "Training:721:cej:1",
+        "Training:721:cej:2",
+        "Training:721:cej:3",
+        "Training:721:cej:4",
+        "Training:721:cej:5",
+        "Training:721:cej:6",
+        "Training:721:cej:7",
+        "Training:721:cej:8",
+        "Training:721:apex:1",
+        "Training:721:apex:2",
+        "Training:721:apex:3",
+        "Training:721:apex:4",
+        "Training:721:apex:5",
+        "Training:721:apex:6",
+        "Training:721:bone:1",
+        "Training:721:bone:2"
+      ],
+      "tooth_instance_ids": [
+        "Training:721:tooth:01",
+        "Training:721:tooth:02",
+        "Training:721:tooth:03",
+        "Training:721:tooth:04",
+        "Training:721:tooth:05",
+        "Training:721:tooth:06",
+        "Training:721:tooth:07",
+        "Training:721:tooth:08"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "ambiguous_cej",
+        "arch:Lower",
+        "boundary_tooth",
+        "clipped_crop",
+        "multiple_apex_candidate",
+        "site:Anterior",
+        "visible_tooth_count:8"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "719",
+      "stable_image_id": "Training:719",
+      "association_ids": [
+        "Training:719:cej:1",
+        "Training:719:cej:2",
+        "Training:719:cej:3",
+        "Training:719:cej:4",
+        "Training:719:cej:5",
+        "Training:719:cej:6",
+        "Training:719:apex:1",
+        "Training:719:apex:2",
+        "Training:719:apex:3",
+        "Training:719:apex:4",
+        "Training:719:apex:5",
+        "Training:719:bone:1",
+        "Training:719:bone:2",
+        "Training:719:bone:3",
+        "Training:719:bone:4"
+      ],
+      "tooth_instance_ids": [
+        "Training:719:tooth:01",
+        "Training:719:tooth:02",
+        "Training:719:tooth:03",
+        "Training:719:tooth:04",
+        "Training:719:tooth:05",
+        "Training:719:tooth:06"
+      ],
+      "selection_reasons": [
+        "ambiguous_apex",
+        "ambiguous_bone_line",
+        "arch:Upper",
+        "boundary_tooth",
+        "clipped_crop",
+        "multiple_apex_candidate",
+        "site:Right",
+        "visible_tooth_count:6"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "1175",
+      "stable_image_id": "Training:1175",
+      "association_ids": [
+        "Training:1175:cej:1",
+        "Training:1175:cej:2",
+        "Training:1175:apex:1",
+        "Training:1175:apex:2",
+        "Training:1175:bone:1",
+        "Training:1175:bone:2"
+      ],
+      "tooth_instance_ids": [
+        "Training:1175:tooth:01"
+      ],
+      "selection_reasons": [
+        "arch:Lower",
+        "boundary_tooth",
+        "clipped_crop",
+        "high_confidence",
+        "multiple_apex_candidate",
+        "site:Left",
+        "visible_tooth_count:1"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "46",
+      "stable_image_id": "Training:46",
+      "association_ids": [
+        "Training:46:cej:1",
+        "Training:46:cej:2",
+        "Training:46:cej:3",
+        "Training:46:cej:4",
+        "Training:46:cej:5",
+        "Training:46:cej:6",
+        "Training:46:apex:1",
+        "Training:46:apex:2",
+        "Training:46:apex:3",
+        "Training:46:apex:4",
+        "Training:46:apex:5",
+        "Training:46:bone:1",
+        "Training:46:bone:2",
+        "Training:46:bone:3"
+      ],
+      "tooth_instance_ids": [
+        "Training:46:tooth:01",
+        "Training:46:tooth:02",
+        "Training:46:tooth:03",
+        "Training:46:tooth:04",
+        "Training:46:tooth:05"
+      ],
+      "selection_reasons": [
+        "ambiguous_apex",
+        "ambiguous_bone_line",
+        "arch:Upper",
+        "boundary_tooth",
+        "clipped_crop",
+        "multiple_apex_candidate",
+        "site:Anterior",
+        "visible_tooth_count:5"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "410",
+      "stable_image_id": "Training:410",
+      "association_ids": [
+        "Training:410:cej:1",
+        "Training:410:cej:2",
+        "Training:410:cej:3",
+        "Training:410:cej:4",
+        "Training:410:cej:5",
+        "Training:410:cej:6",
+        "Training:410:apex:1",
+        "Training:410:apex:2",
+        "Training:410:apex:3",
+        "Training:410:apex:4",
+        "Training:410:bone:1",
+        "Training:410:bone:2",
+        "Training:410:bone:3",
+        "Training:410:bone:4"
+      ],
+      "tooth_instance_ids": [
+        "Training:410:tooth:01",
+        "Training:410:tooth:02",
+        "Training:410:tooth:03",
+        "Training:410:tooth:04"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "ambiguous_cej",
+        "arch:Upper",
+        "boundary_tooth",
+        "clipped_crop",
+        "single_apex_candidate",
+        "site:Right",
+        "visible_tooth_count:4"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "2",
+      "stable_image_id": "Training:2",
+      "association_ids": [
+        "Training:2:cej:1",
+        "Training:2:cej:2",
+        "Training:2:cej:3",
+        "Training:2:cej:4",
+        "Training:2:cej:5",
+        "Training:2:apex:1",
+        "Training:2:apex:2",
+        "Training:2:apex:3",
+        "Training:2:apex:4",
+        "Training:2:apex:5",
+        "Training:2:bone:1",
+        "Training:2:bone:2",
+        "Training:2:bone:3"
+      ],
+      "tooth_instance_ids": [
+        "Training:2:tooth:01",
+        "Training:2:tooth:02",
+        "Training:2:tooth:03"
+      ],
+      "selection_reasons": [
+        "ambiguous_apex",
+        "ambiguous_bone_line",
+        "arch:Lower",
+        "boundary_tooth",
+        "clipped_crop",
+        "multiple_apex_candidate",
+        "site:Left",
+        "visible_tooth_count:3"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "3",
+      "stable_image_id": "Training:3",
+      "association_ids": [
+        "Training:3:cej:1",
+        "Training:3:cej:2",
+        "Training:3:cej:3",
+        "Training:3:cej:4",
+        "Training:3:cej:5",
+        "Training:3:cej:6",
+        "Training:3:cej:7",
+        "Training:3:cej:8",
+        "Training:3:cej:9",
+        "Training:3:apex:1",
+        "Training:3:apex:2",
+        "Training:3:apex:3",
+        "Training:3:apex:4",
+        "Training:3:bone:1",
+        "Training:3:bone:2"
+      ],
+      "tooth_instance_ids": [
+        "Training:3:tooth:01",
+        "Training:3:tooth:02",
+        "Training:3:tooth:03",
+        "Training:3:tooth:04",
+        "Training:3:tooth:05",
+        "Training:3:tooth:06",
+        "Training:3:tooth:07"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "ambiguous_cej",
+        "arch:Upper",
+        "boundary_tooth",
+        "clipped_crop",
+        "single_apex_candidate",
+        "site:Anterior",
+        "visible_tooth_count:7"
+      ]
+    },
+    {
+      "source_partition": "Training",
+      "source_image_id": "703",
+      "stable_image_id": "Training:703",
+      "association_ids": [
+        "Training:703:cej:1",
+        "Training:703:cej:2",
+        "Training:703:cej:3",
+        "Training:703:apex:1",
+        "Training:703:apex:2",
+        "Training:703:bone:1",
+        "Training:703:bone:2",
+        "Training:703:bone:3"
+      ],
+      "tooth_instance_ids": [
+        "Training:703:tooth:01",
+        "Training:703:tooth:02"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "arch:Lower",
+        "boundary_tooth",
+        "clipped_crop",
+        "high_confidence",
+        "single_apex_candidate",
+        "site:Right",
+        "visible_tooth_count:2"
+      ]
+    },
+    {
+      "source_partition": "Validation",
+      "source_image_id": "686",
+      "stable_image_id": "Validation:686",
+      "association_ids": [
+        "Validation:686:cej:1",
+        "Validation:686:cej:2",
+        "Validation:686:cej:3",
+        "Validation:686:cej:4",
+        "Validation:686:apex:1",
+        "Validation:686:apex:2",
+        "Validation:686:apex:3",
+        "Validation:686:apex:4",
+        "Validation:686:bone:1",
+        "Validation:686:bone:2",
+        "Validation:686:bone:3"
+      ],
+      "tooth_instance_ids": [
+        "Validation:686:tooth:01",
+        "Validation:686:tooth:02"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "arch:Lower",
+        "boundary_tooth",
+        "clipped_crop",
+        "high_confidence",
+        "multiple_apex_candidate",
+        "site:Right",
+        "visible_tooth_count:2"
+      ]
+    },
+    {
+      "source_partition": "Validation",
+      "source_image_id": "817",
+      "stable_image_id": "Validation:817",
+      "association_ids": [
+        "Validation:817:cej:1",
+        "Validation:817:cej:2",
+        "Validation:817:cej:3",
+        "Validation:817:cej:4",
+        "Validation:817:cej:5",
+        "Validation:817:cej:6",
+        "Validation:817:cej:7",
+        "Validation:817:cej:8",
+        "Validation:817:apex:1",
+        "Validation:817:apex:2",
+        "Validation:817:apex:3",
+        "Validation:817:apex:4",
+        "Validation:817:apex:5",
+        "Validation:817:bone:1",
+        "Validation:817:bone:2",
+        "Validation:817:bone:3",
+        "Validation:817:bone:4"
+      ],
+      "tooth_instance_ids": [
+        "Validation:817:tooth:01",
+        "Validation:817:tooth:02",
+        "Validation:817:tooth:03",
+        "Validation:817:tooth:04",
+        "Validation:817:tooth:05"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "ambiguous_cej",
+        "arch:Upper",
+        "boundary_tooth",
+        "clipped_crop",
+        "single_apex_candidate",
+        "site:Anterior",
+        "visible_tooth_count:5"
+      ]
+    },
+    {
+      "source_partition": "Validation",
+      "source_image_id": "601",
+      "stable_image_id": "Validation:601",
+      "association_ids": [
+        "Validation:601:cej:1",
+        "Validation:601:cej:2",
+        "Validation:601:cej:3",
+        "Validation:601:cej:4",
+        "Validation:601:cej:5",
+        "Validation:601:cej:6",
+        "Validation:601:cej:7",
+        "Validation:601:cej:8",
+        "Validation:601:apex:1",
+        "Validation:601:apex:2",
+        "Validation:601:apex:3",
+        "Validation:601:apex:4",
+        "Validation:601:apex:5",
+        "Validation:601:apex:6",
+        "Validation:601:bone:1",
+        "Validation:601:bone:2",
+        "Validation:601:bone:3",
+        "Validation:601:bone:4"
+      ],
+      "tooth_instance_ids": [
+        "Validation:601:tooth:01",
+        "Validation:601:tooth:02",
+        "Validation:601:tooth:03",
+        "Validation:601:tooth:04",
+        "Validation:601:tooth:05"
+      ],
+      "selection_reasons": [
+        "ambiguous_apex",
+        "ambiguous_bone_line",
+        "arch:Upper",
+        "boundary_tooth",
+        "clipped_crop",
+        "multiple_apex_candidate",
+        "site:Right",
+        "visible_tooth_count:5"
+      ]
+    },
+    {
+      "source_partition": "Validation",
+      "source_image_id": "1091",
+      "stable_image_id": "Validation:1091",
+      "association_ids": [
+        "Validation:1091:cej:1",
+        "Validation:1091:cej:2",
+        "Validation:1091:cej:3",
+        "Validation:1091:cej:4",
+        "Validation:1091:cej:5",
+        "Validation:1091:cej:6",
+        "Validation:1091:apex:1",
+        "Validation:1091:apex:2",
+        "Validation:1091:bone:1",
+        "Validation:1091:bone:2",
+        "Validation:1091:bone:3",
+        "Validation:1091:bone:4"
+      ],
+      "tooth_instance_ids": [
+        "Validation:1091:tooth:01",
+        "Validation:1091:tooth:02",
+        "Validation:1091:tooth:03",
+        "Validation:1091:tooth:04"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "arch:Lower",
+        "boundary_tooth",
+        "clipped_crop",
+        "high_confidence",
+        "single_apex_candidate",
+        "site:Left",
+        "visible_tooth_count:4"
+      ]
+    },
+    {
+      "source_partition": "Validation",
+      "source_image_id": "1226",
+      "stable_image_id": "Validation:1226",
+      "association_ids": [
+        "Validation:1226:cej:1",
+        "Validation:1226:cej:2",
+        "Validation:1226:cej:3",
+        "Validation:1226:cej:4",
+        "Validation:1226:cej:5",
+        "Validation:1226:cej:6",
+        "Validation:1226:cej:7",
+        "Validation:1226:apex:1",
+        "Validation:1226:apex:2",
+        "Validation:1226:apex:3",
+        "Validation:1226:apex:4",
+        "Validation:1226:bone:1",
+        "Validation:1226:bone:2",
+        "Validation:1226:bone:3",
+        "Validation:1226:bone:4",
+        "Validation:1226:bone:5"
+      ],
+      "tooth_instance_ids": [
+        "Validation:1226:tooth:01",
+        "Validation:1226:tooth:02",
+        "Validation:1226:tooth:03",
+        "Validation:1226:tooth:04",
+        "Validation:1226:tooth:05",
+        "Validation:1226:tooth:06",
+        "Validation:1226:tooth:07"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "ambiguous_cej",
+        "arch:Lower",
+        "boundary_tooth",
+        "clipped_crop",
+        "single_apex_candidate",
+        "site:Anterior",
+        "visible_tooth_count:7"
+      ]
+    },
+    {
+      "source_partition": "Validation",
+      "source_image_id": "1286",
+      "stable_image_id": "Validation:1286",
+      "association_ids": [
+        "Validation:1286:cej:1",
+        "Validation:1286:cej:2",
+        "Validation:1286:cej:3",
+        "Validation:1286:cej:4",
+        "Validation:1286:cej:5",
+        "Validation:1286:cej:6",
+        "Validation:1286:cej:7",
+        "Validation:1286:cej:8",
+        "Validation:1286:cej:9",
+        "Validation:1286:cej:10",
+        "Validation:1286:apex:1",
+        "Validation:1286:apex:2",
+        "Validation:1286:apex:3",
+        "Validation:1286:apex:4",
+        "Validation:1286:apex:5",
+        "Validation:1286:bone:1",
+        "Validation:1286:bone:2",
+        "Validation:1286:bone:3",
+        "Validation:1286:bone:4"
+      ],
+      "tooth_instance_ids": [
+        "Validation:1286:tooth:01",
+        "Validation:1286:tooth:02",
+        "Validation:1286:tooth:03",
+        "Validation:1286:tooth:04",
+        "Validation:1286:tooth:05",
+        "Validation:1286:tooth:06"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "arch:Upper",
+        "boundary_tooth",
+        "clipped_crop",
+        "high_confidence",
+        "multiple_apex_candidate",
+        "site:Left",
+        "visible_tooth_count:6"
+      ]
+    },
+    {
+      "source_partition": "Validation",
+      "source_image_id": "419",
+      "stable_image_id": "Validation:419",
+      "association_ids": [
+        "Validation:419:cej:1",
+        "Validation:419:cej:2",
+        "Validation:419:cej:3",
+        "Validation:419:cej:4",
+        "Validation:419:cej:5",
+        "Validation:419:apex:1",
+        "Validation:419:apex:2",
+        "Validation:419:apex:3",
+        "Validation:419:apex:4",
+        "Validation:419:bone:1",
+        "Validation:419:bone:2"
+      ],
+      "tooth_instance_ids": [
+        "Validation:419:tooth:01",
+        "Validation:419:tooth:02",
+        "Validation:419:tooth:03"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "ambiguous_cej",
+        "arch:Lower",
+        "boundary_tooth",
+        "clipped_crop",
+        "multiple_apex_candidate",
+        "site:Right",
+        "visible_tooth_count:3"
+      ]
+    },
+    {
+      "source_partition": "Validation",
+      "source_image_id": "489",
+      "stable_image_id": "Validation:489",
+      "association_ids": [
+        "Validation:489:cej:1",
+        "Validation:489:cej:2",
+        "Validation:489:cej:3",
+        "Validation:489:cej:4",
+        "Validation:489:cej:5",
+        "Validation:489:apex:1",
+        "Validation:489:apex:2",
+        "Validation:489:apex:3",
+        "Validation:489:bone:1",
+        "Validation:489:bone:2",
+        "Validation:489:bone:3"
+      ],
+      "tooth_instance_ids": [
+        "Validation:489:tooth:01",
+        "Validation:489:tooth:02",
+        "Validation:489:tooth:03"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "arch:Upper",
+        "boundary_tooth",
+        "clipped_crop",
+        "high_confidence",
+        "single_apex_candidate",
+        "site:Left",
+        "visible_tooth_count:3"
+      ]
+    },
+    {
+      "source_partition": "Validation",
+      "source_image_id": "616",
+      "stable_image_id": "Validation:616",
+      "association_ids": [
+        "Validation:616:cej:1",
+        "Validation:616:cej:2",
+        "Validation:616:cej:3",
+        "Validation:616:cej:4",
+        "Validation:616:cej:5",
+        "Validation:616:apex:1",
+        "Validation:616:apex:2",
+        "Validation:616:apex:3",
+        "Validation:616:apex:4",
+        "Validation:616:apex:5",
+        "Validation:616:apex:6",
+        "Validation:616:bone:1",
+        "Validation:616:bone:2",
+        "Validation:616:bone:3"
+      ],
+      "tooth_instance_ids": [
+        "Validation:616:tooth:01",
+        "Validation:616:tooth:02",
+        "Validation:616:tooth:03",
+        "Validation:616:tooth:04",
+        "Validation:616:tooth:05",
+        "Validation:616:tooth:06",
+        "Validation:616:tooth:07"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "ambiguous_cej",
+        "arch:Lower",
+        "boundary_tooth",
+        "clipped_crop",
+        "multiple_apex_candidate",
+        "site:Anterior",
+        "visible_tooth_count:7"
+      ]
+    },
+    {
+      "source_partition": "Validation",
+      "source_image_id": "971",
+      "stable_image_id": "Validation:971",
+      "association_ids": [
+        "Validation:971:cej:1",
+        "Validation:971:cej:2",
+        "Validation:971:cej:3",
+        "Validation:971:cej:4",
+        "Validation:971:cej:5",
+        "Validation:971:cej:6",
+        "Validation:971:cej:7",
+        "Validation:971:cej:8",
+        "Validation:971:cej:9",
+        "Validation:971:apex:1",
+        "Validation:971:apex:2",
+        "Validation:971:apex:3",
+        "Validation:971:apex:4",
+        "Validation:971:apex:5",
+        "Validation:971:bone:1",
+        "Validation:971:bone:2",
+        "Validation:971:bone:3",
+        "Validation:971:bone:4",
+        "Validation:971:bone:5"
+      ],
+      "tooth_instance_ids": [
+        "Validation:971:tooth:01",
+        "Validation:971:tooth:02",
+        "Validation:971:tooth:03",
+        "Validation:971:tooth:04",
+        "Validation:971:tooth:05",
+        "Validation:971:tooth:06"
+      ],
+      "selection_reasons": [
+        "ambiguous_bone_line",
+        "ambiguous_cej",
+        "arch:Upper",
+        "boundary_tooth",
+        "clipped_crop",
+        "single_apex_candidate",
+        "site:Right",
+        "visible_tooth_count:6"
+      ]
+    }
+  ],
+  "overlap_subset": [],
+  "overlap_status": "not_created_single_reviewer",
+  "manifest_hashes": {
+    "Training": "a58b29ed113a079ddd3399b1b091360bb06a7a95a473888bbda34d678814e09f",
+    "Validation": "a6268f608613fbaf0fab8a08048cd3098114f7d247e5915b915cd24490d16a2d"
+  },
+  "stage2b_artifact_hashes": {
+    "training_associations.jsonl": "4596935c464ae46d8ef5b5e40d0230833758741a45befd00987fae58b1afb315",
+    "validation_associations.jsonl": "2dd6adddefbe28ce8382e14120b88e5bb1837c371c8d7af17ede82d85c974828",
+    "frozen_config.json": "71184c3f712ada220093e1bd4932b2404a6205dc79b3afdf4ef4f9f33e24eae5",
+    "summary.json": "113349f2551dbdcc8f4d3886d612748fae52c4e83354d8dbeada856e34cb3ecd"
+  },
+  "stage2b_configuration_hash": "cc184a6ecc9899bd1d7184dbe1a63a39a62578bbfef75402c0ff10183b91f196",
+  "content_hash": "54ecc13e453759ee780adb9f1d3154f094c731f039c9f788fdd53570ae20eae3"
+}

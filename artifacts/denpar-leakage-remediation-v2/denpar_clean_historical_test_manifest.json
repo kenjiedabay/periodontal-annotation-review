@@ -1,0 +1,1815 @@
+{
+  "schema_version": "1.0.0",
+  "policy_version": "denpar-leakage-remediation-v2",
+  "manifest_type": "denpar_clean_historical_test_manifest",
+  "source_audit": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\denpar-stage2a-audit\\audit_results.json",
+  "source_audit_sha256": "78c9a7e0dc563820222ae599816ff327379b620211f0e62b7d4c41be6ef85076",
+  "decision_date": "2026-09-21T14:44:40.087125+00:00",
+  "source_files_copied": false,
+  "previous_manifest_version": {
+    "policy_version": "denpar-leakage-remediation-v1",
+    "manifest_hashes": {
+      "denpar_clean_train_manifest": "f052219a2976b384df6a5a7a3ee6555355bfc81c62c39e3dc41eb69d46346de0",
+      "denpar_clean_validation_manifest": "2399de659973811f99b87def6a8a88f1d2f977ce7b8795fb4745202d82c0379f",
+      "denpar_clean_historical_test_manifest": "db68eb80a30f17d3b3303310b1042ff46a3f61c2a31156bfb401e00bc5b4052b",
+      "denpar_exclusion_manifest": "62ec706bb235c3ad90ff86d4ca763f112fb07406ab4480d71a58f37ba4b5991a",
+      "denpar_duplicate_group_manifest": "0d1e63957a1f1ae1951cd45f633b44f6fd8c884e21961fd6afc9e869a585e68d",
+      "denpar_near_duplicate_review_queue": "b77b7c766e5742f527be50317bc901eee820d301336cc0d2eaf86db066c411c9"
+    },
+    "manifest_directory": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\denpar-leakage-remediation-v1"
+  },
+  "test_set_status": "historical_exposed_test",
+  "allowed_use": "transparent_historical_comparison_after_exclusions",
+  "prohibited_use": [
+    "model_selection",
+    "hyperparameter_tuning",
+    "claim_as_pristine_final_test"
+  ],
+  "external_holdout_recommendation": "Use a future independent expert-labeled external holdout for final unbiased evaluation.",
+  "fallback_limitation": "Patient-independent or grouped validation requires reliable patient identifiers, which remain unavailable.",
+  "entries": [
+    {
+      "stable_image_id": "Testing:1",
+      "image_id": "1",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1.jpg",
+      "file_sha256": "41f93565fe1ce53b3eb7f42ed4829f8b4b01b71ff3ce2f477d68ed77110acb3b",
+      "normalized_pixel_sha256": "ec88775c4e58ce7acf113ec1ce48a8af1ae264dd4b799efe7f40319a315995a5"
+    },
+    {
+      "stable_image_id": "Testing:100",
+      "image_id": "100",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/100.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\100.jpg",
+      "file_sha256": "3324b126d9c7e3562be3535ba599c266a1ac844f177a609f101e2e143416e6be",
+      "normalized_pixel_sha256": "880d9c18c56e829ed8f9b1bbea4be655435acbafec116d9854db3578f7ca8fb4"
+    },
+    {
+      "stable_image_id": "Testing:1000",
+      "image_id": "1000",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1000.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1000.jpg",
+      "file_sha256": "f5fc68fd7ff3339e1bbb49f58a1aeb83861109477edd08b4dc02c50ca1a915e1",
+      "normalized_pixel_sha256": "c2ae3189adb277b4ca20931014ba711911b575e2f6fa861c4fda9f9cb98ed2fd"
+    },
+    {
+      "stable_image_id": "Testing:1007",
+      "image_id": "1007",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1007.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1007.jpg",
+      "file_sha256": "b2464f765372ae9748918f537c8ef6f974e6a1b558bdaa39280b9ef0de4672b2",
+      "normalized_pixel_sha256": "dd36915a3208ea76771f0c3825a1182e7d5882a34bf12abbea690ba00380bf81"
+    },
+    {
+      "stable_image_id": "Testing:1027",
+      "image_id": "1027",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1027.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1027.jpg",
+      "file_sha256": "110b7202f67cd23d7ab15341cc1c4ef8549be11b32e39edb2fad54f05af52b02",
+      "normalized_pixel_sha256": "f2f30fc15a9a3b903a0404ffc7de2d1d38be12a83ce05c60c2d9100770c7be5a"
+    },
+    {
+      "stable_image_id": "Testing:103",
+      "image_id": "103",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/103.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\103.jpg",
+      "file_sha256": "789ec046f12b88f7b507419ca69735c402beb43a25c4b42df1060a02800b719b",
+      "normalized_pixel_sha256": "800722d51816c62d784b43c303fc2eeede0ba6960a1a93bbb40d500e0b622637"
+    },
+    {
+      "stable_image_id": "Testing:1036",
+      "image_id": "1036",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1036.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1036.jpg",
+      "file_sha256": "bd10419d13238d09ab0155d6631702b939f05efff99c3a20fd0b386ad0fa851c",
+      "normalized_pixel_sha256": "7226d04f2d172acea7d0c44af679639c35f734b00757e85bd4a4e066dea20552"
+    },
+    {
+      "stable_image_id": "Testing:1042",
+      "image_id": "1042",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1042.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1042.jpg",
+      "file_sha256": "86d809501e43f120bd51d4628b48f4b87076120a2534054394b3f04c329a8eb3",
+      "normalized_pixel_sha256": "169cc9dede79d905aab88ed653153b8e635c18582060a6b1cec975cbe43021a9"
+    },
+    {
+      "stable_image_id": "Testing:1048",
+      "image_id": "1048",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1048.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1048.jpg",
+      "file_sha256": "6e26e11671ade18733e5a73d59f3e50c7b9d6b538f8bd1b232ba780207dec4b9",
+      "normalized_pixel_sha256": "58611f8a904aec4265b38573ab32ba9f9faf5d928857419ff5791c6c6c3408ae"
+    },
+    {
+      "stable_image_id": "Testing:1059",
+      "image_id": "1059",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1059.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1059.jpg",
+      "file_sha256": "a8672b98e2fe83341450cb34a98cb812c0312144e668b923359a5230d9421997",
+      "normalized_pixel_sha256": "7558fa0d4595a08fe381c72371ffaaf8bd533408417729d4952547a50ff8cfab"
+    },
+    {
+      "stable_image_id": "Testing:106",
+      "image_id": "106",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/106.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\106.jpg",
+      "file_sha256": "b20aa0ded37829b63c30143587f947851e0df4499e451a7e5d6d34ced0a94d9b",
+      "normalized_pixel_sha256": "cf850df37396a60411a7379b4f34bfa5ce0242669d0068c868a066a5a81e23f3"
+    },
+    {
+      "stable_image_id": "Testing:1064",
+      "image_id": "1064",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1064.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1064.jpg",
+      "file_sha256": "a929c3abe8cb81dca1676bc3d43bdb64cd393818ef211e2fcc8ecaa9902fb70d",
+      "normalized_pixel_sha256": "db0edd2660188f7af8ad466d63229b7257aa065a328affe7f9b92a8d5574e72f"
+    },
+    {
+      "stable_image_id": "Testing:1065",
+      "image_id": "1065",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1065.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1065.jpg",
+      "file_sha256": "2f62ff22e57a5ebb62ad52b65a418ed65039f6b529d8338663a8de9a2df732ef",
+      "normalized_pixel_sha256": "4e27cce0501f4b21f3487f1f98a89d97759f267c1b2bd67fa6588d989086baf2"
+    },
+    {
+      "stable_image_id": "Testing:107",
+      "image_id": "107",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/107.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\107.jpg",
+      "file_sha256": "6a816fab84e72acce2dd9dee2e8ab01f2439208ad7bfafbf21b419772ee0dff6",
+      "normalized_pixel_sha256": "2ab4b8b0261a9cb8ff7d29db8ad16ce56c9a2c39fb99df32ee945e679672edfb"
+    },
+    {
+      "stable_image_id": "Testing:1071",
+      "image_id": "1071",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1071.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1071.jpg",
+      "file_sha256": "df4323d86d70091eb001be9ec9839c42864bf3252a7d79e28b94f28ce769db4d",
+      "normalized_pixel_sha256": "e25f1f548cc5ee6907a540021ef25e9346f23e882f03eb7c4e9c56c48c3cf479"
+    },
+    {
+      "stable_image_id": "Testing:1078",
+      "image_id": "1078",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1078.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1078.jpg",
+      "file_sha256": "5fc1999865b0be86eee035cfa167807db6f3690ecc6a2984e021496eb22dba1b",
+      "normalized_pixel_sha256": "b85a54d29cacc71e3a3f76ec8bf31f9e6b54393e7c9e375576818427bf606de2"
+    },
+    {
+      "stable_image_id": "Testing:1079",
+      "image_id": "1079",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1079.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1079.jpg",
+      "file_sha256": "89a3e17feba8f5ff76b9007e514c54c8ddbba75f5fdde678520a207f3adfcb03",
+      "normalized_pixel_sha256": "6009524c136cf809c17273579ae5d8a960f84c4cec3f52df9ab5767ea393b748"
+    },
+    {
+      "stable_image_id": "Testing:108",
+      "image_id": "108",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/108.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\108.jpg",
+      "file_sha256": "294c163bbb5e5796ddb29e6174721a4c73c789ef504bd3583404c0f3ef53aa95",
+      "normalized_pixel_sha256": "572efa2a3b81dd56637c1d7e42aedba1cd4a8937780565f0e3aa93d67ab67b08"
+    },
+    {
+      "stable_image_id": "Testing:1082",
+      "image_id": "1082",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1082.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1082.jpg",
+      "file_sha256": "7e749a932da9b836b5406b7688575d4d5976cf067a07807408e33fe86c97c93b",
+      "normalized_pixel_sha256": "5ffd57fb78a252623bed40f2442665d09d463ceb436ba1abc8fe8e423a4eb940"
+    },
+    {
+      "stable_image_id": "Testing:1084",
+      "image_id": "1084",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1084.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1084.jpg",
+      "file_sha256": "ec41a2af273a89c113f8983aa2db2805fa4945b0ef5df2e2db4e75eca61263a5",
+      "normalized_pixel_sha256": "8e36b3152b48e24f18348673d7a3b323b76bb64395fcc414f2aa325f441d825c"
+    },
+    {
+      "stable_image_id": "Testing:1086",
+      "image_id": "1086",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1086.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1086.jpg",
+      "file_sha256": "877c5adbd6ca534368d01c409c9c3f7a1863998a68e73ab71ad88014c065d690",
+      "normalized_pixel_sha256": "ef70e55b0601927783bf12328b479bcdfc3cce7d66dfe5eeb8d2c70b3a4002cd"
+    },
+    {
+      "stable_image_id": "Testing:1088",
+      "image_id": "1088",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1088.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1088.jpg",
+      "file_sha256": "ea17c12efd379d9ced3fab4ce8754de48db9af5930983cb67a6992489a24e408",
+      "normalized_pixel_sha256": "33e0425c60a925f0473d17d4813b2c0e2ceab7cac7f029cedcd39dfff1377017"
+    },
+    {
+      "stable_image_id": "Testing:109",
+      "image_id": "109",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/109.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\109.jpg",
+      "file_sha256": "09008779abaa922546523ddb968d412bd29da976a3a35a14370e8acb01164c39",
+      "normalized_pixel_sha256": "66415716131f589c6272e954fca5eeffc7ad79728e9fb941b1d393a844fdaf69"
+    },
+    {
+      "stable_image_id": "Testing:1098",
+      "image_id": "1098",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1098.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1098.jpg",
+      "file_sha256": "8c04888241b0283995189f46174abc12feb702253d77a81ba1c82865f10ce6e1",
+      "normalized_pixel_sha256": "6395d884df4c2b9c314a1693620aa1527f8dab914f20a44a3b86376d5ca6d3f9"
+    },
+    {
+      "stable_image_id": "Testing:1112",
+      "image_id": "1112",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1112.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1112.jpg",
+      "file_sha256": "a80888cbc1fc77479360cf72b838a785eb24e6e9c3892dd8022dd18d1b679894",
+      "normalized_pixel_sha256": "f1da91ad757a6f5e359ee19e5ec939c75c93c2153926400e5aca62f6c0f923ad"
+    },
+    {
+      "stable_image_id": "Testing:1113",
+      "image_id": "1113",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1113.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1113.jpg",
+      "file_sha256": "aefa1783d6442994e111067df7f804864edebeaa0b2317b3bfe6fc094493a8e3",
+      "normalized_pixel_sha256": "dd657b0c039d80a669d89ea8ae26bc72accd27024a360763ed3f4d4f72b4d85b"
+    },
+    {
+      "stable_image_id": "Testing:1121",
+      "image_id": "1121",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1121.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1121.jpg",
+      "file_sha256": "486a69c9fb871503272ea23bf1bb27e255b5674db37a15ccedac212d70643c92",
+      "normalized_pixel_sha256": "907ba894bb04a45aa42d1f7bb10b6409636b3bfc48ace86639f6cf6b0277faa0"
+    },
+    {
+      "stable_image_id": "Testing:1137",
+      "image_id": "1137",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1137.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1137.jpg",
+      "file_sha256": "5ccc10587cd220c7c5472c329f0b69b463eff4f9fdaca1b7aab622325e4bb11c",
+      "normalized_pixel_sha256": "463a6b528168cd55184db7f62cb7f852282a397063914d642d8c0eede42a8cfe"
+    },
+    {
+      "stable_image_id": "Testing:1140",
+      "image_id": "1140",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1140.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1140.jpg",
+      "file_sha256": "6bcf5b84de88d07fb033e108f5cd68ca033cfd1858670f8e3a92b1442b1aafe9",
+      "normalized_pixel_sha256": "696c0680da1b9e6b6a69cb7f3c77463a8f5403862aa15350bdf0e81b8d6589ae"
+    },
+    {
+      "stable_image_id": "Testing:1141",
+      "image_id": "1141",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1141.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1141.jpg",
+      "file_sha256": "8071048a2686db102ff2090eccff99a7977e9c892147e6426093c545218e7c3b",
+      "normalized_pixel_sha256": "3bab4de342c1ee3f21801d38303535cea36a8d40d0252a90c5554e21c5b17534"
+    },
+    {
+      "stable_image_id": "Testing:1144",
+      "image_id": "1144",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1144.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1144.jpg",
+      "file_sha256": "51d0b962b75d6f75069afec883b078e6511a6cb354739e9fdf1508f14e9fce94",
+      "normalized_pixel_sha256": "318c561e3779b699826e37e6904073af16bf362d6aec2cea69c0ea94924ea368"
+    },
+    {
+      "stable_image_id": "Testing:1177",
+      "image_id": "1177",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1177.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1177.jpg",
+      "file_sha256": "742cab086ce7b33f5f598004ba9de92bbf168bae1f544f1eb37c0171f7c77c95",
+      "normalized_pixel_sha256": "ffeeda369edb7d1a9cb1a1c269ba09203b4a229619fe66d9118d220cdc6a9a67"
+    },
+    {
+      "stable_image_id": "Testing:1194",
+      "image_id": "1194",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1194.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1194.jpg",
+      "file_sha256": "51c7cce78868b9062b66f0a56e7de9e19df04179ca623c435ce3de85a0947e62",
+      "normalized_pixel_sha256": "36a95eb28633e57fab2a86d743d45a037ced5604c2f5b5cc84cf4d4928076aeb"
+    },
+    {
+      "stable_image_id": "Testing:1201",
+      "image_id": "1201",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1201.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1201.jpg",
+      "file_sha256": "4a8649e89a47c78067b4e00b958950d2e02f76a2b32af1def8b018ef406e79d7",
+      "normalized_pixel_sha256": "04febc1e901328d3d7ba2b8078304f1cf550751b2db999569dac76e6ac002ba3"
+    },
+    {
+      "stable_image_id": "Testing:1211",
+      "image_id": "1211",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1211.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1211.jpg",
+      "file_sha256": "c5718a49503fad6f76fb0ff572b7c10f23e4ff916a0646faaf40732b614b64ea",
+      "normalized_pixel_sha256": "6bf1fcaf9764a12c9abe718cffe704720299b3bed90b5cc7a13d17604f3a6246"
+    },
+    {
+      "stable_image_id": "Testing:1221",
+      "image_id": "1221",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1221.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1221.jpg",
+      "file_sha256": "3c136e577f75ee8c6274c646b47cdaf1239441d30a3cbca8f3786552cea09622",
+      "normalized_pixel_sha256": "932908992f8f23a8052dd45c19aebd280e964c4e22f18811bfa54bc6ab56af45"
+    },
+    {
+      "stable_image_id": "Testing:1223",
+      "image_id": "1223",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1223.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1223.jpg",
+      "file_sha256": "2d830a85455344e1279fbeb59330ead8a8be8a39bc1ac958a060c9a2ab703292",
+      "normalized_pixel_sha256": "e4e336f14f66a5cdb442a1b2e637e8bef561dc7339c6d28ffdd8d9f1a292a8fd"
+    },
+    {
+      "stable_image_id": "Testing:1224",
+      "image_id": "1224",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1224.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1224.jpg",
+      "file_sha256": "de44a681700a7251ba47d65bdcac8b3cb772cf71a9995f12be331e6e34f21497",
+      "normalized_pixel_sha256": "969732573310d72c967ee95565a0b8bd70cfab1e8e7e3100725442505d8acaa3"
+    },
+    {
+      "stable_image_id": "Testing:1227",
+      "image_id": "1227",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1227.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1227.jpg",
+      "file_sha256": "22ef0299e505aefa6e3f57d3ebb867ad6ef89aee1dc82112fe90e975420055ed",
+      "normalized_pixel_sha256": "2bc685f30015024c875634462da62e042d16799da4fd1bc5cd0fb56b5c6d9f8e"
+    },
+    {
+      "stable_image_id": "Testing:1229",
+      "image_id": "1229",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1229.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1229.jpg",
+      "file_sha256": "915d288570d51ace111aba2ad46b7f9920cc7cd81126e50437a1b7a26cce22eb",
+      "normalized_pixel_sha256": "d80203478dbcc93ea0a56f6521b7673686ff70905b9a2cbc2d9b56d29231ed7f"
+    },
+    {
+      "stable_image_id": "Testing:1231",
+      "image_id": "1231",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1231.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1231.jpg",
+      "file_sha256": "490a208feabe19709c5c343ef794624216d87e7bddf4362d962c3b77297ae2e8",
+      "normalized_pixel_sha256": "f68c9b8748005706b383367012fc08b8bfcaebd40e1d6eb2fecc70b1af2de79f"
+    },
+    {
+      "stable_image_id": "Testing:1241",
+      "image_id": "1241",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1241.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1241.jpg",
+      "file_sha256": "f935f9582c0803b44a2a14a190897e8bb114de2dfcab1e6b2c6a8a52258fb62d",
+      "normalized_pixel_sha256": "938efbf8d63e376e59696364fe299d3660f781c82b6a81bc8afe32cc9ec93ff7"
+    },
+    {
+      "stable_image_id": "Testing:1242",
+      "image_id": "1242",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1242.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1242.jpg",
+      "file_sha256": "eef6d785457eaf3f438a9512cc23eda84932f035eb6352b44dca38e37bd26247",
+      "normalized_pixel_sha256": "171c99fae465e970b6bae8eb7f203121e3c8366f3522df93e785cbd49185de97"
+    },
+    {
+      "stable_image_id": "Testing:125",
+      "image_id": "125",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/125.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\125.jpg",
+      "file_sha256": "2ff746ffb8bfefdc254f920c745729a859c523c21d6866c68b2fd2962a7fe788",
+      "normalized_pixel_sha256": "f205f46253e658e4c30c5362f772d3d2d7e0597406b1b35ee4b9f46b4b12abd7"
+    },
+    {
+      "stable_image_id": "Testing:1251",
+      "image_id": "1251",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1251.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1251.jpg",
+      "file_sha256": "16e6a33829cb3de261c7e88822255a5e527d9f60ae2e119dc10d8e58392a373e",
+      "normalized_pixel_sha256": "4d806bc403d7dbab3deaca28db61e9b113c2dffa8c1beeecf38b949aee7d8afe"
+    },
+    {
+      "stable_image_id": "Testing:1253",
+      "image_id": "1253",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1253.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1253.jpg",
+      "file_sha256": "f2f369549d9271bb43ae75198569606cdcd03e573dc5acc1996de6901d956810",
+      "normalized_pixel_sha256": "5393441c642b84255808874b8bd2bdbbfdfa25b69eb6f4d5d1632070b8f8172a"
+    },
+    {
+      "stable_image_id": "Testing:1258",
+      "image_id": "1258",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1258.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1258.jpg",
+      "file_sha256": "33a35dfe8f168617b7d8a30c172068c448e0136405c960cdcfd7e9f336973863",
+      "normalized_pixel_sha256": "34217173ba4229107dc8bc3758feb9d236a871448ddc598102cc73fa77438e39"
+    },
+    {
+      "stable_image_id": "Testing:1271",
+      "image_id": "1271",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1271.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1271.jpg",
+      "file_sha256": "364c282aeb4659654477946f5999c00b209f66c5d32c7c53397955b0d817d9ae",
+      "normalized_pixel_sha256": "727f088bb435905ac38d7fe4ba8ab09aaac3066464d2e7261d2de8e288b50766"
+    },
+    {
+      "stable_image_id": "Testing:1278",
+      "image_id": "1278",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1278.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1278.jpg",
+      "file_sha256": "b739450d3ff91a727b0f5f3b99aa8d62e15e130af233c88938835974402354f3",
+      "normalized_pixel_sha256": "92952fc45a0ba579cef307ecac348fb6a1354fb2de33bba8677bf96ee0bf4e42"
+    },
+    {
+      "stable_image_id": "Testing:1285",
+      "image_id": "1285",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1285.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1285.jpg",
+      "file_sha256": "febc732f533ec18355a7f32944ccefe6a9a7b089be57bcf275199bea8329030f",
+      "normalized_pixel_sha256": "0ad783bd7c6d4b77ac520ce8f26f7feafa92f810d698746fe869dcce0870f335"
+    },
+    {
+      "stable_image_id": "Testing:131",
+      "image_id": "131",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/131.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\131.jpg",
+      "file_sha256": "fb28dedb78965ca6ecc1d610db81e95316204059c90668f23a6f1d864870beb6",
+      "normalized_pixel_sha256": "965be5bcda0ad5b773025e4da31fed162437ad50c3160f1f272d8822096f4c16"
+    },
+    {
+      "stable_image_id": "Testing:134",
+      "image_id": "134",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/134.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\134.jpg",
+      "file_sha256": "2d7b73f9440377845fc2a1212c192cfe471e2653724a5c47617383fecc4caa8f",
+      "normalized_pixel_sha256": "50bd478325654ac794434e463ce354b6111a847fde0485eeef03c3ffcad31f3a"
+    },
+    {
+      "stable_image_id": "Testing:138",
+      "image_id": "138",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/138.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\138.jpg",
+      "file_sha256": "2c8f067e5e712d450c747b85cdbbc9feb516dc57ad9fb330a91544fd342c86d2",
+      "normalized_pixel_sha256": "be5aed53e1878383c6c69b08620c74fd36d5f11849d1b5ed4e3c3cf272b58492"
+    },
+    {
+      "stable_image_id": "Testing:139",
+      "image_id": "139",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/139.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\139.jpg",
+      "file_sha256": "61959b224c62ad37f21c7674b2b867bdc4d68d39185c53d17e98046af14346c4",
+      "normalized_pixel_sha256": "f254f14fe7603b5d9d6850d2256a66d34d9412a91a02955e84787ba452292072"
+    },
+    {
+      "stable_image_id": "Testing:143",
+      "image_id": "143",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/143.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\143.jpg",
+      "file_sha256": "c3f719f5371791cd4cd64cf879195b738ac8365e8026aa4a0d36b65919d95ece",
+      "normalized_pixel_sha256": "8088cbf63629a36f44e58fc352428d5cced68ecf5bdacd566fe8e4117639d80a"
+    },
+    {
+      "stable_image_id": "Testing:148",
+      "image_id": "148",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/148.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\148.jpg",
+      "file_sha256": "c267eceec6fcca7c07361101222de47405fc909c94945af0fba1e869c4e7c119",
+      "normalized_pixel_sha256": "6667f87139e016412f007e1faf66ea89e05d251b8027df524e0f4325e0c47aad"
+    },
+    {
+      "stable_image_id": "Testing:149",
+      "image_id": "149",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/149.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\149.jpg",
+      "file_sha256": "dbadc32616ab148b9ffb5413d666b8680d1f76d530a2e733ec0792169be0eb52",
+      "normalized_pixel_sha256": "605c779e844c06ac1840d668388c14cf569dd5de5243656881f35e2bb4f80184"
+    },
+    {
+      "stable_image_id": "Testing:150",
+      "image_id": "150",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/150.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\150.jpg",
+      "file_sha256": "94c81da9aa43279e12045625b9a66a8e9a4a0584fc1ea3e2ab96fb7aac8f99bb",
+      "normalized_pixel_sha256": "d6351946b1e47dbf4b3a400ec67beafe9e1529b1ba07ced61c83a2762d4316a1"
+    },
+    {
+      "stable_image_id": "Testing:152",
+      "image_id": "152",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/152.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\152.jpg",
+      "file_sha256": "2ae4b289970a80ae47109441d4de69e3bb86df5967c5fee4889f1e0da4f3bbd8",
+      "normalized_pixel_sha256": "a248cc683a2fb05f9b6e732a5c59223013f1f0c13de35d9c8fb36a4e90a9148a"
+    },
+    {
+      "stable_image_id": "Testing:156",
+      "image_id": "156",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/156.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\156.jpg",
+      "file_sha256": "b0f32d67b480d8d12bf4860406a9e05adee4f47f70aab2f2d6a6db4fa515509d",
+      "normalized_pixel_sha256": "455b15fafa4d9a8ac27cf0162f66bad6ac0e5fe5255c737a5f57949e8d98587a"
+    },
+    {
+      "stable_image_id": "Testing:163",
+      "image_id": "163",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/163.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\163.jpg",
+      "file_sha256": "dd5b7ce246af8e8a956afc1e21761e2ca555156a0a4254a2b4197c79629d5e5a",
+      "normalized_pixel_sha256": "6beee88f814bb1c424fd08a8a9c0dbc5fa3f7affeb3ea2917cc630f349955b51"
+    },
+    {
+      "stable_image_id": "Testing:167",
+      "image_id": "167",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/167.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\167.jpg",
+      "file_sha256": "e84838fc30c366a1924190beeb61d4e35a478be20a9de0ff9f46d29699460d80",
+      "normalized_pixel_sha256": "fdbc97da1b4914d5827c6b079d656ffc3faf5d93f7647cc2083eefceec39219e"
+    },
+    {
+      "stable_image_id": "Testing:168",
+      "image_id": "168",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/168.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\168.jpg",
+      "file_sha256": "32757d4b604d2f5adb67b5c149352a98d9779e5ad2d698399faed6ef6a1b3a72",
+      "normalized_pixel_sha256": "8a4fc79691c8055bf0869500b04ba264f3aad1a398905f2b48b4b7b21e22140a"
+    },
+    {
+      "stable_image_id": "Testing:177",
+      "image_id": "177",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/177.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\177.jpg",
+      "file_sha256": "d24bf04389464df2c4a4b6f2be0e6106260c77fb8e53c3904fe17b01a29f91b6",
+      "normalized_pixel_sha256": "a5861ba6c547b69f512d9783f1aa0f949c908e979dd6b093d63d365571e6f416"
+    },
+    {
+      "stable_image_id": "Testing:178",
+      "image_id": "178",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/178.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\178.jpg",
+      "file_sha256": "91e2b46973daaa072f6de4534ddbcb6e3c2b79fe2e6762c312825bb07ab2a06d",
+      "normalized_pixel_sha256": "634e4ab896cc254471bfc03c5d307c6e39024381fe665aa53441dc4b5442b4b3"
+    },
+    {
+      "stable_image_id": "Testing:18",
+      "image_id": "18",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/18.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\18.jpg",
+      "file_sha256": "723a8754701dd56e9a78c9717d5c6ee3d31aebcb264e9f514351c7e55f83ed12",
+      "normalized_pixel_sha256": "e15e5c55bf01719c20bb94ff80ddbc3a09bd219836ad37a7df829051094bbbc2"
+    },
+    {
+      "stable_image_id": "Testing:183",
+      "image_id": "183",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/183.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\183.jpg",
+      "file_sha256": "56c79200750f411cf1049b666a49b5c4eabd3ad20b95f1e68f1af3d913c070ad",
+      "normalized_pixel_sha256": "c71ae38c82ce076cba85f258cc8b0afae999c034b2d2cb82294fe121cc492586"
+    },
+    {
+      "stable_image_id": "Testing:184",
+      "image_id": "184",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/184.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\184.jpg",
+      "file_sha256": "d00058d933150bdc5ade62caaaaf211633c72e08599f77363b907e39d9d45a10",
+      "normalized_pixel_sha256": "1bf3428ae5394a030cbf028a5147e8729d41f73c1c7a0079a837fca2f2194041"
+    },
+    {
+      "stable_image_id": "Testing:190",
+      "image_id": "190",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/190.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\190.jpg",
+      "file_sha256": "5029ab7197b1fe36c4958e7701c6ceb496ee445dcb11c56edc854679d8a4fb05",
+      "normalized_pixel_sha256": "c9dcc529184e18ad788ddaaefb1e38da88f88206873f790c4af025ae90728afb"
+    },
+    {
+      "stable_image_id": "Testing:201",
+      "image_id": "201",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/201.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\201.jpg",
+      "file_sha256": "29bb1d11c9fd6180afe4685b9ae8d3a0a4e726f7f8f227d12506340be6429aec",
+      "normalized_pixel_sha256": "88f2b1f8b15b22cb7ad72696c430787bd1b2d7564b701ae5926357651a9c9177"
+    },
+    {
+      "stable_image_id": "Testing:203",
+      "image_id": "203",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/203.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\203.jpg",
+      "file_sha256": "dfeb0b91ddccc391dc19d67d53deb34578b7a67e19853e6052fb07009c54191d",
+      "normalized_pixel_sha256": "ed14e7e948cefbebf6918ed169ebd59716431d811c163496ae9de35c2d04f6bb"
+    },
+    {
+      "stable_image_id": "Testing:22",
+      "image_id": "22",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/22.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\22.jpg",
+      "file_sha256": "0f95f2a8626d7c479144d62d2cdca3b63b76c6fdf658e6b32dd5384e171392cb",
+      "normalized_pixel_sha256": "34430bf7491031ff73545867465675b1ad3f7d9388fd7c8758bd4efbb431d5f4"
+    },
+    {
+      "stable_image_id": "Testing:228",
+      "image_id": "228",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/228.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\228.jpg",
+      "file_sha256": "e962e5adea2de0ddc8aa5af10f93ac9b92e07cafcaced6080a481e55c6322812",
+      "normalized_pixel_sha256": "c45d012117467a7ad92af4810c97b1d1bca6ed0679b8fa92ad639ea76d4c1c10"
+    },
+    {
+      "stable_image_id": "Testing:231",
+      "image_id": "231",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/231.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\231.jpg",
+      "file_sha256": "9d9cffc42ac90a8c1abbb4060cc30e3f5031f79a86ee02ad72341ba67156ec2e",
+      "normalized_pixel_sha256": "240cab812d10a63214b5c30bd61895f844cf4edf449d2f649eaaa3a6620ab6cb"
+    },
+    {
+      "stable_image_id": "Testing:233",
+      "image_id": "233",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/233.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\233.jpg",
+      "file_sha256": "7cc2b7af84a73b15ae402b4dafec8a3f22931ea188f546d64d579c3d640b9992",
+      "normalized_pixel_sha256": "55369a21c809ec3e38badf4873a210344738c866412ca25f41e39e07800f7eb5"
+    },
+    {
+      "stable_image_id": "Testing:240",
+      "image_id": "240",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/240.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\240.jpg",
+      "file_sha256": "0290c0f92c49adbaa9c41b9f688e5366f4070453066bc203b1500b2be2a7749c",
+      "normalized_pixel_sha256": "c48fcdda5a9eef2fa3084e02c126b99116d9701d4bc00872dc4dcfa9a6375ef7"
+    },
+    {
+      "stable_image_id": "Testing:244",
+      "image_id": "244",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/244.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\244.jpg",
+      "file_sha256": "40867e0567073db6b8fb8925ae17a09cf8f73a3f39fc750ec9fd8a02cca41c8c",
+      "normalized_pixel_sha256": "ccd1844d2a7fb76c8a88ed1c70d7a23b907623c7017925f76f2dcba530465ba9"
+    },
+    {
+      "stable_image_id": "Testing:245",
+      "image_id": "245",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/245.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\245.jpg",
+      "file_sha256": "754629adf499be601358a30d4e53da0cf4ff2391af4c033179f8580934a903b2",
+      "normalized_pixel_sha256": "dd2d4120c038cd6a1665abf7fa98a958060e0d035da94a46c81a6d81daf8bdd8"
+    },
+    {
+      "stable_image_id": "Testing:258",
+      "image_id": "258",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/258.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\258.jpg",
+      "file_sha256": "d31fb8dd60aa4fcd73237c014fafcb1dcbd484894741afd6c3fcd3b620681452",
+      "normalized_pixel_sha256": "496c584093d28bfbb1dec963e411b614796d8227dd56c6f2a284bec059838c7d"
+    },
+    {
+      "stable_image_id": "Testing:266",
+      "image_id": "266",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/266.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\266.jpg",
+      "file_sha256": "f2bc188af6f22db4b553c050fa9a5edd1f40bb45f4a65bf8d2da19255daa37bf",
+      "normalized_pixel_sha256": "4597a1de210b1e740418413806c396be9a11946196b8a3250dfbcdc330840ffa"
+    },
+    {
+      "stable_image_id": "Testing:269",
+      "image_id": "269",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/269.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\269.jpg",
+      "file_sha256": "c542f7803f446c0e15cd18e81783dfbfc63656559835887d6714382e2d8f3f8c",
+      "normalized_pixel_sha256": "ee45c46390e8ccc54b871f207ba7a83bb30d227408cb9fad8ab5647334e9f0c3"
+    },
+    {
+      "stable_image_id": "Testing:270",
+      "image_id": "270",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/270.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\270.jpg",
+      "file_sha256": "996adf5e698d2f6289cde49da197072918d3097960246619c60b36b2d53ad350",
+      "normalized_pixel_sha256": "49ef1657ef74789f160ffe52ea4a9242c84b9ccb02d61cf47ec6653d7be67764"
+    },
+    {
+      "stable_image_id": "Testing:281",
+      "image_id": "281",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/281.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\281.jpg",
+      "file_sha256": "c0e23d5f1b5940cf431f8ae229f88ffc615421e30b495facb1dc3fbc3f79f33b",
+      "normalized_pixel_sha256": "f9b5654461deb89a37eb56da08caf8489a6513689c6e32c511403f13ccfa4dac"
+    },
+    {
+      "stable_image_id": "Testing:286",
+      "image_id": "286",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/286.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\286.jpg",
+      "file_sha256": "a3b449539cb13ff5c7cdad207fcbb5deda7bc41915548275af8de15406c8c787",
+      "normalized_pixel_sha256": "b845dcd36baef55007cdc00e79aeee3b1f8709e2a6ac497cec977f7793ef6ba8"
+    },
+    {
+      "stable_image_id": "Testing:298",
+      "image_id": "298",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/298.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\298.jpg",
+      "file_sha256": "a5bd1210d28bbb4226d083d57f20ef2e0ed90e144bf80672cbfba9961b818779",
+      "normalized_pixel_sha256": "986a3e964da1b416894d7fb16aee744b418fd2daabd358128b365c2d500d15b3"
+    },
+    {
+      "stable_image_id": "Testing:301",
+      "image_id": "301",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/301.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\301.jpg",
+      "file_sha256": "59555f0edb5b6763ae16d878b1f4f0025d9822ea426c2601a194a67234736e05",
+      "normalized_pixel_sha256": "ff20c7c3aadd8d043594478ac6f83f416639e6dfa9db71f90d0a5cc4c95dd811"
+    },
+    {
+      "stable_image_id": "Testing:327",
+      "image_id": "327",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/327.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\327.jpg",
+      "file_sha256": "29451b6d19acfd5678933904dec23f4016ef165a236672238dc31d46ba343437",
+      "normalized_pixel_sha256": "a5b702a1372a573b984e3fe206eb70109a88bb5d71f507728f66298a2e5dfa43"
+    },
+    {
+      "stable_image_id": "Testing:337",
+      "image_id": "337",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/337.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\337.jpg",
+      "file_sha256": "27c1685f8f537caff0a2dc45b3eeca8f28e1e99c788c376fc9315a7fd91c002c",
+      "normalized_pixel_sha256": "878402a6f363e3fff284417f26b759f8a2fffda3044d2f21c5f053ea781842ff"
+    },
+    {
+      "stable_image_id": "Testing:338",
+      "image_id": "338",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/338.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\338.jpg",
+      "file_sha256": "a54477bac17eae061bca49cece403acc172e8927e9dd467bc2ce93c6a285c15e",
+      "normalized_pixel_sha256": "6b28a9de6e9e807bbc057d3656325712ffdf87e5106b34f724ff5181c040297a"
+    },
+    {
+      "stable_image_id": "Testing:340",
+      "image_id": "340",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/340.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\340.jpg",
+      "file_sha256": "234f858c1ae1afcbe59866279b7330a8cb4753d53e433417e5117746a53b14bb",
+      "normalized_pixel_sha256": "324559f50401ea7b98e258d2cf82aa10dd1c3f1cf281f0d8442b43383e8f5e3a"
+    },
+    {
+      "stable_image_id": "Testing:35",
+      "image_id": "35",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/35.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\35.jpg",
+      "file_sha256": "7a3b48ecd6cc9aeea4261c11244d7a258e6bbe68d07d6fbc8b83267ddbd70976",
+      "normalized_pixel_sha256": "284f0e75ad1ee74096c449ea7afb4de3604ad97568aaa7924573d80f9c060102"
+    },
+    {
+      "stable_image_id": "Testing:358",
+      "image_id": "358",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/358.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\358.jpg",
+      "file_sha256": "7b5222263f7b109745ed0ef8b0e4288af9ab94bd19dd7cbadf363e15c50c6017",
+      "normalized_pixel_sha256": "840f6194645ee116d76f3588c17f5d78284c11c3143d311ece3362c6ff499591"
+    },
+    {
+      "stable_image_id": "Testing:361",
+      "image_id": "361",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/361.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\361.jpg",
+      "file_sha256": "faaffaa93c85258a96442a32385a2884a80ecef5355ec22d50f3b550b2b60300",
+      "normalized_pixel_sha256": "86b8b785c08e39508be5400bb7f672cc26fa83d0ef838999f7061b4db82ee09a"
+    },
+    {
+      "stable_image_id": "Testing:365",
+      "image_id": "365",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/365.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\365.jpg",
+      "file_sha256": "18616a95dd02c9bf999c2b65109a71821299cdebe235fa5a9a42f68abb8233d2",
+      "normalized_pixel_sha256": "d11346027841f9a2db40b46fc0aa6e3f321197adf0c5bda99b104a76dc749712"
+    },
+    {
+      "stable_image_id": "Testing:372",
+      "image_id": "372",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/372.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\372.jpg",
+      "file_sha256": "5e9003e05987586ec70c3a7c046ee352d9c913450876b3fd640be8294a165b6f",
+      "normalized_pixel_sha256": "dd8e99945cdfc98ee5fba91a06492d4da8e5e8d6f95a105e043fe4dc2c9dc9be"
+    },
+    {
+      "stable_image_id": "Testing:389",
+      "image_id": "389",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/389.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\389.jpg",
+      "file_sha256": "a6d94fa35e88417ec5f0938d00b0975bbf58bb93b77686314bcc2592025899c0",
+      "normalized_pixel_sha256": "74111bee784d6bdec3d4db607831d91d3df96416ccae9a35a6d76ac4388c78ca"
+    },
+    {
+      "stable_image_id": "Testing:394",
+      "image_id": "394",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/394.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\394.jpg",
+      "file_sha256": "938036319cebd7ea4e1fb1711a99a2cf8f660ef0d9ef2cd56931193d396fcda1",
+      "normalized_pixel_sha256": "517913b91e12f6092a14f62676d642cc055e93705e78c83a3a5a34c8d2479c90"
+    },
+    {
+      "stable_image_id": "Testing:411",
+      "image_id": "411",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/411.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\411.jpg",
+      "file_sha256": "9e1382cb622132f6ee576fe7f0ceb442521cab6631c3be3c4604fa730bb0fdd4",
+      "normalized_pixel_sha256": "b2bf3ced42d96cbe6137370238c2f1d86108c33e1bca803f356b83e2eeea092c"
+    },
+    {
+      "stable_image_id": "Testing:413",
+      "image_id": "413",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/413.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\413.jpg",
+      "file_sha256": "6e99903dc9b3d564e8193c14d609aeedccb37b73e47f8a6f7c2ef7472fd70a50",
+      "normalized_pixel_sha256": "5b7b15bda9c394a01a2fcc06fd42b53263fd2575d271794d6f85398671fa9326"
+    },
+    {
+      "stable_image_id": "Testing:430",
+      "image_id": "430",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/430.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\430.jpg",
+      "file_sha256": "2f51c4fd32baa5293f491bf5cfb3e0ea89cb1439c3fa7e66532f41f09da91f3f",
+      "normalized_pixel_sha256": "93c68f69b3de3d163def89b0cc2ea3bdb99fadaceab46bf9e4fce6c55684e03b"
+    },
+    {
+      "stable_image_id": "Testing:431",
+      "image_id": "431",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/431.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\431.jpg",
+      "file_sha256": "d31bde2d01cba706b76d78e75ab82942c065d57236df35452dbe837fc9601bff",
+      "normalized_pixel_sha256": "448e5463636b3fd8387f5383be5f38fd4f3028c816dd87563af5fc9827db6982"
+    },
+    {
+      "stable_image_id": "Testing:44",
+      "image_id": "44",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/44.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\44.jpg",
+      "file_sha256": "a32736a0a2767a5c27e7c8562c08349078facde1935884f3c51fc282a7764427",
+      "normalized_pixel_sha256": "ca308f2d91c42d463c01bb2ee83df3aa40dc4c2ed4928d231d98b4e8763d650f"
+    },
+    {
+      "stable_image_id": "Testing:441",
+      "image_id": "441",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/441.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\441.jpg",
+      "file_sha256": "25f8105e8cbe697dcafa71b091cf7df947b0d5cc8e1e8b2a4f5010113b36a68e",
+      "normalized_pixel_sha256": "86bfbfa2b657490ef0bd268ee806d1509e478faca2fb17e5dab23d7d6e7672b2"
+    },
+    {
+      "stable_image_id": "Testing:448",
+      "image_id": "448",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/448.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\448.jpg",
+      "file_sha256": "3048484eaee5716dcc83221f9d1fa51a8ae636c395c77cbf585ab6fb0e0d4e60",
+      "normalized_pixel_sha256": "38b7dfc2aca4dc9e852d06f3e2e9bf7a9669850ef5b8ea47d90f43a9496d6db2"
+    },
+    {
+      "stable_image_id": "Testing:458",
+      "image_id": "458",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/458.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\458.jpg",
+      "file_sha256": "56994cacc1df52262a17d6d06bc5203ccc79d8bde9af789f395a9e35f56aefd8",
+      "normalized_pixel_sha256": "692bb09d518a754b3d777687c918b576c6e62ff7f41ad65abe045cc77dcf87c7"
+    },
+    {
+      "stable_image_id": "Testing:459",
+      "image_id": "459",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/459.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\459.jpg",
+      "file_sha256": "475fb96f560bc6dbf3b09d3c33b500c830fd1223433c2fef68f77c7b32182996",
+      "normalized_pixel_sha256": "61a85bcd13347b861398a7d45751b79cdd5029cf04b21d06f45b237e2877f570"
+    },
+    {
+      "stable_image_id": "Testing:468",
+      "image_id": "468",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/468.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\468.jpg",
+      "file_sha256": "a7172bdd7655b26c430e3a8c1dd2250239043dfb43e4c7f92f3c79e25056da31",
+      "normalized_pixel_sha256": "79559efdc795492213cb2a51f1aeca6edd056a0315b7ecf51ee8b109b9d5ac10"
+    },
+    {
+      "stable_image_id": "Testing:469",
+      "image_id": "469",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/469.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\469.jpg",
+      "file_sha256": "d4a4491f0568a6933ff2cbb27186dbf06a62efd01f3dc6b5f563eaeb45cedd50",
+      "normalized_pixel_sha256": "d4acfa5cf27423875d062488e11049f5e246fb1c5466bd9586ac73536ea46cd8"
+    },
+    {
+      "stable_image_id": "Testing:472",
+      "image_id": "472",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/472.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\472.jpg",
+      "file_sha256": "1a85caa77b1c642c0cdacdca9e09ae8178f7d54a74915c30849c3f426a837456",
+      "normalized_pixel_sha256": "1aede18c0c14359b64468f9cf9ca0bc153fb626b583c94c03bbef2bb7c7f85a6"
+    },
+    {
+      "stable_image_id": "Testing:473",
+      "image_id": "473",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/473.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\473.jpg",
+      "file_sha256": "7805c65114070f1f438b50094c55b63f839a8cd987e0ced5d66f9ccf41f0965a",
+      "normalized_pixel_sha256": "b5cbd1363b227de279feb639a58c4ed7711bc2cd02921896ae017e722809b2de"
+    },
+    {
+      "stable_image_id": "Testing:474",
+      "image_id": "474",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/474.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\474.jpg",
+      "file_sha256": "488a4534e634c21db89b6ca9043d85fdfcd71b3a6458295d6af5e40541e12851",
+      "normalized_pixel_sha256": "afb035986b32e85bc09b478424c21d4c64fcea2f34ec3d7cd9eef237727f6a6a"
+    },
+    {
+      "stable_image_id": "Testing:483",
+      "image_id": "483",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/483.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\483.jpg",
+      "file_sha256": "85290edb629e7cd9089962452743bbc7eb062a26a1cdb30686001d868cfb5292",
+      "normalized_pixel_sha256": "4dd18d8f36852a86d469e0929fa042bd238b08b0235e8a5f70c2a00bc9418599"
+    },
+    {
+      "stable_image_id": "Testing:485",
+      "image_id": "485",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/485.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\485.jpg",
+      "file_sha256": "1392cd1519c7f1d032c09b2754b31db85291d1076ef284e341d53e19d534eace",
+      "normalized_pixel_sha256": "10016b3dd46169d859639f8c3009ded69c6fdc729993eb501d176a895ec037f3"
+    },
+    {
+      "stable_image_id": "Testing:495",
+      "image_id": "495",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/495.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\495.jpg",
+      "file_sha256": "9e454f67df5e62abf7045d677f935f92bc26831ed5e332ead14b74441178fe1f",
+      "normalized_pixel_sha256": "e03f1c6bcb5b87eb19980ca63475a9dd0e1dd8e25ce5dba34ffe836c5bc937ca"
+    },
+    {
+      "stable_image_id": "Testing:5",
+      "image_id": "5",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/5.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\5.jpg",
+      "file_sha256": "5d433ec5c0d2eb2ae7318e8f5c7e665aabfdfa61ef2355cebb6e0450b2c7eff9",
+      "normalized_pixel_sha256": "c360688347c729876a28377a53cdbc13424c1786dea7a32cdd48f34e18ac1094"
+    },
+    {
+      "stable_image_id": "Testing:504",
+      "image_id": "504",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/504.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\504.jpg",
+      "file_sha256": "9272ff1e2d27870896d475b1bc721c099caa573ac84dfa51324aa13931855153",
+      "normalized_pixel_sha256": "2e22eb575b016685e3fa638b5fa71da3d420c0f6c69ff5604e0db62856403520"
+    },
+    {
+      "stable_image_id": "Testing:51",
+      "image_id": "51",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/51.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\51.jpg",
+      "file_sha256": "125777778e67ae5906d31555eabae56863e7f5c54e5ea9caf4b4c459403cfff0",
+      "normalized_pixel_sha256": "4211a46285d16811f9245e8e30aff136925882a3f7d7154f5788513404c195ce"
+    },
+    {
+      "stable_image_id": "Testing:511",
+      "image_id": "511",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/511.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\511.jpg",
+      "file_sha256": "504e52e74f53f78abf6bea6bc1a7afcd412b16e86915b44ab9f5f748c9c2c48f",
+      "normalized_pixel_sha256": "b7b5ae1bc0064be2cd1ba17cd940b2563ff312412ce8f5d2518ca8975f0f0cae"
+    },
+    {
+      "stable_image_id": "Testing:521",
+      "image_id": "521",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/521.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\521.jpg",
+      "file_sha256": "3fa864c89018828889dbf568a9dabc722147f65730183577c0383538cf98eefd",
+      "normalized_pixel_sha256": "f55d2e483ceda0d1d06dabd8b34030f8c2ebb9cdb9dfe15145d102d63f81cb88"
+    },
+    {
+      "stable_image_id": "Testing:530",
+      "image_id": "530",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/530.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\530.jpg",
+      "file_sha256": "f205c6ce6e8ab55e6bd54ffb9fc4abdb989bf9c43a8f964c9b16e85d56a31cc1",
+      "normalized_pixel_sha256": "ec2384d38e8472b6440b210d188ae4351e2bae9b7be97ed4c9352e1e1685e772"
+    },
+    {
+      "stable_image_id": "Testing:531",
+      "image_id": "531",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/531.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\531.jpg",
+      "file_sha256": "ba1a8186fea82debe9840d3d60089b57856d3024e764898931b97ba227e39708",
+      "normalized_pixel_sha256": "53e75efd1c79332a68c5189830ce4cd5e6573e551419f1d6b07ee78d9004d807"
+    },
+    {
+      "stable_image_id": "Testing:537",
+      "image_id": "537",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/537.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\537.jpg",
+      "file_sha256": "9f884dd05d7f90ecd6b1ec6f346755075c0fdda5bdd1d66d22bcdcb6db9e0d46",
+      "normalized_pixel_sha256": "fb382f26487eb380b8b86b54effed85406a094e00af32df37753d91e06495da0"
+    },
+    {
+      "stable_image_id": "Testing:539",
+      "image_id": "539",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/539.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\539.jpg",
+      "file_sha256": "3ad480190d5d50ec1b90504779d96e2601ea80487c43d85cc508da57840b735a",
+      "normalized_pixel_sha256": "08d81d3b9bff730278e34eb7cdd94beabb43723102dacc78f35d281af4d73c78"
+    },
+    {
+      "stable_image_id": "Testing:54",
+      "image_id": "54",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/54.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\54.jpg",
+      "file_sha256": "408e5d3629b4b96d47adad6bda9610226d9c8293bee9b582fb55673b2dbf6c68",
+      "normalized_pixel_sha256": "797fe1589806286b27d240db0229cb152da4c985828d7a5668d92c694f3493af"
+    },
+    {
+      "stable_image_id": "Testing:542",
+      "image_id": "542",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/542.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\542.jpg",
+      "file_sha256": "9809850289ded9b8b76824ef9d8242003e15afd7ed5e601c886f88dcbfd63beb",
+      "normalized_pixel_sha256": "c7055b80f063be5bff923a4eb2fc13797701ec9798c456ca9e5c09d088d79ae8"
+    },
+    {
+      "stable_image_id": "Testing:544",
+      "image_id": "544",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/544.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\544.jpg",
+      "file_sha256": "94b1a91ac1d62fca922c5a675da3671b936dcea8435f75769b003b227a199cdd",
+      "normalized_pixel_sha256": "23bc10dc948284ca285701cbb84307cf186c3866fd7960b75a7c71186c63a0e2"
+    },
+    {
+      "stable_image_id": "Testing:545",
+      "image_id": "545",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/545.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\545.jpg",
+      "file_sha256": "81a3a10598e1e49e9897af1976bb06b98b2e74cd9fa9fc1d204659626a461299",
+      "normalized_pixel_sha256": "d0894cffab2bc354fffa2c97937160fb75641fed556a8bb164aa542314d192bb"
+    },
+    {
+      "stable_image_id": "Testing:549",
+      "image_id": "549",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/549.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\549.jpg",
+      "file_sha256": "6e094c106e211b39e910834b15f4553198304eac682144d23eca5c5638062b57",
+      "normalized_pixel_sha256": "aac6aa37bf3b1c21ce3ee78bdba12e65c42cf34a4e65703940ebf02e30d28a33"
+    },
+    {
+      "stable_image_id": "Testing:558",
+      "image_id": "558",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/558.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\558.jpg",
+      "file_sha256": "7819498d7d39e5ceb26b3da3acade27995d99adc43c513c48e580d6e7556f874",
+      "normalized_pixel_sha256": "4c862a8fa324a1a82d4e22a12c28d5af48db74a6dc28112f4bb782c2a3dbde03"
+    },
+    {
+      "stable_image_id": "Testing:567",
+      "image_id": "567",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/567.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\567.jpg",
+      "file_sha256": "8fe19371e6ac93e430b34b42248f56c0d74b8c727fdf70b28a6cea6e7e82e306",
+      "normalized_pixel_sha256": "81227f438a9a98e7b2f31006574d8e8eb10cc726c25f0a408afb1698fc22fbc0"
+    },
+    {
+      "stable_image_id": "Testing:570",
+      "image_id": "570",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/570.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\570.jpg",
+      "file_sha256": "a88b44a747aa93a9cda39e922fc5e753c7c3d8486b5673e00eca30b846914271",
+      "normalized_pixel_sha256": "f08a25b2a001eba0c6a715d82516ba15f41b499639164ad19d5cbe316fa8f3cd"
+    },
+    {
+      "stable_image_id": "Testing:580",
+      "image_id": "580",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/580.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\580.jpg",
+      "file_sha256": "5216a8f5b0be2606b60ab1096caa5bb9fd5eb9af410535692a98e13af14bd6bc",
+      "normalized_pixel_sha256": "a418d9a9699f2251a3f866634b3eb1f9ea78805f62cce2eb265a216f23dbb0ab"
+    },
+    {
+      "stable_image_id": "Testing:583",
+      "image_id": "583",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/583.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\583.jpg",
+      "file_sha256": "66099e6fb36929bbaaef318824e7c63acc75f2d536b3fe1690224734976bb033",
+      "normalized_pixel_sha256": "4a31d00cb7f8559b4b805aacd50219f40adf958320e21906e6e4935ab43c1797"
+    },
+    {
+      "stable_image_id": "Testing:590",
+      "image_id": "590",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/590.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\590.jpg",
+      "file_sha256": "81f2a29927c0f8a99b0466d9c157ee591b7f4eea73bf244b47048ea9a41ea297",
+      "normalized_pixel_sha256": "7a72ce8ea1fe6a6032cee07f0e224ece4d59b76f9db59fe6d9aa3c145ea0c271"
+    },
+    {
+      "stable_image_id": "Testing:611",
+      "image_id": "611",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/611.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\611.jpg",
+      "file_sha256": "c9a548aa180d104d21174d822490461a4577ce5d23d45558c08378580a7894ff",
+      "normalized_pixel_sha256": "94b758bfdd0246b832ce18e52790721d81976fb479ea5169e8014a0ba08b8c93"
+    },
+    {
+      "stable_image_id": "Testing:613",
+      "image_id": "613",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/613.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\613.jpg",
+      "file_sha256": "607b1d6b57d82fd7b71aa3497f1d73e3d9279489b8d6677aa80d9469798d9b5a",
+      "normalized_pixel_sha256": "dcd972c35de81feecb96594a7ce29ae4880570b077232267ad2b68395defea32"
+    },
+    {
+      "stable_image_id": "Testing:622",
+      "image_id": "622",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/622.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\622.jpg",
+      "file_sha256": "ed5bfbf0918ef65162a2c1f5cee3a7f59833efc07b5052b7f37d67d8e19cfdfd",
+      "normalized_pixel_sha256": "2aa0f66e97e86a157e9b7976241ebe0af6e9b884854635ffa0893c26020c75fd"
+    },
+    {
+      "stable_image_id": "Testing:624",
+      "image_id": "624",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/624.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\624.jpg",
+      "file_sha256": "886d696a852393f589b18c1e0bbb820f3bef63071fc6362f609da574dc81145f",
+      "normalized_pixel_sha256": "57016c000245f8dce06d9a9cdbdb70511bc8fcc6feb281c06251207bf730cbce"
+    },
+    {
+      "stable_image_id": "Testing:630",
+      "image_id": "630",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/630.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\630.jpg",
+      "file_sha256": "f078687dd9b546c37b169040e8890d29e49e2ec08f2e977a73d788c37efbbb2b",
+      "normalized_pixel_sha256": "d7e5de90f26b34a1739579a4c12d0942ef54e68dc5f09c5d4f325a1c81df191e"
+    },
+    {
+      "stable_image_id": "Testing:633",
+      "image_id": "633",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/633.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\633.jpg",
+      "file_sha256": "b92ad7398a3d26a5d9b62dbc79a550aae4fd02a97e802b85e5385e25cc95116d",
+      "normalized_pixel_sha256": "d4fe3c0df7dae8ded7cb83c320dc4078e6b75aab74e71b106e1542ea81067c80"
+    },
+    {
+      "stable_image_id": "Testing:641",
+      "image_id": "641",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/641.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\641.jpg",
+      "file_sha256": "40cd21e50a0f1ef8ecd5fff7bcc1a35c802c623f5383a27d34fc19cfcff17eb4",
+      "normalized_pixel_sha256": "c7c6bd53fd9dae97e4bdceae87d73f1677a9058cbbe0ff26b5ad162621917819"
+    },
+    {
+      "stable_image_id": "Testing:643",
+      "image_id": "643",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/643.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\643.jpg",
+      "file_sha256": "58a0693e8f986fee4972d823a00ea12d6a56bc04c55c335be381e58172883779",
+      "normalized_pixel_sha256": "7498130a7a798150495574dc290ba873719dcfd17694b1c6b3d55e7d195e7e5e"
+    },
+    {
+      "stable_image_id": "Testing:657",
+      "image_id": "657",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/657.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\657.jpg",
+      "file_sha256": "d54b754089801c3e2cd34ec5b03a835753f2faa63aac772d88c15dccd36c05b3",
+      "normalized_pixel_sha256": "4bb95143353693246742ee5f0921b88f4f01a42874fad72a5a053f173eff5147"
+    },
+    {
+      "stable_image_id": "Testing:663",
+      "image_id": "663",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/663.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\663.jpg",
+      "file_sha256": "4f598d01310ac38037d674e2c9c137b66aa26896417dc2fe63f094c4f547abbe",
+      "normalized_pixel_sha256": "dac1e6623888305676f8e4829d2bdcf81ad5ac25d890280e3e151adcf68436df"
+    },
+    {
+      "stable_image_id": "Testing:666",
+      "image_id": "666",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/666.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\666.jpg",
+      "file_sha256": "ba38ae93de134a44247f4cabf852e205b2c31bddb08f367a59f003dca3c7f7e9",
+      "normalized_pixel_sha256": "3805c79f903501c4273de223902128b71f91e904a7efb3e7b5699c35d415bb7f"
+    },
+    {
+      "stable_image_id": "Testing:675",
+      "image_id": "675",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/675.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\675.jpg",
+      "file_sha256": "358e4978c0235484406d0241f6e9ba6100d67baca432bb49b691b486361b7796",
+      "normalized_pixel_sha256": "82eaf6b851754f148f632cc84c806920047b5ffb0e185dca1fa1a8466e5f0d01"
+    },
+    {
+      "stable_image_id": "Testing:677",
+      "image_id": "677",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/677.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\677.jpg",
+      "file_sha256": "9c5c448bf0783101443e85282942780acf69fc5662646004a698c40b65fd5ba6",
+      "normalized_pixel_sha256": "b1089946043c9088f3541b5763bf975733de05d1b359984d87dabd2cb86745f2"
+    },
+    {
+      "stable_image_id": "Testing:68",
+      "image_id": "68",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/68.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\68.jpg",
+      "file_sha256": "b5b02ddcd85596932217896eb1fb373e61bd1c0bcb2cacdd76c0f4f4c9a6f2c0",
+      "normalized_pixel_sha256": "64d91474dfae62557decb25e2b958dd44ec2544098b33c9ed73d9032d4ba6f45"
+    },
+    {
+      "stable_image_id": "Testing:682",
+      "image_id": "682",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/682.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\682.jpg",
+      "file_sha256": "b65d2adf89c79ac51cb6c62e5bdb13b93c79109d3ccdc093bb1360c4305009d8",
+      "normalized_pixel_sha256": "9bbc0e6d39fec32cb5783b6a0b8d00f5170591223b23f54035bd422e15a12b47"
+    },
+    {
+      "stable_image_id": "Testing:687",
+      "image_id": "687",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/687.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\687.jpg",
+      "file_sha256": "9d310c9517c8b443324425a45721baa1bca2ea81d869532189a5e695a1b75979",
+      "normalized_pixel_sha256": "70a031987bd8c0b1e70dbece17a9967ea47300363739bab0815ccb4a054232b1"
+    },
+    {
+      "stable_image_id": "Testing:695",
+      "image_id": "695",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/695.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\695.jpg",
+      "file_sha256": "c0be9dc649f9385189954d3f1d48a11d0bf8c03dafc35358ed8a2fcc97d8b770",
+      "normalized_pixel_sha256": "e9d43222f341e0dd95fcd4f10aa0bb133bfa8d6fb773209609ed49d34c4df80d"
+    },
+    {
+      "stable_image_id": "Testing:715",
+      "image_id": "715",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/715.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\715.jpg",
+      "file_sha256": "ac99b2f73739d27d53ed3d017f218b8385ec78fdf4d37c60acc8e758038ab989",
+      "normalized_pixel_sha256": "87b63691a10886ad9b7d4c162c872572271ad2c867621fde06a5bcb0cd07b14c"
+    },
+    {
+      "stable_image_id": "Testing:716",
+      "image_id": "716",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/716.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\716.jpg",
+      "file_sha256": "c6bad8b657a68d85511b67af49b985341d375dc26836c1e5f06a9983bd516ee6",
+      "normalized_pixel_sha256": "344fa07a5faa7ec0f29b26e758b00946b85b8c4539a25bce019524d8881fe371"
+    },
+    {
+      "stable_image_id": "Testing:736",
+      "image_id": "736",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/736.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\736.jpg",
+      "file_sha256": "c2bfe318a0960afd1f4132afbd70db586a1c9849bb85a645167f6a748d517d06",
+      "normalized_pixel_sha256": "11085a499f141a3804145ea7d30fdeb57f4cc91b9afed03fee1f71242f3ee361"
+    },
+    {
+      "stable_image_id": "Testing:74",
+      "image_id": "74",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/74.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\74.jpg",
+      "file_sha256": "d44d32fa4efd852d4dea12ceed5eae82abffa6cd4d5da452b235f7756b1f3187",
+      "normalized_pixel_sha256": "d488d6d2f57df291f1859207ab025a4af3fe1266872036d5335018976cfcef97"
+    },
+    {
+      "stable_image_id": "Testing:756",
+      "image_id": "756",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/756.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\756.jpg",
+      "file_sha256": "cda337a4b97aca5767bb7a89e79f848fabb1d0cee048373eedd6cd6155ee8b28",
+      "normalized_pixel_sha256": "5857c003ef3777be9a023af3f1a6099a3a07409269312e1916ad58170963937d"
+    },
+    {
+      "stable_image_id": "Testing:757",
+      "image_id": "757",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/757.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\757.jpg",
+      "file_sha256": "af9b0883b5ee4d4211683348a85f70a6a9e2826ea26f5bd7f7675b3e2dc51b0f",
+      "normalized_pixel_sha256": "c91ec35ca7dcdc1c41f34784f156bb3b37cd389562de0331099bbbd5d862bc88"
+    },
+    {
+      "stable_image_id": "Testing:764",
+      "image_id": "764",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/764.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\764.jpg",
+      "file_sha256": "88d9e80dd86b9a75f1c77d5fbbfe9dac5842caa3bf0781038d9270682d3dd4a1",
+      "normalized_pixel_sha256": "e7adf47d926d1635970c6f3ed1d61595e032bc4ea8583d2e8cc0524d3bdce811"
+    },
+    {
+      "stable_image_id": "Testing:769",
+      "image_id": "769",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/769.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\769.jpg",
+      "file_sha256": "e8749d805691a80f150dc7f79eda0bcf1412bc14c5739c3a22cb5fb43fc4978a",
+      "normalized_pixel_sha256": "96bdb00eccfb0b9771fe9def95a26702a2c5169e543cde923e9a2cd296331d19"
+    },
+    {
+      "stable_image_id": "Testing:782",
+      "image_id": "782",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/782.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\782.jpg",
+      "file_sha256": "9f1a3bb8d75e8ee318783e626b19b1e72d20b991bf44d9fdb1c4cc833f5b0801",
+      "normalized_pixel_sha256": "409bbd61476902aa63c7dd0f6e8ca89349e1d837b35b5da6ba1f322aefdf23cb"
+    },
+    {
+      "stable_image_id": "Testing:784",
+      "image_id": "784",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/784.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\784.jpg",
+      "file_sha256": "1b11f64a8de68bba59e609c158ebf5b389972c26e5cfa2dcb71092b593cd8215",
+      "normalized_pixel_sha256": "aaf77ec3a86bc22fb9a0f2c82734b147318cf64c2e91696e3376b2fa21876ef9"
+    },
+    {
+      "stable_image_id": "Testing:786",
+      "image_id": "786",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/786.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\786.jpg",
+      "file_sha256": "4b7e3ff84c539db8a064606dc055f8d6a20b9cc7e391771d79e4686f0f3e21a5",
+      "normalized_pixel_sha256": "ae1030643571a229461016e874fa083bf5c5f86bb9c94b25906cc9c98778787e"
+    },
+    {
+      "stable_image_id": "Testing:797",
+      "image_id": "797",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/797.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\797.jpg",
+      "file_sha256": "8007539b6d63ca24bfb414e3b9c2b0d4c04ad24c852153bbbcae4cfa147c201b",
+      "normalized_pixel_sha256": "e420a6b24a8c4e37a36d1696726a4b99be529e82e48ce82a57a2dca6ea54de21"
+    },
+    {
+      "stable_image_id": "Testing:799",
+      "image_id": "799",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/799.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\799.jpg",
+      "file_sha256": "9f0ff3f5936d442627ad8d13e43f06ca2e8a2470fdba164b9bd658c738c849a9",
+      "normalized_pixel_sha256": "d313b888064f92888398ab58dc0c94870b828e0ad0698ec1ec9c5ba58f4c1c0c"
+    },
+    {
+      "stable_image_id": "Testing:804",
+      "image_id": "804",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/804.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\804.jpg",
+      "file_sha256": "43b3cef2f29f5cd3524d11982c8792823823dc7470afb6d58a15b4006ad72234",
+      "normalized_pixel_sha256": "5a6f3447db76d6aa6df8e2388be8b1859b09b1b721a70d42a3e7ea3e4b7ae83a"
+    },
+    {
+      "stable_image_id": "Testing:808",
+      "image_id": "808",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/808.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\808.jpg",
+      "file_sha256": "dba09223a6f73cbeeaffb096a5d56f018867f5e2e7acdc695801c5dd3f043fe7",
+      "normalized_pixel_sha256": "813d71e3bca412024149466ed6646ca0e954f67736bdbc520a38650be7dc1c8a"
+    },
+    {
+      "stable_image_id": "Testing:81",
+      "image_id": "81",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/81.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\81.jpg",
+      "file_sha256": "d2a1414ae8377a16357f1ea126d3b466b96ff679a0b91f7dd94cb5da6d48b37f",
+      "normalized_pixel_sha256": "6f663edefa8c4ca391838faaf6090f99fc9c5ee921fc04ae7af2e81fee7381e7"
+    },
+    {
+      "stable_image_id": "Testing:810",
+      "image_id": "810",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/810.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\810.jpg",
+      "file_sha256": "4505a452bfdf796de72ee9937497a7a099552e284c35503d76cf3ea8b2c5e903",
+      "normalized_pixel_sha256": "0d4a1d20ecf4dab7ce36f4442afe9159496ce3a6dfee9ac1560e11adfdf2db51"
+    },
+    {
+      "stable_image_id": "Testing:811",
+      "image_id": "811",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/811.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\811.jpg",
+      "file_sha256": "e5c3eab63e25fe56305458509835ec393135c30455a267b9e534398c78811b17",
+      "normalized_pixel_sha256": "e6e398004fcd2adad56de54fdfba090fd671b5e008fafe680f898029eb333179"
+    },
+    {
+      "stable_image_id": "Testing:851",
+      "image_id": "851",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/851.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\851.jpg",
+      "file_sha256": "996d0bb94692116e4ea290bb94ffc61ec950894910545ba16e57435534649cce",
+      "normalized_pixel_sha256": "c5cb6902f7404ee5f8f5520dde27776483c602b58e46d8fa96d92fb0aa3bdc38"
+    },
+    {
+      "stable_image_id": "Testing:854",
+      "image_id": "854",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/854.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\854.jpg",
+      "file_sha256": "c8718b4a588ca67eb818d6ed77e8e357846cb6983eb3b44d5f25df9f7056b656",
+      "normalized_pixel_sha256": "9383216048dfbdf50e3dc24a608e939a26831589eb3f3e02d932118e25307e27"
+    },
+    {
+      "stable_image_id": "Testing:859",
+      "image_id": "859",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/859.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\859.jpg",
+      "file_sha256": "ee97a22b21ad1044d815f6758d910da56c788b14fb78b88875d797b79bd92e7a",
+      "normalized_pixel_sha256": "118da045931f4a9c58277d7cc37ba08f0c042595031ee6721b13a82acb561d9d"
+    },
+    {
+      "stable_image_id": "Testing:87",
+      "image_id": "87",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/87.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\87.jpg",
+      "file_sha256": "ab0307a915cfdb3b8e2539a6a94db1b5bd217ff99d0075ad6b181a3c672afc8a",
+      "normalized_pixel_sha256": "2dc1ade66ce7e8f63b03744a5bfb6e464ee92515c54f4859a8f8bcc04429803d"
+    },
+    {
+      "stable_image_id": "Testing:881",
+      "image_id": "881",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/881.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\881.jpg",
+      "file_sha256": "bafbc74613f60c66de6eea0f18cc679e276a229fe4029bd0383bf9d8a87cad78",
+      "normalized_pixel_sha256": "e2fe66cf1728f484797ffb3a3dd3bb3bc1fe710090c8034a572fba25b565fedf"
+    },
+    {
+      "stable_image_id": "Testing:884",
+      "image_id": "884",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/884.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\884.jpg",
+      "file_sha256": "83961e5d7cad6f3a054dadaf6d2ee5d2a3318f93c761223158f2b9c958ba48db",
+      "normalized_pixel_sha256": "38fe1eb7cc854a6fa511baac2ef1c362a12d2d55258801f492fc024ba54b0fd2"
+    },
+    {
+      "stable_image_id": "Testing:885",
+      "image_id": "885",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/885.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\885.jpg",
+      "file_sha256": "72b4b723dec6272a6c045151444ccefc899b83a8cfb91256c8959507a3f60caf",
+      "normalized_pixel_sha256": "e63d58bbe558297a5c70b9e70d0e21935591b57e291758f133d861acabf4d3de"
+    },
+    {
+      "stable_image_id": "Testing:887",
+      "image_id": "887",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/887.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\887.jpg",
+      "file_sha256": "c53f5107d37d51d4a813dbabbfae5033d0532c26e85100a7504ec0ee2558f23d",
+      "normalized_pixel_sha256": "a0984700fd97cca68d7ea33a5b7c44ef991b33cf9208c70f8593c419e1e0778f"
+    },
+    {
+      "stable_image_id": "Testing:890",
+      "image_id": "890",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/890.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\890.jpg",
+      "file_sha256": "980685bb56c18259323eea41ad54f5f99cf4e761dd8938eba360512c218f14c4",
+      "normalized_pixel_sha256": "6ed382cd33c445465b4ef74f8be4ccc79665ed666247241490a908b7b88357a7"
+    },
+    {
+      "stable_image_id": "Testing:892",
+      "image_id": "892",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/892.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\892.jpg",
+      "file_sha256": "5f9581f6ba2f1a7af98d16a1a493e6d9db7356db2c9e30527664d8e688051aa7",
+      "normalized_pixel_sha256": "ad38c8f669bc8e1497b5fb4b15e5b5bf7862848642e53140e7a330aae739af14"
+    },
+    {
+      "stable_image_id": "Testing:893",
+      "image_id": "893",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/893.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\893.jpg",
+      "file_sha256": "86179ce560a98a8e2a49955f70c06d07c9d449000cb8ed4d392687ef1e5aec5c",
+      "normalized_pixel_sha256": "d4f991a06d1f84d37bb83be2bcace998ff75481763c67ebcda4a513efb6ed9db"
+    },
+    {
+      "stable_image_id": "Testing:896",
+      "image_id": "896",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/896.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\896.jpg",
+      "file_sha256": "1dae8bad21de5848f5876e4c91e862504fe49d7892cd34ce25f1c34fd136a1f5",
+      "normalized_pixel_sha256": "6b7e3cde72f1f45b6935d9b6ae2fea0ad1826c1419d1774556a32023c25093f4"
+    },
+    {
+      "stable_image_id": "Testing:904",
+      "image_id": "904",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/904.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\904.jpg",
+      "file_sha256": "fd249571340dc92d4f36cf96a7229107e5b58d4763dcbaa44e1b1c0475f159de",
+      "normalized_pixel_sha256": "83d19630c16f158d2a5284b37c301bb5d9c854bb370b7be1b921bf7679ab5457"
+    },
+    {
+      "stable_image_id": "Testing:907",
+      "image_id": "907",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/907.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\907.jpg",
+      "file_sha256": "c75463fc76c462aa2953c09a9cc84ff99dd01b836dda6138f1475fea3306f14a",
+      "normalized_pixel_sha256": "2bb5289b082d6c5788d96ae6fbd9274ae3dbfbe1546fa7016a56fa0021bfbf7f"
+    },
+    {
+      "stable_image_id": "Testing:913",
+      "image_id": "913",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/913.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\913.jpg",
+      "file_sha256": "25674ef40b95d11dbe5431f2ed596023a17a78940ce958585895326871400893",
+      "normalized_pixel_sha256": "303d77468030b0025a05adb11eb25571fcd01b8dddc8b7df8b8c65a082bf28d9"
+    },
+    {
+      "stable_image_id": "Testing:915",
+      "image_id": "915",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/915.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\915.jpg",
+      "file_sha256": "78acf7ba4ae00424b6ba8cb382417c544bde50d470a405ff79e1c88ea1c81dad",
+      "normalized_pixel_sha256": "a97075475036aeda18720c5431f38498ccbdfe741cf53d23e68495791bebcbee"
+    },
+    {
+      "stable_image_id": "Testing:930",
+      "image_id": "930",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/930.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\930.jpg",
+      "file_sha256": "ca627423b07017f26d737ea83c78f7986b41e18dcf0eabb13c44a49d7e289614",
+      "normalized_pixel_sha256": "59f6faee90dab9fdd0298dc0449b953f5a7b037d4566dd8c272318b3dcdd36c8"
+    },
+    {
+      "stable_image_id": "Testing:938",
+      "image_id": "938",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/938.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\938.jpg",
+      "file_sha256": "e3d707a9461ae186608578ed5bc4923b4fc92d188e1487752ddbbbd1ea8d2ac3",
+      "normalized_pixel_sha256": "5b72a7ce49752ebe9239cdaab5c4fa2b4f071d4dbc23714da40e4c8fa941a244"
+    },
+    {
+      "stable_image_id": "Testing:944",
+      "image_id": "944",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/944.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\944.jpg",
+      "file_sha256": "abbf9379a45cffbff0485d3aa18c1cdc5608004af2c7ea8adc748dbde3a9e8ca",
+      "normalized_pixel_sha256": "85515380453a45e83de78da0e73cae43efec5ac2c22e7e7f8d867431d828fd7f"
+    },
+    {
+      "stable_image_id": "Testing:946",
+      "image_id": "946",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/946.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\946.jpg",
+      "file_sha256": "a32753a920b8953825af5b397a0186cc40475c2ad5df8daa3b43300b63401e06",
+      "normalized_pixel_sha256": "7a4de35213f4d48fd8f95fe5a46c41a2628da50f6ee85b5edcb186881082a12c"
+    },
+    {
+      "stable_image_id": "Testing:947",
+      "image_id": "947",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/947.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\947.jpg",
+      "file_sha256": "eaac2925076851ef6586a3373969db587548e5073dff1e7929710e5d1e381429",
+      "normalized_pixel_sha256": "d235bd931a4cbb3c4ca10f1c419da8988f7079927f78e5caeda39823754eb120"
+    },
+    {
+      "stable_image_id": "Testing:961",
+      "image_id": "961",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/961.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\961.jpg",
+      "file_sha256": "80aef98640875f4e020d946f9079a4d1c8d4a17cb4004dca14874b05d69c258f",
+      "normalized_pixel_sha256": "314f145ffc8f9c454008efcd7e1d12319424954b9e8fce29eb8760ef9bbfd426"
+    },
+    {
+      "stable_image_id": "Testing:973",
+      "image_id": "973",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/973.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\973.jpg",
+      "file_sha256": "ff6ea981b6d1f5ef2efb2e6ad3d34f54ad51257799c6d471c28a318454eb6ba7",
+      "normalized_pixel_sha256": "f2daeabea94fefbb39403a553e6b051b149dcbc63daed9cb33b5d239cc8e5cd9"
+    },
+    {
+      "stable_image_id": "Testing:975",
+      "image_id": "975",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/975.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\975.jpg",
+      "file_sha256": "863d74188966cd59223f3905da9aa67fc26edb4797c6075d8fb33a1361584ab1",
+      "normalized_pixel_sha256": "8a6eeec689666e779813fde9977b1d8079e83675a1dc175b2fe60d615ea532c9"
+    },
+    {
+      "stable_image_id": "Testing:976",
+      "image_id": "976",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/976.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\976.jpg",
+      "file_sha256": "05ace648fe520c69cb621c554536dbbfba156f5c8e20bdebfd038cc5814f3df9",
+      "normalized_pixel_sha256": "b3dc56f32b463b2da06654aeb196547f2cb190dbd5b064dcd927ffb3ff9e3b10"
+    },
+    {
+      "stable_image_id": "Testing:984",
+      "image_id": "984",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/984.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\984.jpg",
+      "file_sha256": "9f7e32de06d7e6ab53eceead13d723b925c5b29f373475091ef9e3d3b251a612",
+      "normalized_pixel_sha256": "6640776e7baebeea3a447a4b66bdff23b1899c9113d47433b7448bcc21fa4fe4"
+    },
+    {
+      "stable_image_id": "Testing:988",
+      "image_id": "988",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/988.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\988.jpg",
+      "file_sha256": "0023cd3b1c38214ed2d20761cfe270586cc8ee9d30d7893c9f70b35edea60a33",
+      "normalized_pixel_sha256": "611cf953f6b18e063425e2ab1fded8ed2633875c8f3aaf0a4c9c8c28d1f8e330"
+    },
+    {
+      "stable_image_id": "Testing:993",
+      "image_id": "993",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/993.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\993.jpg",
+      "file_sha256": "70162541c7c3e363e80c4c3e070ab22aedd4cd75dd89c3a49f13e035eab09291",
+      "normalized_pixel_sha256": "e12494226195a1da44be16bea405148b3befbed60903abca8c24bfe9f0de2402"
+    },
+    {
+      "stable_image_id": "Testing:998",
+      "image_id": "998",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/998.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\998.jpg",
+      "file_sha256": "6c33fcf657db9554ac95c7f6eaff6ae360b78d37f27004a498fba26b20ececb2",
+      "normalized_pixel_sha256": "02255e02ed95ecbebf519211cbb952f5eff209ede48855c0ace8ef3d7137805b"
+    }
+  ],
+  "content_hash": "0dd5f0c9f11c575d023ec8dd94f5bed7f5502f23bdca1fa9e61c21bb06934213"
+}

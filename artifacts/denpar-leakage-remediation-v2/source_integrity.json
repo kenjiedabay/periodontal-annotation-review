@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "policy_version": "denpar-leakage-remediation-v2",
+  "manifest_type": "source_integrity",
+  "source_audit": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\denpar-stage2a-audit\\audit_results.json",
+  "source_audit_sha256": "78c9a7e0dc563820222ae599816ff327379b620211f0e62b7d4c41be6ef85076",
+  "decision_date": "2026-09-21T14:44:40.087125+00:00",
+  "source_files_copied": false,
+  "previous_manifest_version": {
+    "policy_version": "denpar-leakage-remediation-v1",
+    "manifest_hashes": {
+      "denpar_clean_train_manifest": "f052219a2976b384df6a5a7a3ee6555355bfc81c62c39e3dc41eb69d46346de0",
+      "denpar_clean_validation_manifest": "2399de659973811f99b87def6a8a88f1d2f977ce7b8795fb4745202d82c0379f",
+      "denpar_clean_historical_test_manifest": "db68eb80a30f17d3b3303310b1042ff46a3f61c2a31156bfb401e00bc5b4052b",
+      "denpar_exclusion_manifest": "62ec706bb235c3ad90ff86d4ca763f112fb07406ab4480d71a58f37ba4b5991a",
+      "denpar_duplicate_group_manifest": "0d1e63957a1f1ae1951cd45f633b44f6fd8c884e21961fd6afc9e869a585e68d",
+      "denpar_near_duplicate_review_queue": "b77b7c766e5742f527be50317bc901eee820d301336cc0d2eaf86db066c411c9"
+    },
+    "manifest_directory": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\denpar-leakage-remediation-v1"
+  },
+  "files_hashed": 9258,
+  "source_tree_hash": "1a8653923669c01b9156277cb65574dfba11600061bfa6ab6a0bf7b9181fcb26",
+  "changed_files": [],
+  "preserved": true,
+  "previous_v1_manifest_hashes_preserved": {
+    "denpar_clean_train_manifest": "f052219a2976b384df6a5a7a3ee6555355bfc81c62c39e3dc41eb69d46346de0",
+    "denpar_clean_validation_manifest": "2399de659973811f99b87def6a8a88f1d2f977ce7b8795fb4745202d82c0379f",
+    "denpar_clean_historical_test_manifest": "db68eb80a30f17d3b3303310b1042ff46a3f61c2a31156bfb401e00bc5b4052b",
+    "denpar_exclusion_manifest": "62ec706bb235c3ad90ff86d4ca763f112fb07406ab4480d71a58f37ba4b5991a",
+    "denpar_duplicate_group_manifest": "0d1e63957a1f1ae1951cd45f633b44f6fd8c884e21961fd6afc9e869a585e68d",
+    "denpar_near_duplicate_review_queue": "b77b7c766e5742f527be50317bc901eee820d301336cc0d2eaf86db066c411c9"
+  },
+  "content_hash": "516cfcb449414bdbf7450ca88fff70c7881710f122d075737b4ef8b22529c0a1"
+}

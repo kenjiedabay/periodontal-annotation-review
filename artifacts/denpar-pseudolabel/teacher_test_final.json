@@ -1,0 +1,28 @@
+{
+  "checkpoint": "../artifacts/denpar-pseudolabel/teacher/latest_checkpoint.pt",
+  "checkpoint_epoch": 6,
+  "split": "test",
+  "source": {
+    "usable_images": 200,
+    "total_instances": 864
+  },
+  "aggregate": {
+    "dice": 0.923436462551753,
+    "iou": 0.8629278310587994,
+    "precision": 0.8974126584214226,
+    "recall": 0.9582413840898556,
+    "matched_instances": 4.2,
+    "missed_instances": 0.12,
+    "false_positive_instances": 2.295,
+    "mean_matched_instance_iou": 0.8969222591607721
+  },
+  "error_analysis": {
+    "missed_teeth": 24,
+    "false_positive_regions": 459,
+    "merged_or_split_instances": "requires qualitative review; reported visualizations distinguish prediction and ground truth",
+    "poor_boundary_delineation_images": [
+      "504",
+      "580"
+    ]
+  }
+}

@@ -1,0 +1,1308 @@
+{
+  "checkpoint": "../artifacts/denpar-pseudolabel/teacher/best_checkpoint.pt",
+  "score_threshold": 0.9,
+  "accepted_images": 324,
+  "accepted_instances": 1390,
+  "per_image": [
+    {
+      "image_id": "3",
+      "instances": 6
+    },
+    {
+      "image_id": "7",
+      "instances": 5
+    },
+    {
+      "image_id": "9",
+      "instances": 5
+    },
+    {
+      "image_id": "10",
+      "instances": 5
+    },
+    {
+      "image_id": "12",
+      "instances": 4
+    },
+    {
+      "image_id": "15",
+      "instances": 4
+    },
+    {
+      "image_id": "17",
+      "instances": 5
+    },
+    {
+      "image_id": "21",
+      "instances": 5
+    },
+    {
+      "image_id": "23",
+      "instances": 2
+    },
+    {
+      "image_id": "24",
+      "instances": 4
+    },
+    {
+      "image_id": "25",
+      "instances": 3
+    },
+    {
+      "image_id": "28",
+      "instances": 6
+    },
+    {
+      "image_id": "30",
+      "instances": 5
+    },
+    {
+      "image_id": "57",
+      "instances": 6
+    },
+    {
+      "image_id": "75",
+      "instances": 4
+    },
+    {
+      "image_id": "77",
+      "instances": 3
+    },
+    {
+      "image_id": "79",
+      "instances": 7
+    },
+    {
+      "image_id": "83",
+      "instances": 4
+    },
+    {
+      "image_id": "91",
+      "instances": 2
+    },
+    {
+      "image_id": "94",
+      "instances": 5
+    },
+    {
+      "image_id": "95",
+      "instances": 3
+    },
+    {
+      "image_id": "97",
+      "instances": 5
+    },
+    {
+      "image_id": "110",
+      "instances": 6
+    },
+    {
+      "image_id": "114",
+      "instances": 4
+    },
+    {
+      "image_id": "115",
+      "instances": 1
+    },
+    {
+      "image_id": "124",
+      "instances": 5
+    },
+    {
+      "image_id": "132",
+      "instances": 4
+    },
+    {
+      "image_id": "146",
+      "instances": 6
+    },
+    {
+      "image_id": "151",
+      "instances": 4
+    },
+    {
+      "image_id": "155",
+      "instances": 6
+    },
+    {
+      "image_id": "157",
+      "instances": 4
+    },
+    {
+      "image_id": "161",
+      "instances": 3
+    },
+    {
+      "image_id": "162",
+      "instances": 3
+    },
+    {
+      "image_id": "179",
+      "instances": 4
+    },
+    {
+      "image_id": "180",
+      "instances": 4
+    },
+    {
+      "image_id": "182",
+      "instances": 4
+    },
+    {
+      "image_id": "185",
+      "instances": 3
+    },
+    {
+      "image_id": "191",
+      "instances": 4
+    },
+    {
+      "image_id": "206",
+      "instances": 3
+    },
+    {
+      "image_id": "217",
+      "instances": 3
+    },
+    {
+      "image_id": "221",
+      "instances": 5
+    },
+    {
+      "image_id": "226",
+      "instances": 4
+    },
+    {
+      "image_id": "230",
+      "instances": 5
+    },
+    {
+      "image_id": "235",
+      "instances": 2
+    },
+    {
+      "image_id": "236",
+      "instances": 6
+    },
+    {
+      "image_id": "242",
+      "instances": 3
+    },
+    {
+      "image_id": "248",
+      "instances": 5
+    },
+    {
+      "image_id": "250",
+      "instances": 3
+    },
+    {
+      "image_id": "252",
+      "instances": 5
+    },
+    {
+      "image_id": "254",
+      "instances": 4
+    },
+    {
+      "image_id": "259",
+      "instances": 5
+    },
+    {
+      "image_id": "261",
+      "instances": 4
+    },
+    {
+      "image_id": "262",
+      "instances": 6
+    },
+    {
+      "image_id": "263",
+      "instances": 4
+    },
+    {
+      "image_id": "267",
+      "instances": 5
+    },
+    {
+      "image_id": "271",
+      "instances": 3
+    },
+    {
+      "image_id": "272",
+      "instances": 4
+    },
+    {
+      "image_id": "274",
+      "instances": 3
+    },
+    {
+      "image_id": "276",
+      "instances": 4
+    },
+    {
+      "image_id": "277",
+      "instances": 5
+    },
+    {
+      "image_id": "280",
+      "instances": 0
+    },
+    {
+      "image_id": "282",
+      "instances": 4
+    },
+    {
+      "image_id": "291",
+      "instances": 5
+    },
+    {
+      "image_id": "294",
+      "instances": 6
+    },
+    {
+      "image_id": "299",
+      "instances": 5
+    },
+    {
+      "image_id": "317",
+      "instances": 5
+    },
+    {
+      "image_id": "328",
+      "instances": 4
+    },
+    {
+      "image_id": "332",
+      "instances": 5
+    },
+    {
+      "image_id": "335",
+      "instances": 5
+    },
+    {
+      "image_id": "341",
+      "instances": 5
+    },
+    {
+      "image_id": "344",
+      "instances": 4
+    },
+    {
+      "image_id": "348",
+      "instances": 6
+    },
+    {
+      "image_id": "356",
+      "instances": 6
+    },
+    {
+      "image_id": "360",
+      "instances": 5
+    },
+    {
+      "image_id": "366",
+      "instances": 3
+    },
+    {
+      "image_id": "371",
+      "instances": 6
+    },
+    {
+      "image_id": "375",
+      "instances": 5
+    },
+    {
+      "image_id": "380",
+      "instances": 5
+    },
+    {
+      "image_id": "386",
+      "instances": 4
+    },
+    {
+      "image_id": "393",
+      "instances": 5
+    },
+    {
+      "image_id": "397",
+      "instances": 6
+    },
+    {
+      "image_id": "400",
+      "instances": 5
+    },
+    {
+      "image_id": "403",
+      "instances": 5
+    },
+    {
+      "image_id": "409",
+      "instances": 6
+    },
+    {
+      "image_id": "410",
+      "instances": 4
+    },
+    {
+      "image_id": "417",
+      "instances": 5
+    },
+    {
+      "image_id": "438",
+      "instances": 5
+    },
+    {
+      "image_id": "440",
+      "instances": 4
+    },
+    {
+      "image_id": "442",
+      "instances": 4
+    },
+    {
+      "image_id": "443",
+      "instances": 4
+    },
+    {
+      "image_id": "446",
+      "instances": 4
+    },
+    {
+      "image_id": "447",
+      "instances": 5
+    },
+    {
+      "image_id": "452",
+      "instances": 4
+    },
+    {
+      "image_id": "453",
+      "instances": 6
+    },
+    {
+      "image_id": "465",
+      "instances": 3
+    },
+    {
+      "image_id": "470",
+      "instances": 6
+    },
+    {
+      "image_id": "508",
+      "instances": 5
+    },
+    {
+      "image_id": "515",
+      "instances": 5
+    },
+    {
+      "image_id": "523",
+      "instances": 4
+    },
+    {
+      "image_id": "524",
+      "instances": 5
+    },
+    {
+      "image_id": "529",
+      "instances": 4
+    },
+    {
+      "image_id": "532",
+      "instances": 3
+    },
+    {
+      "image_id": "536",
+      "instances": 4
+    },
+    {
+      "image_id": "540",
+      "instances": 4
+    },
+    {
+      "image_id": "541",
+      "instances": 4
+    },
+    {
+      "image_id": "547",
+      "instances": 6
+    },
+    {
+      "image_id": "553",
+      "instances": 3
+    },
+    {
+      "image_id": "560",
+      "instances": 6
+    },
+    {
+      "image_id": "562",
+      "instances": 5
+    },
+    {
+      "image_id": "564",
+      "instances": 6
+    },
+    {
+      "image_id": "566",
+      "instances": 4
+    },
+    {
+      "image_id": "569",
+      "instances": 5
+    },
+    {
+      "image_id": "571",
+      "instances": 5
+    },
+    {
+      "image_id": "572",
+      "instances": 5
+    },
+    {
+      "image_id": "577",
+      "instances": 4
+    },
+    {
+      "image_id": "578",
+      "instances": 2
+    },
+    {
+      "image_id": "585",
+      "instances": 6
+    },
+    {
+      "image_id": "588",
+      "instances": 6
+    },
+    {
+      "image_id": "592",
+      "instances": 4
+    },
+    {
+      "image_id": "599",
+      "instances": 3
+    },
+    {
+      "image_id": "607",
+      "instances": 4
+    },
+    {
+      "image_id": "614",
+      "instances": 3
+    },
+    {
+      "image_id": "621",
+      "instances": 2
+    },
+    {
+      "image_id": "623",
+      "instances": 5
+    },
+    {
+      "image_id": "625",
+      "instances": 4
+    },
+    {
+      "image_id": "636",
+      "instances": 5
+    },
+    {
+      "image_id": "638",
+      "instances": 6
+    },
+    {
+      "image_id": "639",
+      "instances": 6
+    },
+    {
+      "image_id": "646",
+      "instances": 2
+    },
+    {
+      "image_id": "649",
+      "instances": 4
+    },
+    {
+      "image_id": "650",
+      "instances": 6
+    },
+    {
+      "image_id": "651",
+      "instances": 3
+    },
+    {
+      "image_id": "659",
+      "instances": 5
+    },
+    {
+      "image_id": "665",
+      "instances": 4
+    },
+    {
+      "image_id": "667",
+      "instances": 5
+    },
+    {
+      "image_id": "669",
+      "instances": 3
+    },
+    {
+      "image_id": "671",
+      "instances": 5
+    },
+    {
+      "image_id": "678",
+      "instances": 5
+    },
+    {
+      "image_id": "679",
+      "instances": 5
+    },
+    {
+      "image_id": "680",
+      "instances": 5
+    },
+    {
+      "image_id": "689",
+      "instances": 5
+    },
+    {
+      "image_id": "692",
+      "instances": 3
+    },
+    {
+      "image_id": "697",
+      "instances": 4
+    },
+    {
+      "image_id": "698",
+      "instances": 3
+    },
+    {
+      "image_id": "703",
+      "instances": 2
+    },
+    {
+      "image_id": "709",
+      "instances": 5
+    },
+    {
+      "image_id": "717",
+      "instances": 5
+    },
+    {
+      "image_id": "718",
+      "instances": 5
+    },
+    {
+      "image_id": "720",
+      "instances": 3
+    },
+    {
+      "image_id": "723",
+      "instances": 5
+    },
+    {
+      "image_id": "725",
+      "instances": 4
+    },
+    {
+      "image_id": "726",
+      "instances": 2
+    },
+    {
+      "image_id": "727",
+      "instances": 6
+    },
+    {
+      "image_id": "730",
+      "instances": 4
+    },
+    {
+      "image_id": "731",
+      "instances": 3
+    },
+    {
+      "image_id": "733",
+      "instances": 6
+    },
+    {
+      "image_id": "734",
+      "instances": 2
+    },
+    {
+      "image_id": "735",
+      "instances": 5
+    },
+    {
+      "image_id": "739",
+      "instances": 6
+    },
+    {
+      "image_id": "743",
+      "instances": 3
+    },
+    {
+      "image_id": "746",
+      "instances": 4
+    },
+    {
+      "image_id": "747",
+      "instances": 2
+    },
+    {
+      "image_id": "751",
+      "instances": 3
+    },
+    {
+      "image_id": "753",
+      "instances": 3
+    },
+    {
+      "image_id": "759",
+      "instances": 6
+    },
+    {
+      "image_id": "761",
+      "instances": 4
+    },
+    {
+      "image_id": "762",
+      "instances": 5
+    },
+    {
+      "image_id": "765",
+      "instances": 2
+    },
+    {
+      "image_id": "768",
+      "instances": 4
+    },
+    {
+      "image_id": "774",
+      "instances": 1
+    },
+    {
+      "image_id": "776",
+      "instances": 7
+    },
+    {
+      "image_id": "777",
+      "instances": 4
+    },
+    {
+      "image_id": "787",
+      "instances": 5
+    },
+    {
+      "image_id": "789",
+      "instances": 5
+    },
+    {
+      "image_id": "794",
+      "instances": 3
+    },
+    {
+      "image_id": "795",
+      "instances": 6
+    },
+    {
+      "image_id": "801",
+      "instances": 3
+    },
+    {
+      "image_id": "803",
+      "instances": 4
+    },
+    {
+      "image_id": "805",
+      "instances": 4
+    },
+    {
+      "image_id": "812",
+      "instances": 4
+    },
+    {
+      "image_id": "815",
+      "instances": 4
+    },
+    {
+      "image_id": "818",
+      "instances": 3
+    },
+    {
+      "image_id": "820",
+      "instances": 6
+    },
+    {
+      "image_id": "822",
+      "instances": 3
+    },
+    {
+      "image_id": "824",
+      "instances": 4
+    },
+    {
+      "image_id": "827",
+      "instances": 3
+    },
+    {
+      "image_id": "828",
+      "instances": 5
+    },
+    {
+      "image_id": "829",
+      "instances": 3
+    },
+    {
+      "image_id": "830",
+      "instances": 4
+    },
+    {
+      "image_id": "831",
+      "instances": 6
+    },
+    {
+      "image_id": "832",
+      "instances": 5
+    },
+    {
+      "image_id": "835",
+      "instances": 3
+    },
+    {
+      "image_id": "839",
+      "instances": 5
+    },
+    {
+      "image_id": "840",
+      "instances": 5
+    },
+    {
+      "image_id": "841",
+      "instances": 5
+    },
+    {
+      "image_id": "844",
+      "instances": 4
+    },
+    {
+      "image_id": "845",
+      "instances": 3
+    },
+    {
+      "image_id": "847",
+      "instances": 4
+    },
+    {
+      "image_id": "848",
+      "instances": 2
+    },
+    {
+      "image_id": "850",
+      "instances": 4
+    },
+    {
+      "image_id": "856",
+      "instances": 3
+    },
+    {
+      "image_id": "857",
+      "instances": 4
+    },
+    {
+      "image_id": "858",
+      "instances": 6
+    },
+    {
+      "image_id": "861",
+      "instances": 2
+    },
+    {
+      "image_id": "862",
+      "instances": 5
+    },
+    {
+      "image_id": "865",
+      "instances": 5
+    },
+    {
+      "image_id": "868",
+      "instances": 4
+    },
+    {
+      "image_id": "869",
+      "instances": 4
+    },
+    {
+      "image_id": "877",
+      "instances": 6
+    },
+    {
+      "image_id": "879",
+      "instances": 3
+    },
+    {
+      "image_id": "886",
+      "instances": 4
+    },
+    {
+      "image_id": "888",
+      "instances": 5
+    },
+    {
+      "image_id": "889",
+      "instances": 4
+    },
+    {
+      "image_id": "903",
+      "instances": 4
+    },
+    {
+      "image_id": "910",
+      "instances": 4
+    },
+    {
+      "image_id": "912",
+      "instances": 4
+    },
+    {
+      "image_id": "914",
+      "instances": 6
+    },
+    {
+      "image_id": "921",
+      "instances": 6
+    },
+    {
+      "image_id": "926",
+      "instances": 6
+    },
+    {
+      "image_id": "941",
+      "instances": 4
+    },
+    {
+      "image_id": "949",
+      "instances": 5
+    },
+    {
+      "image_id": "951",
+      "instances": 4
+    },
+    {
+      "image_id": "952",
+      "instances": 2
+    },
+    {
+      "image_id": "955",
+      "instances": 4
+    },
+    {
+      "image_id": "959",
+      "instances": 4
+    },
+    {
+      "image_id": "960",
+      "instances": 5
+    },
+    {
+      "image_id": "962",
+      "instances": 5
+    },
+    {
+      "image_id": "963",
+      "instances": 5
+    },
+    {
+      "image_id": "964",
+      "instances": 4
+    },
+    {
+      "image_id": "966",
+      "instances": 5
+    },
+    {
+      "image_id": "982",
+      "instances": 5
+    },
+    {
+      "image_id": "983",
+      "instances": 4
+    },
+    {
+      "image_id": "987",
+      "instances": 3
+    },
+    {
+      "image_id": "992",
+      "instances": 4
+    },
+    {
+      "image_id": "999",
+      "instances": 3
+    },
+    {
+      "image_id": "1001",
+      "instances": 4
+    },
+    {
+      "image_id": "1005",
+      "instances": 5
+    },
+    {
+      "image_id": "1010",
+      "instances": 5
+    },
+    {
+      "image_id": "1011",
+      "instances": 5
+    },
+    {
+      "image_id": "1012",
+      "instances": 5
+    },
+    {
+      "image_id": "1014",
+      "instances": 6
+    },
+    {
+      "image_id": "1017",
+      "instances": 3
+    },
+    {
+      "image_id": "1019",
+      "instances": 4
+    },
+    {
+      "image_id": "1020",
+      "instances": 2
+    },
+    {
+      "image_id": "1025",
+      "instances": 5
+    },
+    {
+      "image_id": "1032",
+      "instances": 3
+    },
+    {
+      "image_id": "1035",
+      "instances": 4
+    },
+    {
+      "image_id": "1037",
+      "instances": 4
+    },
+    {
+      "image_id": "1038",
+      "instances": 4
+    },
+    {
+      "image_id": "1045",
+      "instances": 5
+    },
+    {
+      "image_id": "1049",
+      "instances": 5
+    },
+    {
+      "image_id": "1058",
+      "instances": 4
+    },
+    {
+      "image_id": "1060",
+      "instances": 3
+    },
+    {
+      "image_id": "1061",
+      "instances": 2
+    },
+    {
+      "image_id": "1063",
+      "instances": 3
+    },
+    {
+      "image_id": "1068",
+      "instances": 4
+    },
+    {
+      "image_id": "1069",
+      "instances": 5
+    },
+    {
+      "image_id": "1072",
+      "instances": 3
+    },
+    {
+      "image_id": "1075",
+      "instances": 4
+    },
+    {
+      "image_id": "1077",
+      "instances": 3
+    },
+    {
+      "image_id": "1081",
+      "instances": 5
+    },
+    {
+      "image_id": "1085",
+      "instances": 5
+    },
+    {
+      "image_id": "1087",
+      "instances": 4
+    },
+    {
+      "image_id": "1089",
+      "instances": 3
+    },
+    {
+      "image_id": "1093",
+      "instances": 5
+    },
+    {
+      "image_id": "1096",
+      "instances": 2
+    },
+    {
+      "image_id": "1099",
+      "instances": 4
+    },
+    {
+      "image_id": "1100",
+      "instances": 4
+    },
+    {
+      "image_id": "1104",
+      "instances": 5
+    },
+    {
+      "image_id": "1105",
+      "instances": 5
+    },
+    {
+      "image_id": "1107",
+      "instances": 6
+    },
+    {
+      "image_id": "1114",
+      "instances": 5
+    },
+    {
+      "image_id": "1119",
+      "instances": 5
+    },
+    {
+      "image_id": "1126",
+      "instances": 7
+    },
+    {
+      "image_id": "1128",
+      "instances": 5
+    },
+    {
+      "image_id": "1129",
+      "instances": 5
+    },
+    {
+      "image_id": "1131",
+      "instances": 4
+    },
+    {
+      "image_id": "1134",
+      "instances": 4
+    },
+    {
+      "image_id": "1139",
+      "instances": 4
+    },
+    {
+      "image_id": "1145",
+      "instances": 4
+    },
+    {
+      "image_id": "1149",
+      "instances": 5
+    },
+    {
+      "image_id": "1150",
+      "instances": 5
+    },
+    {
+      "image_id": "1151",
+      "instances": 5
+    },
+    {
+      "image_id": "1152",
+      "instances": 4
+    },
+    {
+      "image_id": "1156",
+      "instances": 5
+    },
+    {
+      "image_id": "1157",
+      "instances": 4
+    },
+    {
+      "image_id": "1158",
+      "instances": 5
+    },
+    {
+      "image_id": "1160",
+      "instances": 3
+    },
+    {
+      "image_id": "1163",
+      "instances": 6
+    },
+    {
+      "image_id": "1168",
+      "instances": 4
+    },
+    {
+      "image_id": "1172",
+      "instances": 3
+    },
+    {
+      "image_id": "1176",
+      "instances": 5
+    },
+    {
+      "image_id": "1178",
+      "instances": 5
+    },
+    {
+      "image_id": "1183",
+      "instances": 6
+    },
+    {
+      "image_id": "1184",
+      "instances": 3
+    },
+    {
+      "image_id": "1187",
+      "instances": 5
+    },
+    {
+      "image_id": "1189",
+      "instances": 3
+    },
+    {
+      "image_id": "1193",
+      "instances": 4
+    },
+    {
+      "image_id": "1195",
+      "instances": 7
+    },
+    {
+      "image_id": "1197",
+      "instances": 4
+    },
+    {
+      "image_id": "1198",
+      "instances": 3
+    },
+    {
+      "image_id": "1202",
+      "instances": 3
+    },
+    {
+      "image_id": "1204",
+      "instances": 4
+    },
+    {
+      "image_id": "1206",
+      "instances": 4
+    },
+    {
+      "image_id": "1213",
+      "instances": 4
+    },
+    {
+      "image_id": "1214",
+      "instances": 4
+    },
+    {
+      "image_id": "1220",
+      "instances": 4
+    },
+    {
+      "image_id": "1228",
+      "instances": 2
+    },
+    {
+      "image_id": "1232",
+      "instances": 3
+    },
+    {
+      "image_id": "1237",
+      "instances": 5
+    },
+    {
+      "image_id": "1246",
+      "instances": 4
+    },
+    {
+      "image_id": "1247",
+      "instances": 4
+    },
+    {
+      "image_id": "1249",
+      "instances": 5
+    },
+    {
+      "image_id": "1252",
+      "instances": 5
+    },
+    {
+      "image_id": "1255",
+      "instances": 2
+    },
+    {
+      "image_id": "1260",
+      "instances": 3
+    },
+    {
+      "image_id": "1261",
+      "instances": 4
+    },
+    {
+      "image_id": "1269",
+      "instances": 4
+    },
+    {
+      "image_id": "1273",
+      "instances": 6
+    },
+    {
+      "image_id": "1281",
+      "instances": 4
+    },
+    {
+      "image_id": "1282",
+      "instances": 3
+    },
+    {
+      "image_id": "1288",
+      "instances": 5
+    },
+    {
+      "image_id": "1289",
+      "instances": 4
+    },
+    {
+      "image_id": "1290",
+      "instances": 5
+    },
+    {
+      "image_id": "1293",
+      "instances": 4
+    }
+  ]
+}

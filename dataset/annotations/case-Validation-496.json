@@ -1,0 +1,30 @@
+{
+  "image_id": "case-Validation-496",
+  "disease_status": "present",
+  "affected_teeth": [],
+  "severity": "moderate",
+  "findings": [
+    "Alveolar bone loss",
+    "Periodontal ligament space changes",
+    "Crestal bone changes"
+  ],
+  "regions": [
+    {
+      "type": "bounding_box",
+      "coordinates": [
+        0.387544876529938,
+        0.19288543872017944,
+        0.23835117570270242,
+        0.2942435385416737
+      ]
+    }
+  ],
+  "expert_comment": "",
+  "expert_validated": false,
+  "validation_status": "pending",
+  "validation_timestamp": null,
+  "version": 1,
+  "created_at": "2026-09-24T00:42:01.477231+00:00",
+  "updated_at": "2026-09-24T00:42:01.477231+00:00",
+  "version_history": []
+}

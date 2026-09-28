@@ -1,0 +1,20 @@
+{
+  "selected": 20,
+  "reviewed": 0,
+  "pending": 20,
+  "ungradable": 0,
+  "metrics_calculated": false,
+  "coverage": {
+    "arch:Lower": 10,
+    "site:Anterior": 9,
+    "partial_boundary": 20,
+    "unclear_landmark_candidate": 20,
+    "multiple_apex_candidate": 16,
+    "central_incisor_candidate": 15,
+    "posterior_candidate": 20,
+    "potentially_ungradable": 20,
+    "arch:Upper": 10,
+    "site:Left": 6,
+    "site:Right": 5
+  }
+}

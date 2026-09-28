@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>DenPAR â€” Bone line QA</title>
+<style>[hidden]{display:none!important}body{font:16px system-ui;background:#15202b;color:#eee;margin:24px}select,button{padding:8px}label{display:inline-block;margin:12px} .pair{display:flex;gap:16px}.panel{width:50%}.stack{position:relative}.stack img{width:100%;display:block}.stack .layer{position:absolute;inset:0}pre{white-space:pre-wrap}a{color:#8ddfff}</style>
+<h1>Step 1 Â· Bone line geometry QA</h1><p>Yellow: bone polylines Â· Cyan: CEJ Â· Magenta: apex. Boxes are tooth-mask extents. Instance colors do not encode FDI or correspondence.</p>
+<p>Dental-expert confirmation is required for anatomical meaning and tooth correspondence. These annotations do not establish disease or severity; line length is not a severity measure.</p>
+<p id="summary"></p><a href="qa_summary.json">Full QA JSON</a> Â· <a href="reports/manual_review.json">Manual review report</a>
+<p><select id="cases" aria-label="Radiograph"></select> <button id="previous">Previous</button> <button id="next">Next</button></p><div id="toggles"></div><div id="reps"></div>
+<pre id="info"></pre><div class="pair"><section class="panel"><h2>Original</h2><img id="original" style="width:100%" alt="Original radiograph"></section><section class="panel"><h2>Annotation layers</h2><div class="stack" id="stack"></div></section></div>
+<script>
+const data=/*DATA*/null;
+const names={masks:'Tooth masks',boxes:'Boxes',bones:'Bone lines',cej:'CEJ',apex:'Apex'};
+const cases=document.querySelector('#cases');
+data.records.forEach(r=>{const o=new Option(`${r.key} Â· ${r.metadata.Arch||'?'} / ${r.metadata.Site||'?'} Â· ${r.tooth_count} teeth${r.issues.length?' Â· REVIEW':''}`,r.key);cases.add(o)});
+for(const [key,name] of Object.entries(names)){const l=document.createElement('label');const c=document.createElement('input');c.type='checkbox';c.checked=true;c.dataset.layer=key;c.onchange=()=>{const img=document.getElementById(key);if(img)img.hidden=!c.checked;};l.append(c,name);document.querySelector('#toggles').append(l)}
+for(const [label,key] of Object.entries(data.representatives)){const b=document.createElement('button');b.textContent=label.replaceAll('_',' ');b.disabled=!key;b.onclick=()=>{cases.value=key;show()};document.querySelector('#reps').append(b)}
+document.querySelector('#summary').textContent=`${data.total_images_with_bone_lines} images with bone lines Â· ${data.total_bone_lines} lines Â· ${data.invalid_line_count} invalid lines Â· ${data.missing_files.length} missing files`;
+function show(){const r=data.records.find(r=>r.key===cases.value);document.querySelector('#info').textContent=JSON.stringify({image:r.key,metadata:r.metadata,lines:r.line_count,issues:r.issues,line_validation:r.lines.filter(l=>l.errors.length)},null,2);const s=document.querySelector('#stack');s.replaceChildren();const original=document.querySelector('#original');original.removeAttribute('src');if(!r.overlay)return;const path=`overlays/${r.key}/`;original.src=path+'original.jpg';for(const key of ['original',...Object.keys(names)]){const img=document.createElement('img');img.src=path+key+(key==='original'?'.jpg':'.png');img.alt=names[key]||'Radiograph';if(key!=='original'){img.className='layer';img.id=key;img.hidden=!document.querySelector(`[data-layer=${key}]`).checked} s.append(img)}}
+cases.onchange=show;document.querySelector('#previous').onclick=()=>{cases.selectedIndex=Math.max(0,cases.selectedIndex-1);show()};document.querySelector('#next').onclick=()=>{cases.selectedIndex=Math.min(cases.length-1,cases.selectedIndex+1);show()};show();
+</script></html>

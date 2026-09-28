@@ -1,0 +1,460 @@
+{
+  "protocol_version": "1.0",
+  "dataset": "BRAR",
+  "seed": 20260923,
+  "case_count": 45,
+  "selection": "class-balanced stratified random sample",
+  "published_labels_blinded": true,
+  "entries": [
+    {
+      "pilot_case_id": "BRAR-001",
+      "file_name": "patient_image_000571_5c273975.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_1/patient_image_000571_5c273975.jpg",
+      "age": 26,
+      "sha256": "d069d38b1541ed7f0ed0d353eddecc1b4a6c416c8ad3aaa1a78af6020541e2f4",
+      "published_level": 1,
+      "published_bone_resorption": 0.0,
+      "published_brar": 0.0
+    },
+    {
+      "pilot_case_id": "BRAR-002",
+      "file_name": "patient_image_000511_9eb4c057.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_1/patient_image_000511_9eb4c057.jpg",
+      "age": 19,
+      "sha256": "9814151e70526d919d967971eb3e5dfe4d428c2aa134b5bfa88c0fc3165ac5e9",
+      "published_level": 1,
+      "published_bone_resorption": 0.0,
+      "published_brar": 0.0
+    },
+    {
+      "pilot_case_id": "BRAR-003",
+      "file_name": "patient_image_000508_f7a15f6f.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_1/patient_image_000508_f7a15f6f.jpg",
+      "age": 18,
+      "sha256": "d22eb53446af768e7ad5dbee3eb36ad14abef9468c8c4d662afb1b22c48552d8",
+      "published_level": 1,
+      "published_bone_resorption": 0.0,
+      "published_brar": 0.0
+    },
+    {
+      "pilot_case_id": "BRAR-004",
+      "file_name": "patient_image_000535_44b5a8c9.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_1/patient_image_000535_44b5a8c9.jpg",
+      "age": 24,
+      "sha256": "57ad7896e4d2b98913f58348a3abeed203c9f5192795bd2b088ce9fabd7c3393",
+      "published_level": 1,
+      "published_bone_resorption": 0.0,
+      "published_brar": 0.0
+    },
+    {
+      "pilot_case_id": "BRAR-005",
+      "file_name": "patient_image_000945_21f7d851.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_3/patient_image_000945_21f7d851.jpg",
+      "age": 61,
+      "sha256": "cce517dc7aac578bff2fa63c9645e82bb7feec2e2f449b277a1cb95e0af51f7f",
+      "published_level": 3,
+      "published_bone_resorption": 0.729,
+      "published_brar": 1.195081967
+    },
+    {
+      "pilot_case_id": "BRAR-006",
+      "file_name": "patient_image_000397_05ddedc7.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_2/patient_image_000397_05ddedc7.jpg",
+      "age": 54,
+      "sha256": "1ef1425f16fb89d7e123de1071f83a0d154a63d189d22538be6740590814570d",
+      "published_level": 2,
+      "published_bone_resorption": 0.374233129,
+      "published_brar": 0.693024313
+    },
+    {
+      "pilot_case_id": "BRAR-007",
+      "file_name": "patient_image_000271_90118e15.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_3/patient_image_000271_90118e15.jpg",
+      "age": 36,
+      "sha256": "479355a50943bc31a8254b5d69fa4488c574931b646e83467e5a4198a9228871",
+      "published_level": 3,
+      "published_bone_resorption": 0.362149031,
+      "published_brar": 1.005969531
+    },
+    {
+      "pilot_case_id": "BRAR-008",
+      "file_name": "patient_image_000657_e471eef1.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_1/patient_image_000657_e471eef1.jpg",
+      "age": 31,
+      "sha256": "ae6356505bd23074b21729fb80eaa15a766a7f2d17468ab4c1ec4f164d6855bf",
+      "published_level": 1,
+      "published_bone_resorption": 0.0,
+      "published_brar": 0.0
+    },
+    {
+      "pilot_case_id": "BRAR-009",
+      "file_name": "patient_image_000687_78a93597.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_2/patient_image_000687_78a93597.jpg",
+      "age": 34,
+      "sha256": "f3bb8460a98998c7c32b0705190321c4dc16e2646d8fca1747ac6d101007d24a",
+      "published_level": 2,
+      "published_bone_resorption": 0.328,
+      "published_brar": 0.964705882
+    },
+    {
+      "pilot_case_id": "BRAR-010",
+      "file_name": "patient_image_000356_02609c16.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_3/patient_image_000356_02609c16.jpg",
+      "age": 47,
+      "sha256": "5e31eb39dbc8b2506c5463231c95003e1393be4f8c375431e0a44f8016036edb",
+      "published_level": 3,
+      "published_bone_resorption": 0.671641791,
+      "published_brar": 1.429025087
+    },
+    {
+      "pilot_case_id": "BRAR-011",
+      "file_name": "patient_image_000609_b45d7ffd.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_3/patient_image_000609_b45d7ffd.jpg",
+      "age": 28,
+      "sha256": "1d48944e0d03a117e09c2b68423e1a9601cc7c76205b256316b3477ffafbfb93",
+      "published_level": 3,
+      "published_bone_resorption": 1.0,
+      "published_brar": 3.571428571
+    },
+    {
+      "pilot_case_id": "BRAR-012",
+      "file_name": "patient_image_000162_e8668d74.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_2/patient_image_000162_e8668d74.jpg",
+      "age": 28,
+      "sha256": "55fb7d705dad1111e1de3bc684e41c10ba099eb1c0f9a8930f74c21fe2d73649",
+      "published_level": 2,
+      "published_bone_resorption": 0.141312391,
+      "published_brar": 0.504687112
+    },
+    {
+      "pilot_case_id": "BRAR-013",
+      "file_name": "patient_image_000627_a087afec.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_2/patient_image_000627_a087afec.jpg",
+      "age": 29,
+      "sha256": "73a7ef5b1ef7014e59d23f3d1570f829b1b2c23acacb294c6629394bd12a7d23",
+      "published_level": 2,
+      "published_bone_resorption": 0.255537074,
+      "published_brar": 0.881162325
+    },
+    {
+      "pilot_case_id": "BRAR-014",
+      "file_name": "patient_image_000134_1642341c.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_3/patient_image_000134_1642341c.jpg",
+      "age": 27,
+      "sha256": "55c40ac09d60c3ef6d1aa02fd745465952c16dbd2d5b9dec49aba11a6c06a89d",
+      "published_level": 3,
+      "published_bone_resorption": 0.275926136,
+      "published_brar": 1.021948652
+    },
+    {
+      "pilot_case_id": "BRAR-015",
+      "file_name": "patient_image_000055_084cf9be.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_1/patient_image_000055_084cf9be.jpg",
+      "age": 23,
+      "sha256": "c10d557ca66c4c4f33420c778dec5eea922cd6d8fd806025bd9eb04fd8886d53",
+      "published_level": 1,
+      "published_bone_resorption": 0.0,
+      "published_brar": 0.0
+    },
+    {
+      "pilot_case_id": "BRAR-016",
+      "file_name": "patient_image_000716_5aeb574b.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_1/patient_image_000716_5aeb574b.jpg",
+      "age": 36,
+      "sha256": "b2f226920a0b25d14fe60fce1272eae2bb7d93ec20a6b93d33ff563cff1b778e",
+      "published_level": 1,
+      "published_bone_resorption": 0.0,
+      "published_brar": 0.0
+    },
+    {
+      "pilot_case_id": "BRAR-017",
+      "file_name": "patient_image_000015_17fab6ee.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_1/patient_image_000015_17fab6ee.jpg",
+      "age": 20,
+      "sha256": "39e7d06d83d513a0c20b28088813cd73e9020b21b2ad7bfaf5df44827b3b3ee3",
+      "published_level": 1,
+      "published_bone_resorption": 0.0,
+      "published_brar": 0.0
+    },
+    {
+      "pilot_case_id": "BRAR-018",
+      "file_name": "patient_image_000522_1d00aca9.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_1/patient_image_000522_1d00aca9.jpg",
+      "age": 22,
+      "sha256": "9d5c1b51681032e5751678591762b93b193a0c53a9bd257d3aeba9e48527e2e6",
+      "published_level": 1,
+      "published_bone_resorption": 0.0,
+      "published_brar": 0.0
+    },
+    {
+      "pilot_case_id": "BRAR-019",
+      "file_name": "patient_image_000326_c8a8772c.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_3/patient_image_000326_c8a8772c.jpg",
+      "age": 42,
+      "sha256": "517b04c577ff847e7d41861e99691cc78c52ebf8bc3fce3246d67fb4069e1326",
+      "published_level": 3,
+      "published_bone_resorption": 0.626012615,
+      "published_brar": 1.490506226
+    },
+    {
+      "pilot_case_id": "BRAR-020",
+      "file_name": "patient_image_000353_4f1e829c.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_2/patient_image_000353_4f1e829c.jpg",
+      "age": 46,
+      "sha256": "4e22f54ff983f6cb48ec9b77f7a14535c00b985fb6c264f74d7e96dd64034de0",
+      "published_level": 2,
+      "published_bone_resorption": 0.271816421,
+      "published_brar": 0.590905263
+    },
+    {
+      "pilot_case_id": "BRAR-021",
+      "file_name": "patient_image_000201_68fcfc13.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_3/patient_image_000201_68fcfc13.jpg",
+      "age": 31,
+      "sha256": "c142a1dee856159b2a832e4b919f7a4cbe20d91311af1ca7528b831fda7637fb",
+      "published_level": 3,
+      "published_bone_resorption": 0.354330709,
+      "published_brar": 1.143002286
+    },
+    {
+      "pilot_case_id": "BRAR-022",
+      "file_name": "patient_image_000299_0081b06c.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_2/patient_image_000299_0081b06c.jpg",
+      "age": 39,
+      "sha256": "df06406e9461e25860b12b5c59dd51b2a8eb76583abf5910bc08395cec70f6f1",
+      "published_level": 2,
+      "published_bone_resorption": 0.214608666,
+      "published_brar": 0.550278632
+    },
+    {
+      "pilot_case_id": "BRAR-023",
+      "file_name": "patient_image_000637_f11f3ab0.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_1/patient_image_000637_f11f3ab0.jpg",
+      "age": 30,
+      "sha256": "e6c7979c54603faa102ff4d0e90d32b9f3eae1c349bc9fa83395abe7047222b2",
+      "published_level": 1,
+      "published_bone_resorption": 0.0,
+      "published_brar": 0.0
+    },
+    {
+      "pilot_case_id": "BRAR-024",
+      "file_name": "patient_image_000018_38bd4f5d.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_2/patient_image_000018_38bd4f5d.jpg",
+      "age": 21,
+      "sha256": "24d4dbcf1eab863622bc662be2e941cf9800b31c3811c3696b5a0995c7c81ed1",
+      "published_level": 2,
+      "published_bone_resorption": 0.152777778,
+      "published_brar": 0.727513228
+    },
+    {
+      "pilot_case_id": "BRAR-025",
+      "file_name": "patient_image_000802_babf562c.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_3/patient_image_000802_babf562c.jpg",
+      "age": 42,
+      "sha256": "8e9fa2ee338fdc2caac08a100c9bbd7d7f24b50d45a33c5a93e27c54ba77445d",
+      "published_level": 3,
+      "published_bone_resorption": 0.779,
+      "published_brar": 1.854761905
+    },
+    {
+      "pilot_case_id": "BRAR-026",
+      "file_name": "patient_image_000599_f9a4c92e.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_2/patient_image_000599_f9a4c92e.jpg",
+      "age": 27,
+      "sha256": "9f3ff1fa31973e9e120e4e23a3de023fba0ee094edbe1e79533e4964771d2582",
+      "published_level": 2,
+      "published_bone_resorption": 0.133,
+      "published_brar": 0.492592593
+    },
+    {
+      "pilot_case_id": "BRAR-027",
+      "file_name": "patient_image_000722_09368cb5.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_3/patient_image_000722_09368cb5.jpg",
+      "age": 36,
+      "sha256": "e359f8083844611b2c7bd77bcc732d18dd3b83ec2de2a706a1753d89b2f0502a",
+      "published_level": 3,
+      "published_bone_resorption": 0.692,
+      "published_brar": 1.922222222
+    },
+    {
+      "pilot_case_id": "BRAR-028",
+      "file_name": "patient_image_000845_a53d6d29.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_1/patient_image_000845_a53d6d29.jpg",
+      "age": 46,
+      "sha256": "da8b276dc8e74cce95f505937d383e244935d238d9144391eb2129181b51fbc9",
+      "published_level": 1,
+      "published_bone_resorption": 0.101,
+      "published_brar": 0.219565217
+    },
+    {
+      "pilot_case_id": "BRAR-029",
+      "file_name": "patient_image_000594_edff5861.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_2/patient_image_000594_edff5861.jpg",
+      "age": 27,
+      "sha256": "8985fc24c03b75b7f4b362e0a31fd5c0ab843a1fe4f53fc082771f49a416d22a",
+      "published_level": 2,
+      "published_bone_resorption": 0.155,
+      "published_brar": 0.574074074
+    },
+    {
+      "pilot_case_id": "BRAR-030",
+      "file_name": "patient_image_000559_a0f01261.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_1/patient_image_000559_a0f01261.jpg",
+      "age": 25,
+      "sha256": "f6c59f7655cc6a6f379b72f3174cdb7069458ccefbae40f392b1746d0999fe29",
+      "published_level": 1,
+      "published_bone_resorption": 0.0,
+      "published_brar": 0.0
+    },
+    {
+      "pilot_case_id": "BRAR-031",
+      "file_name": "patient_image_000970_8ce3e7bf.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_2/patient_image_000970_8ce3e7bf.jpg",
+      "age": 66,
+      "sha256": "f308b605db2d7ca1b5cd4189821c41cc29f1d8b27f1671665970be22f768f942",
+      "published_level": 2,
+      "published_bone_resorption": 0.635,
+      "published_brar": 0.962121212
+    },
+    {
+      "pilot_case_id": "BRAR-032",
+      "file_name": "patient_image_000103_a4980122.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_2/patient_image_000103_a4980122.jpg",
+      "age": 26,
+      "sha256": "6555b86850f81eb5a45f0399e451321bd4cae74e16004fe0762940899f90b8d6",
+      "published_level": 2,
+      "published_bone_resorption": 0.239520958,
+      "published_brar": 0.921234454
+    },
+    {
+      "pilot_case_id": "BRAR-033",
+      "file_name": "patient_image_000202_4e744692.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_2/patient_image_000202_4e744692.jpg",
+      "age": 31,
+      "sha256": "a2b8da3269ac2c534b9a980601e938216466c2c053969874bf8f5ccece039326",
+      "published_level": 2,
+      "published_bone_resorption": 0.25974026,
+      "published_brar": 0.837871806
+    },
+    {
+      "pilot_case_id": "BRAR-034",
+      "file_name": "patient_image_000771_f666f8d9.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_2/patient_image_000771_f666f8d9.jpg",
+      "age": 39,
+      "sha256": "c7533c9e1f5cb8e6974c55a379cd6feaee94b591f177c722faba8adf20fe5e17",
+      "published_level": 2,
+      "published_bone_resorption": 0.182385199,
+      "published_brar": 0.467654358
+    },
+    {
+      "pilot_case_id": "BRAR-035",
+      "file_name": "patient_image_000650_ca4dd45d.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_3/patient_image_000650_ca4dd45d.jpg",
+      "age": 31,
+      "sha256": "084f125da5bc6e0fcab7d5c2c4f55c1fde2d360cd016179dcc06e8486cbbcd0d",
+      "published_level": 3,
+      "published_bone_resorption": 0.511,
+      "published_brar": 1.648387097
+    },
+    {
+      "pilot_case_id": "BRAR-036",
+      "file_name": "patient_image_000108_58d95f86.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_3/patient_image_000108_58d95f86.jpg",
+      "age": 26,
+      "sha256": "67982324aaabd6b970d63f6b4cc842b06bfdcb4508323c5c8829a9ea0784e6ee",
+      "published_level": 3,
+      "published_bone_resorption": 0.317273263,
+      "published_brar": 1.22028178
+    },
+    {
+      "pilot_case_id": "BRAR-037",
+      "file_name": "patient_image_000521_17a61742.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_1/patient_image_000521_17a61742.jpg",
+      "age": 22,
+      "sha256": "e457b17f5b04d4c0a6ebc7c617b7dde0b5acdfca11272292cbee4423d3171334",
+      "published_level": 1,
+      "published_bone_resorption": 0.0,
+      "published_brar": 0.0
+    },
+    {
+      "pilot_case_id": "BRAR-038",
+      "file_name": "patient_image_000588_11ba2a39.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_3/patient_image_000588_11ba2a39.jpg",
+      "age": 27,
+      "sha256": "c9ff65397185afbf31014fa17128a3ac85f268f98433e439b39f853b3d68cdc8",
+      "published_level": 3,
+      "published_bone_resorption": 0.351,
+      "published_brar": 1.3
+    },
+    {
+      "pilot_case_id": "BRAR-039",
+      "file_name": "patient_image_000600_c839e11e.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_1/patient_image_000600_c839e11e.jpg",
+      "age": 27,
+      "sha256": "15962c6c8a754c7b6a1c2ad63c0e20a93f9970eecca1620d07eb6a5363809197",
+      "published_level": 1,
+      "published_bone_resorption": 0.0,
+      "published_brar": 0.0
+    },
+    {
+      "pilot_case_id": "BRAR-040",
+      "file_name": "patient_image_000022_4eb9fa52.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_1/patient_image_000022_4eb9fa52.jpg",
+      "age": 21,
+      "sha256": "df1f7500dbc5c511d50a13e723a79260311f8f25628dad9fffe6262321161203",
+      "published_level": 1,
+      "published_bone_resorption": 0.0,
+      "published_brar": 0.0
+    },
+    {
+      "pilot_case_id": "BRAR-041",
+      "file_name": "patient_image_000713_278198c0.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_2/patient_image_000713_278198c0.jpg",
+      "age": 35,
+      "sha256": "e45824cab884b2a50223e6f985720b25c77f83c04e84b185aaaf5b398c62ac60",
+      "published_level": 2,
+      "published_bone_resorption": 0.346,
+      "published_brar": 0.988571429
+    },
+    {
+      "pilot_case_id": "BRAR-042",
+      "file_name": "patient_image_000908_766c56d1.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_3/patient_image_000908_766c56d1.jpg",
+      "age": 54,
+      "sha256": "cc1cdb9319a5d529fa6b9f721d9aa3afd5a2b1e61f50f12743566d87584309aa",
+      "published_level": 3,
+      "published_bone_resorption": 0.679,
+      "published_brar": 1.257407407
+    },
+    {
+      "pilot_case_id": "BRAR-043",
+      "file_name": "patient_image_000944_a3249312.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_3/patient_image_000944_a3249312.jpg",
+      "age": 61,
+      "sha256": "f9b1a8085f6d69a83c0b4da16dc0452a5ae26c1907e7911a803992e76d85b7a6",
+      "published_level": 3,
+      "published_bone_resorption": 0.823,
+      "published_brar": 1.349180328
+    },
+    {
+      "pilot_case_id": "BRAR-044",
+      "file_name": "patient_image_000874_5284b7ef.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_2/patient_image_000874_5284b7ef.jpg",
+      "age": 48,
+      "sha256": "34bb744079d0485678989db58ab858893df9cba0bc9fdcb58b5e1df4502bdc92",
+      "published_level": 2,
+      "published_bone_resorption": 0.170894006,
+      "published_brar": 0.356029179
+    },
+    {
+      "pilot_case_id": "BRAR-045",
+      "file_name": "patient_image_000563_df925935.jpg",
+      "image_reference": "BRAR Dataset/BRAR-anchored multimodal dataset/level_3/patient_image_000563_df925935.jpg",
+      "age": 25,
+      "sha256": "7e84ae62777fc6924279f246eb62d97d7480de865434f56a41e31a5c331e34c4",
+      "published_level": 3,
+      "published_bone_resorption": 0.741,
+      "published_brar": 2.964
+    }
+  ]
+}

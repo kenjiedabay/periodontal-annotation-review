@@ -1,0 +1,262 @@
+{
+  "schema_version": "1.0.0",
+  "policy_version": "denpar-leakage-remediation-v2",
+  "manifest_type": "denpar_near_duplicate_review_queue",
+  "source_audit": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\denpar-stage2a-audit\\audit_results.json",
+  "source_audit_sha256": "78c9a7e0dc563820222ae599816ff327379b620211f0e62b7d4c41be6ef85076",
+  "decision_date": "2026-09-21T14:44:40.087125+00:00",
+  "source_files_copied": false,
+  "previous_manifest_version": {
+    "policy_version": "denpar-leakage-remediation-v1",
+    "manifest_hashes": {
+      "denpar_clean_train_manifest": "f052219a2976b384df6a5a7a3ee6555355bfc81c62c39e3dc41eb69d46346de0",
+      "denpar_clean_validation_manifest": "2399de659973811f99b87def6a8a88f1d2f977ce7b8795fb4745202d82c0379f",
+      "denpar_clean_historical_test_manifest": "db68eb80a30f17d3b3303310b1042ff46a3f61c2a31156bfb401e00bc5b4052b",
+      "denpar_exclusion_manifest": "62ec706bb235c3ad90ff86d4ca763f112fb07406ab4480d71a58f37ba4b5991a",
+      "denpar_duplicate_group_manifest": "0d1e63957a1f1ae1951cd45f633b44f6fd8c884e21961fd6afc9e869a585e68d",
+      "denpar_near_duplicate_review_queue": "b77b7c766e5742f527be50317bc901eee820d301336cc0d2eaf86db066c411c9"
+    },
+    "manifest_directory": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\denpar-leakage-remediation-v1"
+  },
+  "status": "complete",
+  "automatic_exclusion": false,
+  "pairs": [
+    {
+      "pair_id": "near-pair-e4d6079d244f6544",
+      "near_duplicate_group_id": "near-e4d6079d244f6544",
+      "left": {
+        "stable_image_id": "Testing:852",
+        "image_id": "852",
+        "official_partition": "Testing",
+        "source_path": "DenPAR Radiographs Dataset/Dataset/Images/852.jpg",
+        "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\852.jpg",
+        "file_sha256": "58556a43dc6611e3491cd29a3144d77282bac9e1ed6cec3b7879d5c2b97228a6",
+        "normalized_pixel_sha256": "ca2b4181654036f4892eea952ca521f120c34f1c7e3e01e02270aeb324644e42",
+        "perceptual_hash_64": "bb6a7a98aad0ea60"
+      },
+      "right": {
+        "stable_image_id": "Validation:853",
+        "image_id": "853",
+        "official_partition": "Validation",
+        "source_path": "DenPAR Radiographs Dataset/Dataset/Validation/Images/853.jpg",
+        "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Validation\\Images\\853.jpg",
+        "file_sha256": "cca5dc01bcd29617efd46ffeec96880bc84d4bc2acf31be299ad858badbd5cf2",
+        "normalized_pixel_sha256": "845f0095792f5868b609a87bf11fd1f0063a1b116477372232be6bea08feef65",
+        "perceptual_hash_64": "bb6a7a98aad0ea60"
+      },
+      "p_hash_method": "64-bit DCT pHash",
+      "p_hash_distance": 0,
+      "p_hash_threshold": "Hamming distance <= 6",
+      "stage2a_supporting_evidence": {
+        "normalized_thumbnail_mae": 7.348154031205922e-05,
+        "thumbnail_pearson_correlation": 0.9999649907738114
+      },
+      "review_artifact": {
+        "artifact_path": "near_duplicate_artifacts/near-pair-e4d6079d244f6544.png",
+        "artifact_sha256": "09d705c6d05c7d76ee7f855bb169fb67002b7f026e498ddca0350be174b454a3",
+        "left_dimensions": [
+          1168,
+          886
+        ],
+        "right_dimensions": [
+          1168,
+          886
+        ],
+        "transformation_scores": {
+          "identity": {
+            "thumbnail_pearson_correlation": 0.999969803084269,
+            "normalized_thumbnail_mae": 7.455862942151725e-05
+          },
+          "horizontal_flip": {
+            "thumbnail_pearson_correlation": 0.7932131636573984,
+            "normalized_thumbnail_mae": 0.1143670454621315
+          },
+          "vertical_flip": {
+            "thumbnail_pearson_correlation": 0.6084247147531682,
+            "normalized_thumbnail_mae": 0.1768682450056076
+          },
+          "rotate_180": {
+            "thumbnail_pearson_correlation": 0.5854002971629562,
+            "normalized_thumbnail_mae": 0.18402862548828125
+          }
+        },
+        "best_scoring_transformation": "identity",
+        "edge_method": "Canny thresholds 50/150; left red, right cyan, overlap white",
+        "difference_method": "absolute difference after matched 512x512 aspect-preserving fit"
+      },
+      "review_status": "completed",
+      "allowed_decisions": [
+        "different_radiograph",
+        "same_underlying_radiograph",
+        "uncertain"
+      ],
+      "decision": "same_underlying_radiograph",
+      "reviewer_id": "researcher_kenjie",
+      "decision_date": "2026-09-21T14:44:38.661700+00:00",
+      "notes": "Manual visual review confirms that Testing image 852 and Validation image 853 show the same underlying radiograph. The numerical comparison also shows pHash distance 0, identity correlation 0.999970, normalized MAE 0.000075, and identity alignment.",
+      "decision_record": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\denpar-leakage-remediation-v1\\near_duplicate_decisions\\near-pair-e4d6079d244f6544.json",
+      "decision_record_content_hash": "75592e18ccd79b18c30ded3735796dad67eabe8bc2f27215a87cb5f526da0ea8"
+    },
+    {
+      "pair_id": "near-pair-f025ad634ebdab45",
+      "near_duplicate_group_id": "near-f025ad634ebdab45",
+      "left": {
+        "stable_image_id": "Testing:1241",
+        "image_id": "1241",
+        "official_partition": "Testing",
+        "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1241.jpg",
+        "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1241.jpg",
+        "file_sha256": "f935f9582c0803b44a2a14a190897e8bb114de2dfcab1e6b2c6a8a52258fb62d",
+        "normalized_pixel_sha256": "938efbf8d63e376e59696364fe299d3660f781c82b6a81bc8afe32cc9ec93ff7",
+        "perceptual_hash_64": "be486b32adb0bc8a"
+      },
+      "right": {
+        "stable_image_id": "Training:214",
+        "image_id": "214",
+        "official_partition": "Training",
+        "source_path": "dataset/raw/214.jpg",
+        "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\dataset\\raw\\214.jpg",
+        "file_sha256": "9853302e9c50c98451a4fa26f722b97f84ab0a4639c4eb69d01d4926c334b37f",
+        "normalized_pixel_sha256": "a259459edaf24d11be9bdaa30a4e23a9e821b7b74a0f3e105bb7be4de2e2187b",
+        "perceptual_hash_64": "ae446b32afb8bc88"
+      },
+      "p_hash_method": "64-bit DCT pHash",
+      "p_hash_distance": 6,
+      "p_hash_threshold": "Hamming distance <= 6",
+      "stage2a_supporting_evidence": {
+        "normalized_thumbnail_mae": 0.15267620980739594,
+        "thumbnail_pearson_correlation": 0.770532336654934
+      },
+      "review_artifact": {
+        "artifact_path": "near_duplicate_artifacts/near-pair-f025ad634ebdab45.png",
+        "artifact_sha256": "0020c103cebdcf436fdc570d8205ceb9b1376eee71f137558184472ac083a873",
+        "left_dimensions": [
+          1171,
+          886
+        ],
+        "right_dimensions": [
+          1168,
+          883
+        ],
+        "transformation_scores": {
+          "identity": {
+            "thumbnail_pearson_correlation": 0.875349250231184,
+            "normalized_thumbnail_mae": 0.11677028983831406
+          },
+          "horizontal_flip": {
+            "thumbnail_pearson_correlation": 0.6717763439491063,
+            "normalized_thumbnail_mae": 0.18007344007492065
+          },
+          "vertical_flip": {
+            "thumbnail_pearson_correlation": 0.656118104715567,
+            "normalized_thumbnail_mae": 0.1711461842060089
+          },
+          "rotate_180": {
+            "thumbnail_pearson_correlation": 0.6597077526584032,
+            "normalized_thumbnail_mae": 0.18538334965705872
+          }
+        },
+        "best_scoring_transformation": "identity",
+        "edge_method": "Canny thresholds 50/150; left red, right cyan, overlap white",
+        "difference_method": "absolute difference after matched 512x512 aspect-preserving fit"
+      },
+      "review_status": "completed",
+      "allowed_decisions": [
+        "different_radiograph",
+        "same_underlying_radiograph",
+        "uncertain"
+      ],
+      "decision": "different_radiograph",
+      "reviewer_id": "researcher_kenjie",
+      "decision_date": "2026-09-21T14:44:39.398258+00:00",
+      "notes": "Manual visual inspection confirms that Testing image 1241 and Training image 214 are different radiographs because their anatomical image content does not match.",
+      "decision_record": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\denpar-leakage-remediation-v1\\near_duplicate_decisions\\near-pair-f025ad634ebdab45.json",
+      "decision_record_content_hash": "58b2f266beb1fc195838c4922e5d3fa8a9d6cecd0d32e450afda129df8e71e4b"
+    },
+    {
+      "pair_id": "near-pair-55ab6deeb610b3ae",
+      "near_duplicate_group_id": "near-55ab6deeb610b3ae",
+      "left": {
+        "stable_image_id": "Testing:1258",
+        "image_id": "1258",
+        "official_partition": "Testing",
+        "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1258.jpg",
+        "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1258.jpg",
+        "file_sha256": "33a35dfe8f168617b7d8a30c172068c448e0136405c960cdcfd7e9f336973863",
+        "normalized_pixel_sha256": "34217173ba4229107dc8bc3758feb9d236a871448ddc598102cc73fa77438e39",
+        "perceptual_hash_64": "fef7ba02b9119091"
+      },
+      "right": {
+        "stable_image_id": "Training:1254",
+        "image_id": "1254",
+        "official_partition": "Training",
+        "source_path": "dataset/raw/1254.jpg",
+        "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\dataset\\raw\\1254.jpg",
+        "file_sha256": "341c14eb7927516de269f42bc20a681e2924507cae10fc3d852d2b8a095bf8cc",
+        "normalized_pixel_sha256": "d3fae1e8d95d63ce21634c4b98767d67a094545b66cc4db2f72af5c09d83dfc3",
+        "perceptual_hash_64": "fff3ba0aa8139091"
+      },
+      "p_hash_method": "64-bit DCT pHash",
+      "p_hash_distance": 6,
+      "p_hash_threshold": "Hamming distance <= 6",
+      "stage2a_supporting_evidence": {
+        "normalized_thumbnail_mae": 0.09915340691804886,
+        "thumbnail_pearson_correlation": 0.8378446094606414
+      },
+      "review_artifact": {
+        "artifact_path": "near_duplicate_artifacts/near-pair-55ab6deeb610b3ae.png",
+        "artifact_sha256": "688eb4441524620aaa29954e737c6e075e1adf08c61c14d604eb65f14b59b46c",
+        "left_dimensions": [
+          1171,
+          886
+        ],
+        "right_dimensions": [
+          1171,
+          886
+        ],
+        "transformation_scores": {
+          "identity": {
+            "thumbnail_pearson_correlation": 0.8978666828074473,
+            "normalized_thumbnail_mae": 0.0771438330411911
+          },
+          "horizontal_flip": {
+            "thumbnail_pearson_correlation": 0.8209756373582286,
+            "normalized_thumbnail_mae": 0.08937880396842957
+          },
+          "vertical_flip": {
+            "thumbnail_pearson_correlation": 0.7852416111357935,
+            "normalized_thumbnail_mae": 0.10736502707004547
+          },
+          "rotate_180": {
+            "thumbnail_pearson_correlation": 0.8107575782425013,
+            "normalized_thumbnail_mae": 0.10013212263584137
+          }
+        },
+        "best_scoring_transformation": "identity",
+        "edge_method": "Canny thresholds 50/150; left red, right cyan, overlap white",
+        "difference_method": "absolute difference after matched 512x512 aspect-preserving fit"
+      },
+      "review_status": "completed",
+      "allowed_decisions": [
+        "different_radiograph",
+        "same_underlying_radiograph",
+        "uncertain"
+      ],
+      "decision": "different_radiograph",
+      "reviewer_id": "researcher_kenjie",
+      "decision_date": "2026-09-21T14:44:40.087125+00:00",
+      "notes": "Manual visual inspection confirms that Testing image 1258 and Training image 1254 are different radiographs because their anatomical image content does not match.",
+      "decision_record": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\denpar-leakage-remediation-v1\\near_duplicate_decisions\\near-pair-55ab6deeb610b3ae.json",
+      "decision_record_content_hash": "caa9e9ee85f53bb64594f89f0c2808694c6b8fe543c80484c0e84fc658b965e5"
+    }
+  ],
+  "quarantined_images": [],
+  "applied_same_underlying_pairs": [
+    "near-pair-e4d6079d244f6544"
+  ],
+  "released_different_radiograph_pairs": [
+    "near-pair-f025ad634ebdab45",
+    "near-pair-55ab6deeb610b3ae"
+  ],
+  "content_hash": "eaaf24afe86d5f97944c4bb42aecc242c7197ed9b40055a3c12191e894768619"
+}

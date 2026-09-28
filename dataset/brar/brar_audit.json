@@ -1,0 +1,84 @@
+{
+  "research_only": true,
+  "unit_of_prediction": "patient-level panoramic radiograph",
+  "localized_disease_supported": false,
+  "treatment_planning_supported": false,
+  "records": 988,
+  "images": 988,
+  "missing_values": {
+    "Level": 0,
+    "File name": 0,
+    "Age": 0,
+    "Bone resorption": 0,
+    "Number of missing teeth": 0,
+    "Implant": 0,
+    "Gender": 0,
+    "Residual root": 0,
+    "Functional tooth logarithm": 0,
+    "Bone resorption Age": 0
+  },
+  "class_counts": {
+    "1": 170,
+    "2": 560,
+    "3": 258
+  },
+  "split_class_counts": {
+    "train": {
+      "1": 118,
+      "2": 392,
+      "3": 180
+    },
+    "validation": {
+      "1": 26,
+      "2": 84,
+      "3": 39
+    },
+    "test": {
+      "1": 26,
+      "2": 84,
+      "3": 39
+    }
+  },
+  "exact_duplicate_groups": 0,
+  "image_dimensions": {
+    "2795x1316": 309,
+    "2796x1316": 222,
+    "2976x1536": 143,
+    "2786x1316": 110,
+    "2775x1480": 52,
+    "2787x1316": 51,
+    "2794x1316": 30,
+    "2785x1316": 14,
+    "2793x1316": 14,
+    "2790x1316": 8,
+    "2791x1316": 6,
+    "2797x1316": 5,
+    "2789x1316": 5,
+    "2459x1316": 3,
+    "2784x1316": 3,
+    "2792x1316": 2,
+    "2788x1316": 2,
+    "2783x1316": 2,
+    "2781x1316": 2,
+    "2770x1316": 1,
+    "2457x1316": 1,
+    "2767x1316": 1,
+    "2771x1316": 1,
+    "2798x1316": 1
+  },
+  "seed": 42,
+  "forbidden_predictors": [
+    "Bone resorption",
+    "Bone resorption Age",
+    "Level"
+  ],
+  "allowed_metadata_predictors": [
+    "Age",
+    "Gender",
+    "Number of missing teeth",
+    "Implant",
+    "Residual root",
+    "Functional tooth logarithm"
+  ],
+  "warning": "Level is derived from Bone resorption Age; never use either bone-resorption field to predict Level."
+}

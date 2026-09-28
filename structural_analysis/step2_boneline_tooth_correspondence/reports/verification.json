@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "candidate_count": 2147,
+  "source_files_unchanged": 5752,
+  "overlay_assets_verified": 2219,
+  "candidate_status_counts": {
+    "probable": 1936,
+    "uncertain": 211
+  },
+  "expert_review_revision": 0,
+  "report_consistent": true
+}

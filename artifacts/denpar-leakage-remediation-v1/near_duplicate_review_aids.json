@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "manifests_modified": false,
+  "records": [
+    {
+      "pair_id": "near-pair-e4d6079d244f6544",
+      "overlay_path": "artifacts/denpar-leakage-remediation-v1/near_duplicate_artifacts/near-pair-e4d6079d244f6544_overlay.png",
+      "overlay_sha256": "5ad9a676ce8366d6e3bad79f924b04e28eef7c2423de0961ec0eb606c19fd74e",
+      "blink_path": "artifacts/denpar-leakage-remediation-v1/near_duplicate_artifacts/near-pair-e4d6079d244f6544_blink.gif",
+      "blink_sha256": "ccd5f896f0050aa9981b2c501c127da58a39b705eae97c1b5d9d9bfd7e6e8791",
+      "method": "512x512 aspect-preserving centered fit; overlay left red/right cyan; blink 700 ms per frame"
+    },
+    {
+      "pair_id": "near-pair-f025ad634ebdab45",
+      "overlay_path": "artifacts/denpar-leakage-remediation-v1/near_duplicate_artifacts/near-pair-f025ad634ebdab45_overlay.png",
+      "overlay_sha256": "f0da4409a0d3fa00e066ffb8681cb95f9a40d0257cdb07fb88231cf46988ee74",
+      "blink_path": "artifacts/denpar-leakage-remediation-v1/near_duplicate_artifacts/near-pair-f025ad634ebdab45_blink.gif",
+      "blink_sha256": "3db6c763d83c048e5a5abb34c80697630fbed6b76a0a38822bcbd3451afe24a5",
+      "method": "512x512 aspect-preserving centered fit; overlay left red/right cyan; blink 700 ms per frame"
+    },
+    {
+      "pair_id": "near-pair-55ab6deeb610b3ae",
+      "overlay_path": "artifacts/denpar-leakage-remediation-v1/near_duplicate_artifacts/near-pair-55ab6deeb610b3ae_overlay.png",
+      "overlay_sha256": "d09f272ee3eabd38406aea4ce94b1bd9a53ea17f333801e77f7a9e30afa7d753",
+      "blink_path": "artifacts/denpar-leakage-remediation-v1/near_duplicate_artifacts/near-pair-55ab6deeb610b3ae_blink.gif",
+      "blink_sha256": "05cfc8ab03592b93d2b165ed754081251769de99d2c05b6c23937973012401c4",
+      "method": "512x512 aspect-preserving centered fit; overlay left red/right cyan; blink 700 ms per frame"
+    }
+  ]
+}

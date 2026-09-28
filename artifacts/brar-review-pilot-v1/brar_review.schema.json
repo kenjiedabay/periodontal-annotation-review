@@ -1,0 +1,171 @@
+{
+  "$defs": {
+    "Point": {
+      "additionalProperties": false,
+      "properties": {
+        "x": {
+          "minimum": 0,
+          "title": "X",
+          "type": "number"
+        },
+        "y": {
+          "minimum": 0,
+          "title": "Y",
+          "type": "number"
+        }
+      },
+      "required": [
+        "x",
+        "y"
+      ],
+      "title": "Point",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "protocol_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Protocol Version",
+      "type": "string"
+    },
+    "pilot_case_id": {
+      "title": "Pilot Case Id",
+      "type": "string"
+    },
+    "anonymous_reviewer_id": {
+      "enum": [
+        "reviewer_A",
+        "reviewer_B"
+      ],
+      "title": "Anonymous Reviewer Id",
+      "type": "string"
+    },
+    "image_quality": {
+      "enum": [
+        "acceptable",
+        "suboptimal",
+        "unreadable"
+      ],
+      "title": "Image Quality",
+      "type": "string"
+    },
+    "maximum_loss_fdi": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Maximum Loss Fdi"
+    },
+    "maximum_loss_surface": {
+      "anyOf": [
+        {
+          "enum": [
+            "mesial",
+            "distal"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Maximum Loss Surface"
+    },
+    "cej": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Point"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "alveolar_crest": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Point"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "apex": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Point"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "bone_loss_percent": {
+      "anyOf": [
+        {
+          "maximum": 100,
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Bone Loss Percent"
+    },
+    "reviewer_brar": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Reviewer Brar"
+    },
+    "reviewer_level": {
+      "enum": [
+        1,
+        2,
+        3,
+        "not_assessable"
+      ],
+      "title": "Reviewer Level"
+    },
+    "notes": {
+      "default": "",
+      "maxLength": 5000,
+      "title": "Notes",
+      "type": "string"
+    },
+    "completed_at_utc": {
+      "title": "Completed At Utc",
+      "type": "string"
+    }
+  },
+  "required": [
+    "pilot_case_id",
+    "anonymous_reviewer_id",
+    "image_quality",
+    "reviewer_level",
+    "completed_at_utc"
+  ],
+  "title": "BrarReview",
+  "type": "object"
+}

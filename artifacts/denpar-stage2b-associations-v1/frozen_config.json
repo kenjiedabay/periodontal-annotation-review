@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "margin_fraction_x": 0.25,
+  "margin_fraction_y": 0.15,
+  "minimum_margin_px": 16,
+  "point_max_normalized_distance": 0.2,
+  "bone_max_normalized_distance": 0.35,
+  "ambiguity_delta": 0.03,
+  "coordinate_space": "original_image_pixels",
+  "coordinate_origin": "top_left",
+  "anatomical_side_policy": "hypothesis_only",
+  "provenance_label": "AI-generated anatomical association—awaiting expert review",
+  "qa_seed": 20260921,
+  "qa_images_per_partition": 6,
+  "frozen_at": "2026-09-21T15:17:46.574109+00:00",
+  "manifest_hashes": {
+    "denpar_clean_train_manifest.json": "a58b29ed113a079ddd3399b1b091360bb06a7a95a473888bbda34d678814e09f",
+    "denpar_clean_validation_manifest.json": "a6268f608613fbaf0fab8a08048cd3098114f7d247e5915b915cd24490d16a2d",
+    "denpar_clean_historical_test_manifest.json": "0dd5f0c9f11c575d023ec8dd94f5bed7f5502f23bdca1fa9e61c21bb06934213",
+    "denpar_exclusion_manifest.json": "aa23a920ce3f3c32e83ce3ba1cd1023fc60e102d9cdd668f5cc42b444d5d227b",
+    "denpar_duplicate_group_manifest.json": "eee1220816eb6e90d6ea75bb327033449c74d470bd93e61d83aa9026f478c4ec",
+    "denpar_near_duplicate_review_queue.json": "eaaf24afe86d5f97944c4bb42aecc242c7197ed9b40055a3c12191e894768619"
+  },
+  "content_hash": "cc184a6ecc9899bd1d7184dbe1a63a39a62578bbfef75402c0ff10183b91f196"
+}

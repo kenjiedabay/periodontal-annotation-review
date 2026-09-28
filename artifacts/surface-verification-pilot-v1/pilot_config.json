@@ -1,0 +1,28 @@
+{
+  "pilot_version": "surface-verification-pilot-v1",
+  "application_version": "PerioLab 0.1.0 + supervised-surface-pilot-v1",
+  "git_commit": "4165acc12a64cd00085e758164286b34c02a1726",
+  "surface_verification_schema_version": "1.1.0",
+  "rbl_calculation_version": "rbl-euclidean-v1",
+  "created_at": "2026-09-22T05:58:05.735812+00:00",
+  "source_tree_integrity_sha256": "1a8653923669c01b9156277cb65574dfba11600061bfa6ab6a0bf7b9181fcb26",
+  "geometry_validation": {
+    "mask_tolerance_px": 12,
+    "bone_boundary_tolerance_px": 18,
+    "near_zero_distance_px": 5,
+    "coronal_allowance_px": 8,
+    "rbl_review_min": 0,
+    "rbl_review_max": 100,
+    "unrelated_line_sample_step_px": 2
+  },
+  "read_only_guards": {
+    "allowed_partition": "Training",
+    "validation_access": false,
+    "testing_access": false,
+    "model_training": false,
+    "pseudo_label_generation": false,
+    "official_source_editing": false,
+    "geometry_changes_during_session": false,
+    "performance_metrics_before_approval": false
+  }
+}

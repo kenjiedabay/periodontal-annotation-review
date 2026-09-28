@@ -1,0 +1,140 @@
+﻿{
+  "schema_version": "1.0.0",
+  "stage": "2B",
+  "generated_at": "2026-09-21T15:17:46.575111+00:00",
+  "configuration_hash": "cc184a6ecc9899bd1d7184dbe1a63a39a62578bbfef75402c0ff10183b91f196",
+  "statistics": {
+    "Training": {
+      "images": 645,
+      "tooth_instances": 2861,
+      "clipped_crops": 1977,
+      "cej": {
+        "provisional": 3761,
+        "ambiguous": 210,
+        "unassigned": 0,
+        "total": 3971,
+        "distance_px_distribution": {
+          "minimum": 0.0,
+          "median": 0.0,
+          "p95": 2.1969,
+          "maximum": 47.1473
+        }
+      },
+      "apex": {
+        "provisional": 2877,
+        "ambiguous": 11,
+        "unassigned": 1,
+        "total": 2889,
+        "distance_px_distribution": {
+          "minimum": 0.0,
+          "median": 0.0,
+          "p95": 8.5938,
+          "maximum": 66.5132
+        }
+      },
+      "bone_lines": {
+        "provisional": 458,
+        "ambiguous": 1735,
+        "unassigned": 0,
+        "total": 2193
+      },
+      "candidate_counts_per_tooth": {
+        "cej": {
+          "3": 836,
+          "4": 566,
+          "1": 388,
+          "2": 820,
+          "0": 244,
+          "5": 7
+        },
+        "apex": {
+          "1": 1496,
+          "0": 656,
+          "2": 592,
+          "3": 106,
+          "4": 11
+        }
+      },
+      "uncertainty_reasons": {
+        "equidistant_multiple_teeth": 221,
+        "multiple_similarly_close_teeth": 1735,
+        "outside_distance_threshold": 1
+      },
+      "qa_panels": [
+        "qa/Training_97.png",
+        "qa/Training_1024.png",
+        "qa/Training_639.png",
+        "qa/Training_79.png",
+        "qa/Training_110.png",
+        "qa/Training_14.png"
+      ]
+    },
+    "Validation": {
+      "images": 147,
+      "tooth_instances": 644,
+      "clipped_crops": 432,
+      "cej": {
+        "provisional": 864,
+        "ambiguous": 38,
+        "unassigned": 0,
+        "total": 902,
+        "distance_px_distribution": {
+          "minimum": 0.0,
+          "median": 0.0,
+          "p95": 2.1969,
+          "maximum": 31.0
+        }
+      },
+      "apex": {
+        "provisional": 646,
+        "ambiguous": 1,
+        "unassigned": 0,
+        "total": 647,
+        "distance_px_distribution": {
+          "minimum": 0.0,
+          "median": 0.0,
+          "p95": 8.1969,
+          "maximum": 24.7876
+        }
+      },
+      "bone_lines": {
+        "provisional": 120,
+        "ambiguous": 389,
+        "unassigned": 0,
+        "total": 509
+      },
+      "candidate_counts_per_tooth": {
+        "cej": {
+          "2": 171,
+          "1": 98,
+          "4": 134,
+          "3": 186,
+          "0": 55
+        },
+        "apex": {
+          "1": 331,
+          "0": 152,
+          "2": 142,
+          "3": 17,
+          "4": 2
+        }
+      },
+      "uncertainty_reasons": {
+        "multiple_similarly_close_teeth": 389,
+        "equidistant_multiple_teeth": 39
+      },
+      "qa_panels": [
+        "qa/Validation_1226.png",
+        "qa/Validation_971.png",
+        "qa/Validation_817.png",
+        "qa/Validation_48.png",
+        "qa/Validation_1055.png",
+        "qa/Validation_1103.png"
+      ]
+    }
+  },
+  "excluded_images_in_output": [],
+  "historical_test_processed": false,
+  "source_files_modified": false,
+  "content_hash": "7941a92dd732857a09609907fa1a85010a932166742f94cabfd3eaead71fd0da"
+}

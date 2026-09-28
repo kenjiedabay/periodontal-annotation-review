@@ -1,0 +1,795 @@
+{
+  "split": "official_validation",
+  "matching_iou": 0.5,
+  "mask_threshold": 0.5,
+  "counts": {
+    "both_miss": 20,
+    "student_only_miss": 1,
+    "control_only_miss": 0
+  },
+  "difference_cases": [
+    {
+      "image_id": "27",
+      "mask": "mask6",
+      "case": "both_miss",
+      "control": {
+        "mask": "mask6",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.0,
+        "best_score": 0.9996676445007324,
+        "best_prediction_index": 0,
+        "area_pixels": 4605,
+        "bbox_xyxy_processed": [
+          956,
+          232,
+          1020,
+          397
+        ],
+        "components": 1
+      },
+      "student": {
+        "mask": "mask6",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.0,
+        "best_score": 0.999711811542511,
+        "best_prediction_index": 0,
+        "area_pixels": 4605,
+        "bbox_xyxy_processed": [
+          956,
+          232,
+          1020,
+          397
+        ],
+        "components": 1
+      }
+    },
+    {
+      "image_id": "31",
+      "mask": "mask4",
+      "case": "both_miss",
+      "control": {
+        "mask": "mask4",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.0006249171565286815,
+        "best_score": 0.9998027682304382,
+        "best_prediction_index": 1,
+        "area_pixels": 438,
+        "bbox_xyxy_processed": [
+          950,
+          482,
+          961,
+          549
+        ],
+        "components": 1
+      },
+      "student": {
+        "mask": "mask4",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.000667512824293226,
+        "best_score": 0.999813973903656,
+        "best_prediction_index": 1,
+        "area_pixels": 438,
+        "bbox_xyxy_processed": [
+          950,
+          482,
+          961,
+          549
+        ],
+        "components": 1
+      }
+    },
+    {
+      "image_id": "31",
+      "mask": "mask5",
+      "case": "both_miss",
+      "control": {
+        "mask": "mask5",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.000359154655598104,
+        "best_score": 0.9998027682304382,
+        "best_prediction_index": 1,
+        "area_pixels": 600,
+        "bbox_xyxy_processed": [
+          946,
+          537,
+          963,
+          626
+        ],
+        "components": 1
+      },
+      "student": {
+        "mask": "mask5",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.0004223250434733927,
+        "best_score": 0.999813973903656,
+        "best_prediction_index": 1,
+        "area_pixels": 600,
+        "bbox_xyxy_processed": [
+          946,
+          537,
+          963,
+          626
+        ],
+        "components": 1
+      }
+    },
+    {
+      "image_id": "48",
+      "mask": "mask7",
+      "case": "both_miss",
+      "control": {
+        "mask": "mask7",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.32031556963920593,
+        "best_score": 0.18624520301818848,
+        "best_prediction_index": 6,
+        "area_pixels": 2934,
+        "bbox_xyxy_processed": [
+          839,
+          485,
+          879,
+          614
+        ],
+        "components": 1
+      },
+      "student": {
+        "mask": "mask7",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.37842491269111633,
+        "best_score": 0.1358937919139862,
+        "best_prediction_index": 6,
+        "area_pixels": 2934,
+        "bbox_xyxy_processed": [
+          839,
+          485,
+          879,
+          614
+        ],
+        "components": 1
+      }
+    },
+    {
+      "image_id": "71",
+      "mask": "mask6",
+      "case": "both_miss",
+      "control": {
+        "mask": "mask6",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.37352409958839417,
+        "best_score": 0.0896608754992485,
+        "best_prediction_index": 7,
+        "area_pixels": 18857,
+        "bbox_xyxy_processed": [
+          885,
+          175,
+          1012,
+          491
+        ],
+        "components": 1
+      },
+      "student": {
+        "mask": "mask6",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.31228017807006836,
+        "best_score": 0.08441600948572159,
+        "best_prediction_index": 5,
+        "area_pixels": 18857,
+        "bbox_xyxy_processed": [
+          885,
+          175,
+          1012,
+          491
+        ],
+        "components": 1
+      }
+    },
+    {
+      "image_id": "71",
+      "mask": "mask7",
+      "case": "both_miss",
+      "control": {
+        "mask": "mask7",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.0,
+        "best_score": 0.9990158081054688,
+        "best_prediction_index": 0,
+        "area_pixels": 4555,
+        "bbox_xyxy_processed": [
+          11,
+          595,
+          56,
+          746
+        ],
+        "components": 1
+      },
+      "student": {
+        "mask": "mask7",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.0,
+        "best_score": 0.9994434714317322,
+        "best_prediction_index": 0,
+        "area_pixels": 4555,
+        "bbox_xyxy_processed": [
+          11,
+          595,
+          56,
+          746
+        ],
+        "components": 1
+      }
+    },
+    {
+      "image_id": "239",
+      "mask": "mask6",
+      "case": "both_miss",
+      "control": {
+        "mask": "mask6",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.002464955672621727,
+        "best_score": 0.9994639754295349,
+        "best_prediction_index": 0,
+        "area_pixels": 293,
+        "bbox_xyxy_processed": [
+          658,
+          222,
+          677,
+          263
+        ],
+        "components": 1
+      },
+      "student": {
+        "mask": "mask6",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.0018965820781886578,
+        "best_score": 0.9995908141136169,
+        "best_prediction_index": 1,
+        "area_pixels": 293,
+        "bbox_xyxy_processed": [
+          658,
+          222,
+          677,
+          263
+        ],
+        "components": 1
+      }
+    },
+    {
+      "image_id": "574",
+      "mask": "mask2",
+      "case": "student_only_miss",
+      "control": {
+        "mask": "mask2",
+        "matched": true,
+        "matched_score": 0.08246248960494995,
+        "best_iou": 0.6243643760681152,
+        "best_score": 0.08246248960494995,
+        "best_prediction_index": 2,
+        "area_pixels": 55984,
+        "bbox_xyxy_processed": [
+          344,
+          199,
+          962,
+          367
+        ],
+        "components": 1
+      },
+      "student": {
+        "mask": "mask2",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.0,
+        "best_score": 0.2987331748008728,
+        "best_prediction_index": 0,
+        "area_pixels": 55984,
+        "bbox_xyxy_processed": [
+          344,
+          199,
+          962,
+          367
+        ],
+        "components": 1
+      }
+    },
+    {
+      "image_id": "574",
+      "mask": "mask3",
+      "case": "both_miss",
+      "control": {
+        "mask": "mask3",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.012027338147163391,
+        "best_score": 0.08246248960494995,
+        "best_prediction_index": 2,
+        "area_pixels": 37109,
+        "bbox_xyxy_processed": [
+          422,
+          128,
+          967,
+          217
+        ],
+        "components": 1
+      },
+      "student": {
+        "mask": "mask3",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.0,
+        "best_score": 0.2987331748008728,
+        "best_prediction_index": 0,
+        "area_pixels": 37109,
+        "bbox_xyxy_processed": [
+          422,
+          128,
+          967,
+          217
+        ],
+        "components": 1
+      }
+    },
+    {
+      "image_id": "584",
+      "mask": "mask1",
+      "case": "both_miss",
+      "control": {
+        "mask": "mask1",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.0,
+        "best_score": 0.8845401406288147,
+        "best_prediction_index": 0,
+        "area_pixels": 64292,
+        "bbox_xyxy_processed": [
+          80,
+          223,
+          678,
+          391
+        ],
+        "components": 1
+      },
+      "student": {
+        "mask": "mask1",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.0,
+        "best_score": 0.6937594413757324,
+        "best_prediction_index": 0,
+        "area_pixels": 64292,
+        "bbox_xyxy_processed": [
+          80,
+          223,
+          678,
+          391
+        ],
+        "components": 1
+      }
+    },
+    {
+      "image_id": "584",
+      "mask": "mask5",
+      "case": "both_miss",
+      "control": {
+        "mask": "mask5",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.0,
+        "best_score": 0.8845401406288147,
+        "best_prediction_index": 0,
+        "area_pixels": 27824,
+        "bbox_xyxy_processed": [
+          94,
+          149,
+          610,
+          240
+        ],
+        "components": 5
+      },
+      "student": {
+        "mask": "mask5",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.0,
+        "best_score": 0.6937594413757324,
+        "best_prediction_index": 0,
+        "area_pixels": 27824,
+        "bbox_xyxy_processed": [
+          94,
+          149,
+          610,
+          240
+        ],
+        "components": 5
+      }
+    },
+    {
+      "image_id": "616",
+      "mask": "mask5",
+      "case": "both_miss",
+      "control": {
+        "mask": "mask5",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.3860969543457031,
+        "best_score": 0.9917957186698914,
+        "best_prediction_index": 5,
+        "area_pixels": 52463,
+        "bbox_xyxy_processed": [
+          145,
+          240,
+          418,
+          844
+        ],
+        "components": 1
+      },
+      "student": {
+        "mask": "mask5",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.3350285291671753,
+        "best_score": 0.9923020601272583,
+        "best_prediction_index": 5,
+        "area_pixels": 52463,
+        "bbox_xyxy_processed": [
+          145,
+          240,
+          418,
+          844
+        ],
+        "components": 1
+      }
+    },
+    {
+      "image_id": "771",
+      "mask": "mask3",
+      "case": "both_miss",
+      "control": {
+        "mask": "mask3",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.0,
+        "best_score": 0.9995429515838623,
+        "best_prediction_index": 0,
+        "area_pixels": 1499,
+        "bbox_xyxy_processed": [
+          968,
+          211,
+          1011,
+          285
+        ],
+        "components": 3
+      },
+      "student": {
+        "mask": "mask3",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.0,
+        "best_score": 0.9996657371520996,
+        "best_prediction_index": 0,
+        "area_pixels": 1499,
+        "bbox_xyxy_processed": [
+          968,
+          211,
+          1011,
+          285
+        ],
+        "components": 3
+      }
+    },
+    {
+      "image_id": "788",
+      "mask": "mask3",
+      "case": "both_miss",
+      "control": {
+        "mask": "mask3",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.0,
+        "best_score": 0.999386191368103,
+        "best_prediction_index": 0,
+        "area_pixels": 5664,
+        "bbox_xyxy_processed": [
+          942,
+          216,
+          1024,
+          455
+        ],
+        "components": 1
+      },
+      "student": {
+        "mask": "mask3",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.0,
+        "best_score": 0.9996515512466431,
+        "best_prediction_index": 0,
+        "area_pixels": 5664,
+        "bbox_xyxy_processed": [
+          942,
+          216,
+          1024,
+          455
+        ],
+        "components": 1
+      }
+    },
+    {
+      "image_id": "833",
+      "mask": "mask3",
+      "case": "both_miss",
+      "control": {
+        "mask": "mask3",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.2089625895023346,
+        "best_score": 0.28704404830932617,
+        "best_prediction_index": 3,
+        "area_pixels": 5184,
+        "bbox_xyxy_processed": [
+          0,
+          261,
+          69,
+          416
+        ],
+        "components": 1
+      },
+      "student": {
+        "mask": "mask3",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.20288394391536713,
+        "best_score": 0.16760869324207306,
+        "best_prediction_index": 3,
+        "area_pixels": 5184,
+        "bbox_xyxy_processed": [
+          0,
+          261,
+          69,
+          416
+        ],
+        "components": 1
+      }
+    },
+    {
+      "image_id": "899",
+      "mask": "mask5",
+      "case": "both_miss",
+      "control": {
+        "mask": "mask5",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.49289268255233765,
+        "best_score": 0.6523234844207764,
+        "best_prediction_index": 4,
+        "area_pixels": 55551,
+        "bbox_xyxy_processed": [
+          123,
+          271,
+          310,
+          704
+        ],
+        "components": 2
+      },
+      "student": {
+        "mask": "mask5",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.490093469619751,
+        "best_score": 0.8706150054931641,
+        "best_prediction_index": 4,
+        "area_pixels": 55551,
+        "bbox_xyxy_processed": [
+          123,
+          271,
+          310,
+          704
+        ],
+        "components": 2
+      }
+    },
+    {
+      "image_id": "935",
+      "mask": "mask3",
+      "case": "both_miss",
+      "control": {
+        "mask": "mask3",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.43773648142814636,
+        "best_score": 0.1022670567035675,
+        "best_prediction_index": 3,
+        "area_pixels": 37026,
+        "bbox_xyxy_processed": [
+          797,
+          76,
+          1024,
+          532
+        ],
+        "components": 6
+      },
+      "student": {
+        "mask": "mask3",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.4891479015350342,
+        "best_score": 0.8481503129005432,
+        "best_prediction_index": 2,
+        "area_pixels": 37026,
+        "bbox_xyxy_processed": [
+          797,
+          76,
+          1024,
+          532
+        ],
+        "components": 6
+      }
+    },
+    {
+      "image_id": "1091",
+      "mask": "mask4",
+      "case": "both_miss",
+      "control": {
+        "mask": "mask4",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.2998120188713074,
+        "best_score": 0.07087141275405884,
+        "best_prediction_index": 5,
+        "area_pixels": 9954,
+        "bbox_xyxy_processed": [
+          9,
+          219,
+          49,
+          744
+        ],
+        "components": 6
+      },
+      "student": {
+        "mask": "mask4",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.0,
+        "best_score": 0.9997673630714417,
+        "best_prediction_index": 0,
+        "area_pixels": 9954,
+        "bbox_xyxy_processed": [
+          9,
+          219,
+          49,
+          744
+        ],
+        "components": 6
+      }
+    },
+    {
+      "image_id": "1226",
+      "mask": "mask5",
+      "case": "both_miss",
+      "control": {
+        "mask": "mask5",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.27088823914527893,
+        "best_score": 0.524611234664917,
+        "best_prediction_index": 3,
+        "area_pixels": 77117,
+        "bbox_xyxy_processed": [
+          25,
+          676,
+          823,
+          839
+        ],
+        "components": 1
+      },
+      "student": {
+        "mask": "mask5",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.2902751863002777,
+        "best_score": 0.07044963538646698,
+        "best_prediction_index": 5,
+        "area_pixels": 77117,
+        "bbox_xyxy_processed": [
+          25,
+          676,
+          823,
+          839
+        ],
+        "components": 1
+      }
+    },
+    {
+      "image_id": "1226",
+      "mask": "mask7",
+      "case": "both_miss",
+      "control": {
+        "mask": "mask7",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.0070729502476751804,
+        "best_score": 0.3767051100730896,
+        "best_prediction_index": 4,
+        "area_pixels": 41814,
+        "bbox_xyxy_processed": [
+          74,
+          127,
+          776,
+          208
+        ],
+        "components": 1
+      },
+      "student": {
+        "mask": "mask7",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.006256879307329655,
+        "best_score": 0.21076641976833344,
+        "best_prediction_index": 4,
+        "area_pixels": 41814,
+        "bbox_xyxy_processed": [
+          74,
+          127,
+          776,
+          208
+        ],
+        "components": 1
+      }
+    },
+    {
+      "image_id": "1279",
+      "mask": "mask6",
+      "case": "both_miss",
+      "control": {
+        "mask": "mask6",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.10261224210262299,
+        "best_score": 0.5175203084945679,
+        "best_prediction_index": 5,
+        "area_pixels": 31607,
+        "bbox_xyxy_processed": [
+          39,
+          138,
+          222,
+          536
+        ],
+        "components": 2
+      },
+      "student": {
+        "mask": "mask6",
+        "matched": false,
+        "matched_score": null,
+        "best_iou": 0.19232113659381866,
+        "best_score": 0.6673484444618225,
+        "best_prediction_index": 5,
+        "area_pixels": 31607,
+        "bbox_xyxy_processed": [
+          39,
+          138,
+          222,
+          536
+        ],
+        "components": 2
+      }
+    }
+  ],
+  "overlay_images": [
+    "574",
+    "27",
+    "31",
+    "584"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "policy_version": "denpar-leakage-remediation-v1",
+  "manifest_type": "near_duplicate_manual_decision",
+  "pair_id": "near-pair-55ab6deeb610b3ae",
+  "reviewer_id": "researcher_kenjie",
+  "decision": "different_radiograph",
+  "decision_date": "2026-09-21T14:44:40.087125+00:00",
+  "notes": "Manual visual inspection confirms that Testing image 1258 and Training image 1254 are different radiographs because their anatomical image content does not match.",
+  "evidence": {
+    "left": {
+      "stable_image_id": "Testing:1258",
+      "image_id": "1258",
+      "official_partition": "Testing",
+      "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1258.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\DenPAR Radiographs Dataset\\Dataset\\Images\\1258.jpg",
+      "file_sha256": "33a35dfe8f168617b7d8a30c172068c448e0136405c960cdcfd7e9f336973863",
+      "normalized_pixel_sha256": "34217173ba4229107dc8bc3758feb9d236a871448ddc598102cc73fa77438e39",
+      "perceptual_hash_64": "fef7ba02b9119091"
+    },
+    "right": {
+      "stable_image_id": "Training:1254",
+      "image_id": "1254",
+      "official_partition": "Training",
+      "source_path": "dataset/raw/1254.jpg",
+      "absolute_source_path": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\dataset\\raw\\1254.jpg",
+      "file_sha256": "341c14eb7927516de269f42bc20a681e2924507cae10fc3d852d2b8a095bf8cc",
+      "normalized_pixel_sha256": "d3fae1e8d95d63ce21634c4b98767d67a094545b66cc4db2f72af5c09d83dfc3",
+      "perceptual_hash_64": "fff3ba0aa8139091"
+    },
+    "review_artifact": {
+      "artifact_path": "near_duplicate_artifacts/near-pair-55ab6deeb610b3ae.png",
+      "artifact_sha256": "688eb4441524620aaa29954e737c6e075e1adf08c61c14d604eb65f14b59b46c",
+      "left_dimensions": [
+        1171,
+        886
+      ],
+      "right_dimensions": [
+        1171,
+        886
+      ],
+      "transformation_scores": {
+        "identity": {
+          "thumbnail_pearson_correlation": 0.8978666828074473,
+          "normalized_thumbnail_mae": 0.0771438330411911
+        },
+        "horizontal_flip": {
+          "thumbnail_pearson_correlation": 0.8209756373582286,
+          "normalized_thumbnail_mae": 0.08937880396842957
+        },
+        "vertical_flip": {
+          "thumbnail_pearson_correlation": 0.7852416111357935,
+          "normalized_thumbnail_mae": 0.10736502707004547
+        },
+        "rotate_180": {
+          "thumbnail_pearson_correlation": 0.8107575782425013,
+          "normalized_thumbnail_mae": 0.10013212263584137
+        }
+      },
+      "best_scoring_transformation": "identity",
+      "edge_method": "Canny thresholds 50/150; left red, right cyan, overlap white",
+      "difference_method": "absolute difference after matched 512x512 aspect-preserving fit"
+    },
+    "p_hash_distance": 6,
+    "stage2a_supporting_evidence": {
+      "normalized_thumbnail_mae": 0.09915340691804886,
+      "thumbnail_pearson_correlation": 0.8378446094606414
+    }
+  },
+  "queue_content_hash": "b77b7c766e5742f527be50317bc901eee820d301336cc0d2eaf86db066c411c9",
+  "content_hash": "caa9e9ee85f53bb64594f89f0c2808694c6b8fe543c80484c0e84fc658b965e5"
+}

@@ -1,0 +1,16 @@
+{
+  "protocol_version": "1.0",
+  "pilot_case_id": "BRAR-001",
+  "anonymous_reviewer_id": "reviewer_A",
+  "image_quality": "unreadable",
+  "maximum_loss_fdi": null,
+  "maximum_loss_surface": null,
+  "cej": null,
+  "alveolar_crest": null,
+  "apex": null,
+  "bone_loss_percent": null,
+  "reviewer_brar": null,
+  "reviewer_level": "not_assessable",
+  "notes": "",
+  "completed_at_utc": "2026-09-24T02:29:15.483Z"
+}

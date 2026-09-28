@@ -1,0 +1,270 @@
+{
+  "confirmed_leakage": [
+    {
+      "classification": "confirmed_leakage",
+      "images": [
+        "Training:1029",
+        "Validation:1028"
+      ],
+      "partitions": [
+        "Training",
+        "Validation"
+      ],
+      "cross_partition": true,
+      "evidence_methods": [
+        {
+          "method": "identical_file_sha256",
+          "hash": "68f82ad2c9e5d67a681a6e8766de696e45e880bea635d8dd687f00a6b4b757db"
+        },
+        {
+          "method": "identical_normalized_pixels",
+          "hash": "480b4273188663e25b894598914ea17eff8ca273ed74443cb29f1c9346631148"
+        }
+      ],
+      "issue": "exact_image_duplicate"
+    },
+    {
+      "classification": "confirmed_leakage",
+      "images": [
+        "Testing:166",
+        "Training:164"
+      ],
+      "partitions": [
+        "Testing",
+        "Training"
+      ],
+      "cross_partition": true,
+      "evidence_methods": [
+        {
+          "method": "identical_file_sha256",
+          "hash": "5082c0fd922b4117c5d420229dbfd187d72e0b6ffddc0bfcbcee966bd59bc21e"
+        },
+        {
+          "method": "identical_normalized_pixels",
+          "hash": "5343bdfcc316c646bc9c501941968e165a06ce670b003a1e64744857664a2040"
+        }
+      ],
+      "issue": "exact_image_duplicate"
+    },
+    {
+      "classification": "confirmed_leakage",
+      "images": [
+        "Training:29",
+        "Validation:158"
+      ],
+      "partitions": [
+        "Training",
+        "Validation"
+      ],
+      "cross_partition": true,
+      "evidence_methods": [
+        {
+          "method": "identical_file_sha256",
+          "hash": "e8599081ed505aafe7d971cc4cf3310861100cdbbc7b6fa30d75890460fe4798"
+        },
+        {
+          "method": "identical_normalized_pixels",
+          "hash": "3f249d6a53c4531bfb998834680b8c9d72f26404ed36fc382b03f1ab04d6ebdb"
+        }
+      ],
+      "issue": "exact_image_duplicate"
+    },
+    {
+      "classification": "confirmed_leakage",
+      "images": [
+        "Training:903",
+        "Validation:899"
+      ],
+      "partitions": [
+        "Training",
+        "Validation"
+      ],
+      "cross_partition": true,
+      "evidence_methods": [
+        {
+          "method": "identical_file_sha256",
+          "hash": "cb395d31abdc40d24f29175362ad0d2e21aa3202f699b7597c53fd83763bd1fd"
+        },
+        {
+          "method": "identical_normalized_pixels",
+          "hash": "6593327dca4763a785f8d45d47af426b069ed4fa77dcb3c50216b12dd04168d0"
+        }
+      ],
+      "issue": "exact_image_duplicate"
+    }
+  ],
+  "cross_partition_exact_duplicates": [
+    {
+      "classification": "confirmed_leakage",
+      "images": [
+        "Training:1029",
+        "Validation:1028"
+      ],
+      "partitions": [
+        "Training",
+        "Validation"
+      ],
+      "cross_partition": true,
+      "evidence_methods": [
+        {
+          "method": "identical_file_sha256",
+          "hash": "68f82ad2c9e5d67a681a6e8766de696e45e880bea635d8dd687f00a6b4b757db"
+        },
+        {
+          "method": "identical_normalized_pixels",
+          "hash": "480b4273188663e25b894598914ea17eff8ca273ed74443cb29f1c9346631148"
+        }
+      ]
+    },
+    {
+      "classification": "confirmed_leakage",
+      "images": [
+        "Testing:166",
+        "Training:164"
+      ],
+      "partitions": [
+        "Testing",
+        "Training"
+      ],
+      "cross_partition": true,
+      "evidence_methods": [
+        {
+          "method": "identical_file_sha256",
+          "hash": "5082c0fd922b4117c5d420229dbfd187d72e0b6ffddc0bfcbcee966bd59bc21e"
+        },
+        {
+          "method": "identical_normalized_pixels",
+          "hash": "5343bdfcc316c646bc9c501941968e165a06ce670b003a1e64744857664a2040"
+        }
+      ]
+    },
+    {
+      "classification": "confirmed_leakage",
+      "images": [
+        "Training:29",
+        "Validation:158"
+      ],
+      "partitions": [
+        "Training",
+        "Validation"
+      ],
+      "cross_partition": true,
+      "evidence_methods": [
+        {
+          "method": "identical_file_sha256",
+          "hash": "e8599081ed505aafe7d971cc4cf3310861100cdbbc7b6fa30d75890460fe4798"
+        },
+        {
+          "method": "identical_normalized_pixels",
+          "hash": "3f249d6a53c4531bfb998834680b8c9d72f26404ed36fc382b03f1ab04d6ebdb"
+        }
+      ]
+    },
+    {
+      "classification": "confirmed_leakage",
+      "images": [
+        "Training:903",
+        "Validation:899"
+      ],
+      "partitions": [
+        "Training",
+        "Validation"
+      ],
+      "cross_partition": true,
+      "evidence_methods": [
+        {
+          "method": "identical_file_sha256",
+          "hash": "cb395d31abdc40d24f29175362ad0d2e21aa3202f699b7597c53fd83763bd1fd"
+        },
+        {
+          "method": "identical_normalized_pixels",
+          "hash": "6593327dca4763a785f8d45d47af426b069ed4fa77dcb3c50216b12dd04168d0"
+        }
+      ]
+    }
+  ],
+  "cross_partition_near_duplicate_candidates": [
+    {
+      "classification": "probable_near_duplicate",
+      "method": "64-bit DCT pHash",
+      "threshold": "Hamming distance <= 6",
+      "hamming_distance": 6,
+      "relative_aspect_difference": 0.0,
+      "cross_partition": true,
+      "left": {
+        "stable_image_id": "Training:1254",
+        "source_path": "dataset/raw/1254.jpg",
+        "official_partition": "Training",
+        "perceptual_hash_64": "fff3ba0aa8139091"
+      },
+      "right": {
+        "stable_image_id": "Testing:1258",
+        "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1258.jpg",
+        "official_partition": "Testing",
+        "perceptual_hash_64": "fef7ba02b9119091"
+      },
+      "supporting_evidence": {
+        "normalized_thumbnail_mae": 0.09915340691804886,
+        "thumbnail_pearson_correlation": 0.8378446094606414
+      },
+      "interpretation": "candidate_for_manual_review_not_a_confirmed_duplicate"
+    },
+    {
+      "classification": "probable_near_duplicate",
+      "method": "64-bit DCT pHash",
+      "threshold": "Hamming distance <= 6",
+      "hamming_distance": 6,
+      "relative_aspect_difference": 0.0008262082933919694,
+      "cross_partition": true,
+      "left": {
+        "stable_image_id": "Training:214",
+        "source_path": "dataset/raw/214.jpg",
+        "official_partition": "Training",
+        "perceptual_hash_64": "ae446b32afb8bc88"
+      },
+      "right": {
+        "stable_image_id": "Testing:1241",
+        "source_path": "DenPAR Radiographs Dataset/Dataset/Images/1241.jpg",
+        "official_partition": "Testing",
+        "perceptual_hash_64": "be486b32adb0bc8a"
+      },
+      "supporting_evidence": {
+        "normalized_thumbnail_mae": 0.15267620980739594,
+        "thumbnail_pearson_correlation": 0.770532336654934
+      },
+      "interpretation": "candidate_for_manual_review_not_a_confirmed_duplicate"
+    },
+    {
+      "classification": "probable_near_duplicate",
+      "method": "64-bit DCT pHash",
+      "threshold": "Hamming distance <= 6",
+      "hamming_distance": 0,
+      "relative_aspect_difference": 0.0,
+      "cross_partition": true,
+      "left": {
+        "stable_image_id": "Validation:853",
+        "source_path": "DenPAR Radiographs Dataset/Dataset/Validation/Images/853.jpg",
+        "official_partition": "Validation",
+        "perceptual_hash_64": "bb6a7a98aad0ea60"
+      },
+      "right": {
+        "stable_image_id": "Testing:852",
+        "source_path": "DenPAR Radiographs Dataset/Dataset/Images/852.jpg",
+        "official_partition": "Testing",
+        "perceptual_hash_64": "bb6a7a98aad0ea60"
+      },
+      "supporting_evidence": {
+        "normalized_thumbnail_mae": 7.348154031205922e-05,
+        "thumbnail_pearson_correlation": 0.9999649907738114
+      },
+      "interpretation": "candidate_for_manual_review_not_a_confirmed_duplicate"
+    }
+  ],
+  "patient_grouping": {
+    "available": false,
+    "fields": [],
+    "classification": "provenance_unverified",
+    "limitation": "No patient, subject, or case identifier is present; patient-level separation cannot be verified."
+  },
+  "conclusion": "confirmed_leakage_detected"
+}

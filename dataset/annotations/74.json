@@ -1,0 +1,245 @@
+{
+  "image_id": "74",
+  "disease_status": "present",
+  "affected_teeth": [],
+  "severity": "cannot_determine",
+  "findings": [
+    "Alveolar bone loss"
+  ],
+  "regions": [
+    {
+      "type": "bounding_box",
+      "coordinates": [
+        0.12027672896729512,
+        0.21101724308249445,
+        0.09260245171941532,
+        0.2083773435614303
+      ]
+    }
+  ],
+  "expert_comment": "",
+  "expert_validated": true,
+  "validation_status": "validated",
+  "validation_timestamp": "2026-09-21T13:17:05.798Z",
+  "version": 8,
+  "created_at": "2026-09-21T13:14:35.596227+00:00",
+  "updated_at": "2026-09-21T13:17:05.805639+00:00",
+  "version_history": [
+    {
+      "version": 1,
+      "saved_at": "2026-09-21T13:14:35.596227+00:00",
+      "annotation": {
+        "image_id": "74",
+        "disease_status": "present",
+        "affected_teeth": [
+          "23",
+          "22",
+          "21"
+        ],
+        "severity": "mild",
+        "findings": [
+          "Alveolar bone loss"
+        ],
+        "regions": [
+          {
+            "type": "bounding_box",
+            "coordinates": [
+              0.40340602303922746,
+              0.24199226447621858,
+              0.06279937454397211,
+              0.28440687675635856
+            ]
+          }
+        ],
+        "expert_comment": "",
+        "expert_validated": false,
+        "validation_status": "pending",
+        "validation_timestamp": null
+      }
+    },
+    {
+      "version": 2,
+      "saved_at": "2026-09-21T13:15:00.550901+00:00",
+      "annotation": {
+        "image_id": "74",
+        "disease_status": "present",
+        "affected_teeth": [
+          "23",
+          "22",
+          "21"
+        ],
+        "severity": "mild",
+        "findings": [
+          "Alveolar bone loss"
+        ],
+        "regions": [
+          {
+            "type": "bounding_box",
+            "coordinates": [
+              0.412985602411522,
+              0.2631116335212762,
+              0.08834489246776994,
+              0.3167898290639697
+            ]
+          }
+        ],
+        "expert_comment": "",
+        "expert_validated": false,
+        "validation_status": "pending",
+        "validation_timestamp": null
+      }
+    },
+    {
+      "version": 3,
+      "saved_at": "2026-09-21T13:15:21.631071+00:00",
+      "annotation": {
+        "image_id": "74",
+        "disease_status": "present",
+        "affected_teeth": [
+          "23",
+          "22",
+          "21"
+        ],
+        "severity": "mild",
+        "findings": [
+          "Alveolar bone loss"
+        ],
+        "regions": [
+          {
+            "type": "bounding_box",
+            "coordinates": [
+              0.412985602411522,
+              0.2631116335212762,
+              0.08834489246776994,
+              0.3167898290639697
+            ]
+          }
+        ],
+        "expert_comment": "",
+        "expert_validated": true,
+        "validation_status": "validated",
+        "validation_timestamp": "2026-09-21T13:15:21.623Z"
+      }
+    },
+    {
+      "version": 4,
+      "saved_at": "2026-09-21T13:15:23.098983+00:00",
+      "annotation": {
+        "image_id": "74",
+        "disease_status": "present",
+        "affected_teeth": [
+          "23",
+          "22",
+          "21"
+        ],
+        "severity": "mild",
+        "findings": [
+          "Alveolar bone loss"
+        ],
+        "regions": [
+          {
+            "type": "bounding_box",
+            "coordinates": [
+              0.412985602411522,
+              0.2631116335212762,
+              0.08834489246776994,
+              0.3167898290639697
+            ]
+          }
+        ],
+        "expert_comment": "",
+        "expert_validated": true,
+        "validation_status": "validated",
+        "validation_timestamp": "2026-09-21T13:15:23.092Z"
+      }
+    },
+    {
+      "version": 5,
+      "saved_at": "2026-09-21T13:15:37.832200+00:00",
+      "annotation": {
+        "image_id": "74",
+        "disease_status": "present",
+        "affected_teeth": [
+          "23",
+          "22",
+          "21"
+        ],
+        "severity": "mild",
+        "findings": [
+          "Alveolar bone loss"
+        ],
+        "regions": [
+          {
+            "type": "bounding_box",
+            "coordinates": [
+              0.412985602411522,
+              0.2631116335212762,
+              0.08834489246776994,
+              0.3167898290639697
+            ]
+          }
+        ],
+        "expert_comment": "",
+        "expert_validated": true,
+        "validation_status": "validated",
+        "validation_timestamp": "2026-09-21T13:15:37.822Z"
+      }
+    },
+    {
+      "version": 6,
+      "saved_at": "2026-09-21T13:17:02.026404+00:00",
+      "annotation": {
+        "image_id": "74",
+        "disease_status": "present",
+        "affected_teeth": [],
+        "severity": "cannot_determine",
+        "findings": [
+          "Alveolar bone loss"
+        ],
+        "regions": [
+          {
+            "type": "bounding_box",
+            "coordinates": [
+              0.12027672896729512,
+              0.21101724308249445,
+              0.09260245171941532,
+              0.2083773435614303
+            ]
+          }
+        ],
+        "expert_comment": "",
+        "expert_validated": false,
+        "validation_status": "pending",
+        "validation_timestamp": null
+      }
+    },
+    {
+      "version": 7,
+      "saved_at": "2026-09-21T13:17:04.517009+00:00",
+      "annotation": {
+        "image_id": "74",
+        "disease_status": "present",
+        "affected_teeth": [],
+        "severity": "cannot_determine",
+        "findings": [
+          "Alveolar bone loss"
+        ],
+        "regions": [
+          {
+            "type": "bounding_box",
+            "coordinates": [
+              0.12027672896729512,
+              0.21101724308249445,
+              0.09260245171941532,
+              0.2083773435614303
+            ]
+          }
+        ],
+        "expert_comment": "",
+        "expert_validated": true,
+        "validation_status": "validated",
+        "validation_timestamp": "2026-09-21T13:17:04.509Z"
+      }
+    }
+  ]
+}

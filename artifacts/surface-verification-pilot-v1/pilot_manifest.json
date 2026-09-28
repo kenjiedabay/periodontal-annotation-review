@@ -1,0 +1,431 @@
+{
+  "schema_version": "1.0.0",
+  "pilot_version": "surface-verification-pilot-v1",
+  "selection_seed": 7312026,
+  "selection_procedure": "deterministic greedy metadata/structural diversity; no model-correctness or performance filtering",
+  "created_at": "2026-09-22T06:04:44.608002+00:00",
+  "source_partition": "Training",
+  "prohibited_partitions": [
+    "Validation",
+    "Testing"
+  ],
+  "case_count": 20,
+  "clinical_label_coverage": {
+    "severity": "unavailable—not used for selection",
+    "bone_loss_pattern": "unavailable—not used for selection"
+  },
+  "entries": [
+    {
+      "pilot_case_id": "SVP-001",
+      "stable_image_id": "Training:978",
+      "source_partition": "Training",
+      "source_image_id": "978",
+      "original_image_reference": "DenPAR Radiographs Dataset/Dataset/Training/Images/978.jpg",
+      "image_sha256": "815f1e3557c152a2b02afd75f323cf4a8cac64638f441fa2d137ae860d3b3b47",
+      "arch": "Lower",
+      "site": "Anterior",
+      "available_fdi_candidates": "43,42,41,31,32,33,34",
+      "selection_stratum": "arch:Lower",
+      "inclusion_reason": [
+        "partial_boundary",
+        "unclear_landmark_candidate",
+        "multiple_apex_candidate",
+        "central_incisor_candidate",
+        "posterior_candidate",
+        "potentially_ungradable"
+      ],
+      "review_order": 1
+    },
+    {
+      "pilot_case_id": "SVP-002",
+      "stable_image_id": "Training:593",
+      "source_partition": "Training",
+      "source_image_id": "593",
+      "original_image_reference": "DenPAR Radiographs Dataset/Dataset/Training/Images/593.jpg",
+      "image_sha256": "fea515f7690859cdd6b691f44e2e9c02cc277298d329c8dd09fb9181918dc546",
+      "arch": "Upper",
+      "site": "Left",
+      "available_fdi_candidates": "11,21,22,23,24,25",
+      "selection_stratum": "arch:Upper",
+      "inclusion_reason": [
+        "partial_boundary",
+        "unclear_landmark_candidate",
+        "multiple_apex_candidate",
+        "central_incisor_candidate",
+        "posterior_candidate",
+        "potentially_ungradable"
+      ],
+      "review_order": 2
+    },
+    {
+      "pilot_case_id": "SVP-003",
+      "stable_image_id": "Training:314",
+      "source_partition": "Training",
+      "source_image_id": "314",
+      "original_image_reference": "DenPAR Radiographs Dataset/Dataset/Training/Images/314.jpg",
+      "image_sha256": "9ea4308030215363d9d3a4298e9b54914434cb1aafbb030d1957652b861c0229",
+      "arch": "Lower",
+      "site": "Right",
+      "available_fdi_candidates": "44,45,46,47,48",
+      "selection_stratum": "site:Right",
+      "inclusion_reason": [
+        "partial_boundary",
+        "unclear_landmark_candidate",
+        "multiple_apex_candidate",
+        "posterior_candidate",
+        "potentially_ungradable"
+      ],
+      "review_order": 3
+    },
+    {
+      "pilot_case_id": "SVP-004",
+      "stable_image_id": "Training:434",
+      "source_partition": "Training",
+      "source_image_id": "434",
+      "original_image_reference": "DenPAR Radiographs Dataset/Dataset/Training/Images/434.jpg",
+      "image_sha256": "e252e5474b57eda057d5f58aed14cf04087570a8fc6524b2ac53d8dc22b18ecc",
+      "arch": "Upper",
+      "site": "Left",
+      "available_fdi_candidates": "11,21,22,23,24",
+      "selection_stratum": "arch:Upper",
+      "inclusion_reason": [
+        "partial_boundary",
+        "unclear_landmark_candidate",
+        "multiple_apex_candidate",
+        "central_incisor_candidate",
+        "posterior_candidate",
+        "potentially_ungradable"
+      ],
+      "review_order": 4
+    },
+    {
+      "pilot_case_id": "SVP-005",
+      "stable_image_id": "Training:79",
+      "source_partition": "Training",
+      "source_image_id": "79",
+      "original_image_reference": "DenPAR Radiographs Dataset/Dataset/Training/Images/79.jpg",
+      "image_sha256": "81eeaa49674a6b4605ad6776f353085defb9d39b76f1a75cc319add401566a1c",
+      "arch": "Lower",
+      "site": "Anterior",
+      "available_fdi_candidates": "43,42,41,31,32,33,34",
+      "selection_stratum": "site:Anterior",
+      "inclusion_reason": [
+        "partial_boundary",
+        "unclear_landmark_candidate",
+        "multiple_apex_candidate",
+        "central_incisor_candidate",
+        "posterior_candidate",
+        "potentially_ungradable"
+      ],
+      "review_order": 5
+    },
+    {
+      "pilot_case_id": "SVP-006",
+      "stable_image_id": "Training:46",
+      "source_partition": "Training",
+      "source_image_id": "46",
+      "original_image_reference": "DenPAR Radiographs Dataset/Dataset/Training/Images/46.jpg",
+      "image_sha256": "ecb83f052cba65799ca9f6cef9bdd065424c577c52f8be3a1f87bb677337c59b",
+      "arch": "Upper",
+      "site": "Anterior",
+      "available_fdi_candidates": "12,11,21,22,23,24",
+      "selection_stratum": "arch:Upper",
+      "inclusion_reason": [
+        "partial_boundary",
+        "unclear_landmark_candidate",
+        "multiple_apex_candidate",
+        "central_incisor_candidate",
+        "posterior_candidate",
+        "potentially_ungradable"
+      ],
+      "review_order": 6
+    },
+    {
+      "pilot_case_id": "SVP-007",
+      "stable_image_id": "Training:28",
+      "source_partition": "Training",
+      "source_image_id": "28",
+      "original_image_reference": "DenPAR Radiographs Dataset/Dataset/Training/Images/28.jpg",
+      "image_sha256": "abdd867f07d026e0d364979b99e28a0d5031b15236758924b29043af457f7d81",
+      "arch": "Upper",
+      "site": "Right",
+      "available_fdi_candidates": "11,12,13,14,15",
+      "selection_stratum": "site:Right",
+      "inclusion_reason": [
+        "partial_boundary",
+        "unclear_landmark_candidate",
+        "central_incisor_candidate",
+        "posterior_candidate",
+        "potentially_ungradable"
+      ],
+      "review_order": 7
+    },
+    {
+      "pilot_case_id": "SVP-008",
+      "stable_image_id": "Training:334",
+      "source_partition": "Training",
+      "source_image_id": "334",
+      "original_image_reference": "DenPAR Radiographs Dataset/Dataset/Training/Images/334.jpg",
+      "image_sha256": "9793e9e0661840cd082846895b19aa1f0679cee7e74f429369d86522f7b479c0",
+      "arch": "Lower",
+      "site": "Anterior",
+      "available_fdi_candidates": "42,41,31,32,33,34",
+      "selection_stratum": "arch:Lower",
+      "inclusion_reason": [
+        "partial_boundary",
+        "unclear_landmark_candidate",
+        "multiple_apex_candidate",
+        "central_incisor_candidate",
+        "posterior_candidate",
+        "potentially_ungradable"
+      ],
+      "review_order": 8
+    },
+    {
+      "pilot_case_id": "SVP-009",
+      "stable_image_id": "Training:519",
+      "source_partition": "Training",
+      "source_image_id": "519",
+      "original_image_reference": "DenPAR Radiographs Dataset/Dataset/Training/Images/519.jpg",
+      "image_sha256": "95ec9b329261740159a189aa0dacb1c81cf79b990aff45aadfa848e494423e91",
+      "arch": "Lower",
+      "site": "Right",
+      "available_fdi_candidates": "45,46,47,48",
+      "selection_stratum": "site:Right",
+      "inclusion_reason": [
+        "partial_boundary",
+        "unclear_landmark_candidate",
+        "multiple_apex_candidate",
+        "posterior_candidate",
+        "potentially_ungradable"
+      ],
+      "review_order": 9
+    },
+    {
+      "pilot_case_id": "SVP-010",
+      "stable_image_id": "Training:341",
+      "source_partition": "Training",
+      "source_image_id": "341",
+      "original_image_reference": "DenPAR Radiographs Dataset/Dataset/Training/Images/341.jpg",
+      "image_sha256": "4972fd5c572fd85bf254cc07b1795ebe15fc16e8a2e0eb21296806f2f6f7fe07",
+      "arch": "Upper",
+      "site": "Left",
+      "available_fdi_candidates": "21,22,23,24,25",
+      "selection_stratum": "site:Left",
+      "inclusion_reason": [
+        "partial_boundary",
+        "unclear_landmark_candidate",
+        "central_incisor_candidate",
+        "posterior_candidate",
+        "potentially_ungradable"
+      ],
+      "review_order": 10
+    },
+    {
+      "pilot_case_id": "SVP-011",
+      "stable_image_id": "Training:721",
+      "source_partition": "Training",
+      "source_image_id": "721",
+      "original_image_reference": "DenPAR Radiographs Dataset/Dataset/Training/Images/721.jpg",
+      "image_sha256": "c676bd3e5e9af5025265241f78694f4a6de26ca9d2041881daf149885a6f08ed",
+      "arch": "Lower",
+      "site": "Anterior",
+      "available_fdi_candidates": "44,43,42,41,31,32,33,34",
+      "selection_stratum": "site:Anterior",
+      "inclusion_reason": [
+        "partial_boundary",
+        "unclear_landmark_candidate",
+        "multiple_apex_candidate",
+        "central_incisor_candidate",
+        "posterior_candidate",
+        "potentially_ungradable"
+      ],
+      "review_order": 11
+    },
+    {
+      "pilot_case_id": "SVP-012",
+      "stable_image_id": "Training:1157",
+      "source_partition": "Training",
+      "source_image_id": "1157",
+      "original_image_reference": "DenPAR Radiographs Dataset/Dataset/Training/Images/1157.jpg",
+      "image_sha256": "4eeb96a408fa778029408a52bfd10b6155d55890b22415812beff89a8d980557",
+      "arch": "Upper",
+      "site": "Left",
+      "available_fdi_candidates": "24,25,26,27",
+      "selection_stratum": "site:Left",
+      "inclusion_reason": [
+        "partial_boundary",
+        "unclear_landmark_candidate",
+        "multiple_apex_candidate",
+        "posterior_candidate",
+        "potentially_ungradable"
+      ],
+      "review_order": 12
+    },
+    {
+      "pilot_case_id": "SVP-013",
+      "stable_image_id": "Training:1191",
+      "source_partition": "Training",
+      "source_image_id": "1191",
+      "original_image_reference": "DenPAR Radiographs Dataset/Dataset/Training/Images/1191.jpg",
+      "image_sha256": "9dfdd74545e4d608676f075fe5565003692b6e9e272ab745108cb76682268fe0",
+      "arch": "Lower",
+      "site": "Anterior",
+      "available_fdi_candidates": "43,42,41,31,32,33,34",
+      "selection_stratum": "site:Anterior",
+      "inclusion_reason": [
+        "partial_boundary",
+        "unclear_landmark_candidate",
+        "multiple_apex_candidate",
+        "central_incisor_candidate",
+        "posterior_candidate",
+        "potentially_ungradable"
+      ],
+      "review_order": 13
+    },
+    {
+      "pilot_case_id": "SVP-014",
+      "stable_image_id": "Training:1070",
+      "source_partition": "Training",
+      "source_image_id": "1070",
+      "original_image_reference": "DenPAR Radiographs Dataset/Dataset/Training/Images/1070.jpg",
+      "image_sha256": "eff7583d500884dc7c430b68a39bbd64fcbd981480a5f261b94db19599ae48e7",
+      "arch": "Upper",
+      "site": "Right",
+      "available_fdi_candidates": "11,12,13,14,15",
+      "selection_stratum": "site:Right",
+      "inclusion_reason": [
+        "partial_boundary",
+        "unclear_landmark_candidate",
+        "central_incisor_candidate",
+        "posterior_candidate",
+        "potentially_ungradable"
+      ],
+      "review_order": 14
+    },
+    {
+      "pilot_case_id": "SVP-015",
+      "stable_image_id": "Training:860",
+      "source_partition": "Training",
+      "source_image_id": "860",
+      "original_image_reference": "DenPAR Radiographs Dataset/Dataset/Training/Images/860.jpg",
+      "image_sha256": "4eb8e746e9c0b591d79e54e01b496047b84cb118281f82641eed550f1984835f",
+      "arch": "Lower",
+      "site": "Anterior",
+      "available_fdi_candidates": "44,43,42,41,31,32,33",
+      "selection_stratum": "site:Anterior",
+      "inclusion_reason": [
+        "partial_boundary",
+        "unclear_landmark_candidate",
+        "multiple_apex_candidate",
+        "central_incisor_candidate",
+        "posterior_candidate",
+        "potentially_ungradable"
+      ],
+      "review_order": 15
+    },
+    {
+      "pilot_case_id": "SVP-016",
+      "stable_image_id": "Training:400",
+      "source_partition": "Training",
+      "source_image_id": "400",
+      "original_image_reference": "DenPAR Radiographs Dataset/Dataset/Training/Images/400.jpg",
+      "image_sha256": "685feaa8a2b3e5515c395eeaa3172b0e0118ad39286a48a08e8952ab993da420",
+      "arch": "Upper",
+      "site": "Left",
+      "available_fdi_candidates": "21,23,24,26,27",
+      "selection_stratum": "site:Left",
+      "inclusion_reason": [
+        "partial_boundary",
+        "unclear_landmark_candidate",
+        "central_incisor_candidate",
+        "posterior_candidate",
+        "potentially_ungradable"
+      ],
+      "review_order": 16
+    },
+    {
+      "pilot_case_id": "SVP-017",
+      "stable_image_id": "Training:749",
+      "source_partition": "Training",
+      "source_image_id": "749",
+      "original_image_reference": "DenPAR Radiographs Dataset/Dataset/Training/Images/749.jpg",
+      "image_sha256": "748146572305697be7a80c59f8fb981ddf48b956120e2e2b1945d9be496fe034",
+      "arch": "Upper",
+      "site": "Right",
+      "available_fdi_candidates": "13,14,15,17,18",
+      "selection_stratum": "site:Right",
+      "inclusion_reason": [
+        "partial_boundary",
+        "unclear_landmark_candidate",
+        "multiple_apex_candidate",
+        "posterior_candidate",
+        "potentially_ungradable"
+      ],
+      "review_order": 17
+    },
+    {
+      "pilot_case_id": "SVP-018",
+      "stable_image_id": "Training:604",
+      "source_partition": "Training",
+      "source_image_id": "604",
+      "original_image_reference": "DenPAR Radiographs Dataset/Dataset/Training/Images/604.jpg",
+      "image_sha256": "0d85a1a595bdaacb74cf29d5797b0537c9a7906938f5e38fa8ee54daf8c47b41",
+      "arch": "Lower",
+      "site": "Anterior",
+      "available_fdi_candidates": "43,42,41,31,32,33,34",
+      "selection_stratum": "site:Anterior",
+      "inclusion_reason": [
+        "partial_boundary",
+        "unclear_landmark_candidate",
+        "multiple_apex_candidate",
+        "central_incisor_candidate",
+        "posterior_candidate",
+        "potentially_ungradable"
+      ],
+      "review_order": 18
+    },
+    {
+      "pilot_case_id": "SVP-019",
+      "stable_image_id": "Training:1203",
+      "source_partition": "Training",
+      "source_image_id": "1203",
+      "original_image_reference": "DenPAR Radiographs Dataset/Dataset/Training/Images/1203.jpg",
+      "image_sha256": "ba21d2145bc5486d50895af6769b162f288e7e67bca2a538ca4b98f39cd99ca8",
+      "arch": "Lower",
+      "site": "Anterior",
+      "available_fdi_candidates": "44,43,42,41,31,32,33",
+      "selection_stratum": "site:Anterior",
+      "inclusion_reason": [
+        "partial_boundary",
+        "unclear_landmark_candidate",
+        "multiple_apex_candidate",
+        "central_incisor_candidate",
+        "posterior_candidate",
+        "potentially_ungradable"
+      ],
+      "review_order": 19
+    },
+    {
+      "pilot_case_id": "SVP-020",
+      "stable_image_id": "Training:105",
+      "source_partition": "Training",
+      "source_image_id": "105",
+      "original_image_reference": "DenPAR Radiographs Dataset/Dataset/Training/Images/105.jpg",
+      "image_sha256": "0706a1892184d24f6c0df2d1f8ecc0b24261929b1aba1e03b432b01459d76455",
+      "arch": "Upper",
+      "site": "Left",
+      "available_fdi_candidates": "23,24,25,26,27,28",
+      "selection_stratum": "site:Left",
+      "inclusion_reason": [
+        "partial_boundary",
+        "unclear_landmark_candidate",
+        "multiple_apex_candidate",
+        "posterior_candidate",
+        "potentially_ungradable"
+      ],
+      "review_order": 20
+    }
+  ],
+  "content_hash": "a7ba819383b2931d567775d6e97b9686bdb54c1d1b00ea8eea526ace61b9b3d2"
+}

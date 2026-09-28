@@ -1,0 +1,273 @@
+{
+  "classification": "no_issue",
+  "checkpoint_training_provenance_verified": true,
+  "checkpoint": "models/tooth_instance_maskrcnn_baseline/full_run/best_checkpoint.pt",
+  "checkpoint_metadata": {
+    "keys": [
+      "architecture",
+      "augmentation_version",
+      "config",
+      "dataset_manifest_version",
+      "epoch",
+      "metrics",
+      "preprocessing_version",
+      "saved_at",
+      "state_dict"
+    ],
+    "epoch": 8,
+    "saved_at": "2026-09-12T05:50:32.927448+00:00",
+    "config": {
+      "dataset_root": "../DenPAR Radiographs Dataset/Dataset",
+      "output_dir": "..\\models\\tooth_instance_maskrcnn_baseline\\full_run",
+      "training_images_dir": "../dataset/raw",
+      "epochs": 10,
+      "batch_size": 1,
+      "max_side": 1024,
+      "learning_rate": 0.0001,
+      "seed": 42,
+      "early_stopping_patience": 4,
+      "mask_score_threshold": 0.5,
+      "match_iou_threshold": 0.5,
+      "pretrained": true,
+      "force_cpu": false,
+      "amp": true
+    },
+    "dataset_manifest_version": "official_denpar_split_v1",
+    "preprocessing_version": "resize_longest_side_v1",
+    "augmentation_version": "horizontal_flip_v1",
+    "architecture": {
+      "architecture": "Mask R-CNN ResNet-50-FPN",
+      "pretrained_weights": "COCO_V1",
+      "frozen_layers": [],
+      "fine_tuned_layers": "all",
+      "total_parameters": 44401393,
+      "trainable_parameters": 44178993
+    }
+  },
+  "checkpoint_metadata_load_error": null,
+  "evidence": [
+    {
+      "kind": "training_manifest",
+      "path": "models/tooth_instance_maskrcnn_baseline/training_expected_manifest.json",
+      "sha256": "26edf11f8edbc2b9acc37cdbd743e26cf6aa1d6e677b2ec7cb04f56e66ffc12b",
+      "image_ids": 650
+    },
+    {
+      "kind": "locked_training_config",
+      "path": "models/tooth_instance_maskrcnn_baseline/full_run/config/final_train_config.json",
+      "sha256": "7496f363875bf18c2f2e8b8bb58a0ad5c3266b68dfdc38d09250f920aa54ffa5",
+      "data": {
+        "training_manifest": "models/tooth_instance_maskrcnn_baseline/training_expected_manifest.json",
+        "validation_partition": "DenPAR Radiographs Dataset/Dataset/Validation",
+        "testing_partition": "DenPAR Radiographs Dataset/Dataset/Testing",
+        "training_images": "dataset/raw",
+        "official_partition_only": true,
+        "expected": {
+          "training_images": 650,
+          "training_instances": 2882,
+          "validation_images": 150,
+          "validation_instances": 655,
+          "testing_images": 200,
+          "testing_instances": 864
+        }
+      }
+    },
+    {
+      "kind": "checkpoint",
+      "path": "models/tooth_instance_maskrcnn_baseline/full_run/best_checkpoint.pt",
+      "sha256": "5190a3eb1e459076dc9a6c5b1269f53f20d2e630875012eba7458df5e5da62ac",
+      "metadata": {
+        "keys": [
+          "architecture",
+          "augmentation_version",
+          "config",
+          "dataset_manifest_version",
+          "epoch",
+          "metrics",
+          "preprocessing_version",
+          "saved_at",
+          "state_dict"
+        ],
+        "epoch": 8,
+        "saved_at": "2026-09-12T05:50:32.927448+00:00",
+        "config": {
+          "dataset_root": "../DenPAR Radiographs Dataset/Dataset",
+          "output_dir": "..\\models\\tooth_instance_maskrcnn_baseline\\full_run",
+          "training_images_dir": "../dataset/raw",
+          "epochs": 10,
+          "batch_size": 1,
+          "max_side": 1024,
+          "learning_rate": 0.0001,
+          "seed": 42,
+          "early_stopping_patience": 4,
+          "mask_score_threshold": 0.5,
+          "match_iou_threshold": 0.5,
+          "pretrained": true,
+          "force_cpu": false,
+          "amp": true
+        },
+        "dataset_manifest_version": "official_denpar_split_v1",
+        "preprocessing_version": "resize_longest_side_v1",
+        "augmentation_version": "horizontal_flip_v1",
+        "architecture": {
+          "architecture": "Mask R-CNN ResNet-50-FPN",
+          "pretrained_weights": "COCO_V1",
+          "frozen_layers": [],
+          "fine_tuned_layers": "all",
+          "total_parameters": 44401393,
+          "trainable_parameters": 44178993
+        }
+      },
+      "metadata_load_error": null
+    },
+    {
+      "kind": "historical_report",
+      "path": "models/tooth_instance_maskrcnn_baseline/full_run/reports/full_training_report.json",
+      "sha256": "60bff13d6e5223afb09f09a06d21e168598b5ad830f4823d436b8d87f5130a5a",
+      "reported_official_split": null,
+      "checkpoint_used": null,
+      "test_exposure": null
+    },
+    {
+      "kind": "historical_report",
+      "path": "models/tooth_instance_maskrcnn_baseline/full_run/reports/final_model_lock.json",
+      "sha256": "03cf85df46a314ca207986a622287ef8ee6d97e9d6c85a3d34785c4bf6f11e9c",
+      "reported_official_split": null,
+      "checkpoint_used": "..\\models\\tooth_instance_maskrcnn_baseline\\full_run\\best_checkpoint.pt",
+      "test_exposure": null
+    },
+    {
+      "kind": "historical_report",
+      "path": "models/tooth_instance_maskrcnn_baseline/full_run/reports/test_exposure_record.json",
+      "sha256": "1ba6592265826f46565be34a57327e79c3d7d290290bbf1afba0635e336117ca",
+      "reported_official_split": null,
+      "checkpoint_used": "..\\models\\tooth_instance_maskrcnn_baseline\\full_run\\best_checkpoint.pt",
+      "test_exposure": true
+    },
+    {
+      "kind": "historical_report",
+      "path": "models/tooth_instance_maskrcnn_baseline/full_run/evaluation_report.json",
+      "sha256": "2fe7226f90adc0fdd016a4a47f7fcbcf8f6e0dd80df42f32a34e94cabe5d86ea",
+      "reported_official_split": {
+        "train": 650,
+        "validation": 150,
+        "test": 200
+      },
+      "checkpoint_used": null,
+      "test_exposure": null
+    },
+    {
+      "kind": "historical_report",
+      "path": "models/tooth_instance_maskrcnn_baseline/full_run/config/augmentation_config.json",
+      "sha256": "382f51535b3aa4247132ad4f5c9f0696fc75ecc2e9d317aa2918706712ea2d0a",
+      "reported_official_split": null,
+      "checkpoint_used": null,
+      "test_exposure": null
+    }
+  ],
+  "training_source_directory": "dataset/raw",
+  "training_source_location_note": "Training radiographs are outside the DenPAR Training folder; identity is supported by the immutable manifest and matching official annotation IDs.",
+  "manifest_training_id_count": 650,
+  "manifest_matches_all_observed_training_ids": true,
+  "checkpoint_paths_and_manifest_version_match_locked_configuration": true,
+  "manifest_validation_id_overlap": [],
+  "manifest_testing_id_overlap": [],
+  "cross_partition_exact_image_groups_by_method": 8,
+  "cross_partition_unique_exact_image_pairs": [
+    {
+      "classification": "confirmed_leakage",
+      "images": [
+        "Training:1029",
+        "Validation:1028"
+      ],
+      "partitions": [
+        "Training",
+        "Validation"
+      ],
+      "cross_partition": true,
+      "evidence_methods": [
+        {
+          "method": "identical_file_sha256",
+          "hash": "68f82ad2c9e5d67a681a6e8766de696e45e880bea635d8dd687f00a6b4b757db"
+        },
+        {
+          "method": "identical_normalized_pixels",
+          "hash": "480b4273188663e25b894598914ea17eff8ca273ed74443cb29f1c9346631148"
+        }
+      ]
+    },
+    {
+      "classification": "confirmed_leakage",
+      "images": [
+        "Testing:166",
+        "Training:164"
+      ],
+      "partitions": [
+        "Testing",
+        "Training"
+      ],
+      "cross_partition": true,
+      "evidence_methods": [
+        {
+          "method": "identical_file_sha256",
+          "hash": "5082c0fd922b4117c5d420229dbfd187d72e0b6ffddc0bfcbcee966bd59bc21e"
+        },
+        {
+          "method": "identical_normalized_pixels",
+          "hash": "5343bdfcc316c646bc9c501941968e165a06ce670b003a1e64744857664a2040"
+        }
+      ]
+    },
+    {
+      "classification": "confirmed_leakage",
+      "images": [
+        "Training:29",
+        "Validation:158"
+      ],
+      "partitions": [
+        "Training",
+        "Validation"
+      ],
+      "cross_partition": true,
+      "evidence_methods": [
+        {
+          "method": "identical_file_sha256",
+          "hash": "e8599081ed505aafe7d971cc4cf3310861100cdbbc7b6fa30d75890460fe4798"
+        },
+        {
+          "method": "identical_normalized_pixels",
+          "hash": "3f249d6a53c4531bfb998834680b8c9d72f26404ed36fc382b03f1ab04d6ebdb"
+        }
+      ]
+    },
+    {
+      "classification": "confirmed_leakage",
+      "images": [
+        "Training:903",
+        "Validation:899"
+      ],
+      "partitions": [
+        "Training",
+        "Validation"
+      ],
+      "cross_partition": true,
+      "evidence_methods": [
+        {
+          "method": "identical_file_sha256",
+          "hash": "cb395d31abdc40d24f29175362ad0d2e21aa3202f699b7597c53fd83763bd1fd"
+        },
+        {
+          "method": "identical_normalized_pixels",
+          "hash": "6593327dca4763a785f8d45d47af426b069ed4fa77dcb3c50216b12dd04168d0"
+        }
+      ]
+    }
+  ],
+  "validation_or_testing_paths_in_training_manifest": false,
+  "validation_or_testing_content_duplicated_in_training": true,
+  "verified_claim": "Checkpoint metadata points to dataset/raw and the official Training annotation partition; no Validation or Testing IDs or paths occur in the 650-entry training manifest.",
+  "cannot_verify": [
+    "Patient-level split independence cannot be verified from the supplied metadata.",
+    "Filesystem artifacts cannot independently prove every runtime batch consumed during historical training."
+  ]
+}
