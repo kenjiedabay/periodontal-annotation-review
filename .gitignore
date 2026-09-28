@@ -20,6 +20,12 @@ backend/ml/checkpoints/**/*.json
 backend/ml/checkpoints/**/*.csv
 
 # Local data and model artifacts
+*.zip
+*.pt
+*.pth
+.torch-cache/
+backend/.stage*/
+backend/.decision*/
 datasets/
 dataset/raw/*
 dataset/cleaned/*
