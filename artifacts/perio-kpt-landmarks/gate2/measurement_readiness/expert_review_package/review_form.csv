@@ -1,0 +1,13 @@
+case_id,root_class,landmark_definition_clear,placement_consistent,uncertain_landmarks,suggested_correction,reviewer_notes
+Case001,double_root,,,,,
+Case002,single_root,,,,,
+Case003,double_root,,,,,
+Case004,single_root,,,,,
+Case005,triple_root,,,,,
+Case006,triple_root,,,,,
+Case007,double_root,,,,,
+Case008,single_root,,,,,
+Case009,double_root,,,,,
+Case010,single_root,,,,,
+Case011,single_root,,,,,
+Case012,triple_root,,,,,

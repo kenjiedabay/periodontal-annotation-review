@@ -1,0 +1,342 @@
+{
+  "gate": 1,
+  "training_performed": false,
+  "dataset_root": "datasets/sources/perio-kpt/extracted/Periodontal_Keypoint_Dataset",
+  "schema_version": "perio-kpt-standard-box-v1",
+  "created_at": "2026-09-28T00:33:52.858176+00:00",
+  "environment": {
+    "python": "3.12.10",
+    "processor": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+    "device": "CPU-only preparation"
+  },
+  "inventory": {
+    "unique_radiographs": 193,
+    "development_radiographs": 175,
+    "holdout_radiographs": 18,
+    "valid_annotation_rows": 773,
+    "quarantined_rows": 2,
+    "heatmap_ready_records": 632,
+    "class_counts": {
+      "single_root": 385,
+      "double_root": 160,
+      "triple_root": 34,
+      "arr_region": 51,
+      "pls_region": 143
+    },
+    "landmark_counts": {
+      "CEJ-m": 580,
+      "BL-m": 581,
+      "RL-m": 194,
+      "CEJ-d": 581,
+      "BL-d": 578,
+      "RL-d": 195,
+      "RL-c": 419,
+      "FA": 191,
+      "FBL-m": 191,
+      "FBL-d": 191,
+      "ARR": 51
+    },
+    "visibility_counts": {
+      "0": 4751,
+      "1": 344,
+      "2": 3408
+    },
+    "image_dimensions": {
+      "1480x1939": 2,
+      "1940x1478": 2,
+      "1944x1487": 3,
+      "1944x1480": 3,
+      "1488x1941": 1,
+      "1932x1493": 1,
+      "1940x1482": 1,
+      "1936x1501": 1,
+      "1200x868": 54,
+      "1944x1481": 4,
+      "1484x1937": 2,
+      "246x320": 2,
+      "1936x1484": 3,
+      "1936x1476": 1,
+      "1480x1945": 1,
+      "1480x1936": 3,
+      "1480x1941": 3,
+      "1940x1485": 2,
+      "1484x1938": 1,
+      "1480x1937": 3,
+      "1940x1481": 3,
+      "1940x1480": 4,
+      "1940x1483": 3,
+      "1948x1479": 1,
+      "1480x1932": 1,
+      "1928x1486": 1,
+      "1484x1916": 1,
+      "1504x1928": 1,
+      "1484x1941": 1,
+      "320x248": 1,
+      "1936x1486": 1,
+      "1484x1928": 1,
+      "1948x1481": 2,
+      "1492x1934": 1,
+      "1920x1483": 1,
+      "1936x1477": 1,
+      "320x245": 4,
+      "1488x1939": 1,
+      "1928x1488": 1,
+      "1952x1481": 1,
+      "1484x1932": 2,
+      "1936x1482": 2,
+      "1480x1930": 2,
+      "1936x1478": 2,
+      "1936x1480": 1,
+      "1940x1475": 1,
+      "1484x1944": 1,
+      "1920x1485": 1,
+      "1480x1935": 1,
+      "1956x1481": 1,
+      "1941x1484": 1,
+      "1480x1940": 1,
+      "1944x1486": 1,
+      "1944x1483": 1,
+      "1940x1484": 4,
+      "1928x1480": 1,
+      "1492x1940": 2,
+      "244x320": 1,
+      "1484x1931": 1,
+      "1932x1480": 1,
+      "1496x1938": 1,
+      "1492x1939": 1,
+      "1480x1931": 1,
+      "1930x1484": 1,
+      "1948x1490": 1,
+      "320x247": 3,
+      "1488x1936": 1,
+      "1932x1483": 1,
+      "1480x1938": 1,
+      "1924x1481": 1,
+      "1944x1482": 2,
+      "1480x1929": 1,
+      "1952x1482": 1,
+      "1940x1496": 1,
+      "1932x1484": 1,
+      "1484x1943": 1,
+      "1049x817": 1,
+      "1932x1481": 1,
+      "1496x1945": 1,
+      "1944x1479": 2,
+      "1928x1484": 1,
+      "1936x1492": 1,
+      "1932x1477": 1,
+      "1258x943": 1,
+      "1480x1921": 1,
+      "1936x1500": 1,
+      "662x875": 1,
+      "1936x1489": 1,
+      "1484x1940": 1,
+      "1952x1480": 1,
+      "1936x1479": 1,
+      "1952x1492": 1,
+      "1496x1940": 1,
+      "1944x1488": 1,
+      "1480x1948": 1,
+      "1944x1478": 1,
+      "1492x1945": 1
+    }
+  },
+  "validation": {
+    "expected_fold_count": 5,
+    "folds_valid": true,
+    "radiograph_level_split": true,
+    "patient_ids_available": false,
+    "repeated_fold_copy_mismatches": []
+  },
+  "quarantined": [
+    {
+      "record_id": "Image190:object-2",
+      "image_id": "Image190",
+      "source_label": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\datasets\\sources\\perio-kpt\\extracted\\Periodontal_Keypoint_Dataset\\1_Experiment\\standard_box\\f0\\train\\labels\\Image190.txt",
+      "source_line": 2,
+      "reason": "box_outside_image",
+      "observed_value_count": null,
+      "expected_value_count": 38,
+      "source_preserved": true
+    },
+    {
+      "record_id": "Image24:object-3",
+      "image_id": "Image24",
+      "source_label": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\datasets\\sources\\perio-kpt\\extracted\\Periodontal_Keypoint_Dataset\\1_Experiment\\holdout_test_standard_box\\labels\\Image24.txt",
+      "source_line": 3,
+      "reason": "unexpected_value_count",
+      "observed_value_count": 41,
+      "expected_value_count": 38,
+      "source_preserved": true
+    }
+  ],
+  "rbl": {
+    "candidate_surface_count": 1158,
+    "assessable_surface_count": 1137,
+    "not_assessable_surface_count": 21,
+    "not_assessable_reasons": {
+      "implausible_bone_projection": 14,
+      "missing_landmarks": 7
+    },
+    "rbl_percent": {
+      "minimum": 3.4503159356678412,
+      "maximum": 78.11935311760897,
+      "mean": 19.602215337675922,
+      "median": 16.70119507150855
+    },
+    "formula": "100 * euclidean_distance(CEJ, BL) / euclidean_distance(CEJ, root_landmark)",
+    "interpretation": "ground-truth radiographic geometry only; not CAL, probing depth, diagnosis, or treatment"
+  },
+  "examples": [
+    {
+      "record_id": "Image98:object-2",
+      "class_id": 0,
+      "class_name": "single_root",
+      "expanded_crop": {
+        "source_width": 1944,
+        "source_height": 1478,
+        "crop_xyxy": [
+          963.6137421189869,
+          71.48248852784738,
+          1398.1245391310122,
+          1478.0
+        ],
+        "output_size": 256,
+        "scale": 0.1820098206470631,
+        "resized_width": 79,
+        "resized_height": 256,
+        "offset_x": 88,
+        "offset_y": 0
+      },
+      "available_landmarks": 5,
+      "landmark_overlay": "artifacts/perio-kpt-landmarks/gate1/examples/01_Image98_object2_single_root_landmarks.png",
+      "heatmap_overlay": "artifacts/perio-kpt-landmarks/gate1/examples/01_Image98_object2_single_root_heatmaps.png"
+    },
+    {
+      "record_id": "Image127:object-3",
+      "class_id": 0,
+      "class_name": "single_root",
+      "expanded_crop": {
+        "source_width": 1940,
+        "source_height": 1480,
+        "crop_xyxy": [
+          1091.0757080078124,
+          0.0,
+          1557.7162841796876,
+          1480.0
+        ],
+        "output_size": 256,
+        "scale": 0.17297297297297298,
+        "resized_width": 81,
+        "resized_height": 256,
+        "offset_x": 87,
+        "offset_y": 0
+      },
+      "available_landmarks": 5,
+      "landmark_overlay": "artifacts/perio-kpt-landmarks/gate1/examples/02_Image127_object3_single_root_landmarks.png",
+      "heatmap_overlay": "artifacts/perio-kpt-landmarks/gate1/examples/02_Image127_object3_single_root_heatmaps.png"
+    },
+    {
+      "record_id": "Image107:object-1",
+      "class_id": 1,
+      "class_name": "double_root",
+      "expanded_crop": {
+        "source_width": 1200,
+        "source_height": 868,
+        "crop_xyxy": [
+          156.98704467626183,
+          0.0,
+          689.8563085952226,
+          868.0
+        ],
+        "output_size": 256,
+        "scale": 0.29493087557603687,
+        "resized_width": 157,
+        "resized_height": 256,
+        "offset_x": 49,
+        "offset_y": 0
+      },
+      "available_landmarks": 9,
+      "landmark_overlay": "artifacts/perio-kpt-landmarks/gate1/examples/03_Image107_object1_double_root_landmarks.png",
+      "heatmap_overlay": "artifacts/perio-kpt-landmarks/gate1/examples/03_Image107_object1_double_root_heatmaps.png"
+    },
+    {
+      "record_id": "Image184:object-3",
+      "class_id": 1,
+      "class_name": "double_root",
+      "expanded_crop": {
+        "source_width": 1200,
+        "source_height": 868,
+        "crop_xyxy": [
+          759.0197934313785,
+          0.0,
+          1200.0,
+          736.6791156923646
+        ],
+        "output_size": 256,
+        "scale": 0.3475054396776262,
+        "resized_width": 153,
+        "resized_height": 256,
+        "offset_x": 51,
+        "offset_y": 0
+      },
+      "available_landmarks": 9,
+      "landmark_overlay": "artifacts/perio-kpt-landmarks/gate1/examples/04_Image184_object3_double_root_landmarks.png",
+      "heatmap_overlay": "artifacts/perio-kpt-landmarks/gate1/examples/04_Image184_object3_double_root_heatmaps.png"
+    },
+    {
+      "record_id": "Image215:object-2",
+      "class_id": 2,
+      "class_name": "triple_root",
+      "expanded_crop": {
+        "source_width": 1940,
+        "source_height": 1483,
+        "crop_xyxy": [
+          358.0622223504323,
+          0.0,
+          1207.5192290655834,
+          1483.0
+        ],
+        "output_size": 256,
+        "scale": 0.17262306136210384,
+        "resized_width": 147,
+        "resized_height": 256,
+        "offset_x": 54,
+        "offset_y": 0
+      },
+      "available_landmarks": 10,
+      "landmark_overlay": "artifacts/perio-kpt-landmarks/gate1/examples/05_Image215_object2_triple_root_landmarks.png",
+      "heatmap_overlay": "artifacts/perio-kpt-landmarks/gate1/examples/05_Image215_object2_triple_root_heatmaps.png"
+    },
+    {
+      "record_id": "Image207:object-2",
+      "class_id": 2,
+      "class_name": "triple_root",
+      "expanded_crop": {
+        "source_width": 1200,
+        "source_height": 868,
+        "crop_xyxy": [
+          364.59249267578133,
+          0.0,
+          861.7021240234375,
+          868.0
+        ],
+        "output_size": 256,
+        "scale": 0.29493087557603687,
+        "resized_width": 147,
+        "resized_height": 256,
+        "offset_x": 54,
+        "offset_y": 0
+      },
+      "available_landmarks": 10,
+      "landmark_overlay": "artifacts/perio-kpt-landmarks/gate1/examples/06_Image207_object2_triple_root_landmarks.png",
+      "heatmap_overlay": "artifacts/perio-kpt-landmarks/gate1/examples/06_Image207_object2_triple_root_heatmaps.png"
+    }
+  ],
+  "source_modified": false,
+  "limitations": [
+    "Patient identifiers are not supplied, so patient-disjoint splitting cannot be verified.",
+    "ARR regions cannot be proposed by the tooth-only Mask R-CNN stage.",
+    "PLS rows with no available keypoint provide no landmark heatmap supervision."
+  ]
+}

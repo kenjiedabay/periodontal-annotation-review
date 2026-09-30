@@ -1,0 +1,331 @@
+{
+  "scope": "Gate 2.1 read-only diagnostic; no training or mutation",
+  "ground_truth_heatmaps": {
+    "CEJ-m": {
+      "visible_in_crop_count": 106,
+      "peak_value": {
+        "minimum": 0.9753741025924683,
+        "mean": 0.9915109265525386,
+        "maximum": 0.9998720288276672
+      },
+      "positive_pixel_definition": "target >= 0.01",
+      "positive_pixels": {
+        "minimum": 256.0,
+        "mean": 260.54716981132077,
+        "maximum": 265.0
+      },
+      "mean_background_to_positive_ratio": 250.5321891520023,
+      "heatmap_peak_to_expected_coordinate_error_pixels": {
+        "minimum": 0.04799941937510947,
+        "mean": 0.36354691112073184,
+        "maximum": 0.6699312421172331
+      }
+    },
+    "BL-m": {
+      "visible_in_crop_count": 106,
+      "peak_value": {
+        "minimum": 0.9749150276184082,
+        "mean": 0.9908366551939046,
+        "maximum": 0.9999818205833435
+      },
+      "positive_pixel_definition": "target >= 0.01",
+      "positive_pixels": {
+        "minimum": 256.0,
+        "mean": 260.5,
+        "maximum": 265.0
+      },
+      "mean_background_to_positive_ratio": 250.57773512476007,
+      "heatmap_peak_to_expected_coordinate_error_pixels": {
+        "minimum": 0.01808398911875403,
+        "mean": 0.37933828155560345,
+        "maximum": 0.676231455893025
+      }
+    },
+    "RL-m": {
+      "visible_in_crop_count": 42,
+      "peak_value": {
+        "minimum": 0.9735620617866516,
+        "mean": 0.9907645427045368,
+        "maximum": 0.9999368786811829
+      },
+      "positive_pixel_definition": "target >= 0.01",
+      "positive_pixels": {
+        "minimum": 256.0,
+        "mean": 260.8333333333333,
+        "maximum": 265.0
+      },
+      "mean_background_to_positive_ratio": 250.2562300319489,
+      "heatmap_peak_to_expected_coordinate_error_pixels": {
+        "minimum": 0.03371030944076714,
+        "mean": 0.382515374809813,
+        "maximum": 0.6944629282114049
+      }
+    },
+    "CEJ-d": {
+      "visible_in_crop_count": 106,
+      "peak_value": {
+        "minimum": 0.9787997603416443,
+        "mean": 0.9914930788975842,
+        "maximum": 0.9999358057975769
+      },
+      "positive_pixel_definition": "target >= 0.01",
+      "positive_pixels": {
+        "minimum": 256.0,
+        "mean": 260.52830188679246,
+        "maximum": 264.0
+      },
+      "mean_background_to_positive_ratio": 250.55040556199305,
+      "heatmap_peak_to_expected_coordinate_error_pixels": {
+        "minimum": 0.03399699637196487,
+        "mean": 0.36800226654124496,
+        "maximum": 0.6210513196496884
+      }
+    },
+    "BL-d": {
+      "visible_in_crop_count": 105,
+      "peak_value": {
+        "minimum": 0.973868727684021,
+        "mean": 0.9907052068483262,
+        "maximum": 0.999930739402771
+      },
+      "positive_pixel_definition": "target >= 0.01",
+      "positive_pixels": {
+        "minimum": 256.0,
+        "mean": 260.1142857142857,
+        "maximum": 264.0
+      },
+      "mean_background_to_positive_ratio": 250.95079086115996,
+      "heatmap_peak_to_expected_coordinate_error_pixels": {
+        "minimum": 0.03531453474900483,
+        "mean": 0.3823499394699328,
+        "maximum": 0.6903750852943278
+      }
+    },
+    "RL-d": {
+      "visible_in_crop_count": 43,
+      "peak_value": {
+        "minimum": 0.974941074848175,
+        "mean": 0.9917522488638412,
+        "maximum": 0.9997203350067139
+      },
+      "positive_pixel_definition": "target >= 0.01",
+      "positive_pixels": {
+        "minimum": 254.0,
+        "mean": 259.93023255813955,
+        "maximum": 265.0
+      },
+      "mean_background_to_positive_ratio": 251.12919388028988,
+      "heatmap_peak_to_expected_coordinate_error_pixels": {
+        "minimum": 0.07095406152530959,
+        "mean": 0.3559148779264647,
+        "maximum": 0.6758806966502432
+      }
+    },
+    "RL-c": {
+      "visible_in_crop_count": 71,
+      "peak_value": {
+        "minimum": 0.9781836271286011,
+        "mean": 0.9911303755263208,
+        "maximum": 0.9999517798423767
+      },
+      "positive_pixel_definition": "target >= 0.01",
+      "positive_pixels": {
+        "minimum": 150.0,
+        "mean": 255.08450704225353,
+        "maximum": 265.0
+      },
+      "mean_background_to_positive_ratio": 255.91877864281375,
+      "heatmap_peak_to_expected_coordinate_error_pixels": {
+        "minimum": 0.02945969952177657,
+        "mean": 0.37118106772020176,
+        "maximum": 0.630108686773215
+      }
+    },
+    "FA": {
+      "visible_in_crop_count": 42,
+      "peak_value": {
+        "minimum": 0.9756317734718323,
+        "mean": 0.9912607073783875,
+        "maximum": 0.9991662502288818
+      },
+      "positive_pixel_definition": "target >= 0.01",
+      "positive_pixels": {
+        "minimum": 256.0,
+        "mean": 260.5,
+        "maximum": 265.0
+      },
+      "mean_background_to_positive_ratio": 250.57773512476007,
+      "heatmap_peak_to_expected_coordinate_error_pixels": {
+        "minimum": 0.12252954622291799,
+        "mean": 0.3744543026423268,
+        "maximum": 0.6663750216472304
+      }
+    },
+    "FBL-m": {
+      "visible_in_crop_count": 42,
+      "peak_value": {
+        "minimum": 0.9771068096160889,
+        "mean": 0.9916241793405443,
+        "maximum": 0.9991662502288818
+      },
+      "positive_pixel_definition": "target >= 0.01",
+      "positive_pixels": {
+        "minimum": 256.0,
+        "mean": 260.3095238095238,
+        "maximum": 265.0
+      },
+      "mean_background_to_positive_ratio": 250.7618220067685,
+      "heatmap_peak_to_expected_coordinate_error_pixels": {
+        "minimum": 0.12252954622291799,
+        "mean": 0.36451439816098224,
+        "maximum": 0.6456570836852115
+      }
+    },
+    "FBL-d": {
+      "visible_in_crop_count": 42,
+      "peak_value": {
+        "minimum": 0.9751631617546082,
+        "mean": 0.9910960864453089,
+        "maximum": 0.9991662502288818
+      },
+      "positive_pixel_definition": "target >= 0.01",
+      "positive_pixels": {
+        "minimum": 256.0,
+        "mean": 260.23809523809524,
+        "maximum": 265.0
+      },
+      "mean_background_to_positive_ratio": 250.8309240622141,
+      "heatmap_peak_to_expected_coordinate_error_pixels": {
+        "minimum": 0.12252954622291799,
+        "mean": 0.37615461148551255,
+        "maximum": 0.6728358746168345
+      }
+    },
+    "ARR": {
+      "visible_in_crop_count": 14,
+      "peak_value": {
+        "minimum": 0.9810473322868347,
+        "mean": 0.9897381109850747,
+        "maximum": 0.9981030225753784
+      },
+      "positive_pixel_definition": "target >= 0.01",
+      "positive_pixels": {
+        "minimum": 259.0,
+        "mean": 260.57142857142856,
+        "maximum": 262.0
+      },
+      "mean_background_to_positive_ratio": 250.50877192982458,
+      "heatmap_peak_to_expected_coordinate_error_pixels": {
+        "minimum": 0.1848716949547259,
+        "mean": 0.40484665217785004,
+        "maximum": 0.5868745164115755
+      }
+    }
+  },
+  "coordinates": {
+    "visible_landmarks": 720,
+    "landmarks_in_letterbox_padding": 3,
+    "letterbox_padding_landmark_records": [
+      {
+        "record_id": "Image149:object-4",
+        "landmark": "RL-c",
+        "crop_xy": [
+          143.77174297314627,
+          -3.4319717682970134
+        ],
+        "content_xyxy": [
+          52,
+          0,
+          204,
+          256
+        ]
+      },
+      {
+        "record_id": "Image193:object-1",
+        "landmark": "RL-c",
+        "crop_xy": [
+          180.83825720307385,
+          4.508098830825173
+        ],
+        "content_xyxy": [
+          88,
+          0,
+          167,
+          256
+        ]
+      },
+      {
+        "record_id": "Image193:object-2",
+        "landmark": "CEJ-m",
+        "crop_xy": [
+          86.96172687411996,
+          173.04689300115209
+        ],
+        "content_xyxy": [
+          88,
+          0,
+          167,
+          256
+        ]
+      }
+    ],
+    "maximum_forward_inverse_roundtrip_error_pixels": 2.2737367544323206e-13,
+    "out_of_crop_landmarks": [
+      {
+        "record_id": "Image149:object-4",
+        "landmark": "RL-c",
+        "crop_xy": [
+          143.77174297314627,
+          -3.4319717682970134
+        ],
+        "original_xy": [
+          1560.65771484375,
+          252.77894592285156
+        ],
+        "crop_xyxy": [
+          1127.6004507320508,
+          268.97391243800416,
+          1845.691541455448,
+          1477.0
+        ]
+      }
+    ],
+    "xy_convention": "points are (x,y); arrays and OpenCV indexing are [y,x]"
+  },
+  "current_objective": {
+    "activation": "sigmoid(logits)",
+    "loss": "sum(mask * (sigmoid(logit)-target)^2) / (visible_channel_count * H * W)",
+    "channel_weighting": "equal weight per available landmark channel; visibility 0 excluded",
+    "spatial_weighting": "uniform; target background and letterbox padding are currently included",
+    "gaussian_sigma_pixels": 3.0
+  },
+  "model_outputs_and_loss": {
+    "logits": {
+      "minimum": -6.033299922943115,
+      "mean": -0.5309143662452698,
+      "maximum": 6.210579872131348,
+      "std": 0.41825276613235474
+    },
+    "after_sigmoid": {
+      "minimum": 0.0023918345104902983,
+      "mean": 0.3754374086856842,
+      "maximum": 0.9979959726333618,
+      "std": 0.09223201870918274
+    },
+    "decoded_visible_channels": 719,
+    "argmax_within_four_pixels_of_canvas_boundary": 386,
+    "argmax_in_letterbox_padding": 576,
+    "decoded_prediction_crop_original_crop_roundtrip_max_pixels": 6.355287432313019e-14,
+    "padding_fraction_of_evaluated_pixels": 0.5413606136995828,
+    "padding_mse_per_pixel": 0.1383196632611697,
+    "content_mse_per_pixel": 0.12517481790179588,
+    "padding_fraction_of_total_squared_error": 0.5660314260394456,
+    "decoder": "sigmoid per channel, flattened spatial argmax, x=index%width, y=index//width"
+  },
+  "ground_truth_visuals": [
+    "perio-kpt-landmarks/gate2/gate2_1_diagnostic/ground_truth_examples/01_Image104_object-1.png",
+    "perio-kpt-landmarks/gate2/gate2_1_diagnostic/ground_truth_examples/02_Image104_object-2.png",
+    "perio-kpt-landmarks/gate2/gate2_1_diagnostic/ground_truth_examples/03_Image104_object-3.png",
+    "perio-kpt-landmarks/gate2/gate2_1_diagnostic/ground_truth_examples/04_Image104_object-4.png"
+  ]
+}

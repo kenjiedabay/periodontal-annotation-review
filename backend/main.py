@@ -25,6 +25,8 @@ from app.association_review import router as association_review_router, legacy_r
 from app.surface_verification import router as surface_verification_router
 from app.pilot_surface_review import router as pilot_surface_router
 from app.ground_truth_pilot_api import router as ground_truth_pilot_router
+from app.perio_kpt_expert_review_api import router as perio_kpt_expert_review_router
+from app.perio_kpt_connected_inference import service as connected_perio_service
 
 app = FastAPI(title="PerioLab Research API", version="0.1.0")
 app.include_router(spatial_annotation_router)
@@ -34,6 +36,7 @@ app.include_router(association_review_legacy_router)
 app.include_router(surface_verification_router)
 app.include_router(pilot_surface_router)
 app.include_router(ground_truth_pilot_router)
+app.include_router(perio_kpt_expert_review_router)
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
 
@@ -59,6 +62,42 @@ def anatomical_overlay(image_id: str, file: UploadFile = File(...)) -> dict[str,
     if original is None:
         raise HTTPException(status_code=422, detail='Unsupported image')
     return anatomy_service.predict(image_id, original)
+
+
+@app.post('/analysis/perio-kpt-preview')
+def perio_kpt_preview(image_id: str, file: UploadFile = File(...)) -> dict[str, Any]:
+    data = file.file.read(30 * 1024 * 1024 + 1)
+    if len(data) > 30 * 1024 * 1024:
+        raise HTTPException(status_code=413, detail='Image exceeds 30 MB')
+    assert_ai_access(image_id, data)
+    original = cv2.imdecode(np.frombuffer(data, np.uint8), cv2.IMREAD_UNCHANGED)
+    if original is None:
+        raise HTTPException(status_code=422, detail='Unsupported image')
+    return connected_perio_service.predict(image_id, original)
+
+
+@app.post('/analysis/unified-model-review')
+def unified_model_review(image_id: str, file: UploadFile = File(...)) -> dict[str, Any]:
+    """Run existing models without combining their datasets or checkpoints."""
+    data = file.file.read(30 * 1024 * 1024 + 1)
+    if len(data) > 30 * 1024 * 1024:
+        raise HTTPException(status_code=413, detail='Image exceeds 30 MB')
+    assert_ai_access(image_id, data)
+    original = cv2.imdecode(np.frombuffer(data, np.uint8), cv2.IMREAD_UNCHANGED)
+    if original is None:
+        raise HTTPException(status_code=422, detail='Unsupported image')
+    return {
+        'image_id': image_id,
+        'task': 'unified_research_annotation_review',
+        'connected_perio_kpt': connected_perio_service.predict(image_id, original),
+        'full_image_anatomy': anatomy_service.predict(image_id, original),
+        'separation': {
+            'datasets_merged': False,
+            'checkpoints_modified': False,
+            'expert_annotations_are_model_outputs': False,
+        },
+        'disclaimer': 'Experimental AI overlays for expert review only; not a diagnosis or treatment recommendation.',
+    }
 
 cases: dict[str, dict[str, Any]] = {}
 DENPAR_VALIDATION_DIR = Path(os.getenv("DENPAR_VALIDATION_DIR", Path(__file__).resolve().parents[1] / "DenPAR Radiographs Dataset" / "Dataset" / "Validation"))

@@ -25,6 +25,44 @@ export interface ToothSegmentationResponse {
   ground_truth: { split: string; mask_urls: string[]; source: string } | null;
 }
 
+export interface PerioKptPreviewResponse {
+  image_id: string;
+  task: 'connected_perio_kpt_research_preview';
+  model_status: 'available' | 'unavailable';
+  detector_status: 'available' | 'unavailable';
+  detector_version: string;
+  landmark_model_version: string;
+  model_error?: string;
+  width: number;
+  height: number;
+  disclaimer: string;
+  limitations: string[];
+  instances: Array<{
+    instance_id: number;
+    detector_confidence?: number;
+    bbox: [number, number, number, number];
+    expanded_bbox: [number, number, number, number] | null;
+    root_class: 'unknown';
+    error?: string;
+    landmarks: Array<{type:string;x:number;y:number;confidence:number;confidence_status:'acceptable'|'uncertain'}>;
+    measurements: Record<'mesial'|'distal', {status:string;reason:string;preliminary_rbl_range_percent?:[number,number];surface_root_percent?:number;central_root_percent?:number}>;
+  }>;
+}
+
+export interface FullImageAnatomyResponse {
+  model_status: 'available'|'unavailable'; model_error?: string; width: number; height: number;
+  bone_overlay_url: string; bone_threshold: number; landmark_threshold: number;
+  points: {cej:Array<{x:number;y:number;confidence:number}>;apex:Array<{x:number;y:number;confidence:number}>};
+  model_versions: {bone_level:string;key_points:string}; scope: string;
+}
+
+export interface UnifiedModelReviewResponse {
+  image_id:string; task:'unified_research_annotation_review';
+  connected_perio_kpt:PerioKptPreviewResponse; full_image_anatomy:FullImageAnatomyResponse;
+  separation:{datasets_merged:false;checkpoints_modified:false;expert_annotations_are_model_outputs:false};
+  disclaimer:string;
+}
+
 export type LandmarkKey = 'cej' | 'bone' | 'apex';
 
 export type ToothStatus = 'confirmed' | 'corrected' | 'annotated_from_scratch';

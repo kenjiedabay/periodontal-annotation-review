@@ -10,6 +10,20 @@ export async function getToothSegmentation(imageId: string, file: File, signal?:
   return response.json();
 }
 
+export async function getPerioKptPreview(imageId: string, file: File, signal?: AbortSignal): Promise<import('../types').PerioKptPreviewResponse> {
+  const body = new FormData(); body.append('file', file);
+  const response = await fetch(`${API_URL}/analysis/perio-kpt-preview?image_id=${encodeURIComponent(imageId)}`, {method:'POST', body, signal});
+  if (!response.ok) throw new Error(`Perio-KPT preview failed (${response.status}).`);
+  return response.json();
+}
+
+export async function getUnifiedModelReview(imageId: string, file: File, signal?: AbortSignal): Promise<import('../types').UnifiedModelReviewResponse> {
+  const body = new FormData(); body.append('file', file);
+  const response = await fetch(`${API_URL}/analysis/unified-model-review?image_id=${encodeURIComponent(imageId)}`, {method:'POST', body, signal});
+  if (!response.ok) throw new Error(`Unified model review failed (${response.status}).`);
+  return response.json();
+}
+
 export async function saveAnnotation(payload: AnnotationPayload): Promise<AnnotationPayload & { saved_at?: string }> {
   const response = await fetch(`${API_URL}/annotations`, {
     method: 'POST',

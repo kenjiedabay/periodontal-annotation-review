@@ -1,0 +1,74 @@
+[
+  {
+    "case_id": "Case001",
+    "record_id": "Image94:object-2",
+    "selection_reason": "RL-d",
+    "class": "double_root"
+  },
+  {
+    "case_id": "Case002",
+    "record_id": "Image193:object-4",
+    "selection_reason": "worst",
+    "class": "single_root"
+  },
+  {
+    "case_id": "Case003",
+    "record_id": "Image81:object-2",
+    "selection_reason": "typical",
+    "class": "double_root"
+  },
+  {
+    "case_id": "Case004",
+    "record_id": "Image193:object-3",
+    "selection_reason": "RL-c",
+    "class": "single_root"
+  },
+  {
+    "case_id": "Case005",
+    "record_id": "Image174:object-3",
+    "selection_reason": "RL-c",
+    "class": "triple_root"
+  },
+  {
+    "case_id": "Case006",
+    "record_id": "Image194:object-3",
+    "selection_reason": "RL-d",
+    "class": "triple_root"
+  },
+  {
+    "case_id": "Case007",
+    "record_id": "Image106:object-3",
+    "selection_reason": "same-family-confusion",
+    "class": "double_root"
+  },
+  {
+    "case_id": "Case008",
+    "record_id": "Image120:object-3",
+    "selection_reason": "typical",
+    "class": "single_root"
+  },
+  {
+    "case_id": "Case009",
+    "record_id": "Image81:object-1",
+    "selection_reason": "worst",
+    "class": "double_root"
+  },
+  {
+    "case_id": "Case010",
+    "record_id": "Image142:object-2",
+    "selection_reason": "best",
+    "class": "single_root"
+  },
+  {
+    "case_id": "Case011",
+    "record_id": "Image51:object-3",
+    "selection_reason": "best",
+    "class": "single_root"
+  },
+  {
+    "case_id": "Case012",
+    "record_id": "Image147:object-2",
+    "selection_reason": "same-family-confusion",
+    "class": "triple_root"
+  }
+]

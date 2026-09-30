@@ -1,0 +1,20 @@
+{
+  "fold": 0,
+  "maximum_epochs": 30,
+  "seed": 42,
+  "image_size": 256,
+  "batch_size": 4,
+  "workers": 2,
+  "amp": true,
+  "augmentation": "none",
+  "allowed_classes": [
+    0,
+    1,
+    2
+  ],
+  "train_records": 411,
+  "validation_records": 106,
+  "encoder_weights": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\.torch-cache\\hub\\checkpoints\\resnet18-f37072fd.pth",
+  "manifest_sha256": "81cf56b4c9b1a7befb35cbaeeea6f78eab0c64e37ed8baced362be5e3a9f63d7",
+  "early_stopping_patience": 3
+}

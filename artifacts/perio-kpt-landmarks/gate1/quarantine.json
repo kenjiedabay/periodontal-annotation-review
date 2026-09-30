@@ -1,0 +1,24 @@
+{
+  "records": [
+    {
+      "record_id": "Image190:object-2",
+      "image_id": "Image190",
+      "source_label": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\datasets\\sources\\perio-kpt\\extracted\\Periodontal_Keypoint_Dataset\\1_Experiment\\standard_box\\f0\\train\\labels\\Image190.txt",
+      "source_line": 2,
+      "reason": "box_outside_image",
+      "observed_value_count": null,
+      "expected_value_count": 38,
+      "source_preserved": true
+    },
+    {
+      "record_id": "Image24:object-3",
+      "image_id": "Image24",
+      "source_label": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\datasets\\sources\\perio-kpt\\extracted\\Periodontal_Keypoint_Dataset\\1_Experiment\\holdout_test_standard_box\\labels\\Image24.txt",
+      "source_line": 3,
+      "reason": "unexpected_value_count",
+      "observed_value_count": 41,
+      "expected_value_count": 38,
+      "source_preserved": true
+    }
+  ]
+}

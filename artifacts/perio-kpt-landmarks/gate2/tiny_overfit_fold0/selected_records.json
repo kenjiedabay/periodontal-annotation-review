@@ -1,0 +1,42 @@
+[
+  {
+    "dataset_index": 167,
+    "record_id": "Image177:object-2",
+    "class_id": 2
+  },
+  {
+    "dataset_index": 239,
+    "record_id": "Image209:object-2",
+    "class_id": 0
+  },
+  {
+    "dataset_index": 65,
+    "record_id": "Image128:object-2",
+    "class_id": 1
+  },
+  {
+    "dataset_index": 430,
+    "record_id": "Image93:object-1",
+    "class_id": 2
+  },
+  {
+    "dataset_index": 95,
+    "record_id": "Image141:object-3",
+    "class_id": 0
+  },
+  {
+    "dataset_index": 122,
+    "record_id": "Image159:object-2",
+    "class_id": 1
+  },
+  {
+    "dataset_index": 110,
+    "record_id": "Image148:object-4",
+    "class_id": 1
+  },
+  {
+    "dataset_index": 15,
+    "record_id": "Image103:object-1",
+    "class_id": 0
+  }
+]

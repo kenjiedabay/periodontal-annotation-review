@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getToothSegmentation } from '../lib/annotations';
 import type { AnnotationDraft, ToothSegmentationResponse } from '../types';
+import PerioKptPreviewPanel from './PerioKptPreviewPanel';
 
 interface ResultsPanelProps {
   imageId: string; imageName: string; imageSrc: string; imageFile: File;
@@ -14,9 +15,10 @@ export default function ResultsPanel({ imageId, imageName, imageSrc, imageFile, 
   const [boxes, setBoxes] = useState(true);
   const [labels, setLabels] = useState(true);
   const [mode, setMode] = useState('Model Prediction');
+  const [showPerioKpt, setShowPerioKpt] = useState(false);
   useEffect(() => {
     const controller = new AbortController();
-    setResult(null); setError(null); setMode('Model Prediction');
+    setResult(null); setError(null); setMode('Model Prediction'); setShowPerioKpt(false);
     void getToothSegmentation(imageId, imageFile, controller.signal).then(value => {
       if (!controller.signal.aborted) setResult(value);
     }).catch((reason: unknown) => {
@@ -29,6 +31,8 @@ export default function ResultsPanel({ imageId, imageName, imageSrc, imageFile, 
   return <section className="results-page">
     <div className="results-heading"><div><h2>MODEL TOOTH SEGMENTATION</h2><p>{imageName}</p></div><button className="secondary-btn" onClick={onBack}>Back to review</button></div>
     <div className="research-disclaimer">This system is a research prototype intended to support oral assessment and treatment planning research. Its outputs are not clinically validated and should not be used as a standalone diagnosis or treatment recommendation.</div>
+    <button className="primary-action" onClick={()=>setShowPerioKpt(value=>!value)}>{showPerioKpt?'Hide unified model review':'Run unified model annotation review'}</button>
+    {showPerioKpt&&<PerioKptPreviewPanel imageId={imageId} imageFile={imageFile} imageSrc={imageSrc}/>} 
     <p className="research-disclaimer">Research prototype. Tooth segmentation output does not indicate periodontal disease, severity, or treatment need.</p>
     <p className="research-disclaimer">AI-generated—awaiting expert review.</p>
     {!result && !error && <p role="status">Running tooth segmentation...</p>}

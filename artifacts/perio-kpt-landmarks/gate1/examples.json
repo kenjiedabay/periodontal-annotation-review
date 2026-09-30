@@ -1,0 +1,146 @@
+[
+  {
+    "record_id": "Image98:object-2",
+    "class_id": 0,
+    "class_name": "single_root",
+    "expanded_crop": {
+      "source_width": 1944,
+      "source_height": 1478,
+      "crop_xyxy": [
+        963.6137421189869,
+        71.48248852784738,
+        1398.1245391310122,
+        1478.0
+      ],
+      "output_size": 256,
+      "scale": 0.1820098206470631,
+      "resized_width": 79,
+      "resized_height": 256,
+      "offset_x": 88,
+      "offset_y": 0
+    },
+    "available_landmarks": 5,
+    "landmark_overlay": "artifacts/perio-kpt-landmarks/gate1/examples/01_Image98_object2_single_root_landmarks.png",
+    "heatmap_overlay": "artifacts/perio-kpt-landmarks/gate1/examples/01_Image98_object2_single_root_heatmaps.png"
+  },
+  {
+    "record_id": "Image127:object-3",
+    "class_id": 0,
+    "class_name": "single_root",
+    "expanded_crop": {
+      "source_width": 1940,
+      "source_height": 1480,
+      "crop_xyxy": [
+        1091.0757080078124,
+        0.0,
+        1557.7162841796876,
+        1480.0
+      ],
+      "output_size": 256,
+      "scale": 0.17297297297297298,
+      "resized_width": 81,
+      "resized_height": 256,
+      "offset_x": 87,
+      "offset_y": 0
+    },
+    "available_landmarks": 5,
+    "landmark_overlay": "artifacts/perio-kpt-landmarks/gate1/examples/02_Image127_object3_single_root_landmarks.png",
+    "heatmap_overlay": "artifacts/perio-kpt-landmarks/gate1/examples/02_Image127_object3_single_root_heatmaps.png"
+  },
+  {
+    "record_id": "Image107:object-1",
+    "class_id": 1,
+    "class_name": "double_root",
+    "expanded_crop": {
+      "source_width": 1200,
+      "source_height": 868,
+      "crop_xyxy": [
+        156.98704467626183,
+        0.0,
+        689.8563085952226,
+        868.0
+      ],
+      "output_size": 256,
+      "scale": 0.29493087557603687,
+      "resized_width": 157,
+      "resized_height": 256,
+      "offset_x": 49,
+      "offset_y": 0
+    },
+    "available_landmarks": 9,
+    "landmark_overlay": "artifacts/perio-kpt-landmarks/gate1/examples/03_Image107_object1_double_root_landmarks.png",
+    "heatmap_overlay": "artifacts/perio-kpt-landmarks/gate1/examples/03_Image107_object1_double_root_heatmaps.png"
+  },
+  {
+    "record_id": "Image184:object-3",
+    "class_id": 1,
+    "class_name": "double_root",
+    "expanded_crop": {
+      "source_width": 1200,
+      "source_height": 868,
+      "crop_xyxy": [
+        759.0197934313785,
+        0.0,
+        1200.0,
+        736.6791156923646
+      ],
+      "output_size": 256,
+      "scale": 0.3475054396776262,
+      "resized_width": 153,
+      "resized_height": 256,
+      "offset_x": 51,
+      "offset_y": 0
+    },
+    "available_landmarks": 9,
+    "landmark_overlay": "artifacts/perio-kpt-landmarks/gate1/examples/04_Image184_object3_double_root_landmarks.png",
+    "heatmap_overlay": "artifacts/perio-kpt-landmarks/gate1/examples/04_Image184_object3_double_root_heatmaps.png"
+  },
+  {
+    "record_id": "Image215:object-2",
+    "class_id": 2,
+    "class_name": "triple_root",
+    "expanded_crop": {
+      "source_width": 1940,
+      "source_height": 1483,
+      "crop_xyxy": [
+        358.0622223504323,
+        0.0,
+        1207.5192290655834,
+        1483.0
+      ],
+      "output_size": 256,
+      "scale": 0.17262306136210384,
+      "resized_width": 147,
+      "resized_height": 256,
+      "offset_x": 54,
+      "offset_y": 0
+    },
+    "available_landmarks": 10,
+    "landmark_overlay": "artifacts/perio-kpt-landmarks/gate1/examples/05_Image215_object2_triple_root_landmarks.png",
+    "heatmap_overlay": "artifacts/perio-kpt-landmarks/gate1/examples/05_Image215_object2_triple_root_heatmaps.png"
+  },
+  {
+    "record_id": "Image207:object-2",
+    "class_id": 2,
+    "class_name": "triple_root",
+    "expanded_crop": {
+      "source_width": 1200,
+      "source_height": 868,
+      "crop_xyxy": [
+        364.59249267578133,
+        0.0,
+        861.7021240234375,
+        868.0
+      ],
+      "output_size": 256,
+      "scale": 0.29493087557603687,
+      "resized_width": 147,
+      "resized_height": 256,
+      "offset_x": 54,
+      "offset_y": 0
+    },
+    "available_landmarks": 10,
+    "landmark_overlay": "artifacts/perio-kpt-landmarks/gate1/examples/06_Image207_object2_triple_root_landmarks.png",
+    "heatmap_overlay": "artifacts/perio-kpt-landmarks/gate1/examples/06_Image207_object2_triple_root_heatmaps.png"
+  }
+]

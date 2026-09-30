@@ -1,0 +1,241 @@
+{
+  "scope": "exactly eight fixed fold-0 training tooth crops; no augmentation or external evaluation",
+  "epochs_completed": 154,
+  "early_stopped": true,
+  "criteria": {
+    "loss_reduction_at_least_90_percent": true,
+    "mean_pixel_error_at_most_2": true,
+    "pck_0.01_at_least_0.95": true,
+    "no_thermal_stop": true,
+    "checkpoint_reload_exact": true
+  },
+  "all_passed": true,
+  "initial": {
+    "loss": 0.2050272896885872,
+    "mean_pixel_error": 145.900559962941,
+    "pck_0.01": 0.0,
+    "per_landmark": {
+      "CEJ-m": {
+        "count": 8,
+        "mean_pixel_error": 128.78561205196024
+      },
+      "BL-m": {
+        "count": 8,
+        "mean_pixel_error": 149.41230347341514
+      },
+      "RL-m": {
+        "count": 5,
+        "mean_pixel_error": 150.1361871987611
+      },
+      "CEJ-d": {
+        "count": 8,
+        "mean_pixel_error": 165.87540096489784
+      },
+      "BL-d": {
+        "count": 8,
+        "mean_pixel_error": 152.44341827795608
+      },
+      "RL-d": {
+        "count": 5,
+        "mean_pixel_error": 167.4843442681378
+      },
+      "RL-c": {
+        "count": 5,
+        "mean_pixel_error": 114.23109257179627
+      },
+      "FA": {
+        "count": 5,
+        "mean_pixel_error": 137.0620151106835
+      },
+      "FBL-m": {
+        "count": 5,
+        "mean_pixel_error": 141.0742042323472
+      },
+      "FBL-d": {
+        "count": 5,
+        "mean_pixel_error": 144.75232452957593
+      },
+      "ARR": {
+        "count": 0,
+        "mean_pixel_error": null
+      }
+    }
+  },
+  "final": {
+    "loss": 0.003865164704620838,
+    "mean_pixel_error": 1.9398343293564344,
+    "pck_0.01": 0.967741935483871,
+    "per_landmark": {
+      "CEJ-m": {
+        "count": 8,
+        "mean_pixel_error": 0.43453481457240506
+      },
+      "BL-m": {
+        "count": 8,
+        "mean_pixel_error": 2.5548459557987195
+      },
+      "RL-m": {
+        "count": 5,
+        "mean_pixel_error": 0.440489586663907
+      },
+      "CEJ-d": {
+        "count": 8,
+        "mean_pixel_error": 0.5017194217870447
+      },
+      "BL-d": {
+        "count": 8,
+        "mean_pixel_error": 0.37429957429894833
+      },
+      "RL-d": {
+        "count": 5,
+        "mean_pixel_error": 15.680828972300532
+      },
+      "RL-c": {
+        "count": 5,
+        "mean_pixel_error": 0.5725083064705716
+      },
+      "FA": {
+        "count": 5,
+        "mean_pixel_error": 0.39182639741779335
+      },
+      "FBL-m": {
+        "count": 5,
+        "mean_pixel_error": 0.39182639741779335
+      },
+      "FBL-d": {
+        "count": 5,
+        "mean_pixel_error": 0.39182639741779335
+      },
+      "ARR": {
+        "count": 0,
+        "mean_pixel_error": null
+      }
+    }
+  },
+  "per_landmark_improvement": {
+    "CEJ-m": {
+      "initial_mean_pixel_error": 128.78561205196024,
+      "final_mean_pixel_error": 0.43453481457240506,
+      "improvement_pixels": 128.35107723738784
+    },
+    "BL-m": {
+      "initial_mean_pixel_error": 149.41230347341514,
+      "final_mean_pixel_error": 2.5548459557987195,
+      "improvement_pixels": 146.8574575176164
+    },
+    "RL-m": {
+      "initial_mean_pixel_error": 150.1361871987611,
+      "final_mean_pixel_error": 0.440489586663907,
+      "improvement_pixels": 149.69569761209718
+    },
+    "CEJ-d": {
+      "initial_mean_pixel_error": 165.87540096489784,
+      "final_mean_pixel_error": 0.5017194217870447,
+      "improvement_pixels": 165.3736815431108
+    },
+    "BL-d": {
+      "initial_mean_pixel_error": 152.44341827795608,
+      "final_mean_pixel_error": 0.37429957429894833,
+      "improvement_pixels": 152.06911870365713
+    },
+    "RL-d": {
+      "initial_mean_pixel_error": 167.4843442681378,
+      "final_mean_pixel_error": 15.680828972300532,
+      "improvement_pixels": 151.80351529583726
+    },
+    "RL-c": {
+      "initial_mean_pixel_error": 114.23109257179627,
+      "final_mean_pixel_error": 0.5725083064705716,
+      "improvement_pixels": 113.6585842653257
+    },
+    "FA": {
+      "initial_mean_pixel_error": 137.0620151106835,
+      "final_mean_pixel_error": 0.39182639741779335,
+      "improvement_pixels": 136.6701887132657
+    },
+    "FBL-m": {
+      "initial_mean_pixel_error": 141.0742042323472,
+      "final_mean_pixel_error": 0.39182639741779335,
+      "improvement_pixels": 140.6823778349294
+    },
+    "FBL-d": {
+      "initial_mean_pixel_error": 144.75232452957593,
+      "final_mean_pixel_error": 0.39182639741779335,
+      "improvement_pixels": 144.36049813215814
+    },
+    "ARR": {
+      "initial_mean_pixel_error": null,
+      "final_mean_pixel_error": null,
+      "improvement_pixels": null
+    }
+  },
+  "selected_records": [
+    {
+      "dataset_index": 167,
+      "record_id": "Image177:object-2",
+      "class_id": 2
+    },
+    {
+      "dataset_index": 239,
+      "record_id": "Image209:object-2",
+      "class_id": 0
+    },
+    {
+      "dataset_index": 65,
+      "record_id": "Image128:object-2",
+      "class_id": 1
+    },
+    {
+      "dataset_index": 430,
+      "record_id": "Image93:object-1",
+      "class_id": 2
+    },
+    {
+      "dataset_index": 95,
+      "record_id": "Image141:object-3",
+      "class_id": 0
+    },
+    {
+      "dataset_index": 122,
+      "record_id": "Image159:object-2",
+      "class_id": 1
+    },
+    {
+      "dataset_index": 110,
+      "record_id": "Image148:object-4",
+      "class_id": 1
+    },
+    {
+      "dataset_index": 15,
+      "record_id": "Image103:object-1",
+      "class_id": 0
+    }
+  ],
+  "before_overlays": [
+    "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\perio-kpt-landmarks\\gate2\\tiny_overfit_fold0\\before\\01_Image177_object-2.png",
+    "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\perio-kpt-landmarks\\gate2\\tiny_overfit_fold0\\before\\02_Image209_object-2.png",
+    "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\perio-kpt-landmarks\\gate2\\tiny_overfit_fold0\\before\\03_Image128_object-2.png",
+    "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\perio-kpt-landmarks\\gate2\\tiny_overfit_fold0\\before\\04_Image93_object-1.png"
+  ],
+  "after_overlays": [
+    "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\perio-kpt-landmarks\\gate2\\tiny_overfit_fold0\\after\\01_Image177_object-2.png",
+    "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\perio-kpt-landmarks\\gate2\\tiny_overfit_fold0\\after\\02_Image209_object-2.png",
+    "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\perio-kpt-landmarks\\gate2\\tiny_overfit_fold0\\after\\03_Image128_object-2.png",
+    "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\perio-kpt-landmarks\\gate2\\tiny_overfit_fold0\\after\\04_Image93_object-1.png"
+  ],
+  "thermal": {
+    "maximum_temperature_c": 63,
+    "events": []
+  },
+  "memory": {
+    "nvidia_smi_max_used_mib": 704,
+    "torch_peak_allocated_mib": 550.77392578125,
+    "torch_peak_reserved_mib": 602.0
+  },
+  "runtime_seconds": 127.01476179997553,
+  "checkpoint": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\perio-kpt-landmarks\\gate2\\tiny_overfit_fold0\\best.pt",
+  "checkpoint_reload": {
+    "success": true,
+    "maximum_absolute_difference": 0.0
+  }
+}

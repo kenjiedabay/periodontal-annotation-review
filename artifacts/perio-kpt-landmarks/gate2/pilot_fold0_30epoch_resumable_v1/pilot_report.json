@@ -1,0 +1,348 @@
+{
+  "status": "completed",
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.10847407525170197,
+      "validation_loss": 0.06824025028833637
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.056462067821361483,
+      "validation_loss": 0.04418461535263945
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.04137212793948581,
+      "validation_loss": 0.037587523391401326
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.0347384866688726,
+      "validation_loss": 0.03184334340470808
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.031401546454979376,
+      "validation_loss": 0.030919275281054003
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.028085389111227203,
+      "validation_loss": 0.02791418873325542
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.02574200859492265,
+      "validation_loss": 0.02770108370869248
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.02368417716793065,
+      "validation_loss": 0.02693868407772647
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.02196483625080979,
+      "validation_loss": 0.025467221728629537
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.019518818670106165,
+      "validation_loss": 0.02577196261673062
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.017221013237767428,
+      "validation_loss": 0.025719520980837168
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.015216317525115406,
+      "validation_loss": 0.025351266445661033
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.012898003854291532,
+      "validation_loss": 0.026713371345842327
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.0114798935003651,
+      "validation_loss": 0.026786059417106486
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.010258341795828158,
+      "validation_loss": 0.025660607101464714
+    }
+  ],
+  "best_epoch": 12,
+  "best_validation_loss": 0.025351266445661033,
+  "metrics": {
+    "overall": {
+      "count": 703,
+      "mean_pixel_error": 35.56438433995403,
+      "normalized_mean_error": 0.0982336614668209,
+      "pck_0.02": 0.406827880512091,
+      "pck_0.05": 0.4879089615931721,
+      "pck_0.10": 0.5576102418207681
+    },
+    "per_landmark": {
+      "CEJ-m": {
+        "count": 105,
+        "mean_pixel_error": 34.897879645009255,
+        "normalized_mean_error": 0.09639268494538292,
+        "pck_0.02": 0.42857142857142855,
+        "pck_0.05": 0.4857142857142857,
+        "pck_0.10": 0.5142857142857142
+      },
+      "BL-m": {
+        "count": 106,
+        "mean_pixel_error": 33.066888286310075,
+        "normalized_mean_error": 0.0913352380468276,
+        "pck_0.02": 0.4339622641509434,
+        "pck_0.05": 0.4716981132075472,
+        "pck_0.10": 0.5377358490566038
+      },
+      "RL-m": {
+        "count": 42,
+        "mean_pixel_error": 39.37342083773473,
+        "normalized_mean_error": 0.1087547377846638,
+        "pck_0.02": 0.35714285714285715,
+        "pck_0.05": 0.47619047619047616,
+        "pck_0.10": 0.5
+      },
+      "CEJ-d": {
+        "count": 106,
+        "mean_pixel_error": 35.23439783603349,
+        "normalized_mean_error": 0.09732219390970268,
+        "pck_0.02": 0.41509433962264153,
+        "pck_0.05": 0.4716981132075472,
+        "pck_0.10": 0.5188679245283019
+      },
+      "BL-d": {
+        "count": 105,
+        "mean_pixel_error": 36.89472427418573,
+        "normalized_mean_error": 0.1019082411104869,
+        "pck_0.02": 0.4,
+        "pck_0.05": 0.41904761904761906,
+        "pck_0.10": 0.4857142857142857
+      },
+      "RL-d": {
+        "count": 43,
+        "mean_pixel_error": 59.45205766022237,
+        "normalized_mean_error": 0.16421466065248777,
+        "pck_0.02": 0.13953488372093023,
+        "pck_0.05": 0.16279069767441862,
+        "pck_0.10": 0.37209302325581395
+      },
+      "RL-c": {
+        "count": 70,
+        "mean_pixel_error": 53.281878448580805,
+        "normalized_mean_error": 0.14717178736464395,
+        "pck_0.02": 0.4142857142857143,
+        "pck_0.05": 0.4857142857142857,
+        "pck_0.10": 0.5285714285714286
+      },
+      "FA": {
+        "count": 42,
+        "mean_pixel_error": 16.84469305438567,
+        "normalized_mean_error": 0.04652733080375798,
+        "pck_0.02": 0.5,
+        "pck_0.05": 0.7380952380952381,
+        "pck_0.10": 0.8095238095238095
+      },
+      "FBL-m": {
+        "count": 42,
+        "mean_pixel_error": 18.637764091366282,
+        "normalized_mean_error": 0.05148003662171965,
+        "pck_0.02": 0.47619047619047616,
+        "pck_0.05": 0.6666666666666666,
+        "pck_0.10": 0.7857142857142857
+      },
+      "FBL-d": {
+        "count": 42,
+        "mean_pixel_error": 18.892514390646088,
+        "normalized_mean_error": 0.05218369155972767,
+        "pck_0.02": 0.42857142857142855,
+        "pck_0.05": 0.6666666666666666,
+        "pck_0.10": 0.8095238095238095
+      },
+      "ARR": {
+        "count": 0,
+        "mean_pixel_error": null,
+        "normalized_mean_error": null,
+        "pck_0.02": null,
+        "pck_0.05": null,
+        "pck_0.10": null
+      }
+    },
+    "by_tooth_class": {
+      "single_root": {
+        "count": 318,
+        "mean_pixel_error": 31.00452109908504,
+        "normalized_mean_error": 0.085638699674236,
+        "pck_0.02": 0.4339622641509434,
+        "pck_0.05": 0.48742138364779874,
+        "pck_0.10": 0.5377358490566038
+      },
+      "double_root": {
+        "count": 306,
+        "mean_pixel_error": 38.070230416947645,
+        "normalized_mean_error": 0.1051551487857736,
+        "pck_0.02": 0.4215686274509804,
+        "pck_0.05": 0.5065359477124183,
+        "pck_0.10": 0.5816993464052288
+      },
+      "triple_root": {
+        "count": 79,
+        "mean_pixel_error": 44.21308827712231,
+        "normalized_mean_error": 0.12212255678887743,
+        "pck_0.02": 0.24050632911392406,
+        "pck_0.05": 0.4177215189873418,
+        "pck_0.10": 0.5443037974683544
+      }
+    },
+    "rbl": {
+      "mesial": {
+        "ground_truth_assessable_count": 104,
+        "ground_truth_invalid_count": 2,
+        "paired_assessable_count": 97,
+        "prediction_invalid_count": 7,
+        "mae_percentage_points": 31.353521668400152,
+        "rmse_percentage_points": 49.39394410977011
+      },
+      "distal": {
+        "ground_truth_assessable_count": 103,
+        "ground_truth_invalid_count": 3,
+        "paired_assessable_count": 98,
+        "prediction_invalid_count": 5,
+        "mae_percentage_points": 30.694668179379583,
+        "rmse_percentage_points": 47.9654779070824
+      }
+    },
+    "overlays": [
+      "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\perio-kpt-landmarks\\gate2\\pilot_fold0_30epoch_resumable_v1\\overlays\\01_Image104_object-1.png",
+      "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\perio-kpt-landmarks\\gate2\\pilot_fold0_30epoch_resumable_v1\\overlays\\02_Image104_object-2.png",
+      "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\perio-kpt-landmarks\\gate2\\pilot_fold0_30epoch_resumable_v1\\overlays\\03_Image104_object-3.png",
+      "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\perio-kpt-landmarks\\gate2\\pilot_fold0_30epoch_resumable_v1\\overlays\\04_Image104_object-4.png",
+      "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\perio-kpt-landmarks\\gate2\\pilot_fold0_30epoch_resumable_v1\\overlays\\05_Image106_object-1.png",
+      "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\perio-kpt-landmarks\\gate2\\pilot_fold0_30epoch_resumable_v1\\overlays\\06_Image106_object-2.png",
+      "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\perio-kpt-landmarks\\gate2\\pilot_fold0_30epoch_resumable_v1\\overlays\\07_Image106_object-3.png",
+      "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\perio-kpt-landmarks\\gate2\\pilot_fold0_30epoch_resumable_v1\\overlays\\08_Image11_object-1.png"
+    ],
+    "condition": "A: ground-truth expanded box to landmark model"
+  },
+  "thermal": {
+    "maximum_temperature_c": 75,
+    "events": [
+      {
+        "event": "thermal_pause",
+        "temperature_c": 75,
+        "time": 1790560009.0954812
+      },
+      {
+        "event": "thermal_resume",
+        "temperature_c": 66,
+        "time": 1790560013.2076185
+      },
+      {
+        "event": "thermal_pause",
+        "temperature_c": 75,
+        "time": 1790560031.6960952
+      },
+      {
+        "event": "thermal_resume",
+        "temperature_c": 66,
+        "time": 1790560035.813615
+      },
+      {
+        "event": "thermal_pause",
+        "temperature_c": 75,
+        "time": 1790560062.5949028
+      },
+      {
+        "event": "thermal_resume",
+        "temperature_c": 66,
+        "time": 1790560066.704738
+      },
+      {
+        "event": "thermal_pause",
+        "temperature_c": 75,
+        "time": 1790560076.9877498
+      },
+      {
+        "event": "thermal_resume",
+        "temperature_c": 68,
+        "time": 1790560079.0503607
+      },
+      {
+        "event": "thermal_pause",
+        "temperature_c": 75,
+        "time": 1790560087.2524433
+      },
+      {
+        "event": "thermal_resume",
+        "temperature_c": 66,
+        "time": 1790560091.3746562
+      },
+      {
+        "event": "thermal_pause",
+        "temperature_c": 75,
+        "time": 1790560105.7826843
+      },
+      {
+        "event": "thermal_resume",
+        "temperature_c": 66,
+        "time": 1790560109.8860898
+      },
+      {
+        "event": "thermal_pause",
+        "temperature_c": 75,
+        "time": 1790560122.2170858
+      },
+      {
+        "event": "thermal_resume",
+        "temperature_c": 66,
+        "time": 1790560126.3280666
+      }
+    ]
+  },
+  "memory": {
+    "nvidia_smi_max_used_mib": 690,
+    "torch_peak_allocated_mib": 549.77392578125,
+    "torch_peak_reserved_mib": 588.0
+  },
+  "runtime_seconds": 205.2648477999901,
+  "checkpoint": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\perio-kpt-landmarks\\gate2\\pilot_fold0_30epoch_resumable_v1\\best.pt",
+  "checkpoint_reload": {
+    "success": true,
+    "maximum_absolute_difference": 0.0,
+    "epoch": 12,
+    "verified_sha256": "10bf207771e4351db60e5b89895b697ba6b7058801e4fd5a9d118f7ce201cdd3",
+    "optimizer_state_restored": true,
+    "generator_state_restored": true
+  },
+  "config": {
+    "fold": 0,
+    "maximum_epochs": 30,
+    "seed": 42,
+    "image_size": 256,
+    "batch_size": 4,
+    "workers": 2,
+    "amp": true,
+    "augmentation": "none",
+    "allowed_classes": [
+      0,
+      1,
+      2
+    ],
+    "train_records": 411,
+    "validation_records": 106,
+    "encoder_weights": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\.torch-cache\\hub\\checkpoints\\resnet18-f37072fd.pth",
+    "manifest_sha256": "81cf56b4c9b1a7befb35cbaeeea6f78eab0c64e37ed8baced362be5e3a9f63d7",
+    "early_stopping_patience": 3
+  },
+  "latest_checkpoint": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\perio-kpt-landmarks\\gate2\\pilot_fold0_30epoch_resumable_v1\\latest.pt"
+}

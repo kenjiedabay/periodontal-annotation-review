@@ -1,0 +1,148 @@
+{
+  "status": "completed_after_evaluation_edge_case_fix",
+  "epochs_trained": 1,
+  "additional_training_performed": false,
+  "train_loss": 0.1305871092315231,
+  "train_loss_definition": "post-epoch evaluation on fold-0 training crops",
+  "validation_loss": 0.13303852876027425,
+  "metrics": {
+    "normalization": "256x256 crop diagonal",
+    "overall_mean_pixel_error": 143.29462799424672,
+    "overall_normalized_mean_error": 0.39579923110287313,
+    "overall_pck_0.05": 0.005563282336578581,
+    "overall_pck_0.10": 0.015299026425591099,
+    "per_landmark": {
+      "CEJ-m": {
+        "count": 106,
+        "failed": 0,
+        "mean_pixel_error": 149.08145100360252,
+        "normalized_mean_error": 0.4117832224756928,
+        "pck_0.05": 0.0,
+        "pck_0.10": 0.0
+      },
+      "BL-m": {
+        "count": 106,
+        "failed": 0,
+        "mean_pixel_error": 136.4702784609538,
+        "normalized_mean_error": 0.3769494505084252,
+        "pck_0.05": 0.0,
+        "pck_0.10": 0.0
+      },
+      "RL-m": {
+        "count": 42,
+        "failed": 0,
+        "mean_pixel_error": 120.09482694769929,
+        "normalized_mean_error": 0.331718228594309,
+        "pck_0.05": 0.0,
+        "pck_0.10": 0.023809523809523808
+      },
+      "CEJ-d": {
+        "count": 106,
+        "failed": 0,
+        "mean_pixel_error": 158.33282968960268,
+        "normalized_mean_error": 0.4373367873358311,
+        "pck_0.05": 0.0,
+        "pck_0.10": 0.0
+      },
+      "BL-d": {
+        "count": 105,
+        "failed": 0,
+        "mean_pixel_error": 133.76110136660117,
+        "normalized_mean_error": 0.36946633529415956,
+        "pck_0.05": 0.009523809523809525,
+        "pck_0.10": 0.009523809523809525
+      },
+      "RL-d": {
+        "count": 43,
+        "failed": 0,
+        "mean_pixel_error": 119.37637356197432,
+        "normalized_mean_error": 0.3297337627309786,
+        "pck_0.05": 0.0,
+        "pck_0.10": 0.06976744186046512
+      },
+      "RL-c": {
+        "count": 71,
+        "failed": 0,
+        "mean_pixel_error": 170.28955637127552,
+        "normalized_mean_error": 0.4703628909194444,
+        "pck_0.05": 0.0,
+        "pck_0.10": 0.04225352112676056
+      },
+      "FA": {
+        "count": 42,
+        "failed": 0,
+        "mean_pixel_error": 137.1743582439198,
+        "normalized_mean_error": 0.37889421452808003,
+        "pck_0.05": 0.07142857142857142,
+        "pck_0.10": 0.07142857142857142
+      },
+      "FBL-m": {
+        "count": 42,
+        "failed": 0,
+        "mean_pixel_error": 146.85816008072075,
+        "normalized_mean_error": 0.40564219088147335,
+        "pck_0.05": 0.0,
+        "pck_0.10": 0.0
+      },
+      "FBL-d": {
+        "count": 42,
+        "failed": 0,
+        "mean_pixel_error": 137.31504295485055,
+        "normalized_mean_error": 0.3792828048136597,
+        "pck_0.05": 0.0,
+        "pck_0.10": 0.0
+      },
+      "ARR": {
+        "count": 14,
+        "failed": 0,
+        "mean_pixel_error": 140.55969592585416,
+        "normalized_mean_error": 0.3882449771511352,
+        "pck_0.05": 0.0,
+        "pck_0.10": 0.0
+      }
+    },
+    "rbl": {
+      "mesial": {
+        "paired_assessable_count": 60,
+        "prediction_invalid_count": 46,
+        "bias_percentage_points": 51.45542546061804,
+        "mae_percentage_points": 59.22972308677579,
+        "rmse_percentage_points": 88.22429776427953
+      },
+      "distal": {
+        "paired_assessable_count": 76,
+        "prediction_invalid_count": 28,
+        "bias_percentage_points": 58.77565516775058,
+        "mae_percentage_points": 63.210787840531026,
+        "rmse_percentage_points": 77.79812505016845
+      }
+    },
+    "status": "preliminary_one_epoch_smoke_test"
+  },
+  "thermal": {
+    "maximum_temperature_c": 60,
+    "events": []
+  },
+  "memory": {
+    "nvidia_smi_max_used_mib": 686,
+    "total_vram_mib": 6144,
+    "evaluation_torch_peak_allocated_mib": 216.64990234375,
+    "evaluation_torch_peak_reserved_mib": 278.0
+  },
+  "training_process_wall_seconds": 56.1,
+  "evaluation_process_seconds": 42.70179629998165,
+  "total_compute_seconds": 98.80179629998165,
+  "checkpoint": "C:\\Users\\ADMIN\\Downloads\\periodontal-annotation-review\\artifacts\\perio-kpt-landmarks\\gate2\\smoke_fold0\\best.pt",
+  "checkpoint_reload": {
+    "success": true,
+    "shape": [
+      1,
+      11,
+      256,
+      256
+    ],
+    "epoch": 1,
+    "status": "completed"
+  },
+  "note": "The epoch completed once. Evaluation resumed without training after masking a source landmark outside its prescribed crop."
+}

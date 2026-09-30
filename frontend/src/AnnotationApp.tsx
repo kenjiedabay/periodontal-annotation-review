@@ -6,10 +6,10 @@ import StructuralAuditViewer from './components/StructuralAuditViewer';
 import AnnotationCanvas from './components/annotation/AnnotationCanvas';
 import ReviewFoundationPanel from './components/ReviewFoundationPanel';
 import AssociationReviewPanel from './components/AssociationReviewPanel';
-import SurfacePilotPanel from './components/SurfacePilotPanel';
 import LegacySurfaceRecordsPanel from './components/LegacySurfaceRecordsPanel';
 import AnatomicalOverlayPanel from './components/AnatomicalOverlayPanel';
 import GroundTruthPilotPanel from './components/GroundTruthPilotPanel';
+import PerioKptExpertReviewPanel from './components/PerioKptExpertReviewPanel';
 import { getHistory, registerSource, type ReviewMode, type ReviewState } from './lib/reviewFoundation';
 import type { AnnotationDraft } from './types';
 
@@ -40,8 +40,8 @@ function readImage(file: File, source: LoadedImage['source']): Promise<LoadedIma
 }
 
 export default function AnnotationApp() {
-  const [surfacePilotMode, setSurfacePilotMode] = useState(() => ['surface-v1', 'merged-anatomical-review', 'stage2c', 'stage2c-v2'].includes(new URLSearchParams(window.location.search).get('pilot') || ''));
   const [groundTruthPilotMode, setGroundTruthPilotMode] = useState(() => new URLSearchParams(window.location.search).get('pilot') === 'ground-truth-v1');
+  const [perioKptReviewMode, setPerioKptReviewMode] = useState(() => new URLSearchParams(window.location.search).get('pilot') === 'perio-kpt-expert-review');
   const [images, setImages] = useState<LoadedImage[]>([]);
   const [imageIndex, setImageIndex] = useState(0);
   const [annotation, setAnnotation] = useState<AnnotationDraft>(blankAnnotation);
@@ -64,23 +64,10 @@ export default function AnnotationApp() {
   const [reviewStates, setReviewStates] = useState<Record<string, ReviewState>>({});
   const updateReviewState = useCallback((state: ReviewState) => setReviewStates(current => ({ ...current, [state.image_id]: state })), []);
   const currentImage = images[imageIndex];
-  useEffect(() => {
-    const pilot = new URLSearchParams(window.location.search).get('pilot');
-    if (pilot === 'surface-v1' || pilot === 'stage2c' || pilot === 'stage2c-v2') {
-      window.history.replaceState(null, '', `${window.location.pathname}?pilot=merged-anatomical-review`);
-    }
-  }, []);
   useEffect(() => { fetch(`${API}/api/stage2c/queue`).then(response => response.ok ? response.json() : Promise.reject(new Error('Case library unavailable'))).then(data => setCaseLibrary(data.entries || [])).catch(() => setCaseLibrary([])); }, []);
 
-  function showPilot(sourceImageId?: string) {
-    const query = new URLSearchParams({ pilot: 'merged-anatomical-review' });
-    if (sourceImageId) query.set('image', sourceImageId);
-    window.history.replaceState(null, '', `${window.location.pathname}?${query}`);
-    setSurfacePilotMode(true);
-  }
-
-  if (surfacePilotMode) return <SurfacePilotPanel initialSourceImageId={new URLSearchParams(window.location.search).get('image') || undefined} onExit={() => { window.history.replaceState(null, '', window.location.pathname); setSurfacePilotMode(false); }} />;
   if (groundTruthPilotMode) return <GroundTruthPilotPanel onExit={() => { window.history.replaceState(null, '', window.location.pathname); setGroundTruthPilotMode(false); }} />;
+  if (perioKptReviewMode) return <PerioKptExpertReviewPanel onExit={() => { window.history.replaceState(null, '', window.location.pathname); setPerioKptReviewMode(false); }} />;
 
   async function loadFiles(files: File[], reviewMode: ReviewMode, source: LoadedImage['source']) {
     if (!files.length) { setError('Choose one or more image files.'); return; }
@@ -180,7 +167,7 @@ export default function AnnotationApp() {
     <aside className="sidebar">
       <div className="brand"><div className="brand-mark">P</div><div><strong>PERIO<span>LAB</span></strong><small>Expert annotation</small></div></div>
       <div className="study-card"><span className="eyebrow">ACTIVE STUDY</span><strong>Localized periodontal disease</strong><span className="study-id">RESEARCH PROTOTYPE</span></div>
-      <nav aria-label="Research workflows" className="workspace-nav"><span className="eyebrow">WORKFLOWS</span><button className="nav-item active" onClick={() => { setImages([]); setImageIndex(0); }}><span className="nav-index">01</span><span>Image review</span></button><button className="nav-item" onClick={() => showPilot()}><span className="nav-index">02</span><span>Unified anatomical review</span><small>Stage 2C + Surface · same image</small></button><button className="nav-item" onClick={() => { window.history.replaceState(null, '', `${window.location.pathname}?pilot=ground-truth-v1`); setGroundTruthPilotMode(true); }}><span className="nav-index">03</span><span>BRAR verification pilot</span></button></nav>
+      <nav aria-label="Research workflows" className="workspace-nav"><span className="eyebrow">WORKFLOWS</span><button className="nav-item active" onClick={() => { setImages([]); setImageIndex(0); }}><span className="nav-index">01</span><span>Image review</span></button><button className="nav-item" onClick={() => { window.history.replaceState(null, '', `${window.location.pathname}?pilot=ground-truth-v1`); setGroundTruthPilotMode(true); }}><span className="nav-index">02</span><span>BRAR verification pilot</span></button><button className="nav-item" onClick={() => { window.history.replaceState(null, '', `${window.location.pathname}?pilot=perio-kpt-expert-review`); setPerioKptReviewMode(true); }}><span className="nav-index">03</span><span>Perio-KPT landmark review</span><small>12-case blinded expert audit</small></button></nav>
       <div className="sidebar-foot"><span className="status-dot" />Local prototype <small>No clinical connection</small></div>
     </aside>
     <main className="main-area" id="workspace-main">
@@ -199,7 +186,6 @@ export default function AnnotationApp() {
             <div className={`casebar-actions ${currentImage.source==='upload'?'image-actions':'workspace-tools'}`} role="navigation" aria-label={currentImage.source==='upload'?'Uploaded image actions':'Case tools'}>
               {currentImage.source==='library'?<>
                 <button className="secondary-btn" disabled={!reviewStates[imageId(currentImage.file)]} onClick={() => openTool('versioned')}>Versioned review</button>
-                <button className="secondary-btn" onClick={() => showPilot(imageId(currentImage.file))}>Unified anatomical review</button>
                 <button className="secondary-btn" onClick={() => openTool('annotation')}>Expert annotation</button>
                 <button className="secondary-btn" disabled={imageReviewModes[imageId(currentImage.file)] === 'independent_evaluation' && !reviewStates[imageId(currentImage.file)]?.revealed} onClick={() => openTool('spatial')}>Spatial annotation</button>
                 <button className="secondary-btn" disabled={imageReviewModes[imageId(currentImage.file)] === 'independent_evaluation' && !reviewStates[imageId(currentImage.file)]?.revealed} onClick={() => openTool('segmentation')}>Tooth segmentation</button>
@@ -209,7 +195,6 @@ export default function AnnotationApp() {
               </>:<>
               <label className="secondary-btn upload-more">Add images<input type="file" accept="image/*" multiple onChange={event => void handleFiles(event.target.files)} /></label>
               <details className="legacy-tools advanced-tools"><summary>Advanced tools</summary><div>
-                <button className="secondary-btn" onClick={() => showPilot(imageId(currentImage.file))}>Unified anatomical review</button>
                 <button className="secondary-btn" disabled={!reviewStates[imageId(currentImage.file)]} onClick={() => openTool('versioned')}>Versioned review</button>
                 <button className="secondary-btn" onClick={() => openTool('annotation')}>Expert annotation</button>
                 <button className="secondary-btn" disabled={imageReviewModes[imageId(currentImage.file)] === 'independent_evaluation' && !reviewStates[imageId(currentImage.file)]?.revealed} onClick={() => openTool('spatial')}>Spatial annotation</button>
